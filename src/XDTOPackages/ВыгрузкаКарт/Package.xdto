@@ -1,0 +1,48 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru/XMLSchema-instance">
+	<objectType name="incomes" sequenced="true">
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="income" type="d3p1:income" upperBound="-1"/>
+	</objectType>
+	<objectType name="income">
+		<property name="pid"/>
+		<property name="paid"/>
+		<property name="date"/>
+		<property name="uid"/>
+		<property name="orgid"/>
+		<property name="sizedCategoryName"/>
+		<property name="arrivalNumber"/>
+		<property name="sizedCategoryNumber"/>
+		<property name="transit"/>
+	</objectType>
+	<objectType name="returns" sequenced="true">
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="return" type="d3p1:return" upperBound="-1"/>
+	</objectType>
+	<objectType name="return">
+		<property name="pid"/>
+		<property name="uid"/>
+		<property name="orgid"/>
+		<property name="date"/>
+	</objectType>
+	<objectType name="distributors" sequenced="true">
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="incomes" type="d3p1:incomes" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="returns" type="d3p1:returns" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="deliveries" type="d3p1:deliveries" upperBound="-1" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="purchases" type="d3p1:purchases" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="users" type="d3p1:users" nillable="true"/>
+	</objectType>
+	<objectType name="deliveries" sequenced="true">
+		<property xmlns:d3p1="http://www.100sp.ru/XMLSchema-instance" name="delivery" type="d3p1:delivery" upperBound="-1"/>
+	</objectType>
+	<objectType name="delivery">
+		<property name="uid"/>
+		<property name="pid"/>
+		<property name="orgid"/>
+		<property name="date"/>
+		<property name="paidSum"/>
+	</objectType>
+	<objectType name="purchases">
+		<property name="purchase" upperBound="-1"/>
+	</objectType>
+	<objectType name="users">
+		<property name="user" upperBound="-1"/>
+	</objectType>
+</package>

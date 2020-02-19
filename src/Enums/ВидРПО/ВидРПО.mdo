@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="862f0dca-58bb-4913-9eff-332c7bc67cef">
+  <producedTypes>
+    <refType typeId="7b8e37d9-90cc-4137-b178-bbae83744935" valueTypeId="6a1fcea0-124f-415d-8393-120f4384e831"/>
+    <listType typeId="72a4af62-f2cf-4151-8ade-94f158633293" valueTypeId="85299251-bc78-466a-a844-8f726748c030"/>
+    <managerType typeId="a7ad99b1-7334-4c65-b941-64be4118b29e" valueTypeId="a0857798-c9dc-4690-a666-61d7d96413b1"/>
+  </producedTypes>
+  <name>ВидРПО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид РПО</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ed68bf6f-c3a0-4def-8c18-36541d1f2f7c">
+    <name>POSTAL_PARCEL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посылка &quot;нестандартная&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a07781fe-37f0-4100-8f8e-c7c3c548d8be">
+    <name>ONLINE_PARCEL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посылка &quot;онлайн&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebd7372c-b432-4cac-80f2-c96bbefce93c">
+    <name>ONLINE_COURIER</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курьер &quot;онлайн&quot;</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0045d791-403c-4897-a245-71ea776a6f07">
+    <name>EMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправление EMS</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="846e9d3d-41ee-4292-a7af-7a3b2a877709">
+    <name>EMS_OPTIMAL</name>
+    <synonym>
+      <key>ru</key>
+      <value>EMS оптимальное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8e0c4405-9a8f-41ee-800b-d9014a9b85b7">
+    <name>LETTER</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cbd05cd3-7b06-482e-bd55-0e88e1d753b5">
+    <name>BANDEROL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бандероль</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fd6e004d-cb16-40f3-b526-b5a49f596349">
+    <name>BUSINESS_COURIER</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес курьер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c142b78d-3768-42cb-93d1-f236a0f7fe75">
+    <name>BUSINESS_COURIER_ES</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес курьер экпресс</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

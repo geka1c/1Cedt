@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7b125c7-491a-4a7d-ba5e-e9a45a094be6">
+  <producedTypes>
+    <objectType typeId="f8c4ac6e-4282-4c62-8c94-876710d05baf" valueTypeId="e12b9b38-d74a-4413-854d-6dadf4e54373"/>
+    <managerType typeId="cd441b71-b860-4bbc-965c-a2b693fb3e6f" valueTypeId="4e6174c1-9c90-4051-a3ef-bbf1a9918568"/>
+  </producedTypes>
+  <name>ПокупкиВПутиNEW</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупки в пути NEW</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПокупкиВПутиNEW.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Сопостовление заказов отправленных Транзитным пунктом выдачи, с принятыми заказами (Поскольку Посылки и коробки уникальны заказ считется поступившим на Пункт выдачи даже если он поступил раньше чем выехал)</value>
+  </explanation>
+  <templates uuid="004b0dbe-3a99-482e-9a26-13e42ca34357">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

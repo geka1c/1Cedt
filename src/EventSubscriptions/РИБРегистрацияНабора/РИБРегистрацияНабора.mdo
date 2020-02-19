@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee729917-e91c-4669-82a9-bd2d08ea348f">
+  <name>РИБРегистрацияНабора</name>
+  <synonym>
+    <key>ru</key>
+    <value>РИБРегистрация набора</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ДанныеПроизводственногоКалендаря</types>
+    <types>SequenceRecordSet.ОтрицательныеОстаткиТоваров</types>
+    <types>AccumulationRegisterRecordSet.Продажи</types>
+    <types>InformationRegisterRecordSet.СтатусыДоставки</types>
+    <types>SequenceRecordSet.Транзит</types>
+    <types>InformationRegisterRecordSet.ДоставленныеТранзиты</types>
+    <types>InformationRegisterRecordSet.ДанныеБизнесПроцессов</types>
+    <types>InformationRegisterRecordSet.УдалитьНастройкиВерсионированияОбъектов</types>
+    <types>InformationRegisterRecordSet.ЗначенияГруппДоступаПоУмолчанию</types>
+    <types>InformationRegisterRecordSet.СтатусыЗаявокВТК</types>
+    <types>InformationRegisterRecordSet.НазначениеДополнительныхОбработок</types>
+    <types>InformationRegisterRecordSet.ГруппыЗначенийДоступа</types>
+    <types>InformationRegisterRecordSet.НаличиеФайлов</types>
+    <types>InformationRegisterRecordSet.КодировкиФайлов</types>
+    <types>InformationRegisterRecordSet.АктуальныеУчастники</types>
+    <types>InformationRegisterRecordSet.ОбменССайтом</types>
+    <types>InformationRegisterRecordSet.СтатусыДоставкиСвернуто</types>
+    <types>AccumulationRegisterRecordSet.Приход</types>
+    <types>InformationRegisterRecordSet.НастройкиВариантовОтчетов</types>
+    <types>AccumulationRegisterRecordSet.Возвраты</types>
+    <types>InformationRegisterRecordSet.ДатыЗапретаИзменения</types>
+    <types>InformationRegisterRecordSet.КурсыВалют</types>
+    <types>InformationRegisterRecordSet.НаборыЗначенийДоступа</types>
+    <types>InformationRegisterRecordSet.ДополнительныеСведения</types>
+    <types>InformationRegisterRecordSet.АдресаЗаказов</types>
+    <types>InformationRegisterRecordSet.ПользовательскиеМакетыПечати</types>
+    <types>InformationRegisterRecordSet.ИсполнителиЗадач</types>
+    <types>AccumulationRegisterRecordSet.Расход</types>
+    <types>AccumulationRegisterRecordSet.КПолучению</types>
+    <types>InformationRegisterRecordSet.ОтправленныеДокументы</types>
+    <types>InformationRegisterRecordSet.КалендарныеГрафики</types>
+    <types>InformationRegisterRecordSet.НастройкиПравОбъектов</types>
+    <types>InformationRegisterRecordSet.ОтветыНаВопросыАнкет</types>
+    <types>InformationRegisterRecordSet.ТаблицыГруппДоступа</types>
+    <types>AccumulationRegisterRecordSet.ОстаткиТоваров</types>
+    <types>InformationRegisterRecordSet.ОчередьРазбора</types>
+    <types>InformationRegisterRecordSet.ПользовательскиеНастройкиДоступаКОбработкам</types>
+    <types>AccumulationRegisterRecordSet.Транзит</types>
+    <types>InformationRegisterRecordSet.ЗначенияГруппДоступа</types>
+    <types>InformationRegisterRecordSet.УчастникиВГруппах</types>
+    <types>AccumulationRegisterRecordSet.ВзаиморасчетыСКонтрагентами</types>
+    <types>InformationRegisterRecordSet.НаследованиеНастроекПравОбъектов</types>
+    <types>InformationRegisterRecordSet.СоставыГруппПользователей</types>
+    <types>AccountingRegisterRecordSet</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияРИБ.ОбменВРИБЗарегистрироватьИзменениеНабораЗаписей</handler>
+</mdclass:EventSubscription>

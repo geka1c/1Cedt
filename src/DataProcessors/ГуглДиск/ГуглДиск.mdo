@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a823c8e2-17ac-4f77-bf59-1497b24c1d78">
+  <producedTypes>
+    <objectType typeId="e0165f48-9e0c-45c7-b32d-934412c11066" valueTypeId="a21658b2-c614-4335-bdc2-ecfce8a688a1"/>
+    <managerType typeId="093fc2ed-7e58-45be-9360-e26947dfa564" valueTypeId="2e25494d-e628-4bea-973b-e2311e7f822b"/>
+  </producedTypes>
+  <name>ГуглДиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гугл диск</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГуглДиск.Form.Форма1</defaultForm>
+  <auxiliaryForm>DataProcessor.ГуглДиск.Form.Форма</auxiliaryForm>
+  <forms uuid="c8c01b01-cbb4-4351-a791-63b7cc66e956">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9e20955c-6967-464f-8f3a-685582e448d4">
+    <name>Форма1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

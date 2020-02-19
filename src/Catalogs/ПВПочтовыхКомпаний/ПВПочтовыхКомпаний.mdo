@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e115c279-2fd0-4ef8-8a5e-20a90e48aacc">
+  <producedTypes>
+    <objectType typeId="385cc7f3-6123-4933-9bfc-b5746181d8e3" valueTypeId="979473ba-40cd-4e24-82ad-abb7974fc5b0"/>
+    <refType typeId="ce330aeb-7954-42c5-9b3e-4f3fb0b9604a" valueTypeId="938742b4-ef60-49f1-8108-cab3fca41a52"/>
+    <selectionType typeId="53a248a4-d334-4b34-876e-8728cf20becc" valueTypeId="a62f3199-8c3a-475c-9cf0-221a93f35212"/>
+    <listType typeId="880b0cae-a7cb-48ed-b094-cd5fc7f7a8b1" valueTypeId="bdb96fd3-259c-40c8-aab6-d292af1a61d3"/>
+    <managerType typeId="d5fddad7-3991-4c4c-80f2-6f1210623828" valueTypeId="fffabaa1-2f04-4cc9-8337-eaf681446251"/>
+  </producedTypes>
+  <name>ПВПочтовыхКомпаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПВПочтовых компаний</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПВПочтовыхКомпаний.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПВПочтовыхКомпаний.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="01c79bcd-78e6-4bed-b073-e07b79757775">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f4b92082-e0c3-496e-baec-68757ce12e97">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c5ad2ae-0bab-47c5-bef5-53d2a090d0bf">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПВПочтовыхКомпаний</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

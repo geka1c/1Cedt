@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83a513ef-25b0-431d-ac69-2bb4fbee8000">
+  <producedTypes>
+    <managerType typeId="4d3fc3af-f744-42f5-98c8-f3c53e6e9317" valueTypeId="4f443e30-ebf7-43a9-8e3f-a9ca7f6075fa"/>
+    <valueManagerType typeId="f4db456f-ae81-4ed6-8ea6-dfa2ef188ff8" valueTypeId="6794bced-24b0-43a7-8d99-9af4d4dc7843"/>
+    <valueKeyType typeId="cb414f03-d69e-5d61-86f3-40ea5975d366" valueTypeId="8deffaa3-68d1-5332-87c3-915c2e7c724e"/>
+  </producedTypes>
+  <name>ТокенBoxBerry</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен box berry</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

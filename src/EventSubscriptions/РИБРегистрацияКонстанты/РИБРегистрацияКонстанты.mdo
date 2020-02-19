@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f869eb38-3a1c-4c70-b422-cdcc11ff71cf">
+  <name>РИБРегистрацияКонстанты</name>
+  <synonym>
+    <key>ru</key>
+    <value>РИБРегистрация константы</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.СписокЗапрещенныхРасширений</types>
+    <types>ConstantValueManager.ИзменятьЗаданияЗаднимЧислом</types>
+    <types>ConstantValueManager.ИспользоватьОбщиеДополнительныеРеквизитыИСведения</types>
+    <types>ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</types>
+    <types>ConstantValueManager.ИспользоватьАнкетирование</types>
+    <types>ConstantValueManager.ИспользоватьШифрование</types>
+    <types>ConstantValueManager.ИспользоватьЭлектронныеПодписи</types>
+    <types>ConstantValueManager.ИспользоватьДатуИВремяВСрокахЗадач</types>
+    <types>ConstantValueManager.ИспользоватьВнешнихПользователей</types>
+    <types>ConstantValueManager.ИспользоватьДополнительныеРеквизитыИСведения</types>
+    <types>ConstantValueManager.ИспользоватьГруппыПользователей</types>
+    <types>ConstantValueManager.ЗапрещатьЗагрузкуФайловПоРасширению</types>
+    <types>ConstantValueManager.ИспользоватьОбщиеДополнительныеЗначения</types>
+    <types>ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</types>
+    <types>ConstantValueManager.ИспользоватьВерсионированиеОбъектов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияРИБ.ОбменВРИБЗарегистрироватьИзменениеКонстанты</handler>
+</mdclass:EventSubscription>

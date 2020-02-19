@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0aa1c543-80c7-45f5-bebc-ef06e66a2a87">
+  <producedTypes>
+    <objectType typeId="0c2afb72-9921-4484-ab0a-b42b4b7304b9" valueTypeId="ce0d0d49-1f78-45ee-a2d6-8cb704c8dddb"/>
+    <managerType typeId="a58651ba-7e22-4c58-8e57-117b65b5e101" valueTypeId="ce0757df-78db-491e-ab66-53ab8b670478"/>
+  </producedTypes>
+  <name>МассоваяВыдачаПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовая выдача покупок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МассоваяВыдачаПокупок.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <forms uuid="b2b7dc72-9270-4524-94ee-cae5d7b0265b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

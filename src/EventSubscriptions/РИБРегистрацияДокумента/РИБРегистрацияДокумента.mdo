@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52a5f0f4-4749-45a7-a67d-c401f81d019a">
+  <name>РИБРегистрацияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value> Обмен в распределенной информационной базе зарегистрировать изменение документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Расходная</types>
+    <types>DocumentObject.ВыдачаТранзита</types>
+    <types>DocumentObject.ФормированиеКоробки</types>
+    <types>DocumentObject.Приходная</types>
+    <types>DocumentObject.ПередачаВозвратовОрганизаторам</types>
+    <types>DocumentObject.ЗаявкаВТранспортнуюКомпанию</types>
+    <types>DocumentObject.ПоступленияОтПоставщика</types>
+    <types>DocumentObject.ЗапросАдресов</types>
+    <types>DocumentObject.ПеремещениеВозврата</types>
+    <types>DocumentObject.ОтчетОДоставке</types>
+    <types>DocumentObject.ОтправлениеТранзита</types>
+    <types>DocumentObject.ПоступлениеКоробокДляРазбора</types>
+    <types>DocumentObject.Движение</types>
+    <types>DocumentObject.ВозвратПокупокОрганизатору</types>
+    <types>DocumentObject.КорректировкаЗаписейРегистров</types>
+    <types>DocumentObject.Продажа</types>
+    <types>DocumentObject.СчетКонтрагента</types>
+    <types>DocumentObject.КорректировкаОстатков</types>
+    <types>DocumentObject.ИнвентаризацияТранзитов</types>
+    <types>DocumentObject.ПередачаВозвратовОрганизатору</types>
+    <types>DocumentObject.РазборКоробки</types>
+    <types>DocumentObject.ПакетНаСайт</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияРИБ.ОбменВРИБЗарегистрироватьИзменениеДокумента</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1199e192-7ead-427b-8d35-51f650655349">
+  <producedTypes>
+    <managerType typeId="606c9e1a-f50c-4c95-90a1-39070f87aaf2" valueTypeId="cb5f508e-5025-4fcc-be2c-e52c6a2ce82e"/>
+    <valueManagerType typeId="d65e1912-790a-45d5-941f-ab2ebf32dbeb" valueTypeId="6be21bd9-22f7-4850-957b-1a1fefe5b089"/>
+    <valueKeyType typeId="f25d8dbb-da02-5f32-b8f7-74267d3e58c3" valueTypeId="f6d72e89-f863-51fb-800d-36ea559798fe"/>
+  </producedTypes>
+  <name>АдресЗагрузкиССайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес загрузки с сайта</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

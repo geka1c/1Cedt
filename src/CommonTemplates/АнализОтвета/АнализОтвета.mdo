@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ceee325-4982-4d1c-84e8-fb989263b243">
+  <name>АнализОтвета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ ответа</value>
+  </synonym>
+</mdclass:CommonTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c93d8415-32a7-409f-b545-7eb75494cd39">
+  <producedTypes>
+    <objectType typeId="cc725b8d-55e8-4da2-8247-1c5486e1aef2" valueTypeId="2f9c24fe-7316-4cb6-8516-b8e214e4cb7f"/>
+    <managerType typeId="34ff9b07-979d-438b-bbd9-8c0cb1d4b454" valueTypeId="2867cce7-452a-4150-b340-2e9be462bdf4"/>
+  </producedTypes>
+  <name>ОбменСПочтойРоссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с почтой россии</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОбменСПочтойРоссии.Form.Форма</defaultForm>
+  <forms uuid="82ab059a-0db7-4543-bc66-cb11fd65603d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd28db25-e0bf-42cb-8490-4ae50cbe1783">
+  <producedTypes>
+    <objectType typeId="c7c6d3dd-ae35-4828-af23-b6fa523edd66" valueTypeId="88c33f14-84e0-45e2-85f8-3aac4fdac452"/>
+    <managerType typeId="2e7424e3-7f6d-4673-809a-38e23c840376" valueTypeId="6ec8792d-d4fe-4b8f-afd2-42238ed63732"/>
+  </producedTypes>
+  <name>ВедомостьТранзитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость транзитов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ВедомостьТранзитов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Остатки и вижения транзитных ззаказов на складе </value>
+  </explanation>
+  <templates uuid="e03e44f2-4949-458e-a5ad-ee4b7f0e948e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="f190b308-470c-4564-9b51-92ac49da99f4">
+    <name>ВедомостьТранзитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость транзитов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

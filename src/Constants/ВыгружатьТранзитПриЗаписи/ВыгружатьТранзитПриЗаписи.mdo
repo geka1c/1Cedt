@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf477b28-cbc8-4089-9bb4-eb985784184e">
+  <producedTypes>
+    <managerType typeId="1ca93a1c-a66b-4dc6-aec4-91cb71301477" valueTypeId="370c7efe-6717-4a21-8ae3-783a7f74d498"/>
+    <valueManagerType typeId="4e55ade9-c646-4a40-b973-ce625740d8d7" valueTypeId="600f1535-3139-459c-8332-c3f0b9c881b9"/>
+    <valueKeyType typeId="8f575054-e53f-592d-be96-58ebaba5fc37" valueTypeId="fb3c6b20-e341-5a99-84e4-716506e25a18"/>
+  </producedTypes>
+  <name>ВыгружатьТранзитПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгружать транзит при записи</value>
+  </synonym>
+  <comment>Если флаг установлен, то при записи и проведении документа данные по транзитам будут автоматически выгружаться на сайт</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

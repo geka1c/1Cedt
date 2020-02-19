@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7fddeba-3a93-4f35-965d-700d7ad7b40b">
+  <producedTypes>
+    <managerType typeId="f108f93c-ac8b-485a-8dce-08c645761648" valueTypeId="f510bd76-98a7-42e8-841e-ba3c171125b2"/>
+    <valueManagerType typeId="25ddf009-683a-41c5-b695-e4d5099ff629" valueTypeId="fbb6b66c-3376-40ef-88b2-a98e941eb66f"/>
+    <valueKeyType typeId="030fa3e2-7f17-5a1c-873d-a78c1e8ea4fd" valueTypeId="4d34f4eb-93e0-5a42-9af1-a90ff12d4f19"/>
+  </producedTypes>
+  <name>АдминистраторДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администратор доставки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

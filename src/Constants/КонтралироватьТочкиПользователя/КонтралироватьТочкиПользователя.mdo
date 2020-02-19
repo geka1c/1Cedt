@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc4dd857-8f8e-420e-8573-1fde6ebbc343">
+  <producedTypes>
+    <managerType typeId="f4b82e47-6e23-4c54-a437-ac40b2a5ab1e" valueTypeId="8e838b5a-d55f-40e2-bd96-cb6b098fed95"/>
+    <valueManagerType typeId="d4e709c5-83c2-4140-a475-ef3c7634a7b6" valueTypeId="9b7aa161-cb87-41bc-9372-943a11488cd8"/>
+    <valueKeyType typeId="f532dead-ad88-581a-87ed-fc6d0cbae2eb" valueTypeId="434aa37c-d46f-5524-bf3b-57ccb6d90e02"/>
+  </producedTypes>
+  <name>КонтралироватьТочкиПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контралировать точки пользователя</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

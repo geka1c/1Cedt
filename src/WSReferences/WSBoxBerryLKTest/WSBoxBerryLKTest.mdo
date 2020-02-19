@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c5476ab-d8b6-4f3d-b716-22d8d431452c">
+  <producedTypes>
+    <managerType typeId="abbb3c90-c1cd-4f8b-b06b-408bbd4e3a75" valueTypeId="aa0a63ca-075c-4825-b60c-e0ce1a08ee7a"/>
+  </producedTypes>
+  <name>WSBoxBerryLKTest</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSBox berry LKTest</value>
+  </synonym>
+  <locationURL>http://test.api.boxberry.de/__soap/1c_lc.php?wsdl</locationURL>
+</mdclass:WSReference>

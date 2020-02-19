@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78611eda-2399-4f44-8a9a-0f79f5a758cf">
+  <producedTypes>
+    <refType typeId="61a3f645-59a3-4364-8ed9-e7642c3aa12f" valueTypeId="4471acdd-16ca-4a4c-b2ef-e9f11a615a47"/>
+    <listType typeId="997497a9-e3dc-4e17-b1a1-7762b8100550" valueTypeId="c30df0c5-1346-47fd-aafd-e874d73c5ce9"/>
+    <managerType typeId="fa04580e-f7fc-4dd5-a549-38ca4c7661fc" valueTypeId="2938df55-e333-4098-bf0d-3b684cf1b153"/>
+  </producedTypes>
+  <name>МетодыОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Методы оплаты</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2ed83bac-7231-4eaf-83ab-8f6bdd58c3d5">
+    <name>prepay</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред.оплата</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d5968bd-2f61-418a-926d-56e49ad5bbea">
+    <name>cod</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нал. латеж</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

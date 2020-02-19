@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f00fae7c-961a-406c-83c8-9519b7d5216a">
+  <name>СтоСП_Выгрузка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто сп выгрузка</value>
+  </synonym>
+  <namespace>http://www.100sp.ru/api/distributor/upload</namespace>
+</mdclass:XDTOPackage>

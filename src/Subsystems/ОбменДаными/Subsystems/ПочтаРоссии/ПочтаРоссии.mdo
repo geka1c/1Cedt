@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7a81df0-8b20-427e-9949-7f62d7b07dee">
+  <name>ПочтаРоссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Почта россии</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Enum.КатегорияРПО</content>
+  <content>Enum.ВидРПО</content>
+  <parentSubsystem>Subsystem.ОбменДаными</parentSubsystem>
+</mdclass:Subsystem>

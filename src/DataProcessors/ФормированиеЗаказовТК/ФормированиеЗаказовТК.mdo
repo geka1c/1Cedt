@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3988d35e-cc46-449b-970c-867553dbc348">
+  <producedTypes>
+    <objectType typeId="4f245f4a-c6cf-4344-bbe0-6969a08ec2fe" valueTypeId="e2e968ef-df05-424f-8a1d-3539b7350537"/>
+    <managerType typeId="3dff1595-83d3-47f7-bf43-befea7d19aed" valueTypeId="b82b610e-9e8a-401e-b529-d1ce26737a91"/>
+  </producedTypes>
+  <name>ФормированиеЗаказовТК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование заказов для передачи через транспортную компанию</value>
+  </synonym>
+  <defaultForm>DataProcessor.ФормированиеЗаказовТК.Form.Форма</defaultForm>
+  <attributes uuid="70bfad8d-0300-4621-84e3-f4c5f942f33a">
+    <name>ОтборПоУчастнику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор по участнику</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9e5bf656-2d18-4397-b283-adb00d40fd86">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="15f05d90-c150-42be-b238-823e7d9668a4">
+    <name>ФормаВыбораАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора адреса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9aed2b15-6552-45db-8c74-cffc5015aa18">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="942c7ae8-f385-42d4-8f17-c18012aa977d">
+    <name>ФормированиеЗаказовТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование заказов для передачи через ТК (устарело)</value>
+    </synonym>
+    <group>CommandGroup.Информация</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

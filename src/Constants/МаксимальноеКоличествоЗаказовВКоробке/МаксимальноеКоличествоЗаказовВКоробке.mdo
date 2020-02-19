@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac69b447-da51-460a-ab47-8a7aeffd8d29">
+  <producedTypes>
+    <managerType typeId="e3d92dc4-8668-4afa-b3b0-1f8895a9cccf" valueTypeId="0d44909b-b984-4d64-98a6-70b8c8f6252f"/>
+    <valueManagerType typeId="0e4ccf00-4021-4c4e-b72e-c713dfeffabb" valueTypeId="ba3b23f7-670e-4150-ba45-9d65fa0f803b"/>
+    <valueKeyType typeId="323708b0-daf3-510f-9824-73ae82174e87" valueTypeId="55f418da-30cc-56ff-a625-64e794bb1cd4"/>
+  </producedTypes>
+  <name>МаксимальноеКоличествоЗаказовВКоробке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальное количество заказов в коробке</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

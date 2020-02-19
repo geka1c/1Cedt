@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d64ab590-8a65-49e9-afbb-92076684d2df">
+  <name>СтоСПОбмен_СупперГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто СПОбмен суппер группы</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

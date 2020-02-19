@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4b50b77-01d9-45f7-916a-4b52eb331d67">
+  <producedTypes>
+    <managerType typeId="243eb97e-5ea6-480e-b490-9e67c3b8d23e" valueTypeId="dc505878-cbd7-4b08-8338-20ad19cf3a2b"/>
+    <valueManagerType typeId="54ed59e2-b6a0-4205-b46f-9723b58dbce2" valueTypeId="7013409c-474e-4db3-8a1d-17a46d656d68"/>
+    <valueKeyType typeId="5bfa849d-651a-59d0-8314-3790ff24f10d" valueTypeId="6f6fa091-a96f-5620-a8f6-eaadb732cf57"/>
+  </producedTypes>
+  <name>ПомечатьЗаказыПриФормированииДокументаВыдачаТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помечать заказы при формировании документа выдача транзита</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

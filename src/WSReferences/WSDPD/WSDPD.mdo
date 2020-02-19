@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2300fe38-bf4b-4189-97d7-ea6e938b9fbf">
+  <producedTypes>
+    <managerType typeId="16eb3da8-f457-42e9-9222-fb441549f886" valueTypeId="d9b9c08c-372f-4f7a-be10-55c74706e051"/>
+  </producedTypes>
+  <name>WSDPD</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSDPD</value>
+  </synonym>
+  <locationURL>http://ws.dpd.ru/services/geography2?wsdl</locationURL>
+</mdclass:WSReference>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12fe4d5c-29f2-4602-ae37-ec31a05407d4">
+  <name>СтоСПОбмен_Сообщения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто СПОбмен сообщения</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

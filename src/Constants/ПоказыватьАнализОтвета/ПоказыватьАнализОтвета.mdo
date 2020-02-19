@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1f30dbf-46a6-4bec-aade-20158909a70b">
+  <producedTypes>
+    <managerType typeId="b629f9d4-816d-4ea7-bf12-4b49d10a344e" valueTypeId="34437922-58fc-4ef8-b2fc-5fc655664f5d"/>
+    <valueManagerType typeId="4f5e3b81-27f7-410e-a82c-336874307955" valueTypeId="b89ae9a6-2fa9-4f32-babd-61f2dbc1abb3"/>
+    <valueKeyType typeId="5f781235-fa55-50ad-bb3e-7ab8ddd12bd5" valueTypeId="a2285a9d-96ff-5954-9887-57ca9a3acf75"/>
+  </producedTypes>
+  <name>ПоказыватьАнализОтвета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать анализ ответа</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

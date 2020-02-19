@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41ff8efc-99ec-4472-865b-39890a13089a">
+  <producedTypes>
+    <managerType typeId="d8db730b-c442-4bca-a142-f33ccb5cc84a" valueTypeId="d4e20664-24f5-436b-bb85-832dd9027a66"/>
+    <valueManagerType typeId="5f1ccf98-94a4-46ad-9c30-d3ef67d312ba" valueTypeId="b8f87cd2-754a-4326-9688-0a0670625b3e"/>
+    <valueKeyType typeId="b48fc101-6f27-44b0-b4b6-955b965b1c08" valueTypeId="4650115d-c2ef-429d-a701-f59ebf760c33"/>
+  </producedTypes>
+  <name>ОграничениеВыдачиТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ограничение выдачи транзита</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Time</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>При заполнении документа &quot;Выдача транзита&quot; остатками заказов, в документ попадут только заказы принятые до указаного времени текущей даты</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

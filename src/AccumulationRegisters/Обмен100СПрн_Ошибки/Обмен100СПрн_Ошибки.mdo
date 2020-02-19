@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49aa6c0a-a507-4fc1-88b9-c368a6e660ef">
+  <producedTypes>
+    <selectionType typeId="3ecf4c4c-ed3f-41b9-84e4-4e495c1be4f7" valueTypeId="1c68e40d-6bef-4a40-88d7-b4663a9de84b"/>
+    <listType typeId="f6d5082a-0887-4afc-8eb7-24be8196ddc6" valueTypeId="40a5a247-938b-49bb-8a0f-8d244d998635"/>
+    <managerType typeId="745b79d7-9e3e-4dab-8e4b-b06b867b7cbc" valueTypeId="bcbf4990-e7ab-4398-827a-e03a99c939fd"/>
+    <recordSetType typeId="0b56f44c-a11e-406d-a8de-6ac35874c74a" valueTypeId="984d9c8e-cfcc-4cb5-bf50-e2d7a82e8a51"/>
+    <recordKeyType typeId="1047a94b-e9f9-444a-aa1d-474d1b46ad31" valueTypeId="a4fce72d-d7f1-4dad-83eb-9df5ded8ecc6"/>
+    <recordType typeId="43393db4-75e2-4aa8-a615-bb2400e74220" valueTypeId="f8a2b47e-b3b8-45de-bc47-2f03f244bfbf"/>
+  </producedTypes>
+  <name>Обмен100СПрн_Ошибки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен100 с прн ошибки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="967b0b5e-9f8d-49a7-935c-5a85e54702cb">
+    <name>КоличествоНеИсправленных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество не исправленных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="5432136a-0251-47a1-9f79-87f7ce520a5d">
+    <name>типОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип обмена</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбменов100сп</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="dc0a5876-8ffa-487c-a5fb-ba96fa22ee3f">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПартияДляОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="05f225ea-6019-49fe-83e0-ac14e923a646">
+    <name>СтрокаВПартии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка в партии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9b5ed730-9e1e-4419-b35d-8c4ba5fcf337">
+    <name>Мегаордер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мегаордер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Мегаордера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f878f7d4-707f-455f-9c5e-5bd6cb0c1161">
+    <name>СообщениеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

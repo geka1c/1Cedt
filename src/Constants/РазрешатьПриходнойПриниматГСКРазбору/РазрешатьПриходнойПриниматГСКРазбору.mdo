@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f84860c-c31d-4a1e-a867-e41f72f406a8">
+  <producedTypes>
+    <managerType typeId="7e75647d-6df6-42d2-b48d-8ff18c408f4b" valueTypeId="07bdc518-bbbe-4086-a2da-01ff7aeb559c"/>
+    <valueManagerType typeId="1ff37b4a-1dcb-4f09-98b2-499a0085fbf1" valueTypeId="26c594ce-2f89-45d0-bd05-882292cd0061"/>
+    <valueKeyType typeId="cbf227d7-2ac7-5a2b-b7c5-8befaa510578" valueTypeId="51750641-8154-57e4-a654-2c8751140856"/>
+  </producedTypes>
+  <name>РазрешатьПриходнойПриниматГСКРазбору</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешать приходной принимат ГС к разбору</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Для использования Приходной как документа поступления ГС на склад для обработки Контроль</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

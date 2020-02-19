@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2bb5172-3ae6-41bd-9c49-577ac46e5201">
+  <producedTypes>
+    <managerType typeId="7629d8aa-ef03-4b69-a9f7-ebd5b40f1d34" valueTypeId="afccbf24-0697-4807-819d-b636bcdc839a"/>
+    <valueManagerType typeId="0f6de264-e577-4da4-afd3-7cba446b1cf6" valueTypeId="c110bdab-0e0e-4e0e-aaa8-b91d0c885d12"/>
+    <valueKeyType typeId="a77c7063-5bb6-5c39-bab0-0b71f7a7b507" valueTypeId="0a9d76d7-e09a-5727-90ec-d9506ec4f6bc"/>
+  </producedTypes>
+  <name>ТокенEMS</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен EMS</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

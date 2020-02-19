@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a0a0324-59a9-467a-82ee-e33532cac0ae">
+  <name>ПодсистемаТранзит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема транзит</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9b69eeb-66ba-4a99-acb8-5579e7e1db21">
+  <producedTypes>
+    <objectType typeId="83721a4c-8eaf-4fb5-9084-6aa349eae84a" valueTypeId="f8f9f1b4-4383-4de5-9108-58c2f4fb146d"/>
+    <managerType typeId="0fe5dff1-9b49-4f31-9d88-25db21adb386" valueTypeId="1141c4d7-cb27-4366-b57e-90df8a06ba2f"/>
+  </producedTypes>
+  <name>АнализСборовСОрганизатора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ сборов с организатора</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализСборовСОрганизатора.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для определения количества заказов собранных для организатора на пункте выдачи</value>
+  </explanation>
+  <templates uuid="3aa0046b-e589-4439-865d-6c8f15c5e116">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

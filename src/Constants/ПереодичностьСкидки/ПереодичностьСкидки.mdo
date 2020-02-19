@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa20f562-7389-42bc-aab5-b4e206ddf628">
+  <producedTypes>
+    <managerType typeId="820e0fdd-47c8-4d81-a6a3-8a901879e0f4" valueTypeId="bcb4af17-a80b-4e1f-b206-b244ae292b5d"/>
+    <valueManagerType typeId="d7544898-56c6-45d2-b131-e1c726b81836" valueTypeId="80bbf675-734b-4165-8460-3517c7ae2e70"/>
+    <valueKeyType typeId="ec53dd6f-6367-52a1-9e84-ac94d38d3d45" valueTypeId="ba9019c3-6453-56eb-9d00-afa884789ae2"/>
+  </producedTypes>
+  <name>ПереодичностьСкидки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переодичность скидки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>6</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

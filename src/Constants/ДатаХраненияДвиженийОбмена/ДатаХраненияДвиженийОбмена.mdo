@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f557970-56d2-46bf-a28f-91f3c039a8c8">
+  <producedTypes>
+    <managerType typeId="409a2d09-43b1-4b8a-9bad-c9f7d7fa742a" valueTypeId="a99b9f21-c615-4059-b1cd-061bbe22b653"/>
+    <valueManagerType typeId="a12a9e96-63af-4f1e-855e-d5306ae1cfe7" valueTypeId="afdf1a70-a42d-4e5a-bed2-a8bc8408ee27"/>
+    <valueKeyType typeId="bf86d7c4-cd24-5984-85d9-0edc2fd2d877" valueTypeId="49b40723-ed7c-5936-94a7-76d22c3714a5"/>
+  </producedTypes>
+  <name>ДатаХраненияДвиженийОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата хранения движений обмена</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3c698cf-7ba1-4bf2-b3c5-50e94f629de3">
+  <producedTypes>
+    <selectionType typeId="ca39ec8f-95a3-405e-8742-f114c47a1cab" valueTypeId="c694caaf-a557-4a95-af42-c1543da4c0df"/>
+    <listType typeId="cd93b619-f03f-44a4-b85b-5c93c0c082bf" valueTypeId="12c34eb5-0615-4a7b-9502-0f500866b688"/>
+    <managerType typeId="7d9e8455-7899-4e48-867c-82a2b882542a" valueTypeId="8dbdf0e5-6b56-4cc8-80b1-237c902e7677"/>
+    <recordSetType typeId="35085243-683b-4715-8b84-a27657c4f72d" valueTypeId="48f34203-e40a-4fe0-97c9-5d3ead1a4316"/>
+    <recordKeyType typeId="36d22976-d082-4c36-bab3-aa50d29ccc10" valueTypeId="f11efc2b-7cb7-4a9e-8fad-4dcaee53f541"/>
+    <recordType typeId="d0d9bcf3-7f8f-4542-8cd4-c697321ca516" valueTypeId="d4a29a89-d10a-4874-821e-dccf4f3da878"/>
+    <recordManagerType typeId="f7b71703-f716-4fea-90a8-080b67e0d885" valueTypeId="4ec36ab0-e1cf-4efe-98af-740741f34947"/>
+  </producedTypes>
+  <name>Чат100СП_Сообщения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат100 с п сообщения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1309a3ad-d4a0-4dd9-953a-8655aa0931b8">
+    <name>body</name>
+    <synonym>
+      <key>ru</key>
+      <value>Body</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="29182190-5655-46ee-accf-bb86b049ac1c">
+    <name>canBeDeleted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Can be deleted</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7ed6e38a-8281-40ed-b1f2-854bfe3fd7f6">
+    <name>mdid</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mdid</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6ccb70ed-24c4-442e-983b-47e2d1eacb64">
+    <name>mid</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mid</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2adee212-f11f-4422-adc1-03913fd11a00">
+    <name>from_u</name>
+    <synonym>
+      <key>ru</key>
+      <value>From u</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02936399-58ee-4223-b1df-508ce3a8bacb">
+    <name>created</name>
+    <synonym>
+      <key>ru</key>
+      <value>Created</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e42bf3f9-497e-48f8-8b00-bc5d9863fa07">
+    <name>unread</name>
+    <synonym>
+      <key>ru</key>
+      <value>Unread</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

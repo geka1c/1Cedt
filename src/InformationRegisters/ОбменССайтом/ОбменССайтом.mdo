@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04f7423c-9339-4fe1-9f2c-2fa6204269fc">
+  <producedTypes>
+    <selectionType typeId="f0d0bad6-d35b-4b34-96ec-4fddd0b68b69" valueTypeId="c141fb78-2161-4183-8451-88986691c784"/>
+    <listType typeId="d7a82aa1-1e96-464a-8e86-6615526e792f" valueTypeId="00577a7c-ba3e-49af-a7ba-2b216c14179d"/>
+    <managerType typeId="014483c2-0663-4f19-b637-8293ab2bc14c" valueTypeId="047ec15e-7e58-4a11-b4bb-dfd474b7c959"/>
+    <recordSetType typeId="6f7d71de-ddbc-42d0-a95a-e446492e8fc2" valueTypeId="2b3cdd1b-4b0b-4438-93f5-14eb25ae56e2"/>
+    <recordKeyType typeId="81d12d6d-952b-4750-8a82-ed5625b589bd" valueTypeId="abb520f1-26b1-4b8f-846e-9821837f71a1"/>
+    <recordType typeId="d5ac5701-5243-4d91-bfbd-f47e3f2c8b61" valueTypeId="7670b9e1-ec54-49ac-8ba5-e3afedd5cf44"/>
+    <recordManagerType typeId="be66e31e-d1a0-4ebc-8ec7-de589712bc0f" valueTypeId="3052d504-77e4-44ab-9064-85d452ebc05e"/>
+  </producedTypes>
+  <name>ОбменССайтом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с сайтом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4ec27974-133f-427c-b924-604b8e04aec6">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусОтпавкиНаСайт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d8e4ac12-d60d-44f1-96b0-705d261d9f95">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КартыУчастников</types>
+      <types>DocumentRef.ВыдачаТранзита</types>
+      <types>DocumentRef.ФормированиеКоробки</types>
+      <types>DocumentRef.ВозвратПокупокОрганизатору</types>
+      <types>DocumentRef.ОтправлениеТранзита</types>
+      <types>DocumentRef.Приходная</types>
+      <types>DocumentRef.Расходная</types>
+      <types>DocumentRef.ОтчетОДоставке</types>
+      <types>DocumentRef.РазборКоробки</types>
+      <types>DocumentRef.ПоступлениеКоробокДляРазбора</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

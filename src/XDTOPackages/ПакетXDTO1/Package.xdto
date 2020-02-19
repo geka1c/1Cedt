@@ -1,0 +1,52 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.integration.cdek.ru">
+	<objectType name="DeliveryRequest">
+		<property name="Number" type="xs:string" form="Attribute"/>
+		<property name="Date" type="xs:date" form="Attribute"/>
+		<property name="Account" type="xs:string" form="Attribute"/>
+		<property name="Secure" type="xs:string" form="Attribute"/>
+		<property name="OrderCount" type="xs:integer" form="Attribute"/>
+		<property name="Currency" type="xs:string" form="Attribute"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Order" type="d3p1:DeliveryRequest.Order"/>
+	</objectType>
+	<objectType name="DeliveryRequest.Order">
+		<property name="Number" type="xs:string" form="Attribute"/>
+		<property name="SendCityCode" type="xs:integer" form="Attribute"/>
+		<property name="RecCityCode" type="xs:integer" form="Attribute"/>
+		<property name="DateInvoice" type="xs:date" form="Attribute"/>
+		<property name="ShipperName" type="xs:string" form="Attribute"/>
+		<property name="ShipperAddress" type="xs:string" form="Attribute"/>
+		<property name="RecipientName" type="xs:string" form="Attribute"/>
+		<property name="RecipientEmail" type="xs:string" form="Attribute"/>
+		<property name="Phone" type="xs:string" form="Attribute"/>
+		<property name="TariffTypeCode" type="xs:integer" form="Attribute"/>
+		<property name="DeliveryRecipientCost" type="xs:float" form="Attribute"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Seller" type="d3p1:DeliveryRequest.Order.Seller"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Address" type="d3p1:DeliveryRequest.Order.Address"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Package" type="d3p1:DeliveryRequest.Order.Package"/>
+	</objectType>
+	<objectType name="DeliveryRequest.Order.Seller">
+		<property name="Address" type="xs:string" form="Attribute"/>
+		<property name="Name" type="xs:string" form="Attribute"/>
+		<property name="Comment" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="DeliveryRequest.Order.Address">
+		<property name="PvzCode" type="xs:string" form="Attribute"/>
+	</objectType>
+	<objectType name="DeliveryRequest.Order.Package">
+		<property name="Number" type="xs:string" form="Attribute"/>
+		<property name="BarCode" type="xs:string" form="Attribute"/>
+		<property name="Weight" type="xs:integer" form="Attribute"/>
+		<property name="SizeA" type="xs:integer" form="Attribute"/>
+		<property name="SizeB" type="xs:integer" form="Attribute"/>
+		<property name="SizeC" type="xs:integer" form="Attribute"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Item" type="d3p1:DeliveryRequest.Order.Package.Item" upperBound="-1"/>
+	</objectType>
+	<objectType name="DeliveryRequest.Order.Package.Item">
+		<property name="Amount" type="xs:integer" form="Attribute"/>
+		<property name="WareKey" type="xs:string" form="Attribute"/>
+		<property name="Cost" type="xs:float" form="Attribute"/>
+		<property name="Payment" type="xs:float" form="Attribute"/>
+		<property name="Weight" type="xs:integer" form="Attribute"/>
+		<property name="Comment" type="xs:string" form="Attribute"/>
+	</objectType>
+</package>

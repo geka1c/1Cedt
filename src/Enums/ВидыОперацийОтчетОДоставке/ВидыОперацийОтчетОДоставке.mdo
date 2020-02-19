@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2230edf4-e4a6-4327-b9da-5f817703248f">
+  <producedTypes>
+    <refType typeId="a4abbba8-f1c9-41ae-9874-b8e0278b9166" valueTypeId="66702258-9117-4abd-9b00-3b2ec84834d7"/>
+    <listType typeId="610a33fa-733f-4c8f-8d9c-1787c40f740e" valueTypeId="825f9075-c66d-4bb9-8d7e-4386a2083ecb"/>
+    <managerType typeId="4e40f741-ab7a-45ca-8388-80879937dc24" valueTypeId="9e9ea0e3-f592-479c-bc78-b8eea5d7ad0d"/>
+  </producedTypes>
+  <name>ВидыОперацийОтчетОДоставке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций отчет о доставке</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4dc9bb40-3b00-4e88-9a24-0586fcd5b6c5">
+    <name>Доставлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доставлен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e5197b9d-17ce-4767-a7e3-a39d244f46ef">
+    <name>Утрачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утрачен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

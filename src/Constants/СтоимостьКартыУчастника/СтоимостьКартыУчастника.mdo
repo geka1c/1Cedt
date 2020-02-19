@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de7583b1-85f6-48ea-99bb-d32ba1602eb2">
+  <producedTypes>
+    <managerType typeId="b50e603e-6836-4fcd-ac3a-62e42c81cba0" valueTypeId="dd8f6380-f621-4e34-adc7-c6f0a960ecfb"/>
+    <valueManagerType typeId="372753ff-ae31-45f3-8714-b3c16c4f7490" valueTypeId="a30e5d32-d17a-4b4b-af7b-1f355c5aab8e"/>
+    <valueKeyType typeId="6368ec6f-23a4-560d-b398-100b6bf8adb5" valueTypeId="9370f460-8566-5bdc-8537-6e95aedc9a11"/>
+  </producedTypes>
+  <name>СтоимостьКартыУчастника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость карты участника</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

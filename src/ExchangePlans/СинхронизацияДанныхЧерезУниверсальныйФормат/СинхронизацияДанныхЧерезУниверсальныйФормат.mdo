@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c24966be-b299-4e81-9fe9-bcc4f401cbba" thisNode="a324a763-0bec-43dd-bfc0-50fb5aee2405">
+  <producedTypes>
+    <objectType typeId="ce15a05f-3a6c-47f3-bcd1-c233815bd648" valueTypeId="c59b4a04-f5a3-4a8d-85a9-c1be48d93022"/>
+    <refType typeId="64ed2998-7717-42b2-8da8-97dc26de0e65" valueTypeId="fc86babe-06fb-4f72-b6f2-bf7de710b8a0"/>
+    <selectionType typeId="69327b7b-13b3-404d-a12d-e3ca5b353814" valueTypeId="465b0d70-2698-4e07-be66-845fcd8e3755"/>
+    <listType typeId="8ff525a0-373f-457c-b8b6-75e817a2783f" valueTypeId="7aebd28d-1792-4796-a8a0-17f6cf60a2f0"/>
+    <managerType typeId="e0720c1b-815a-43b1-bfdc-5ffe6427c07b" valueTypeId="e8e1c894-cd45-4148-ab4a-a9b68c10aae7"/>
+  </producedTypes>
+  <name>СинхронизацияДанныхЧерезУниверсальныйФормат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Document.ЗаявкаВТранспортнуюКомпанию</mdObject>
+  </content>
+  <content>
+    <mdObject>Document.СчетКонтрагента</mdObject>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6c9a89db-6e42-48b7-a644-b22384c380df">
+    <name>ВерсияФорматаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия формата обмена</value>
+    </synonym>
+    <comment>Версия формата обмена в формате ХХ.ХХ.ХХ.ХХ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия формата, выбранная для данного узла плана обмена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:ExchangePlan>

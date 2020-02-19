@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f656b8d9-08dc-4acf-b7db-54758c721ed9">
+  <producedTypes>
+    <managerType typeId="c5dac570-34b6-4c42-8e4b-c8990bcb31ef" valueTypeId="e63637d3-239d-4b70-806a-dd517dfe551c"/>
+    <valueManagerType typeId="f78855a7-af64-4466-8627-5377315be019" valueTypeId="77913b45-77ed-4680-a525-82cec94c26c9"/>
+    <valueKeyType typeId="bcbc10e5-f31b-5341-ab99-c09e523bef70" valueTypeId="3035c7ad-6f84-5624-9557-b49b8cd52f31"/>
+  </producedTypes>
+  <name>ПоследняяЗагрузкаПосылок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последняя загрузка посылок</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

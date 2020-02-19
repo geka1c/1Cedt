@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01a45507-4968-4441-9144-35e7f262d257">
+  <producedTypes>
+    <selectionType typeId="f5f8c024-c921-4db1-a042-bffc62d1ab89" valueTypeId="463f78e2-0780-4c69-9902-52461caeaab4"/>
+    <listType typeId="437c3e0b-a539-45cc-ae33-9a6dcc37dfed" valueTypeId="564026fb-320c-4de5-adcf-ea7febf3a865"/>
+    <managerType typeId="101cb99d-15b8-472b-b024-6ea2021f88f3" valueTypeId="3feeb52c-2004-4c7d-b038-82ffdcc22a94"/>
+    <recordSetType typeId="4ea628a5-c319-44f8-9c66-a520947e55bc" valueTypeId="89c1e020-7321-46bd-a979-37c7110176b6"/>
+    <recordKeyType typeId="62455eb8-28c6-4626-954d-ecb5fa695d47" valueTypeId="36479c69-d4d3-4ff8-b4cd-dbb0eaa485a6"/>
+    <recordType typeId="2e3e0537-f8d0-4a4d-805b-6b5eb597df62" valueTypeId="22d599c2-a493-4f1b-98a1-2c9465089608"/>
+    <recordManagerType typeId="1b97324f-5d34-434a-98c4-26fba1f40e1b" valueTypeId="3d8d2516-3bee-4b7d-94c4-5b3189a780e7"/>
+  </producedTypes>
+  <name>ПокупкиОтдельнымМестом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупки отдельным местом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c2fde9bc-719c-4fa3-a925-b2787cf98d49">
+    <name>ОтдельнымМестом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдельным местом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0c11e88a-22bf-4e22-bae2-6004aef3a66b">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Покупки</types>
+      <types>CatalogRef.Заказы</types>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ecb9f57-48e9-4954-af80-e4010ff5626e">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

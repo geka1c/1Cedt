@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="459fc727-ba61-4f5c-833f-a1e8567b7166">
+  <producedTypes>
+    <selectionType typeId="01c8528c-89bb-49c7-b0c3-28c1de011ddc" valueTypeId="2134d674-f05b-4dd4-94a4-b3983bb4e14e"/>
+    <listType typeId="babc39d9-a25b-498f-b26c-8a0a022ff5ab" valueTypeId="a44b5dbd-9d8a-434b-b6a4-27a0880bb52c"/>
+    <managerType typeId="7661c7f6-3b00-4b90-9e65-71cbc78330dd" valueTypeId="f41a46bd-f37b-4f8a-a699-9775671ff80f"/>
+    <recordSetType typeId="37268fb2-235f-4f70-8335-490b4b0bb957" valueTypeId="091590e3-4590-40af-b544-0f244dce3d93"/>
+    <recordKeyType typeId="9ca69f0b-ba90-4106-9348-9fefb9495042" valueTypeId="13c5baa8-bcd3-4f00-aa72-509e26acba40"/>
+    <recordType typeId="f8782daf-4dfd-4ae9-8409-5b3c6a39744e" valueTypeId="51b524d5-6dd0-4479-a7e8-36a91bef95f5"/>
+  </producedTypes>
+  <name>Обмен100СПрн</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен100СП_рн</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="9f83b999-22a9-4acc-ab4e-7d55bf80296a">
+    <name>КоличествоНеОтправленых</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество не отправленых</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e5413a0c-135d-4a09-8cf5-772f01731bf1">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПартияДляОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="695745f0-0649-486a-a575-203d2a1d9898">
+    <name>типОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип обмена</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбменов100сп</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

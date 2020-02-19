@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb1d1531-d68c-4dde-830f-7e334aa2ea64">
+  <producedTypes>
+    <objectType typeId="4d7f3d97-3d8f-40e0-b587-de506936f101" valueTypeId="64aa3bf9-873a-426b-b6e4-e43e3b85b1f7"/>
+    <managerType typeId="b1be32ad-b9ca-43eb-8a71-0690196c5f3b" valueTypeId="6303f1a7-62ab-4be4-81d1-46483d1b1b2f"/>
+  </producedTypes>
+  <name>АнализРазбораКоробок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ разбора коробок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализРазбораКоробок.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Показывает коробки(групповые стикеры) со штрафом. КОгда больше двух заказов на один ппункт выдачи в коробке к разбору.</value>
+  </explanation>
+  <forms uuid="d6bd62fd-0047-4cdc-a539-978cc0f878bb">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ae1a1887-d6a7-4a02-b861-1ebb3058bf9e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

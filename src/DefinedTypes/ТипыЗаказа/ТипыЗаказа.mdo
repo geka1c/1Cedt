@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13146dcd-1da6-4ac2-93a0-efdbfd4e7146">
+  <producedTypes>
+    <containerType typeId="cb5cce06-900e-4db3-958d-7746542c1eb2" valueTypeId="68178fe1-5734-479f-9cd5-0f1c23ef99de"/>
+  </producedTypes>
+  <name>ТипыЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы заказа</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Покупки</types>
+    <types>CatalogRef.Заказы</types>
+    <types>CatalogRef.Посылки</types>
+    <types>CatalogRef.Пристрой</types>
+    <types>CatalogRef.Мегаордера</types>
+    <types>CatalogRef.Коробки</types>
+  </type>
+</mdclass:DefinedType>

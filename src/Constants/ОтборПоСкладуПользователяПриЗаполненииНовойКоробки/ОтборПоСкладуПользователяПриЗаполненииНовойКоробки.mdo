@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3417b327-f603-46ac-ac93-5934e7458d5a">
+  <producedTypes>
+    <managerType typeId="5fcac836-c940-4a3b-b9a3-fdb33fd1a46c" valueTypeId="0be27a08-2f40-435f-914c-680c6240e6c9"/>
+    <valueManagerType typeId="03a3415e-0de8-4a5b-b3ff-2c6d1198b689" valueTypeId="e295a093-9964-4986-9e2c-0d3b052b0a1c"/>
+    <valueKeyType typeId="3d28baed-5d3b-5a05-992b-c490c089aa91" valueTypeId="64687ed9-66d5-59c1-aecd-51dc539912e8"/>
+  </producedTypes>
+  <name>ОтборПоСкладуПользователяПриЗаполненииНовойКоробки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отбор по складу пользователя при заполнении новой коробки</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

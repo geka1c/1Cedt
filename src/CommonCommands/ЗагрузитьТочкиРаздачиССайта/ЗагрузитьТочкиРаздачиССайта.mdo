@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aef1ba4a-2337-42c2-b6b8-e06f9fba6ba4">
+  <name>ЗагрузитьТочкиРаздачиССайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузить точки раздачи с сайта</value>
+  </synonym>
+  <group>NavigationPanelSeeAlso</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

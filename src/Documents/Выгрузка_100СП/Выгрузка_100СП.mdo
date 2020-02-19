@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb45602d-30cc-4e40-aedd-2e90b4097865">
+  <producedTypes>
+    <objectType typeId="272534ac-ffa5-49b1-89fa-92dba9d72003" valueTypeId="a83403d7-6d31-4e19-bee9-d897ecb48858"/>
+    <refType typeId="9aee02c8-dcfd-48e4-a6f5-c374d115718c" valueTypeId="f54ee3a5-5916-4adf-97ea-e6e225700671"/>
+    <selectionType typeId="da57783d-927d-49d2-87a7-ba1cfce97243" valueTypeId="f641cbf6-4ddd-4ead-bb67-59e36068ee04"/>
+    <listType typeId="37157910-305e-4ab2-a6f2-9c19831a5773" valueTypeId="a5e589d5-0f83-4850-8407-52cc835c9d99"/>
+    <managerType typeId="4e819a4b-3322-4e5f-ba0b-2b0ee191bf2e" valueTypeId="dfb0fba4-f3d1-425f-9be8-44673b01c631"/>
+  </producedTypes>
+  <name>Выгрузка_100СП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка 100 СП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Выгрузка_100СП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Выгрузка_100СП.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.Обмен100СПрн</registerRecords>
+  <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="6f671846-3027-4a64-9512-0f811022c4d8">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусОтпавкиНаСайт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СтатусОтпавкиНаСайт.EnumValue.Сформирован</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="88b0e991-f55c-41df-800f-b0876bf270f0">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="f42f67bd-091e-4189-8f65-b40a60f6588b">
+    <producedTypes>
+      <objectType typeId="71fd93f5-efa9-41c5-a608-98b015278864" valueTypeId="c1554bdf-5a46-4b33-86c4-51d43a590462"/>
+      <rowType typeId="a338ffb9-3c27-4e48-988f-55a63787c70d" valueTypeId="a3c91d82-1f4e-402b-9f7e-32deeb6aa102"/>
+    </producedTypes>
+    <name>ВыгружаемыДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружаемы документы</value>
+    </synonym>
+    <attributes uuid="abccb380-36a5-4af0-a9d4-0ead67fa0d95">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПартияДляОбмена</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c24d0560-41d8-484f-9f2e-982727cea150">
+      <name>типОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип обмена</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыОбменов100сп</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3dcf8382-c729-458e-ae87-9efd52f356e5">
+      <name>Изменен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изменен</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="a3fb1b90-e4ed-4679-8fec-56cd96d1050e">
+    <producedTypes>
+      <objectType typeId="ef021bae-6c0e-4ba8-be76-0326cc79a6a3" valueTypeId="862b4ede-18f1-4dde-b443-e5c6f84c8068"/>
+      <rowType typeId="605dfe82-c4f7-4975-8154-1b9e2b55eed2" valueTypeId="aa69f881-a0bd-47e4-8da2-7efb5c3d99ca"/>
+    </producedTypes>
+    <name>ВыгружаемыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружаемые данные</value>
+    </synonym>
+    <attributes uuid="3bfc0e62-9c04-4670-bad5-22809c03ec88">
+      <name>Мегаордер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мегаордер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Мегаордера</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="caac1b84-b12b-42c2-bb08-50c5a5be2f61">
+      <name>Партия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПартияДляОбмена</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="92c915ce-a170-4df6-ab48-0fb80383fcf5">
+      <name>СтрокаВПартии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Строка в партии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="609454f4-5747-4700-80ba-016cc894f396">
+      <name>типОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип обмена</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыОбменов100сп</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="42e36867-9681-496b-a0cd-9fde6554bddd">
+      <name>Отправлено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправлено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="07145811-e44b-4d2a-b590-e81db5682e3a">
+      <name>РезультатОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат обмена</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="854bf2c0-b00c-4a3b-97e8-5b41e4971403">
+      <name>СообщениеОшибки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сообщение ошибки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f2106ae0-a32c-4dac-bdf5-f4ed1bd1467f">
+      <name>ПерваяТочкаПриема</name>
+      <synonym>
+        <key>ru</key>
+        <value>Первая точка приема</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТочкиРаздачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4a38195e-9425-4117-85dd-1f2547cfc2f6">
+      <name>Изменен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Изменен</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="4604b5b3-f57b-466c-aaba-ba36a56bcb89">
+    <producedTypes>
+      <objectType typeId="65be35e5-1c64-4b44-ae4d-ddb109c580fb" valueTypeId="fe956726-2f18-40b0-a6a5-4777db44af6d"/>
+      <rowType typeId="d2b1ed2c-00fe-4b53-a776-5ffc86c4975f" valueTypeId="d0e04816-33eb-4053-b9be-32f472b97fea"/>
+    </producedTypes>
+    <name>ПротоколыПередач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Протоколы передач</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5276875d-0b82-4eec-a67b-ab1ba18dd5de">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="27d297a6-3197-4cbe-b548-ef3011ef47ca">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7ef570f5-511b-4bb2-b16e-2f02021e383d">
+      <name>Результат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5c6b9739-ca40-4ff1-a783-6ae522fa22fc">
+      <name>ПолученныеДанные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Полученные данные</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

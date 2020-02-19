@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dfdda1d-91b2-4e4f-968f-ae6b6cd43990">
+  <producedTypes>
+    <managerType typeId="8dada815-f78f-4dbf-ae57-3651fb26f023" valueTypeId="79c09e32-7e6e-40ec-9902-e2ad661c359a"/>
+    <valueManagerType typeId="2a066ca4-b92f-4df4-a34b-69bda1764225" valueTypeId="d1745651-00a4-48d7-8ae5-e0aab77a2d5e"/>
+    <valueKeyType typeId="bf04ab88-b072-5b9c-b0ba-ba1d0e07dbd4" valueTypeId="981940e9-49cc-5b35-a1ee-7809c572b701"/>
+  </producedTypes>
+  <name>СтрокПриходаАвтоСохранение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Строк прихода авто сохранение</value>
+  </synonym>
+  <comment>Через сколько строк в приходе происходит автосохранение документа</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

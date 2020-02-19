@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd874999-32b2-4d0e-b1d7-1dca8959f4a5">
+  <producedTypes>
+    <objectType typeId="85c68a66-5836-489c-9f78-f2150d314f29" valueTypeId="046999f3-e7b7-43e7-84ad-5f25269f67d9"/>
+    <managerType typeId="335ea617-8438-46f5-b62d-9bbf7f3a9c06" valueTypeId="e92e1db9-86a9-4afe-9702-a9a4ef1090f7"/>
+  </producedTypes>
+  <name>ВедомостьЗаказовНаСкладе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость заказов на складе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ВедомостьЗаказовНаСкладе.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Остатки и вижения заказов на складе </value>
+  </explanation>
+  <templates uuid="5a04c30c-4f82-4683-8442-b0d97bc5008c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="3064cde8-88b2-4b8c-b79f-fa0b8fe2dc5b">
+    <name>ВедомостьЗаказовНаСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость заказов на складе</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

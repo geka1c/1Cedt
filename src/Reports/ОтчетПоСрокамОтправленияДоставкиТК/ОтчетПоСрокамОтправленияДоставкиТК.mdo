@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="515aa576-819e-420a-8a52-c4abd09b5896">
+  <producedTypes>
+    <objectType typeId="ecfdd811-0b50-48d5-b598-89d6656cb89d" valueTypeId="0830bfce-e423-424d-8d7f-7eb8815ee3a6"/>
+    <managerType typeId="4ecb5bbb-25ee-46da-a71b-d4c0a2c9b8db" valueTypeId="a452ed70-89a3-4d3c-bf29-ba4c6b7ad49f"/>
+  </producedTypes>
+  <name>ОтчетПоСрокамОтправленияДоставкиТК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по срокам отправления доставки ТК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоСрокамОтправленияДоставкиТК.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e329889a-47c8-4959-aa21-1c7cfe910650">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

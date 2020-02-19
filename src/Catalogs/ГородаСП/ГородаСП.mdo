@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dce65784-6716-4c7d-85c7-d1d31511848a">
+  <producedTypes>
+    <objectType typeId="b9bf7564-7cb9-4ad7-8e8f-f37a40a41fb3" valueTypeId="67025e79-ae43-4d11-9c2e-c87fc3cf5289"/>
+    <refType typeId="49cedeae-ea58-484c-bb88-129ed267d5a1" valueTypeId="ad2328c7-adb8-487d-bc9f-4ca9a2c962a0"/>
+    <selectionType typeId="2de5f745-ada9-4b9f-b7c4-1a0c85e20001" valueTypeId="f51c0bc2-e20b-4897-98e5-6ffa22d550bb"/>
+    <listType typeId="6273c009-0ba9-4b1c-855c-7e288a33d300" valueTypeId="d237def8-784e-4db1-824d-437218e2a09e"/>
+    <managerType typeId="d9df1923-349d-4e6e-936a-3341724eb042" valueTypeId="f435a43d-ac7d-45d2-94d1-451872d7354e"/>
+  </producedTypes>
+  <name>ГородаСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города СП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГородаСП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГородаСП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="72f45c38-182c-4b09-8c39-9fa09a96c0da">
+    <name>РегионСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион СП</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РегионыСП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9e52269a-5ed0-4fa9-b576-0b96cc741d2a">
+    <name>Догрузить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Догрузить</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

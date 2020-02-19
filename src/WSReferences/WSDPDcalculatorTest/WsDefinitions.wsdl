@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://dpd.ru/ws/calculator/2012-03-20"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://dpd.ru/ws/calculator/2012-03-20"
+		name="DPDCalculatorService"
+		targetNamespace="http://dpd.ru/ws/calculator/2012-03-20">
+	<types>
+		<xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsp="http://www.w3.org/ns/ws-policy"
+				xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+				targetNamespace="0">
+			<xsd:import namespace="http://dpd.ru/ws/calculator/2012-03-20"
+					schemaLocation="file://1.xsd"/>
+		</xsd:schema>
+	</types>
+	<message name="getServiceCostByParcels">
+		<part name="parameters"
+				element="tns:getServiceCostByParcels"/>
+	</message>
+	<message name="getServiceCostByParcelsResponse">
+		<part name="parameters"
+				element="tns:getServiceCostByParcelsResponse"/>
+	</message>
+	<message name="ServiceCostFault">
+		<part name="fault"
+				element="tns:ServiceCostFault"/>
+	</message>
+	<message name="getServiceCostByParcels2">
+		<part name="parameters"
+				element="tns:getServiceCostByParcels2"/>
+	</message>
+	<message name="getServiceCostByParcels2Response">
+		<part name="parameters"
+				element="tns:getServiceCostByParcels2Response"/>
+	</message>
+	<message name="ServiceCostFault2">
+		<part name="fault"
+				element="tns:ServiceCostFault2"/>
+	</message>
+	<message name="getServiceCostInternational">
+		<part name="parameters"
+				element="tns:getServiceCostInternational"/>
+	</message>
+	<message name="getServiceCostInternationalResponse">
+		<part name="parameters"
+				element="tns:getServiceCostInternationalResponse"/>
+	</message>
+	<message name="getServiceCost2">
+		<part name="parameters"
+				element="tns:getServiceCost2"/>
+	</message>
+	<message name="getServiceCost2Response">
+		<part name="parameters"
+				element="tns:getServiceCost2Response"/>
+	</message>
+	<message name="getServiceCost">
+		<part name="parameters"
+				element="tns:getServiceCost"/>
+	</message>
+	<message name="getServiceCostResponse">
+		<part name="parameters"
+				element="tns:getServiceCostResponse"/>
+	</message>
+	<portType name="DPDCalculator">
+		<operation name="getServiceCostByParcels">
+			<input name="getServiceCostByParcelsRequest"
+					message="tns:getServiceCostByParcels"/>
+			<output name="getServiceCostByParcelsResponse"
+					message="tns:getServiceCostByParcelsResponse"/>
+			<fault name="ServiceCostFault"
+					message="tns:ServiceCostFault"/>
+		</operation>
+		<operation name="getServiceCostByParcels2">
+			<input name="getServiceCostByParcels2Request"
+					message="tns:getServiceCostByParcels2"/>
+			<output name="getServiceCostByParcels2Response"
+					message="tns:getServiceCostByParcels2Response"/>
+			<fault name="ServiceCostFault2"
+					message="tns:ServiceCostFault2"/>
+		</operation>
+		<operation name="getServiceCostInternational">
+			<input name="getServiceCostInternationalRequest"
+					message="tns:getServiceCostInternational"/>
+			<output name="getServiceCostInternationalResponse"
+					message="tns:getServiceCostInternationalResponse"/>
+			<fault name="ServiceCostFault"
+					message="tns:ServiceCostFault"/>
+		</operation>
+		<operation name="getServiceCost2">
+			<input name="getServiceCost2Request"
+					message="tns:getServiceCost2"/>
+			<output name="getServiceCost2Response"
+					message="tns:getServiceCost2Response"/>
+			<fault name="ServiceCostFault2"
+					message="tns:ServiceCostFault2"/>
+		</operation>
+		<operation name="getServiceCost">
+			<input name="getServiceCostRequest"
+					message="tns:getServiceCost"/>
+			<output name="getServiceCostResponse"
+					message="tns:getServiceCostResponse"/>
+			<fault name="ServiceCostFault"
+					message="tns:ServiceCostFault"/>
+		</operation>
+	</portType>
+	<binding name="DPDCalculatorPortBinding"
+			type="tns:DPDCalculator">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getServiceCostByParcels">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="ServiceCostFault">
+				<soapbind:fault name="ServiceCostFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getServiceCostByParcels2">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="ServiceCostFault2">
+				<soapbind:fault name="ServiceCostFault2"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getServiceCostInternational">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="ServiceCostFault">
+				<soapbind:fault name="ServiceCostFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getServiceCost2">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="ServiceCostFault2">
+				<soapbind:fault name="ServiceCostFault2"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getServiceCost">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="ServiceCostFault">
+				<soapbind:fault name="ServiceCostFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="DPDCalculatorService">
+		<port name="DPDCalculatorPort"
+				binding="tns:DPDCalculatorPortBinding">
+			<soapbind:address location="http://wstest.dpd.ru:80/services/calculator2"/>
+		</port>
+	</service>
+</definitions>

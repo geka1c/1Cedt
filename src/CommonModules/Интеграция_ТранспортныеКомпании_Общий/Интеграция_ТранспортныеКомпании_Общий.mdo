@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44938921-3072-4823-a4e2-270148320097">
+  <name>Интеграция_ТранспортныеКомпании_Общий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция транспортные компании общий</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

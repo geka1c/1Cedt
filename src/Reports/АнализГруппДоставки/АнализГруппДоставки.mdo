@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a9b84d5-22bf-4298-a219-511483bbf2e2">
+  <producedTypes>
+    <objectType typeId="4aa9d662-d0df-4fe8-8cfd-c913f76c12d0" valueTypeId="73f67b1d-5192-4ee6-ae73-b6991a91f56e"/>
+    <managerType typeId="254bf183-93a2-4672-bec3-b5f9545d01d5" valueTypeId="e1dc6cef-5cb2-4cf6-a5e4-6806f38e7b18"/>
+  </producedTypes>
+  <name>АнализГруппДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ групп доставки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализГруппДоставки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b49ee2b8-ab3b-47bc-8279-4840f65728e2">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

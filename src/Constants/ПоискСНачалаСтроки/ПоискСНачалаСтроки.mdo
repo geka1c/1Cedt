@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8febcb95-e7d3-4a44-ac4c-94464747c786">
+  <producedTypes>
+    <managerType typeId="885d4062-9c30-4a59-9eee-380cef663419" valueTypeId="74dd4ac0-0b1c-45ab-a9c6-717601a4dd5a"/>
+    <valueManagerType typeId="9a536b3f-2cab-41b9-9f2b-95836a73573c" valueTypeId="40d9f7f3-5b2c-4d6c-add8-359419fa756d"/>
+    <valueKeyType typeId="833cc92c-dd4c-5e38-a1b5-b8e4682a26fc" valueTypeId="0417e424-9dd5-5492-9664-a5e94c653d83"/>
+  </producedTypes>
+  <name>ПоискСНачалаСтроки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск с начала строки</value>
+  </synonym>
+  <comment>Если нет, то по любому вхождению Умолчание для отчета Поиск участника</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

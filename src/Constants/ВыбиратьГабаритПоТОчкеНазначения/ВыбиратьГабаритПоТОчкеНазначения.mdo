@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ef6432f-6bae-4fff-b341-16d089914023">
+  <producedTypes>
+    <managerType typeId="aede647f-73fa-4d92-be50-6e9adba812a6" valueTypeId="fc9f6039-01b4-4b4b-8b06-9a5d22d2524d"/>
+    <valueManagerType typeId="f086dc93-5ed5-43dc-b5c4-3a8ad5842869" valueTypeId="64480c81-3415-4af3-9a9f-9a0b16f71787"/>
+    <valueKeyType typeId="23515a77-9d71-5494-9e2e-367032254406" valueTypeId="f8526352-f6e8-5e2b-b8c9-5ea523eb2330"/>
+  </producedTypes>
+  <name>ВыбиратьГабаритПоТОчкеНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выбирать габарит по т очке назначения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

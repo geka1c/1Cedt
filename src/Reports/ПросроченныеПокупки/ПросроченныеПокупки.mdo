@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="779bdd93-2f4d-405d-a0d4-ca4c7d682656">
+  <producedTypes>
+    <objectType typeId="f25cfa55-c9d9-4a5b-9bde-430df924c1ef" valueTypeId="57786354-438a-40ca-bf3a-f5c47baee336"/>
+    <managerType typeId="d733a08a-c717-4cea-a826-cca6296b7891" valueTypeId="baa6907c-4ac7-457e-ae0f-31ae937d9f95"/>
+  </producedTypes>
+  <name>ПросроченныеПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просроченные покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПросроченныеПокупки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="30e12fd2-0e3c-4e60-91cc-6d380bbaad8a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

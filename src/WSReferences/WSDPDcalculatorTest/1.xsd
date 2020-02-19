@@ -1,0 +1,390 @@
+<xs:schema xmlns:tns="http://dpd.ru/ws/calculator/2012-03-20"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		version="1.0"
+		targetNamespace="http://dpd.ru/ws/calculator/2012-03-20">
+	<xs:element name="ServiceCostFault"
+			type="tns:ServiceCostFault"/>
+	<xs:element name="ServiceCostFault2"
+			type="tns:ServiceCostFault2"/>
+	<xs:element name="getServiceCost"
+			type="tns:getServiceCost"/>
+	<xs:element name="getServiceCost2"
+			type="tns:getServiceCost2"/>
+	<xs:element name="getServiceCost2Response"
+			type="tns:getServiceCost2Response"/>
+	<xs:element name="getServiceCostByParcels"
+			type="tns:getServiceCostByParcels"/>
+	<xs:element name="getServiceCostByParcels2"
+			type="tns:getServiceCostByParcels2"/>
+	<xs:element name="getServiceCostByParcels2Response"
+			type="tns:getServiceCostByParcels2Response"/>
+	<xs:element name="getServiceCostByParcelsResponse"
+			type="tns:getServiceCostByParcelsResponse"/>
+	<xs:element name="getServiceCostInternational"
+			type="tns:getServiceCostInternational"/>
+	<xs:element name="getServiceCostInternationalResponse"
+			type="tns:getServiceCostInternationalResponse"/>
+	<xs:element name="getServiceCostResponse"
+			type="tns:getServiceCostResponse"/>
+	<xs:complexType name="getServiceCostByParcels2">
+		<xs:sequence>
+			<xs:element name="request"
+					type="tns:serviceCostParcelsRequest"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serviceCostParcelsRequest">
+		<xs:sequence>
+			<xs:element name="auth"
+					type="tns:auth"/>
+			<xs:element name="pickup"
+					type="tns:cityRequest"/>
+			<xs:element name="delivery"
+					type="tns:cityRequest"/>
+			<xs:element name="selfPickup"
+					type="xs:boolean"/>
+			<xs:element name="selfDelivery"
+					type="xs:boolean"/>
+			<xs:element name="serviceCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="pickupDate"
+					type="xs:date"
+					minOccurs="0"/>
+			<xs:element name="maxDays"
+					type="xs:int"
+					minOccurs="0"/>
+			<xs:element name="maxCost"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="declaredValue"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="parcel"
+					type="tns:parcelRequest"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="auth">
+		<xs:sequence>
+			<xs:element name="clientNumber"
+					type="xs:long"/>
+			<xs:element name="clientKey"
+					type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cityRequest">
+		<xs:sequence>
+			<xs:element name="cityId"
+					type="xs:long"
+					minOccurs="0"/>
+			<xs:element name="index"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cityName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="regionCode"
+					type="xs:int"
+					minOccurs="0"/>
+			<xs:element name="countryCode"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="parcelRequest">
+		<xs:sequence>
+			<xs:element name="weight"
+					type="xs:double"/>
+			<xs:element name="length"
+					type="xs:double"/>
+			<xs:element name="width"
+					type="xs:double"/>
+			<xs:element name="height"
+					type="xs:double"/>
+			<xs:element name="quantity"
+					type="xs:int"
+					default="1"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostByParcels2Response">
+		<xs:sequence>
+			<xs:element name="return"
+					type="tns:serviceCost"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serviceCost">
+		<xs:sequence>
+			<xs:element name="serviceCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="serviceName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cost"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="days"
+					type="xs:int"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ServiceCostFault2">
+		<xs:sequence>
+			<xs:element name="code"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="deliveryDups"
+					type="tns:cityIndex"
+					nillable="true"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+			<xs:element name="message"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="pickupDups"
+					type="tns:cityIndex"
+					nillable="true"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cityIndex">
+		<xs:sequence>
+			<xs:element name="cityId"
+					type="xs:long"
+					minOccurs="0"/>
+			<xs:element name="countryCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="countryName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="regionCode"
+					type="xs:int"
+					minOccurs="0"/>
+			<xs:element name="regionName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cityCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cityName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="abbreviation"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="indexMin"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="indexMax"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostInternational">
+		<xs:sequence>
+			<xs:element name="request"
+					type="tns:serviceCostInternationalRequest"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serviceCostInternationalRequest">
+		<xs:sequence>
+			<xs:element name="auth"
+					type="tns:auth"/>
+			<xs:element name="pickup"
+					type="tns:cityInternationalRequest"/>
+			<xs:element name="delivery"
+					type="tns:cityInternationalRequest"/>
+			<xs:element name="selfPickup"
+					type="xs:boolean"/>
+			<xs:element name="selfDelivery"
+					type="xs:boolean"/>
+			<xs:element name="weight"
+					type="xs:double"/>
+			<xs:element name="length"
+					type="xs:long"/>
+			<xs:element name="width"
+					type="xs:long"/>
+			<xs:element name="height"
+					type="xs:long"/>
+			<xs:element name="declaredValue"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="insurance"
+					type="xs:boolean"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cityInternationalRequest">
+		<xs:sequence>
+			<xs:element name="countryName"
+					type="xs:string"/>
+			<xs:element name="cityName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cityId"
+					type="xs:long"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostInternationalResponse">
+		<xs:sequence>
+			<xs:element name="return"
+					type="tns:serviceCostInternational"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serviceCostInternational">
+		<xs:sequence>
+			<xs:element name="serviceCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="serviceName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="days"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cost"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="costPin"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="weight"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="volume"
+					type="xs:double"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ServiceCostFault">
+		<xs:sequence>
+			<xs:element name="code"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="deliveryDups"
+					type="tns:city"
+					nillable="true"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+			<xs:element name="message"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="pickupDups"
+					type="tns:city"
+					nillable="true"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="city">
+		<xs:sequence>
+			<xs:element name="cityId"
+					type="xs:long"
+					minOccurs="0"/>
+			<xs:element name="countryCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="countryName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="regionCode"
+					type="xs:int"
+					minOccurs="0"/>
+			<xs:element name="regionName"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="cityName"
+					type="xs:string"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCost2">
+		<xs:sequence>
+			<xs:element name="request"
+					type="tns:serviceCostRequest"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serviceCostRequest">
+		<xs:sequence>
+			<xs:element name="auth"
+					type="tns:auth"/>
+			<xs:element name="pickup"
+					type="tns:cityRequest"/>
+			<xs:element name="delivery"
+					type="tns:cityRequest"/>
+			<xs:element name="selfPickup"
+					type="xs:boolean"/>
+			<xs:element name="selfDelivery"
+					type="xs:boolean"/>
+			<xs:element name="weight"
+					type="xs:double"/>
+			<xs:element name="volume"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="serviceCode"
+					type="xs:string"
+					minOccurs="0"/>
+			<xs:element name="pickupDate"
+					type="xs:date"
+					minOccurs="0"/>
+			<xs:element name="maxDays"
+					type="xs:int"
+					minOccurs="0"/>
+			<xs:element name="maxCost"
+					type="xs:double"
+					minOccurs="0"/>
+			<xs:element name="declaredValue"
+					type="xs:double"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCost2Response">
+		<xs:sequence>
+			<xs:element name="return"
+					type="tns:serviceCost"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostByParcels">
+		<xs:sequence>
+			<xs:element name="request"
+					type="tns:serviceCostParcelsRequest"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostByParcelsResponse">
+		<xs:sequence>
+			<xs:element name="return"
+					type="tns:serviceCost"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCost">
+		<xs:sequence>
+			<xs:element name="request"
+					type="tns:serviceCostRequest"
+					minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="getServiceCostResponse">
+		<xs:sequence>
+			<xs:element name="return"
+					type="tns:serviceCost"
+					minOccurs="0"
+					maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

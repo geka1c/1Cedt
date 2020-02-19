@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07094f0a-f186-41c1-a813-19e0360a6c04">
+  <producedTypes>
+    <objectType typeId="5216227a-86c2-4655-9afe-45fc600c6ea9" valueTypeId="5c9211ac-672e-487a-9ae4-2854ee122518"/>
+    <refType typeId="54fecc71-35ce-4472-a56c-cec562e3668c" valueTypeId="cdf6d4ef-1c7f-4e36-846d-5ef161a5bf59"/>
+    <selectionType typeId="c8e225c4-5b94-4064-9e21-83269be573bc" valueTypeId="86d102c4-a403-4c5e-b68e-641808baae3d"/>
+    <listType typeId="f6739e80-e1c0-45ea-b89b-171ade5b595c" valueTypeId="8a1a22a7-ee58-4052-8fe1-e256e5132187"/>
+    <managerType typeId="0d195cc5-2d82-4c71-a295-709fec0e6d89" valueTypeId="d4bde251-7111-477e-b900-501bc0d3a827"/>
+  </producedTypes>
+  <name>ТарифнаяГруппа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифная группа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТарифнаяГруппа.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТарифнаяГруппа.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="9390e496-d038-4cd2-a1c5-cdabebccbee5">
+    <producedTypes>
+      <objectType typeId="26005d49-b5b2-48ff-a02f-d183b4c5f267" valueTypeId="07717020-68c5-4120-9d0e-279f3f15610d"/>
+      <rowType typeId="cf0cec6e-62b1-46b3-9fde-a44d05cc6ec3" valueTypeId="0cf3c7ad-616e-4990-9bdc-6c4ff380653f"/>
+    </producedTypes>
+    <name>ГородаСП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Города СП</value>
+    </synonym>
+    <attributes uuid="3b10ebec-4da1-4641-86be-324a3a10efcf">
+      <name>Город</name>
+      <synonym>
+        <key>ru</key>
+        <value>Город</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ГородаСП</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

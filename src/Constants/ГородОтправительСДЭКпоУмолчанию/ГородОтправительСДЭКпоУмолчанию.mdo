@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa756bc2-a7cd-4d06-93da-e5b1abc77af6">
+  <producedTypes>
+    <managerType typeId="50faba25-7fbd-41e2-acd9-32944ef42bdd" valueTypeId="94c612ef-2a12-4c20-86b2-61952814790c"/>
+    <valueManagerType typeId="0bb3f05b-50fd-4906-9fce-20cf4501636d" valueTypeId="ebdec95a-fb32-4748-b9fe-93c12c51fbed"/>
+    <valueKeyType typeId="093c474e-d9b4-5068-8540-36722d3907a9" valueTypeId="3b6ea00c-053d-577c-b1ba-f261c8e6b164"/>
+  </producedTypes>
+  <name>ГородОтправительСДЭКпоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Город отправитель СДЭКпо умолчанию</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ГородаСДЭК</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

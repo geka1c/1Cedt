@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8e27c2e-7ca4-44c7-a0f8-ffb41492fadc">
+  <producedTypes>
+    <managerType typeId="409ca6d8-c146-4a04-8faf-db7a477db226" valueTypeId="44745f06-4dc6-4e57-a091-2a8541e42309"/>
+    <valueManagerType typeId="9d8b9b21-a27c-4c9a-92fd-cf3a767fb09d" valueTypeId="2ecc8e39-e4bd-4cc4-8d76-9c2aeb4f47b1"/>
+    <valueKeyType typeId="513d09c6-60b6-5e68-a1a7-3f27913471bb" valueTypeId="2e586c8d-1e5e-57dc-ae4f-a7522c856d19"/>
+  </producedTypes>
+  <name>РазрешитьВыдачуБезСверкиКодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешить выдачу без сверки кодов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

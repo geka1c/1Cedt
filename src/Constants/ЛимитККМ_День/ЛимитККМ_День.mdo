@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4124edd8-b651-4c4d-94a0-b91e3c5adf83">
+  <producedTypes>
+    <managerType typeId="bd459a30-4599-4fbc-86bd-09671ac2e2ed" valueTypeId="7c99a293-c035-4da4-b1ad-bcd41af632b1"/>
+    <valueManagerType typeId="99498f35-b445-4b5b-9f17-539be3444673" valueTypeId="3c943401-bc01-45ba-8e02-54a841f7ab08"/>
+    <valueKeyType typeId="54ec6226-5402-572e-a9bf-a19a199cc031" valueTypeId="46427255-0c6e-5a09-b986-491ba1c3a8a7"/>
+  </producedTypes>
+  <name>ЛимитККМ_День</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лимит ККМ день</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если 0 то не ограниченно</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

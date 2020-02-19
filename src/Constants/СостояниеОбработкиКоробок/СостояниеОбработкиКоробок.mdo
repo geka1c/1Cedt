@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca3570d3-5807-43fa-8f07-705b293204fb">
+  <producedTypes>
+    <managerType typeId="6743cd02-b262-44bc-a5c9-d6a03f44af13" valueTypeId="d23567ba-b34f-4e13-a979-2f2194f5f404"/>
+    <valueManagerType typeId="535eeba1-6b73-41f2-958a-eb7f2468a94a" valueTypeId="45d0518b-9208-4ef6-8e88-1136cf714763"/>
+    <valueKeyType typeId="a07db695-24f4-522f-9a76-82b421ef18de" valueTypeId="ef24e57b-340b-52ba-ab16-33d962ebe334"/>
+  </producedTypes>
+  <name>СостояниеОбработкиКоробок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние обработки коробок</value>
+  </synonym>
+  <type>
+    <types>EnumRef.ВидыОбработкиКоробок</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

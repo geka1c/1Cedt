@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="232692b1-e3dd-4520-a418-18355bc315f5">
+  <producedTypes>
+    <managerType typeId="ff3f79c3-53de-42ef-8a13-44ed839355f8" valueTypeId="427e50e3-4979-44f1-a65e-592ba7ad574b"/>
+    <valueManagerType typeId="276c91a3-9673-40ef-8079-5982fde8f7b7" valueTypeId="bcb92c45-f16c-444a-89c2-8351654a2008"/>
+    <valueKeyType typeId="11edee7b-8f5e-54d1-8b3c-068860b0905e" valueTypeId="31dc02d6-3796-5429-93fa-f8e67ee5ad0e"/>
+  </producedTypes>
+  <name>ПроверятьОтветственногоПриРасходе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверять ответственного при расходе</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

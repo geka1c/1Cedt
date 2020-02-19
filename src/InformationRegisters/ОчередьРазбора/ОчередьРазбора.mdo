@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a76c35c-dad2-4e28-ae21-a35e1ddab2ec">
+  <producedTypes>
+    <selectionType typeId="05609b42-ad9a-4a18-857b-928bcf71bc4b" valueTypeId="abc67552-7953-42bf-8caf-150864d23c4e"/>
+    <listType typeId="7b1cfcb9-108f-4bb1-9a65-d0323dd7655a" valueTypeId="6f06289d-91c9-4a55-b445-1041e38e805d"/>
+    <managerType typeId="5a354378-6aff-4c18-abb1-9c115a6d4d5b" valueTypeId="82bec83d-f370-40d8-89c2-9e9870e2b14a"/>
+    <recordSetType typeId="e63cd661-a2a3-42f8-8c2b-ae7a42a80998" valueTypeId="fb0206a4-3a2a-480e-a227-b3a394bfb1e4"/>
+    <recordKeyType typeId="b1d39b1c-4657-4572-87b7-5954abc16c01" valueTypeId="de343e93-9192-4014-a51d-3a879698b740"/>
+    <recordType typeId="9bd6b038-28b0-4f85-8e66-28458eeca427" valueTypeId="cc768912-8cf5-4174-bd83-f80a7a14e098"/>
+    <recordManagerType typeId="24befe30-9e72-4d78-93d6-50073246014b" valueTypeId="eccc7539-60bb-433e-b708-6854a472358a"/>
+  </producedTypes>
+  <name>ОчередьРазбора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь разбора</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6bc0fef6-fc2e-4344-acec-a11e2601ca5f">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыКоробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="49c783b2-73f0-45e5-a452-a4d42c83201f">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

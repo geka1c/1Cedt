@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf858376-a48d-4ce0-847d-51fd5fb430b5">
+  <producedTypes>
+    <selectionType typeId="a1bcd9d9-d83f-4083-8a11-167be94e2fc5" valueTypeId="0709c7fe-c642-4897-89ea-4411acf6a294"/>
+    <listType typeId="e6f3946d-e86b-48ad-8d65-e441329d3af0" valueTypeId="5c0c8118-2295-4012-abad-0f4b2182145c"/>
+    <managerType typeId="2a4ab7d1-5f9d-423d-96f5-4327fbae401e" valueTypeId="425e24e7-06ed-427a-8ee1-566a7310ce7b"/>
+    <recordSetType typeId="4aef5129-db8c-403d-913a-ca791acc15e5" valueTypeId="d0bca806-d1ce-4c1e-a05b-e5786cde3680"/>
+    <recordKeyType typeId="b8e37886-95be-4e34-b1d3-d9010e03a398" valueTypeId="387e58db-8d7d-46ed-a9aa-542732236037"/>
+    <recordType typeId="417743b1-9a41-43c0-8291-7a1f3574d3cf" valueTypeId="da0646e9-ccec-426f-874f-241ea4b98cda"/>
+    <recordManagerType typeId="41bfd09c-4ade-49fd-97c1-0655720d126d" valueTypeId="a8927488-c0f1-486e-808e-d2f69f15bbb2"/>
+  </producedTypes>
+  <name>СтатусыЗаявокВТК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявок ВТК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="cfef1082-80fc-4a04-a2f2-370a1da74af6">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаВТранспортнуюКомпанию</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5c96e39d-9270-4cc8-b9d1-2e682f7dd9c5">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОтправкиГруза</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

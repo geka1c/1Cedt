@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17ff0bb0-0d42-4e57-8ab5-95ff23f2f98f">
+  <producedTypes>
+    <managerType typeId="f863ea9f-6972-44a5-90b4-e5ea3042ec47" valueTypeId="0eff2f43-3a02-4333-b6de-90fb1be85dc5"/>
+    <valueManagerType typeId="a380a59f-6d36-456d-b986-39d608e8288a" valueTypeId="85f60eae-035b-45c0-a554-fe4cf6eb59b3"/>
+    <valueKeyType typeId="d3e22f83-ae48-4c62-b604-6a40a299c069" valueTypeId="f8a8019f-7338-4aaa-97d8-51022b34788c"/>
+  </producedTypes>
+  <name>РегистрироватьСупергруппуРазборомКоробки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрировать супергруппу разбором коробки</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>При считывании штрих кода супергруппы открывается документ 
+&quot;Разбор коробки&quot;
+Если флаг не установлен открывается документ 
+&quot;Регистрация супергруппы&quot;</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

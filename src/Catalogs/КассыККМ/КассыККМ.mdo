@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96c3fc67-025a-476c-aad8-41e779fafcf2">
+  <producedTypes>
+    <objectType typeId="5e2edf6f-36ed-4ef9-85e2-fa92b9fe7f4c" valueTypeId="65d79a4f-3afe-47e4-ac47-cd076d09e40d"/>
+    <refType typeId="26777695-f764-412e-90c7-6464dfeec8d0" valueTypeId="3ac1c056-97dd-4c52-b413-fc0ad5527eff"/>
+    <selectionType typeId="a7e98c64-c434-4239-9747-5be7da809464" valueTypeId="3d43f8b0-c74c-48d1-9648-007777061ace"/>
+    <listType typeId="42136244-e72c-446c-8263-760603e4b23b" valueTypeId="b9a48598-aeea-4d74-a1d2-f1ae5b3949e0"/>
+    <managerType typeId="bff54467-2286-4345-b804-c33d22578231" valueTypeId="72503a3d-c4dd-4235-a13c-ba564a801961"/>
+  </producedTypes>
+  <name>КассыККМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассы ККМ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КассыККМ.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КассыККМ.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

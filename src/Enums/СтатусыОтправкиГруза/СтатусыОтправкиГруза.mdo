@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac23b6fa-5298-49c1-ae26-ccaa100fc82b">
+  <producedTypes>
+    <refType typeId="47e03344-48af-4393-9337-cbbf5cd77c74" valueTypeId="a3c355ea-bfe9-4e3c-801c-e9120c996c69"/>
+    <listType typeId="e3a625ce-af48-4acc-96c1-ca487c13a1fb" valueTypeId="49349f93-ca5c-4e95-9dc1-adc3c56eddaf"/>
+    <managerType typeId="a396b61c-04e4-4887-a664-325af878928e" valueTypeId="6690436f-b2e1-4a70-abbe-b0bac283f754"/>
+  </producedTypes>
+  <name>СтатусыОтправкиГруза</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы отправки груза</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a1e56009-af2f-4fa0-9cb2-604d8e59b7ab">
+    <name>НаСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>На складе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="93490528-ed8a-4812-8486-1de11115326b">
+    <name>СформирванаЗаявкаВТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сформирвана заявка в ТК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="458451a3-d040-4381-8e4d-e15cd59bb44b">
+    <name>ВыехалСТочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выехал с точки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebaaa7c7-cdd9-4d6d-9ab7-6aac5bf51b18">
+    <name>ВТранспортнойКомпании</name>
+    <synonym>
+      <key>ru</key>
+      <value>В транспортной компании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4e2927b8-153b-40b2-b58e-cc74a2fe4141">
+    <name>Доставлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доставлен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="919c9513-81fd-4dc5-bde3-a4bcee864fd4">
+    <name>Утрачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утрачен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ca5c498e-0562-42ab-b787-380dda96fa02">
+    <name>ДобавленСчетЭК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлен счет ЭК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8d02b482-b264-4a53-89f0-30364c36c4ea">
+    <name>ОтПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>От поставщика</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dd9b36f1-8a85-4f44-b7ca-cafdb9525396">
+    <name>ОжидаетДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидает доставки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="71363782-281e-47e0-8ca9-c71197f39787">
+    <name>ОжидаетПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидает получения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

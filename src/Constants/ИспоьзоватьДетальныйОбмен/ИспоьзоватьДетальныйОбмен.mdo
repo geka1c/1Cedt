@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ced9462f-377f-4ee8-9705-602487e4f0d8">
+  <producedTypes>
+    <managerType typeId="eca4f4ea-7bed-4a5f-92d5-c67f95fd57f9" valueTypeId="284f0450-3349-4efa-a470-49b96f3ce647"/>
+    <valueManagerType typeId="e22763fa-f759-44fe-af37-0b141aea8711" valueTypeId="f7503921-199c-4059-8501-f56aa53581c1"/>
+    <valueKeyType typeId="edf5c797-f53f-5e6d-a0be-d63c09fce4b6" valueTypeId="1593f76a-951a-5bb2-8e1d-112f9efcf57a"/>
+  </producedTypes>
+  <name>ИспоьзоватьДетальныйОбмен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Испоьзовать детальный обмен</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>На момент включения детального обмено необходимо отправить все данные на сайт.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

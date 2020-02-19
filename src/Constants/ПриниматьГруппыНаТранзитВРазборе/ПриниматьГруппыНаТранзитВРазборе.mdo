@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14203813-1ed4-467c-81e3-510db7d445cc">
+  <producedTypes>
+    <managerType typeId="5ae356b1-25aa-4c50-830c-dbe95338b723" valueTypeId="1f3c4bcd-2c46-4d90-9d07-4335ee02dba6"/>
+    <valueManagerType typeId="03a65ac7-9b4f-49bd-98b3-44d184b63ed0" valueTypeId="8c0c3429-1144-462d-85f6-6b837ab9f0b6"/>
+    <valueKeyType typeId="cf589564-a083-4b57-ae1b-1e4c794eb047" valueTypeId="bccb61e7-fcfa-4959-8608-677a3a85145e"/>
+  </producedTypes>
+  <name>ПриниматьГруппыНаТранзитВРазборе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Принимать группы на транзит в разборе</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>В документе &quot;Разбор коробки&quot; появляется возможность принимать на транзит групповые стикеры. Транзитные стикеры не привязаны ни к какой разбираемой группе</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

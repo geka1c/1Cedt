@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db11853c-8c20-437c-9d14-57576a175018">
+  <producedTypes>
+    <managerType typeId="2d7270fa-ae9b-4981-8daf-b7ce213d3110" valueTypeId="75626ee7-c5cd-496f-8d7e-1b7b734290d3"/>
+    <valueManagerType typeId="cab55bca-2f48-4973-98ed-ce464b1b5d90" valueTypeId="3187defa-b76f-4381-88a5-088179d52292"/>
+    <valueKeyType typeId="5ee703ba-6ce2-5e0f-a14d-2a787c6f74a3" valueTypeId="fbde307e-f352-55cb-b486-90ef45afee69"/>
+  </producedTypes>
+  <name>ПоследняяЗагрузкаКарты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последняя загрузка карты</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

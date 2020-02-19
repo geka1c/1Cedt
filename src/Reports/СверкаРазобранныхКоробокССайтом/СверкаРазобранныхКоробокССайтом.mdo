@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e98ee68-e50e-459f-94a4-dcc06e15aa92">
+  <producedTypes>
+    <objectType typeId="59bcd17e-9db7-4d86-a4b3-8b9d8bc1a58b" valueTypeId="ad66d30e-85ab-4e4f-8b24-fa962c9667eb"/>
+    <managerType typeId="82b26eb9-0038-4ffd-8cc6-586eba4b2161" valueTypeId="3915afaa-bdca-4a24-8d77-05db64967f4a"/>
+  </producedTypes>
+  <name>СверкаРазобранныхКоробокССайтом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сверка разобранных коробок с сайтом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СверкаРазобранныхКоробокССайтом.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="38fcbfe7-9614-41aa-a3fc-1b5321d62235">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

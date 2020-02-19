@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8bd6b82-0d0d-4645-a51c-9c32d38f2a60">
+  <producedTypes>
+    <managerType typeId="dfed1fe5-c25a-4165-b8f5-f213e3cee0f9" valueTypeId="d91530a6-1acb-4386-a083-ac940ce716df"/>
+  </producedTypes>
+  <name>WSDPDorderTest</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSDPDorder test</value>
+  </synonym>
+  <locationURL>http://wstest.dpd.ru/services/order2?wsdl</locationURL>
+</mdclass:WSReference>

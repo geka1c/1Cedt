@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bb03abd-261a-4c50-931d-74ef87e28e46">
+  <producedTypes>
+    <refType typeId="a6795081-ce40-417e-b1cb-1c88d38c2a3b" valueTypeId="fb771d4c-7efe-45c9-bd8e-a69a527d6485"/>
+    <listType typeId="13b83e59-91aa-4070-bf15-1c9955c15711" valueTypeId="a18e297a-2006-46f9-a1df-fa9aa71de174"/>
+    <managerType typeId="b45e83ba-b8bc-42cc-97e1-d10f18ce7525" valueTypeId="330a99fd-2a12-40bc-bb51-0ccd2dd3a9d4"/>
+  </producedTypes>
+  <name>ВидыОпераций_ДвижениеТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций движение транзита</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a5ac549d-7712-458d-91db-a76df55f1e74">
+    <name>ТранзитНаТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзит на транзит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="58722f2a-b63b-4972-bef5-83009be2c115">
+    <name>ТранзитНаОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзит на остатки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1d76c6ea-6a0f-450b-a351-6af3ce8a82a3">
+    <name>ТранзитНаВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзит на возврат</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

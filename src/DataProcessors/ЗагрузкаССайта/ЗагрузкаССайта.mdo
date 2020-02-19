@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a11be29-51ec-409c-8728-948b3b5e4e19">
+  <producedTypes>
+    <objectType typeId="2ec77e57-b7cc-4d60-b5c1-db6d15298b24" valueTypeId="21b36244-fe34-4889-902a-d7e747788673"/>
+    <managerType typeId="9984b669-319e-41cd-8f49-f9e0fdc7d1c7" valueTypeId="1294dbd0-52cd-4283-b737-c6b43ec434a6"/>
+  </producedTypes>
+  <name>ЗагрузкаССайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка с сайта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаССайта.Form.Форма</defaultForm>
+  <forms uuid="9285e22b-9cff-4923-87da-959ce435939d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен с сайтом 100СП (загрузка)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

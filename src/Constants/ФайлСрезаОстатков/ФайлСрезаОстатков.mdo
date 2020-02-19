@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b18e92c4-f266-4c66-801e-67bf7aa26ca9">
+  <producedTypes>
+    <managerType typeId="0f53564e-9a75-4d49-b1e9-c0f625c5377c" valueTypeId="8facd6db-d244-4b19-aca1-2c3c240f65ea"/>
+    <valueManagerType typeId="e9673665-9c55-46c9-a2a3-e7f27f7ba10e" valueTypeId="353bab6a-2320-4fab-879a-a9e173417a94"/>
+    <valueKeyType typeId="e9ed5a06-d603-566c-a827-f3369d47beeb" valueTypeId="a09e92d2-890f-5c42-a6c3-af0b200350bc"/>
+  </producedTypes>
+  <name>ФайлСрезаОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Файл среза остатков</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

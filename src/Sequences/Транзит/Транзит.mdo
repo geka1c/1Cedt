@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b95d596e-d61a-472c-a732-2b03e78bf36b">
+  <producedTypes>
+    <recordType typeId="ba6821d1-e3a8-40bd-beb0-d7cc860ed0d7" valueTypeId="26cc415d-3491-4b35-836e-770914731074"/>
+    <managerType typeId="b531937d-4871-4fd1-89e3-c4b5935ced93" valueTypeId="4f5ce256-2e63-4598-8165-80cee3b8048c"/>
+    <recordSetType typeId="0c62bfb2-144f-4a89-bd56-6a6858c67a66" valueTypeId="27c35921-e191-4a3e-8562-29db46071f45"/>
+  </producedTypes>
+  <name>Транзит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транзит</value>
+  </synonym>
+  <documents>Document.Приходная</documents>
+  <documents>Document.ВыдачаТранзита</documents>
+  <documents>Document.ИнвентаризацияТранзитов</documents>
+  <documents>Document.РазборКоробки</documents>
+  <registerRecords>AccumulationRegister.КПолучению</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Sequence>

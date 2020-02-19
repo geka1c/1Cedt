@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdf4aecb-f273-4dfc-84db-7e0f1e4cf8f9">
+  <name>Заказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Пристрой</content>
+  <content>Catalog.Мегаордера</content>
+  <content>Catalog.Покупки</content>
+  <content>Catalog.Коробки</content>
+  <content>Catalog.Заказы</content>
+  <content>Catalog.Посылки</content>
+  <parentSubsystem>Subsystem.Предприятие.Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

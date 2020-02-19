@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9b26258-5c21-4343-bb17-eb28ae831f8b">
+  <producedTypes>
+    <managerType typeId="6a955cb3-758d-4507-b54e-83f8d5a45014" valueTypeId="b4693641-a1bc-4d8e-9697-5fee80fa1c9b"/>
+    <valueManagerType typeId="f2e2061a-30ce-421b-a37a-05ea404280b7" valueTypeId="ead92a75-ef0c-4909-bce7-d16781e6ad9d"/>
+    <valueKeyType typeId="0f6c2e9f-36af-5447-a443-3abc6c134479" valueTypeId="ade0e94f-5f6b-5d95-8747-7038bd11a15d"/>
+  </producedTypes>
+  <name>ШаблонПечатиГрупповыхСтикеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон печати групповых стикеров</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ХранилищеШаблонов</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

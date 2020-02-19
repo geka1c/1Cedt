@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a630e1b-5afd-4b7f-a874-e5c0396f143f">
+  <producedTypes>
+    <managerType typeId="7ade4890-3752-4bc9-8b26-31a6e095cd59" valueTypeId="8ce89300-89d0-42b5-8393-f0dbddfd15c6"/>
+    <valueManagerType typeId="b0e45038-3595-4890-9c43-92e606da850b" valueTypeId="46722f0a-2f01-4462-b563-2b5cb251e95d"/>
+    <valueKeyType typeId="bfd04034-e9d5-4032-9c83-d00d22521c5c" valueTypeId="d976c494-a853-4c15-8d61-2e213c4e2be6"/>
+  </producedTypes>
+  <name>ВозможностьПриниматьНаТранзит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возможность принимать на транзит</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если не выбрано, то все заказы принимаются на склад в не зависимости от ПВ на стикере и на сайте</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

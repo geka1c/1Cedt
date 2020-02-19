@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55c4fe93-a45f-4e64-8e0d-a6fbb364daf7">
+  <producedTypes>
+    <objectType typeId="917df715-3d67-4b6b-9f8c-642605002f49" valueTypeId="d63e8e55-ab89-446f-9187-31cb1132d782"/>
+    <refType typeId="e1b73d3f-235e-4392-9da6-31a5f747f8a3" valueTypeId="b990f086-542e-471b-bd4e-1612ea69ed58"/>
+    <selectionType typeId="6b162c5d-5cf2-4d1c-af08-5ead727a7886" valueTypeId="ea1e641e-b413-488e-9af0-c10e12195ebf"/>
+    <listType typeId="fb0335b2-abdf-4c98-8e74-a5ec5f3921d3" valueTypeId="c7045688-5077-47b5-97d5-8b725ec29bd8"/>
+    <managerType typeId="3f517c90-aea7-4960-b4be-543005bdd93f" valueTypeId="a8c625eb-f089-4763-af4e-22dabbd256ae"/>
+  </producedTypes>
+  <name>ЗаполнитьКоленоМаршрута</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнить колено маршрута</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗаполнитьКоленоМаршрута.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗаполнитьКоленоМаршрута.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccumulationRegister.Обмен100СПрн</registerRecords>
+  <registerRecords>InformationRegister.Обмен100сп</registerRecords>
+  <registerRecords>InformationRegister.Обмен100спСообщения</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="dcb1baa4-4b10-414a-b4fd-02477c5f5c2e">
+    <name>Супергруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супергруппа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Мегаордера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b98af15d-087a-4984-9510-67bdf2428786">
+    <name>НомерКолена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер колена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be1c30f2-58fc-4245-9e4c-4c1b209126e7">
+    <name>ТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd349a1b-45c5-4421-aeef-7736672bb868">
+    <name>ДатаДоставкиПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата доставки план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e5f47e95-c0e8-4cb1-83dc-012959460a18">
+    <name>ДатаДоставкиФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата доставки факт</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="492e88bf-e357-455f-af9b-ee72475749ef">
+    <name>ТрэкНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трэк номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24ae349c-f302-43ca-b9b7-d645a8a175c6">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыдачаТранзита</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f3e61745-6cfa-4288-b9c3-342929181648">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="be7dc786-cda0-41cc-b6f0-20521c6a259d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f67855a6-ff5b-487f-9113-7964ea4c0299">
+    <name>ФормаДокументаУстанавливаемФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа устанавливаем факт</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9687bdc1-ab27-4ad5-8818-9ab2a4e87518">
+  <producedTypes>
+    <recordType typeId="782ae407-0847-4c36-b894-93c7f47f3b49" valueTypeId="152469fc-6de0-4db4-befe-cd57bf835040"/>
+    <managerType typeId="8d0b8e74-6ddc-440b-94e3-c5e8e2d4046d" valueTypeId="cf3d1777-25f5-49c1-a170-a77b8a819e30"/>
+    <recordSetType typeId="02230bd8-cc35-4352-9521-52d00f8b5ce0" valueTypeId="14b7cfd8-a7db-4f3f-a247-501a9949f2d0"/>
+  </producedTypes>
+  <name>ОтрицательныеОстаткиТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отрицательные остатки товаров</value>
+  </synonym>
+  <documents>Document.Расходная</documents>
+  <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Sequence>

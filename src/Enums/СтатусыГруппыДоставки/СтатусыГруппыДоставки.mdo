@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4235bf32-614c-4ee4-975a-bb3553152010">
+  <producedTypes>
+    <refType typeId="fc93c455-b2b4-45c1-9096-752f0d77711a" valueTypeId="b093367a-68d8-40a9-b145-c8d425459eea"/>
+    <listType typeId="4f5180fb-bfa6-413f-a34d-aa2a20882144" valueTypeId="93b3cd58-fdba-4658-bb7f-ae7209d9552b"/>
+    <managerType typeId="4be1017a-22f9-4586-82e4-25ba9f30a6a0" valueTypeId="ff5cf567-169f-4805-af33-21f4afe55568"/>
+  </producedTypes>
+  <name>СтатусыГруппыДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы группы доставки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a6c7aff0-9e67-4f89-abbe-f4430f10dfbd">
+    <name>waitForOrders</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание заказов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="826ad394-1a51-42fb-9f11-ee74cc6b1f1b">
+    <name>waitForDelay</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос отсрочки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2520bbc7-39ce-4841-a508-220cacca6e25">
+    <name>waitForPayment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f3ff4b44-37cc-49f6-8efb-c8651d63e82d">
+    <name>shipment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Можно отправлять</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a38c170d-3d3f-44a9-be41-2ebbd6f28547">
+    <name>finished</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="66372410-97b1-4640-bf41-945dcc13c076">
+    <name>empty</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустая группа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e9507529-0f25-43e0-bb4a-71722b82e48d">
+    <name>waitForDistributor</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник меняет адресс</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

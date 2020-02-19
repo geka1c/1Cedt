@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипРасхода</dataPath>
+			<field>ТипРасхода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник</dataPath>
+			<field>Участник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Покупка</dataPath>
+			<field>Покупка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПокупкаСпр</dataPath>
+			<field>ПокупкаСпр</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Списано</dataPath>
+			<field>Списано</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьВыдачи</dataPath>
+			<field>СтоимостьВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость выдачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Раздел</dataPath>
+			<field>Раздел</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организатор</dataPath>
+			<field>Организатор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Коробка</dataPath>
+			<field>Коробка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипПрихода</dataPath>
+			<field>ТипПрихода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодРаздел</dataPath>
+			<field>ПодРаздел</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Под раздел</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПокупкаКод</dataPath>
+			<field>ПокупкаКод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Покупка код</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	КоробкиСостав.Ссылка,
+	СУММА(1) КАК Количество
+ПОМЕСТИТЬ КоробкаКоличество
+ИЗ
+	Справочник.Коробки.Состав КАК КоробкиСостав
+
+СГРУППИРОВАТЬ ПО
+	КоробкиСостав.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РасходОбороты.Участник,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ КАК ПокупкаСпр,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(РасходОбороты.Покупка) = ТИП(ЧИСЛО)
+			ТОГДА РасходОбороты.ПокупкаСпр
+		ИНАЧЕ РасходОбороты.Покупка
+	КОНЕЦ КАК Покупка,
+	РасходОбороты.Габарит КАК Габарит,
+	СУММА(РасходОбороты.КоличествоОборот) КАК Количество,
+	СУММА(РасходОбороты.СуммаОборот) КАК СтоимостьВыдачи,
+	РасходОбороты.ТипРасхода,
+	"Выдано" КАК Раздел
+ПОМЕСТИТЬ Выдача
+ИЗ
+	РегистрНакопления.Расход.Обороты(
+			&amp;ДатаБ,
+			&amp;ДатаЕ,
+			,
+			НЕ Списано
+				И ТипРасхода &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипРасхода.Транзит)) КАК РасходОбороты
+
+СГРУППИРОВАТЬ ПО
+	РасходОбороты.Габарит,
+	РасходОбороты.Участник,
+	РасходОбороты.ТипРасхода,
+	ВЫБОР
+		КОГДА ТИПЗНАЧЕНИЯ(РасходОбороты.Покупка) = ТИП(ЧИСЛО)
+			ТОГДА РасходОбороты.ПокупкаСпр
+		ИНАЧЕ РасходОбороты.Покупка
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриходОбороты.Габарит КАК Габарит,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Покупка,
+	ВЫБОР
+		КОГДА ПриходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ ПриходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ ПриходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА ПриходОбороты.Покупка.Код
+		ИНАЧЕ ПриходОбороты.ПокупкаСпр
+	КОНЕЦ КАК ПокупкаСпр,
+	СУММА(ВЫБОР
+			КОГДА ТИПЗНАЧЕНИЯ(ПриходОбороты.Покупка) = ТИП(Справочник.Коробки)
+				ТОГДА ЕСТЬNULL(КоробкаКоличество.Количество, ПриходОбороты.Покупка.Количество)
+			ИНАЧЕ ПриходОбороты.КоличествоОборот
+		КОНЕЦ) КАК Количество,
+	ПриходОбороты.ТипПрихода,
+	"Принято" КАК Раздел
+ПОМЕСТИТЬ Поступление
+ИЗ
+	РегистрНакопления.Приход.Обороты(&amp;ДатаБ, &amp;ДатаЕ, , ) КАК ПриходОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ КоробкаКоличество КАК КоробкаКоличество
+		ПО ПриходОбороты.Покупка = КоробкаКоличество.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	ПриходОбороты.Габарит,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Покупка,
+	ПриходОбороты.ТипПрихода,
+	ВЫБОР
+		КОГДА ПриходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ ПриходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ ПриходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА ПриходОбороты.Покупка.Код
+		ИНАЧЕ ПриходОбороты.ПокупкаСпр
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПродажиОбороты.Участник,
+	СУММА(ПродажиОбороты.количествоОборот) КАК Количество,
+	ПродажиОбороты.СтоимостьОборот КАК СтоимостьПродаж,
+	ПродажиОбороты.Номенклатура,
+	ТИПЗНАЧЕНИЯ(ПродажиОбороты.Номенклатура) КАК ПодРаздел,
+	"Продажи" КАК Раздел
+ПОМЕСТИТЬ Продажи
+ИЗ
+	РегистрНакопления.Продажи.Обороты(&amp;ДатаБ, &amp;ДатаЕ, , ) КАК ПродажиОбороты
+
+СГРУППИРОВАТЬ ПО
+	ПродажиОбороты.Участник,
+	ПродажиОбороты.СтоимостьОборот,
+	ПродажиОбороты.Номенклатура,
+	ТИПЗНАЧЕНИЯ(ПродажиОбороты.Номенклатура)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РасходОбороты.Габарит КАК Габарит,
+	РасходОбороты.Участник,
+	РасходОбороты.Покупка КАК Покупка,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ КАК ПокупкаСпр,
+	СУММА(РасходОбороты.КоличествоОборот) КАК Количество,
+	СУММА(РасходОбороты.СуммаОборот) КАК Стоимость,
+	"Списано" КАК Раздел
+ПОМЕСТИТЬ Списано
+ИЗ
+	РегистрНакопления.Расход.Обороты(
+			&amp;ДатаБ,
+			&amp;ДатаЕ,
+			,
+			Списано
+				И ТипРасхода &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипРасхода.Транзит)) КАК РасходОбороты
+
+СГРУППИРОВАТЬ ПО
+	РасходОбороты.Габарит,
+	РасходОбороты.Участник,
+	РасходОбороты.Покупка,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РасходОбороты.Габарит КАК Габарит,
+	РасходОбороты.Участник,
+	РасходОбороты.Покупка КАК Покупка,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ КАК ПокупкаСпр,
+	СУММА(ВЫБОР
+			КОГДА ТИПЗНАЧЕНИЯ(РасходОбороты.Покупка) = ТИП(Справочник.Коробки)
+				ТОГДА РасходОбороты.Покупка.Количество
+			ИНАЧЕ РасходОбороты.КоличествоОборот
+		КОНЕЦ) КАК Количество,
+	СУММА(РасходОбороты.СуммаОборот) КАК Стоимость,
+	РасходОбороты.ТипРасхода,
+	"Транзит" КАК Раздел
+ПОМЕСТИТЬ Транзит
+ИЗ
+	РегистрНакопления.Расход.Обороты(&amp;ДатаБ, &amp;ДатаЕ, , ТипРасхода = ЗНАЧЕНИЕ(Перечисление.ТипРасхода.Транзит)) КАК РасходОбороты
+
+СГРУППИРОВАТЬ ПО
+	РасходОбороты.Габарит,
+	РасходОбороты.Участник,
+	РасходОбороты.Покупка,
+	РасходОбороты.ТипРасхода,
+	ВЫБОР
+		КОГДА РасходОбороты.Покупка ССЫЛКА Справочник.Покупки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Коробки
+				ИЛИ РасходОбороты.Покупка ССЫЛКА Справочник.Заказы
+			ТОГДА РасходОбороты.Покупка.Код
+		ИНАЧЕ РасходОбороты.ПокупкаСпр
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Выдача.Участник,
+	Выдача.ПокупкаСпр КАК ПокупкаКод,
+	Выдача.Покупка,
+	Выдача.Габарит,
+	Выдача.Количество,
+	Выдача.СтоимостьВыдачи,
+	Выдача.Раздел,
+	NULL КАК ПодРаздел
+ИЗ
+	Выдача КАК Выдача
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Поступление.Организатор,
+	Поступление.ПокупкаСпр,
+	Поступление.Покупка,
+	Поступление.Габарит,
+	Поступление.Количество,
+	0,
+	Поступление.Раздел,
+	NULL
+ИЗ
+	Поступление КАК Поступление
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Продажи.Участник,
+	NULL,
+	Продажи.Номенклатура,
+	NULL,
+	Продажи.Количество,
+	Продажи.СтоимостьПродаж,
+	Продажи.Раздел,
+	Продажи.ПодРаздел
+ИЗ
+	Продажи КАК Продажи
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Списано.Участник,
+	Списано.ПокупкаСпр,
+	Списано.Покупка,
+	Списано.Габарит,
+	Списано.Количество,
+	Списано.Стоимость,
+	Списано.Раздел,
+	NULL
+ИЗ
+	Списано КАК Списано
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Транзит.Участник,
+	Транзит.ПокупкаСпр,
+	Транзит.Покупка,
+	Транзит.Габарит,
+	Транзит.Количество,
+	Транзит.Стоимость,
+	Транзит.Раздел,
+	NULL
+ИЗ
+	Транзит КАК Транзит</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьВыдачи</dataPath>
+		<expression>Сумма(СтоимостьВыдачи)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаБ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата Б</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаЕ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата Е</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ведомость движений покупок на точке</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Габарит</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Покупка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПокупкаКод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтоимостьВыдачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Участник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Участник.Код</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Today</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>425c0322-c241-4c2a-8441-b383897a71f6</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Габарит.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Участник.Наименование</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Раздел</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПодРаздел</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Габарит</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

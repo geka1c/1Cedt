@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b36f9f9d-7233-4ded-96f5-b9fb7af0afdc">
+  <producedTypes>
+    <managerType typeId="233c8d3a-e1da-413a-928c-a5d6ad07375f" valueTypeId="8c57e45e-b38a-47d4-bbb6-ecb9f8ce87b9"/>
+    <valueManagerType typeId="8eca160b-0d52-4bfb-b7f7-db01c69d15f2" valueTypeId="48a189e9-e66b-464e-8a3e-93bcc06f76c2"/>
+    <valueKeyType typeId="de9061fa-bd74-4dc6-8eee-adcb44a7987a" valueTypeId="32aecc81-1345-44a1-94ec-decda1613cf8"/>
+  </producedTypes>
+  <name>ЗакрыватьДокументПослеОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрывать документ после оплаты</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

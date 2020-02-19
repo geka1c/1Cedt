@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9dc9de6-c07b-401c-b240-f000bf41fca0">
+  <producedTypes>
+    <managerType typeId="e9073c54-5a2c-4728-acf9-c6fdcd532667" valueTypeId="66d1096a-faa9-4f8c-b448-94e06e8018e7"/>
+    <valueManagerType typeId="2acd9f04-1eeb-4113-85b8-899fb0e4ad54" valueTypeId="0ce0c111-cae4-4891-9aff-0e597a1a60fa"/>
+    <valueKeyType typeId="ba104bc8-78e1-5c4d-a1bc-224fbf1e7ce5" valueTypeId="e84913d7-3c93-54d6-9c2e-aa61cffaac48"/>
+  </producedTypes>
+  <name>ВыгружатьВозвратПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгружать возврат при записи</value>
+  </synonym>
+  <comment>Если флаг установлен, то при записи и проведении документа Приходная данные будут автоматически выгружаться на сайт</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22a658be-8e69-4f8b-9c88-51c08b491131">
+  <producedTypes>
+    <objectType typeId="b718e71c-ecd7-4644-b7b3-57bed0ae7fd9" valueTypeId="0a0136b0-99a8-41b5-b721-79ebc7ee6387"/>
+    <managerType typeId="1a94f75d-65e1-47fc-a391-f56d51fb6cb5" valueTypeId="63f69eb5-3668-40e1-9c46-815ad25430c3"/>
+  </producedTypes>
+  <name>ПодборТочкиОтправителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор точки отправителя</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПодборТочкиОтправителя.Form.Форма</defaultForm>
+  <attributes uuid="7e4bbfd9-e5af-4170-8424-44f19de9db17">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c616621d-f7ee-41fc-93d4-dc3b784191e7">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Покупки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="0ea21751-d5a0-4c72-87aa-fe7d46dbcb18">
+    <producedTypes>
+      <objectType typeId="4bfdc6f8-1350-40d5-b4f1-3879204a1e44" valueTypeId="8e329a12-fb2b-4023-b3b6-ecc3c12b31b4"/>
+      <rowType typeId="39e86934-ffb7-4522-98cd-f8a60f0eeb5c" valueTypeId="dee4e295-8c4e-44ca-b907-f8441f1ee290"/>
+    </producedTypes>
+    <name>ТочкиОтправители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точки отправители</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0c162742-9893-425a-84a8-6c44fae55828">
+      <name>ТочкаОтправитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Точка отправитель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТочкиРаздачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a864a1c3-00ac-41fb-8eaf-577aab06ef49">
+      <name>Пометка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5f76e02d-a843-45c6-aa0d-aecc2eb02d65">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

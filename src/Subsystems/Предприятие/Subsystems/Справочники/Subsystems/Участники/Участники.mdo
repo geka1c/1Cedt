@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22926846-4f7e-49c5-88e4-b33dbba01f20">
+  <name>Участники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Участники</content>
+  <content>InformationRegister.АктуальныеУчастники</content>
+  <content>e1c64e1f-abf9-4a31-bc1d-d4489d85d91d</content>
+  <content>Catalog.КартыУчастников</content>
+  <content>InformationRegister.УчастникиВГруппах</content>
+  <content>Catalog.ГруппыУчастников</content>
+  <parentSubsystem>Subsystem.Предприятие.Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

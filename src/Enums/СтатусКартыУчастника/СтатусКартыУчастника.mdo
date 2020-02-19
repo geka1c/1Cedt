@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f9eab6f-b70f-4f9c-98fb-4b2b8fc13200">
+  <producedTypes>
+    <refType typeId="09d5d263-09ea-4d75-9482-3258bee805d2" valueTypeId="ecc76064-d1e2-4d88-b080-4fa3a0d027ae"/>
+    <listType typeId="c2256245-a9db-4af8-a4bd-2097132dc6db" valueTypeId="f1273497-9539-4f2d-8245-1a2a0071d1df"/>
+    <managerType typeId="aeea0b8a-402d-420a-9fbd-a07b4654407e" valueTypeId="c7cd366f-fed5-43e4-ac85-3e32dba0fe75"/>
+  </producedTypes>
+  <name>СтатусКартыУчастника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус карты участника</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a60c5f70-0fe1-448a-85ba-a797d3a073dd">
+    <name>НеЗарегистрирована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не зарегистрирована</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b8d6b498-e597-410f-be94-9fa8da926956">
+    <name>ОтправленаНаСайт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлена на сайт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4a4044a4-5d8b-4a59-ae0c-dc3744b4ad4e">
+    <name>Зарегистрированна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрированна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="15e089e9-cba2-4f48-b97b-70caed1e7508">
+    <name>Блокирована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокирована</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

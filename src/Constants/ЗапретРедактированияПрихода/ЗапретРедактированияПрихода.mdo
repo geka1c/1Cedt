@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23feb1a4-80b0-47dc-bb4b-c04dd4554e62">
+  <producedTypes>
+    <managerType typeId="a1a1727d-09f3-4367-b8b8-52442c13c4b6" valueTypeId="6d370ba7-9794-4588-b05c-ece6cb22e16d"/>
+    <valueManagerType typeId="4133c3af-4855-4b3c-a451-a5fd9c912917" valueTypeId="02c57ccc-b686-4fb1-af6f-21a0434ef0e1"/>
+    <valueKeyType typeId="379458f5-eca9-5a0c-87f0-e5e499b0daa6" valueTypeId="950dc984-8521-532a-8df0-af664495aeb9"/>
+  </producedTypes>
+  <name>ЗапретРедактированияПрихода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрет редактирования прихода</value>
+  </synonym>
+  <comment>Запрещать редактирования приходных накладных если после прихода был расход</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

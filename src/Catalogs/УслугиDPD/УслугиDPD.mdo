@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="270193bd-dad4-4c8b-948d-6c00a234c416">
+  <producedTypes>
+    <objectType typeId="e1e6f14e-1d4a-4937-a677-4fcb2283f87b" valueTypeId="23afa622-443a-40fe-8ed4-d9595f794114"/>
+    <refType typeId="bb4be976-0b91-4ae3-a2b3-5fe3f5b23600" valueTypeId="81ce2714-a616-47b2-826e-90f9633cb63a"/>
+    <selectionType typeId="cf4d3b9a-993d-4c8d-a2ff-879514f50280" valueTypeId="fbea9f73-c494-4fbe-9ae2-e39af0bad662"/>
+    <listType typeId="93e45d19-6305-4eab-b3c7-1d91cee1feee" valueTypeId="45b1a16e-d333-4e54-a27b-c36c479af5f6"/>
+    <managerType typeId="9e9dd8a3-2c2b-4fcf-9334-ed52aece0cb3" valueTypeId="9db12efa-f29a-4051-a80b-dec61c1f0571"/>
+  </producedTypes>
+  <name>УслугиDPD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Услуги DPD</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.УслугиDPD.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.УслугиDPD.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="27132f59-4afb-4122-a92b-96b223d5b548">
+      <name>BZP</name>
+      <description>DPD 18:00</description>
+      <code xsi:type="core:StringValue">
+        <value>BZP</value>
+      </code>
+    </items>
+    <items id="df97bc7e-014a-43e5-a6f4-211b11d9182a">
+      <name>CUR</name>
+      <description>DPD CLASSIC domestic</description>
+      <code xsi:type="core:StringValue">
+        <value>CUR</value>
+      </code>
+    </items>
+    <items id="d52f4302-c495-434b-964c-82a9d41ab1e1">
+      <name>DPE</name>
+      <description>DPD CLASSIC international EXPORT</description>
+      <code xsi:type="core:StringValue">
+        <value>DPE</value>
+      </code>
+    </items>
+    <items id="e55ea0be-c873-4ab0-9d2f-caf04db8549f">
+      <name>DPI</name>
+      <description>DPD CLASSIC international IMPORT</description>
+      <code xsi:type="core:StringValue">
+        <value>DPI</value>
+      </code>
+    </items>
+    <items id="ef721d47-b480-4a44-9286-9a1a6400fc66">
+      <name>ECN</name>
+      <description>DPD ECONOMY</description>
+      <code xsi:type="core:StringValue">
+        <value>ECN</value>
+      </code>
+    </items>
+    <items id="2c51f677-4354-4896-a5f0-e364a085264f">
+      <name>ECU</name>
+      <description>DPD ECONOMY CU</description>
+      <code xsi:type="core:StringValue">
+        <value>ECU</value>
+      </code>
+    </items>
+    <items id="054501fd-35a2-41ac-8884-3537df83a278">
+      <name>NDY</name>
+      <description>DPD EXPRESS</description>
+      <code xsi:type="core:StringValue">
+        <value>NDY</value>
+      </code>
+    </items>
+    <items id="ea7237df-a5b1-4ca4-9446-594ce8024f9e">
+      <name>MAX</name>
+      <description>DPD MAX domestic</description>
+      <code xsi:type="core:StringValue">
+        <value>MAX</value>
+      </code>
+    </items>
+    <items id="8138d60d-166e-48f6-9465-08793b02de4f">
+      <name>CSM</name>
+      <description>DPD Online Express</description>
+      <code xsi:type="core:StringValue">
+        <value>CSM</value>
+      </code>
+    </items>
+    <items id="e6c5fa6c-4a88-4186-b9d8-3280b33e6b05">
+      <name>MXO</name>
+      <description>DPD Online Max</description>
+      <code xsi:type="core:StringValue">
+        <value>MXO</value>
+      </code>
+    </items>
+    <items id="59ec5492-8873-4d21-a963-3fac8608ee0d">
+      <name>PCL</name>
+      <description>DPD OPTIMUM</description>
+      <code xsi:type="core:StringValue">
+        <value>PCL</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

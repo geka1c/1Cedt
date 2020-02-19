@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1be16c69-2912-4eaf-8e95-951f2b64f8a9">
+  <producedTypes>
+    <objectType typeId="eccf32ae-5148-45b7-ba16-c04f41010153" valueTypeId="1455dfdf-f0f5-4f40-a13e-94ff1c3c5e95"/>
+    <managerType typeId="872caef5-b779-4d8f-b66d-cb239c8976d2" valueTypeId="efc1f703-fa02-4ef2-a385-fa8b647a39fd"/>
+  </producedTypes>
+  <name>ОстаткиНаСкладе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки на складе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОстаткиНаСкладе.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Остатки заказов на складе на указанную дату. В разрезе  мест хранения ...</value>
+  </explanation>
+  <forms uuid="3122d16a-8409-48f6-ba11-cf5a9a81870d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a8ae7023-da77-407a-814c-4741ffed132f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

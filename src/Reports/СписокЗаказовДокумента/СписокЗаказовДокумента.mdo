@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b0ee038-eec3-41e2-b30e-95df9abe968d">
+  <producedTypes>
+    <objectType typeId="5c20bc86-01d1-46cc-bd73-67fa6292c3c8" valueTypeId="59af6a84-c545-4c14-bf75-a8ba16427f1d"/>
+    <managerType typeId="1844f7d8-219d-48f2-929a-18552aae82a8" valueTypeId="0973b6d5-c1b7-433e-8530-8600e1f694ff"/>
+  </producedTypes>
+  <name>СписокЗаказовДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список заказов документа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СписокЗаказовДокумента.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СписокЗаказовДокумента.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</defaultSettingsForm>
+  <forms uuid="efa2f04b-715a-49e6-8166-71d6ffcc2399">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="803b1002-878b-46d5-a535-558b5236309f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

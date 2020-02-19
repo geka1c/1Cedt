@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ba58bcb-e776-442d-a54d-ebb31143379b">
+  <producedTypes>
+    <objectType typeId="012d3c2e-2f6b-425c-83ab-b781a8177da2" valueTypeId="b9cb7eba-af93-4ce8-9d83-bc991f7cd511"/>
+    <refType typeId="d76a96ab-845a-4dc6-b83d-06ca545cebb6" valueTypeId="fd9d8b3b-70fa-40cb-8c50-21b632c8da73"/>
+    <selectionType typeId="137acc4c-4dc6-457d-bc58-02a5edeee218" valueTypeId="67d251bf-0906-471a-a0be-afc3e1b5b89e"/>
+    <listType typeId="8ea8a50f-22ec-472a-aeed-e2d53fd5ab9b" valueTypeId="f469a99d-55d2-4c25-86c1-6f4fc2c0235e"/>
+    <managerType typeId="1ef5b473-d981-42e7-9655-fce72cf0c59e" valueTypeId="aa13cd4c-f995-4314-afb5-ebd6be0cddc4"/>
+  </producedTypes>
+  <name>МестаХранения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места хранения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МестаХранения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МестаХранения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <forms uuid="e61e84c8-b250-4edb-bbed-1f81b3746809">
+    <name>ГенерацияТопологииСклада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Генерация топологии склада</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cd467b7e-05bb-496f-a42a-e56b40108860">
+    <name>ШК</name>
+  </templates>
+  <commands uuid="7ccf3ae1-f781-48fa-9795-125c01d56b31">
+    <name>Печать</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.МестаХранения</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

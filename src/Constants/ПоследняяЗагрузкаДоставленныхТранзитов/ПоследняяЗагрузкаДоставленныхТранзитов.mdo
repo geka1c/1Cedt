@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9a7e392-e08f-4b63-a631-19c6da65018a">
+  <producedTypes>
+    <managerType typeId="1623b639-be03-45c6-a241-2ff268bb6fdd" valueTypeId="25997af5-91d5-4cb9-bc36-f84163232c97"/>
+    <valueManagerType typeId="e50a57d2-f220-4bc8-b58d-6464bee9a022" valueTypeId="20e5f4de-6a95-4726-8cd5-919db56f41f0"/>
+    <valueKeyType typeId="c60cb7ae-ffce-599b-bc73-e3d33ebc91dd" valueTypeId="2064e978-dd5d-51e4-b4dd-90b23d053393"/>
+  </producedTypes>
+  <name>ПоследняяЗагрузкаДоставленныхТранзитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последняя загрузка доставленных транзитов</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

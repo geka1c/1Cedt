@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9311829e-d8dd-42b5-b6cc-6217dd63f555">
+  <producedTypes>
+    <managerType typeId="5e5583f1-2532-43b8-a2c8-cbc3a801d572" valueTypeId="bae27f7e-da99-467b-b004-55c5d30a8be5"/>
+    <valueManagerType typeId="4325c9bb-56a7-4506-a486-7cf46c846ff8" valueTypeId="8d363a65-226c-476f-b9fd-e2a2af97d484"/>
+    <valueKeyType typeId="34eae26e-e675-53ef-84b5-18146838e70a" valueTypeId="a73069d7-2f16-5447-8d80-15b6b24471a0"/>
+  </producedTypes>
+  <name>ФР</name>
+  <synonym>
+    <key>ru</key>
+    <value>ФР</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ПодключаемоеОборудование</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <choiceParameters>
+    <name>Отбор.ТипОборудования</name>
+    <value xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыПодключаемогоОборудования.EnumValue.ККТ</value>
+    </value>
+  </choiceParameters>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

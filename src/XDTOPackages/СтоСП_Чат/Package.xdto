@@ -1,0 +1,50 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru/api/mobile">
+	<objectType name="main" open="false" abstract="false" mixed="false" ordered="false">
+		<property name="dialogCount" type="xs:int" lowerBound="0" upperBound="1" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="dialogList" type="d3p1:main.dialogList" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
+		<property name="serverDateTime" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="success" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ver" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="errors" type="d3p1:main.errors" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="main.dialogList" ordered="false">
+		<property name="mdid" type="xs:integer" lowerBound="0" nillable="true"/>
+		<property name="subject" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="connected_type" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="connected_id" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="updated" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="unread" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="user" type="d3p1:main.dialogList.user" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="opponent" type="d3p1:main.dialogList.user" lowerBound="0" nillable="true" form="Element"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="messages" type="d3p1:main.dialogList.messages" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="main.dialogList.user">
+		<property name="uid" type="xs:integer"/>
+		<property name="name" type="xs:string"/>
+		<property name="rating" type="xs:string"/>
+		<property name="picture" type="xs:string"/>
+	</objectType>
+	<objectType name="main.dialogList.messages">
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="message" type="d3p1:main.dialogList.messages.message" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="main.dialogList.messages.message">
+		<property name="mid" type="xs:integer" lowerBound="1"/>
+		<property name="from" type="xs:string"/>
+		<property name="body" type="xs:string"/>
+		<property name="created" type="xs:string"/>
+		<property name="unread" type="xs:boolean"/>
+		<property name="canBeDeleted" type="xs:boolean"/>
+		<property name="mdid" type="xs:integer" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="main_message" open="false" abstract="false" mixed="false" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="dialog" type="d3p1:main.dialogList" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="serverDateTime" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="success" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ver" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/mobile" name="errors" type="d3p1:main.errors" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="main.errors" ordered="false">
+		<property name="type" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+</package>

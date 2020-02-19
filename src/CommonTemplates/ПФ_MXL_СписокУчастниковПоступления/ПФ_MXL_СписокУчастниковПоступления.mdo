@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17048680-a51e-41d5-8155-4175dcf800aa">
+  <name>ПФ_MXL_СписокУчастниковПоступления</name>
+  <synonym>
+    <key>ru</key>
+    <value>П ф MXL список участников поступления</value>
+  </synonym>
+</mdclass:CommonTemplate>

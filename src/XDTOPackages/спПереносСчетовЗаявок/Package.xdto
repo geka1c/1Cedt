@@ -1,0 +1,150 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru/1.0.0">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType name="ВидыОперацийСчетКонтрагента" base="xs:string">
+		<enumeration xsi:type="xs:string">СТранспортнойКомпанией</enumeration>
+		<enumeration xsi:type="xs:string">СЭкспедиторскойКомпанией</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Контрагенты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Коробки" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ТочкиРаздачи" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Участники" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Организаторы" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.ЗаявкаВТранспортнуюКомпанию" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.СчетКонтрагента" base="d2p1:Ref"/>
+	<valueType name="ТипНомерСтроки" base="xs:int" totalDigits="10"/>
+	<valueType name="ТипНомерДокумента" base="xs:string" maxLength="256"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Контрагенты" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКонтрагенты"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Коробки" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКоробки"/>
+		<property name="Наименование" type="xs:string" lowerBound="0"/>
+		<property name="Догрузить" type="xs:boolean" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+		<property name="Вес" type="xs:decimal" lowerBound="0"/>
+		<property name="Объем" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Организатор" type="d3p1:КлючевыеСвойстваОрганизаторы" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ТочкаНазначения" type="d3p1:КлючевыеСвойстваТочкиРаздачи" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ТочкиРаздачи" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваТочкиРаздачи"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Догрузить" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Участники" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваУчастники"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Догрузить" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Организаторы" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваОрганизаторы"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Догрузить" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Участник" type="d3p1:КлючевыеСвойстваУчастники" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ЗаявкаВТранспортнуюКомпанию" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваЗаявкаВТранспортнуюКомпанию"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ТранспортнаяКомпания" type="d3p1:КлючевыеСвойстваКонтрагенты" lowerBound="0"/>
+		<property name="Вес" type="xs:decimal" lowerBound="0"/>
+		<property name="Объем" type="xs:decimal" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+		<property name="НомерЗаявки" type="xs:string" lowerBound="0"/>
+		<property name="ДатаЗаявки" type="xs:dateTime" lowerBound="0"/>
+		<property name="КоличествоМест" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ТочкаТранзита" type="d3p1:КлючевыеСвойстваТочкиРаздачи" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Заказы" type="d3p1:Документ.ЗаявкаВТранспортнуюКомпанию.Заказы"/>
+		<property name="НомерОтправителя" type="xs:string"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="СвояТочка" type="d3p1:КлючевыеСвойстваТочкиРаздачи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.ЗаявкаВТранспортнуюКомпанию.Заказы">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Строка" type="d3p1:Документ.ЗаявкаВТранспортнуюКомпанию.Заказы.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ЗаявкаВТранспортнуюКомпанию.Заказы.Строка">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Груз" type="d3p1:КлючевыеСвойстваКоробки" lowerBound="1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.СчетКонтрагента" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваСчетКонтрагента"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Контрагент" type="d3p1:КлючевыеСвойстваКонтрагенты" lowerBound="0"/>
+		<property name="ПримечаниеТК" type="xs:string" lowerBound="0"/>
+		<property name="НомерОтправкиГруза" type="xs:string" lowerBound="0"/>
+		<property name="ДатаОтправкиГруза" type="xs:dateTime" lowerBound="0"/>
+		<property name="ОриентировачнаяДатаДоставки" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ВидОперации" type="d3p1:ВидыОперацийСчетКонтрагента" lowerBound="0"/>
+		<property name="Сумма" type="xs:decimal" lowerBound="0"/>
+		<property name="Вес" type="xs:decimal" lowerBound="0"/>
+		<property name="Объем" type="xs:decimal" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ТранзитнаяТочка" type="d3p1:КлючевыеСвойстваТочкиРаздачи" lowerBound="0"/>
+		<property name="НомерОтправителя" type="xs:string"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Заказы" type="d3p1:Документ.СчетКонтрагента.Заказы"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="ЗаявкиВТК" type="d3p1:Документ.СчетКонтрагента.ЗаявкиВТК" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Организаторы" type="d3p1:Документ.СчетКонтрагента.Организаторы" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="СвояТочка" type="d3p1:КлючевыеСвойстваТочкиРаздачи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.Заказы">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Строка" type="d3p1:Документ.СчетКонтрагента.Заказы.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.Заказы.Строка">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Груз" type="d3p1:КлючевыеСвойстваКоробки" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Заявка" type="d3p1:КлючевыеСвойстваЗаявкаВТранспортнуюКомпанию" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.ЗаявкиВТК">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Строка" type="d3p1:Документ.СчетКонтрагента.ЗаявкиВТК.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.ЗаявкиВТК.Строка">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Заявка" type="d3p1:КлючевыеСвойстваЗаявкаВТранспортнуюКомпанию" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.Организаторы">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Строка" type="d3p1:Документ.СчетКонтрагента.Организаторы.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.СчетКонтрагента.Организаторы.Строка">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Организатор" type="d3p1:КлючевыеСвойстваУчастники" lowerBound="0"/>
+		<property name="Вес" type="xs:decimal" lowerBound="0"/>
+		<property name="Количество" type="xs:decimal" lowerBound="0"/>
+		<property name="Объем" type="xs:decimal" lowerBound="0"/>
+		<property name="ВесПроцент" type="xs:decimal" lowerBound="0"/>
+		<property name="ОбъемПроцент" type="xs:decimal" lowerBound="0"/>
+		<property name="КоличествоПроцент" type="xs:decimal" lowerBound="0"/>
+		<property name="Сумма" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваЗаявкаВТранспортнуюКомпанию">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:ДокументСсылка.ЗаявкаВТранспортнуюКомпанию"/>
+		<property name="Дата" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваСчетКонтрагента">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:ДокументСсылка.СчетКонтрагента"/>
+		<property name="Дата" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонтрагенты">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Контрагенты"/>
+		<property name="КодВПрограмме" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКоробки">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Коробки"/>
+		<property name="КодВПрограмме" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваТочкиРаздачи">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.ТочкиРаздачи"/>
+		<property name="КодВПрограмме" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваУчастники">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Участники"/>
+		<property name="КодВПрограмме" type="xs:integer"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваОрганизаторы">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Организаторы"/>
+		<property name="КодВПрограмме" type="xs:integer"/>
+	</objectType>
+	<objectType name="ЛюбаяСсылка">
+		<property name="СсылкаНаОбъект">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://www.100sp.ru/1.0.0" name="УчастникиСсылка" type="d5p1:СправочникСсылка.Участники"/>
+				<property xmlns:d5p1="http://www.100sp.ru/1.0.0" name="ЗаявкаВТранспортнуюКомпаниюСсылка" type="d5p1:ДокументСсылка.ЗаявкаВТранспортнуюКомпанию"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="УдалениеОбъекта">
+		<property xmlns:d3p1="http://www.100sp.ru/1.0.0" name="СсылкаНаОбъект" type="d3p1:ЛюбаяСсылка"/>
+	</objectType>
+</package>

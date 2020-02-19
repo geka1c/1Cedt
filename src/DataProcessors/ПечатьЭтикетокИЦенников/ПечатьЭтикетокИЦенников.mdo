@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d63c35bc-32a9-495a-90b5-2fa408226d99">
+  <producedTypes>
+    <objectType typeId="51f9c5fb-76e4-4799-949a-dbcbe31caa24" valueTypeId="d7c1a84e-7639-4841-bb76-af9cee929ca3"/>
+    <managerType typeId="ef9f9647-957f-4838-95cb-0ad9d4d2aa46" valueTypeId="796d32ef-afc0-46c0-966f-fc9ffbea8c21"/>
+  </producedTypes>
+  <name>ПечатьЭтикетокИЦенников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать этикеток и ценников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьЭтикетокИЦенников.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="4419dd89-ff30-4b78-9988-d23f9306475c">
+    <name>ВидЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fb69c7aa-dec2-4562-a698-3a754081f3d6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="9592e3c7-845f-492f-869b-f7e194cc8247">
+    <producedTypes>
+      <objectType typeId="0368f173-69bf-47cb-9e8e-efab2288804a" valueTypeId="32532b10-46e8-49d0-b9f6-ae00b65a8447"/>
+      <rowType typeId="aaf429e7-7698-4bf4-be96-4f6c6010e5cb" valueTypeId="89af56d9-51a8-4bf8-affd-f056790f7ba1"/>
+    </producedTypes>
+    <name>ИсходныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходные данные</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ed73a160-52d7-4334-845b-1026ec3dd4e7">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8d7386b1-f935-4a32-9ca2-9675476c4c81">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e28e4c81-fb31-4208-a320-e93a388643c2">
+      <name>Упаковка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Упаковка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Упаковка номенклатуры.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6e6b7fca-caf1-415d-a9e3-357e4355e479">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8bca0589-4ff7-4b5a-b4f7-52a6ce0473e3">
+    <producedTypes>
+      <objectType typeId="371ee48e-6ab2-4b2f-84cf-903bc4f2712b" valueTypeId="e9d5dbf9-d161-4692-b1aa-15b8119faefa"/>
+      <rowType typeId="fffbd0b8-b678-4c18-8427-85e4272d136f" valueTypeId="20e2ba61-ee5f-4fd5-a1e2-7f31339cf15d"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b778e308-5022-4c43-a617-4eb378a80616">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="71ac20dd-f18a-46e0-9123-38b5a88629f9">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="683da9f8-9cf5-4ce8-9e4b-b02ef47a803a">
+      <name>Упаковка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Упаковка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Упаковка номенклатуры.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f9456e53-7e39-4663-a0fb-eacf7b51ecea">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Цена номенклатурной позиции. </value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9bb83a49-85ac-48ef-abe1-7752d7e0f86d">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5e1bb10a-7619-429c-bbff-833aeef735ea">
+      <name>ШаблонЦенника</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон ценника</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fcf3e3da-a754-4895-a98f-a801f38325de">
+      <name>КоличествоЦенников</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество ценников</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество экземпляров этикеток(ценников), выводимых на печать.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6d8dfe61-94ce-4f80-aedc-af4a77fb2dfc">
+      <name>ШаблонЭтикетки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон этикетки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9d4a44e3-164d-4b26-ba6f-85725c1d8ada">
+      <name>КоличествоЭтикеток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество этикеток</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество экземпляров этикеток(ценников), выводимых на печать.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6870497d-6dfb-4f2f-8ee9-1fac6481195d">
+      <name>ОстатокНаСкладе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток на складе</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="29d32999-5635-4c6c-a8af-c77c78282224">
+      <name>КоличествоВДокументе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество в документе</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8ac37014-41fd-4d46-b8c1-aac370b2b6ff">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="848060ef-ac58-46e7-aeb5-f70c0d1849f2">
+    <name>ПоляШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля шаблона</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="fc5530a4-c0dc-4935-97a3-abc75ea30cca">
+    <name>ПоляШаблонаБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля шаблона БД</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b35c07e5-63ed-4b70-92cb-a225155d3b9f">
+    <name>КомпонентаПечатиШтрихкодовWindows32</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компонента печати штрихкодов windows32</value>
+    </synonym>
+    <comment>Компонента использует библиотеку ImageMagick, разработанную ImageMagick Studio LLC. Лицензия http://www.imagemagick.org/script/license.php</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="300c1ab1-abd6-477f-ab20-e287482102d0">
+    <name>КомпонентаПечатиШтрихкодовWindows64</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компонента печати штрихкодов windows64</value>
+    </synonym>
+    <comment>Компонента использует библиотеку ImageMagick, разработанную ImageMagick Studio LLC. Лицензия http://www.imagemagick.org/script/license.php</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="39942d6d-e5c1-4925-9f48-a23422767de7">
+    <name>КомпонентаПечатиШтрихкодовLinux32</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компонента печати штрихкодов linux32</value>
+    </synonym>
+    <comment>Компонента использует библиотеку ImageMagick, разработанную ImageMagick Studio LLC. Лицензия http://www.imagemagick.org/script/license.php</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9f2cdf23-77b0-422d-b64c-3de1362344b9">
+    <name>КомпонентаПечатиШтрихкодовLinux64</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компонента печати штрихкодов linux64</value>
+    </synonym>
+    <comment>Компонента использует библиотеку ImageMagick, разработанную ImageMagick Studio LLC. Лицензия http://www.imagemagick.org/script/license.php</comment>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c943501-277e-4ffe-a31e-aad34f652178">
+  <producedTypes>
+    <refType typeId="ffee72e6-3242-4cd5-8acd-96261529e9f5" valueTypeId="1bfbf7c9-4925-4e72-9c71-8cc57d117b4d"/>
+    <listType typeId="98d8d241-d121-478e-93f5-b2f0589a677c" valueTypeId="397a2473-c2cc-46d0-a215-c9572c14f00a"/>
+    <managerType typeId="55b8915a-bb63-46ae-8d2c-b42d21446d62" valueTypeId="31f2f9f8-95b9-4324-877c-23778baee114"/>
+  </producedTypes>
+  <name>ВидыОперацийФормированияКоробки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций формирования коробки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="73414cc3-2cba-43c6-af9e-fe2478687d6c">
+    <name>НаОднуТочку</name>
+    <synonym>
+      <key>ru</key>
+      <value>На одну точку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c4c8075-345e-42ff-916a-d7c8dd221fa1">
+    <name>КРазбору</name>
+    <synonym>
+      <key>ru</key>
+      <value>К разбору (на разные точки через транзит)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8cab67ac-b239-477b-b57d-85fb57fa6132">
+  <name>СП_КорректеровкаПроведенных</name>
+  <synonym>
+    <key>ru</key>
+    <value>С п корректеровка проведенных</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Приходная</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.СП_ПодпискиНаСобытия.СП_КорректеровкаПроведенныхПередЗаписью</handler>
+</mdclass:EventSubscription>

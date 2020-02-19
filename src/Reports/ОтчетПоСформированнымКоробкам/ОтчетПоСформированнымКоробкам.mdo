@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38a03fc0-95e8-490d-873e-f903ef8bb42a">
+  <producedTypes>
+    <objectType typeId="4298415c-4601-4685-96f6-fb7697747425" valueTypeId="705bad4e-78e4-4dc7-894f-6548a587d82e"/>
+    <managerType typeId="97cec23f-5ecd-4cc5-b7cb-bdafbbddbf94" valueTypeId="8dbb002e-b899-46ec-a153-abe630dafa20"/>
+  </producedTypes>
+  <name>ОтчетПоСформированнымКоробкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по сформированным коробкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоСформированнымКоробкам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Отчет по коробкам (групповым стикерам) , котроые сформированны на пункте выдачи.</value>
+  </explanation>
+  <templates uuid="e4a7bf89-eb13-430c-a46e-574e97797bb3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://dpd.ru/ws/order2/2012-04-04"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="0"
+		xmlns:xsd2="http://dpd.ru/ws/order2/2012-04-04"
+		name="DPDOrderService"
+		targetNamespace="http://dpd.ru/ws/order2/2012-04-04">
+	<types>
+		<xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:tns="0"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsp="http://www.w3.org/ns/ws-policy"
+				xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+				targetNamespace="0">
+			<xsd:import namespace="http://dpd.ru/ws/order2/2012-04-04"
+					schemaLocation="file://1.xsd"/>
+		</xsd:schema>
+	</types>
+	<message name="createOrderResult">
+		<part name="parameters"
+				element="tns:createOrderResult"/>
+	</message>
+	<message name="createOrderResultResponse">
+		<part name="parameters"
+				element="tns:createOrderResultResponse"/>
+	</message>
+	<message name="WSFault">
+		<part name="fault"
+				element="tns:WSFault"/>
+	</message>
+	<message name="changeDeliveryDate">
+		<part name="parameters"
+				element="tns:changeDeliveryDate"/>
+	</message>
+	<message name="changeDeliveryDateResponse">
+		<part name="parameters"
+				element="tns:changeDeliveryDateResponse"/>
+	</message>
+	<message name="getOrderSMS">
+		<part name="parameters"
+				element="tns:getOrderSMS"/>
+	</message>
+	<message name="getOrderSMSResponse">
+		<part name="parameters"
+				element="tns:getOrderSMSResponse"/>
+	</message>
+	<message name="cancelOrder">
+		<part name="parameters"
+				element="tns:cancelOrder"/>
+	</message>
+	<message name="cancelOrderResponse">
+		<part name="parameters"
+				element="tns:cancelOrderResponse"/>
+	</message>
+	<message name="addAirwayBill">
+		<part name="parameters"
+				element="tns:addAirwayBill"/>
+	</message>
+	<message name="addAirwayBillResponse">
+		<part name="parameters"
+				element="tns:addAirwayBillResponse"/>
+	</message>
+	<message name="createOrder">
+		<part name="parameters"
+				element="tns:createOrder"/>
+	</message>
+	<message name="createOrderResponse">
+		<part name="parameters"
+				element="tns:createOrderResponse"/>
+	</message>
+	<message name="changeUnitLoad">
+		<part name="parameters"
+				element="tns:changeUnitLoad"/>
+	</message>
+	<message name="changeUnitLoadResponse">
+		<part name="parameters"
+				element="tns:changeUnitLoadResponse"/>
+	</message>
+	<message name="orderReDirect">
+		<part name="parameters"
+				element="tns:orderReDirect"/>
+	</message>
+	<message name="orderReDirectResponse">
+		<part name="parameters"
+				element="tns:orderReDirectResponse"/>
+	</message>
+	<message name="createOrderAsync">
+		<part name="parameters"
+				element="tns:createOrderAsync"/>
+	</message>
+	<message name="createOrderAsyncResponse">
+		<part name="parameters"
+				element="tns:createOrderAsyncResponse"/>
+	</message>
+	<message name="getOrderStatus">
+		<part name="parameters"
+				element="tns:getOrderStatus"/>
+	</message>
+	<message name="getOrderStatusResponse">
+		<part name="parameters"
+				element="tns:getOrderStatusResponse"/>
+	</message>
+	<message name="getInvoiceFile">
+		<part name="parameters"
+				element="tns:getInvoiceFile"/>
+	</message>
+	<message name="getInvoiceFileResponse">
+		<part name="parameters"
+				element="tns:getInvoiceFileResponse"/>
+	</message>
+	<message name="addParcels">
+		<part name="parameters"
+				element="tns:addParcels"/>
+	</message>
+	<message name="addParcelsResponse">
+		<part name="parameters"
+				element="tns:addParcelsResponse"/>
+	</message>
+	<message name="removeParcels">
+		<part name="parameters"
+				element="tns:removeParcels"/>
+	</message>
+	<message name="removeParcelsResponse">
+		<part name="parameters"
+				element="tns:removeParcelsResponse"/>
+	</message>
+	<message name="createAddress">
+		<part name="parameters"
+				element="tns:createAddress"/>
+	</message>
+	<message name="createAddressResponse">
+		<part name="parameters"
+				element="tns:createAddressResponse"/>
+	</message>
+	<message name="updateAddress">
+		<part name="parameters"
+				element="tns:updateAddress"/>
+	</message>
+	<message name="updateAddressResponse">
+		<part name="parameters"
+				element="tns:updateAddressResponse"/>
+	</message>
+	<message name="getRegisterFile">
+		<part name="parameters"
+				element="tns:getRegisterFile"/>
+	</message>
+	<message name="getRegisterFileResponse">
+		<part name="parameters"
+				element="tns:getRegisterFileResponse"/>
+	</message>
+	<portType name="DPDOrder">
+		<operation name="createOrderResult">
+			<input name="createOrderResultRequest"
+					message="tns:createOrderResult"/>
+			<output name="createOrderResultResponse"
+					message="tns:createOrderResultResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="changeDeliveryDate">
+			<input name="changeDeliveryDateRequest"
+					message="tns:changeDeliveryDate"/>
+			<output name="changeDeliveryDateResponse"
+					message="tns:changeDeliveryDateResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="getOrderSMS">
+			<input name="getOrderSMSRequest"
+					message="tns:getOrderSMS"/>
+			<output name="getOrderSMSResponse"
+					message="tns:getOrderSMSResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="cancelOrder">
+			<input name="cancelOrderRequest"
+					message="tns:cancelOrder"/>
+			<output name="cancelOrderResponse"
+					message="tns:cancelOrderResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="addAirwayBill">
+			<input name="addAirwayBillRequest"
+					message="tns:addAirwayBill"/>
+			<output name="addAirwayBillResponse"
+					message="tns:addAirwayBillResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="createOrder">
+			<input name="createOrderRequest"
+					message="tns:createOrder"/>
+			<output name="createOrderResponse"
+					message="tns:createOrderResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="changeUnitLoad">
+			<input name="changeUnitLoadRequest"
+					message="tns:changeUnitLoad"/>
+			<output name="changeUnitLoadResponse"
+					message="tns:changeUnitLoadResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="orderReDirect">
+			<input name="orderReDirectRequest"
+					message="tns:orderReDirect"/>
+			<output name="orderReDirectResponse"
+					message="tns:orderReDirectResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="createOrderAsync">
+			<input name="createOrderAsyncRequest"
+					message="tns:createOrderAsync"/>
+			<output name="createOrderAsyncResponse"
+					message="tns:createOrderAsyncResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="getOrderStatus">
+			<input name="getOrderStatusRequest"
+					message="tns:getOrderStatus"/>
+			<output name="getOrderStatusResponse"
+					message="tns:getOrderStatusResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="getInvoiceFile">
+			<input name="getInvoiceFileRequest"
+					message="tns:getInvoiceFile"/>
+			<output name="getInvoiceFileResponse"
+					message="tns:getInvoiceFileResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="addParcels">
+			<input name="addParcelsRequest"
+					message="tns:addParcels"/>
+			<output name="addParcelsResponse"
+					message="tns:addParcelsResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="removeParcels">
+			<input name="removeParcelsRequest"
+					message="tns:removeParcels"/>
+			<output name="removeParcelsResponse"
+					message="tns:removeParcelsResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="createAddress">
+			<input name="createAddressRequest"
+					message="tns:createAddress"/>
+			<output name="createAddressResponse"
+					message="tns:createAddressResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="updateAddress">
+			<input name="updateAddressRequest"
+					message="tns:updateAddress"/>
+			<output name="updateAddressResponse"
+					message="tns:updateAddressResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+		<operation name="getRegisterFile">
+			<input name="getRegisterFileRequest"
+					message="tns:getRegisterFile"/>
+			<output name="getRegisterFileResponse"
+					message="tns:getRegisterFileResponse"/>
+			<fault name="WSFault"
+					message="tns:WSFault"/>
+		</operation>
+	</portType>
+	<binding name="DPDOrderPortBinding"
+			type="tns:DPDOrder">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="createOrderResult">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="changeDeliveryDate">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getOrderSMS">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="cancelOrder">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="addAirwayBill">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="createOrder">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="changeUnitLoad">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="orderReDirect">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="createOrderAsync">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getOrderStatus">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getInvoiceFile">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="addParcels">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="removeParcels">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="createAddress">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="updateAddress">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getRegisterFile">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+			<fault name="WSFault">
+				<soapbind:fault name="WSFault"
+						use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="DPDOrderService">
+		<port name="DPDOrderPort"
+				binding="tns:DPDOrderPortBinding">
+			<soapbind:address location="http://wstest.dpd.ru:80/services/order2"/>
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a800afe-1980-42b2-8264-6de69bfb08ac">
+  <producedTypes>
+    <refType typeId="ad43ea64-588c-411f-9fba-d6617adff189" valueTypeId="130181a2-8fa8-4d0c-bb5b-3fdb6e88376f"/>
+    <listType typeId="840e0f7c-8e4b-48b2-a041-789757153c7d" valueTypeId="d1e03ac2-f39f-4d1a-818a-da131e9c6c0b"/>
+    <managerType typeId="09f52412-6fa5-4b5b-8044-9e3246cbe14f" valueTypeId="109157fb-f8b3-4467-8329-5ade4b5141ba"/>
+  </producedTypes>
+  <name>СтатусыВыдачиПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы выдачи покупок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="885f6e7a-0ae2-45d7-b376-995c973aa022">
+    <name>ОжиданиеСборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание сборки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9675cde5-92da-4e0f-af32-e5cdaeaa9f10">
+    <name>ВСборке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В сборке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a5051754-c224-4ea7-bfaf-8b9b8bf7a38d">
+    <name>Собран</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собран</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="417414c1-a91d-4d53-977b-222cefec8310">
+    <name>Выдан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдан</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

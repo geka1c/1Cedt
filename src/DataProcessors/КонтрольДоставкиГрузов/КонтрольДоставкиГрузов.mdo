@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab57d81d-496e-4aaf-9c80-102badf7207b">
+  <producedTypes>
+    <objectType typeId="58538200-5686-4b59-a71c-7f54535dd10a" valueTypeId="8e7a430c-6a94-4ebd-ba20-5e779c428ac1"/>
+    <managerType typeId="4d40f221-91a3-4f96-8ef1-926f95a57fd1" valueTypeId="eec65358-b9d6-4fda-bcba-68f44e467e57"/>
+  </producedTypes>
+  <name>КонтрольДоставкиГрузов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль доставки грузов</value>
+  </synonym>
+  <defaultForm>DataProcessor.КонтрольДоставкиГрузов.Form.ФормаСЗакладками</defaultForm>
+  <tabularSections uuid="a0947f93-de56-4727-8bcc-14d77ba02c4c">
+    <producedTypes>
+      <objectType typeId="e8d84440-df05-4bea-83cb-7cea2a1f4a50" valueTypeId="acc92f22-9ac5-40ae-9446-16ce7202d240"/>
+      <rowType typeId="f122e24c-6e0e-42d2-bf97-b07d31ecdcdc" valueTypeId="6e8dcfb2-c2fd-49be-a949-b3defc3cb899"/>
+    </producedTypes>
+    <name>Корзина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корзина</value>
+    </synonym>
+    <attributes uuid="786f27b5-9838-4ec4-906d-525c8455bdaa">
+      <name>Груз</name>
+      <synonym>
+        <key>ru</key>
+        <value>Груз</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Коробки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aeed3e4c-e978-443a-bcf9-44cb54b69d13">
+      <name>Статус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СтатусыОтправкиГруза</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fbf463d8-a466-4840-96bd-242029325133">
+      <name>ДатаСтатуса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата статуса</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c03293ab-25e0-4b5a-88ea-a61f51224242">
+      <name>ТочкаНазначения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Точка назначения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТочкиРаздачи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="0f7ddf95-6bac-4ddd-87df-96edbd59e2f8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eb420794-0dc1-4069-aea6-3a2b2bdcd59f">
+    <name>ФормаСЗакладками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма с закладками</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee8de6a7-6074-41b8-9622-ff4eb658c840">
+    <name>ФормаРасшифровкиКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки календаря</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c510e2a6-1c75-47e3-a304-a6d50deea466">
+    <name>ФормаСЗакладкамиOld</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма с закладками old</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b7896cf9-ddf8-4ed8-91f6-2a386ebda43c">
+    <name>ФормаРасшифровкиКалендаряOld</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки календаря old</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3bb4b97a-86d0-4e8d-b1f0-b22ae774b779">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="1cab0f65-cca5-470b-8e80-73d341b88af4">
+    <name>КонтрольДоставкиГрузов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль доставки грузов</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

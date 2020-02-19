@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2629ea54-383b-45dd-9698-f74122567880">
+  <producedTypes>
+    <objectType typeId="3837e9f9-1b65-415a-954d-292d430aa82e" valueTypeId="951bf2e8-a9ac-4696-b9f2-5b3363390a64"/>
+    <managerType typeId="c165f5b9-d0d2-4b24-ab2b-d8993f6e641e" valueTypeId="2d9c7e0e-be39-4cb0-8c07-ddc515e09749"/>
+  </producedTypes>
+  <name>ОтчетЗаДеньNew</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет за день(new)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетЗаДеньNew.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="53c2420a-f00e-4e1b-8601-c4a36922771e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

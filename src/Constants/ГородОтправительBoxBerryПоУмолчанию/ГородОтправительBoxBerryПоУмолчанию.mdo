@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc1b4a89-63b8-4f76-bc5d-b422f074609f">
+  <producedTypes>
+    <managerType typeId="81142d23-cecc-42e9-b7c2-1e0fdb19afa7" valueTypeId="da7c645f-89ea-4671-b003-386ade872d85"/>
+    <valueManagerType typeId="ee545a73-6373-4e9d-8652-c5faf164f552" valueTypeId="1ae45068-b4e9-4f5c-8b2a-41d126b5079e"/>
+    <valueKeyType typeId="aa4f3b1b-07e1-580f-ba2b-a31498b18b36" valueTypeId="40fe3326-5c26-5057-8786-a236a8caf226"/>
+  </producedTypes>
+  <name>ГородОтправительBoxBerryПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Город отправитель box berry по умолчанию</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ГородаBoxBerry</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

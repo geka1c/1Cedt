@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2975b6e9-f904-471b-93e9-626a8216b6f6">
+  <producedTypes>
+    <objectType typeId="6ca859f5-5e12-4b9c-84e2-1e4000e88bbb" valueTypeId="3baf627e-7352-46a5-b4d7-2204c9455899"/>
+    <managerType typeId="ff300d86-ef45-499d-8e09-16dd6ed24a66" valueTypeId="84570272-9793-48cd-9df2-740d12771e7a"/>
+  </producedTypes>
+  <name>КонсольСистемыКомпоновкиДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль системы компоновки данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КонсольСистемыКомпоновкиДанных.Form.Форма</defaultForm>
+  <mainDataCompositionSchema>Report.КонсольСистемыКомпоновкиДанных.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="46a8420d-50a4-4e52-8afb-7e54119d6923">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="256d2e1a-d47b-4320-9de7-9bb11996b15b">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d7a93541-efbd-485c-9e52-22ad51331a21">
+    <name>ФормаВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма варианта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="39c2996a-ee57-4c42-bf4f-e9969990c0e1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

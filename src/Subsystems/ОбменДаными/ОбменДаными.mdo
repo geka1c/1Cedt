@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70554fb6-8095-481e-a4de-0d74daaa4a1b">
+  <name>ОбменДаными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен даными</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.ExchangePlan</picture>
+  </picture>
+  <content>DataProcessor.ВыгрузкаНаСайт</content>
+  <content>DataProcessor.ЗагрузкаССайта</content>
+  <content>DataProcessor.СверкаОбменов</content>
+  <content>CommonModule.аСПОбменССайтом</content>
+  <content>CommonModule.аСПОбменССайтомСервер</content>
+  <content>InformationRegister.ОтправленныеДокументы</content>
+  <content>Document.ПакетНаСайт</content>
+  <content>InformationRegister.ОбменССайтом</content>
+  <content>ExchangePlan.РИБ</content>
+  <content>Document.ЗапросАдресов</content>
+  <content>CommonModule.МенеджерОбменаЧерезУниверсальныйФормат</content>
+  <content>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</content>
+  <content>CommonCommand.НастройкиСинхронизацииДанных</content>
+  <content>CommonModule.спМенеджерОбменаЧерезУниверсальныйФормат</content>
+  <content>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</content>
+  <content>Document.ЗапросыГруппДоставки</content>
+  <content>DataProcessor.ГуглДиск</content>
+  <content>Catalog.ТранспортныеКомпании</content>
+  <subsystems>ПочтаРоссии</subsystems>
+  <subsystems>СП</subsystems>
+  <subsystems>ЧатСП</subsystems>
+  <subsystems>ДеловыеЛинии</subsystems>
+  <subsystems>DPD</subsystems>
+</mdclass:Subsystem>

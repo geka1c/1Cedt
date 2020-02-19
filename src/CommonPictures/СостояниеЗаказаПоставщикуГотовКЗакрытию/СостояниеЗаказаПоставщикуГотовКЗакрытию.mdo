@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80e50a0d-c27e-4fae-a353-1f740361cfe7">
+  <name>СостояниеЗаказаПоставщикуГотовКЗакрытию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние заказа поставщику готов к закрытию</value>
+  </synonym>
+</mdclass:CommonPicture>

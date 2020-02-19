@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c4c8e0d-0956-4634-ac60-d48ffdbc36e3">
+  <producedTypes>
+    <managerType typeId="8e40e96b-f6eb-4543-9b54-928e6f978e99" valueTypeId="5fc3a0eb-9ad9-43b5-a7d9-9ab0e93f803d"/>
+    <valueManagerType typeId="f813e164-3a5a-4d7f-8826-580e44a3da64" valueTypeId="5a2d6e70-fe78-470f-bd75-f3b9457aaeb0"/>
+    <valueKeyType typeId="61e15585-a2ae-5792-88cc-fc134b7ced78" valueTypeId="b1a63cee-c16f-53ad-93a4-e5955033baa6"/>
+  </producedTypes>
+  <name>passw</name>
+  <synonym>
+    <key>ru</key>
+    <value>Passw</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>20</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

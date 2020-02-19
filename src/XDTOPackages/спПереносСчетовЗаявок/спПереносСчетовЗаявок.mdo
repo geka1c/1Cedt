@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1897fc68-9ad7-4124-af79-5386b843fd77">
+  <name>спПереносСчетовЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>СП перенос счетов заявок</value>
+  </synonym>
+  <namespace>http://www.100sp.ru/1.0.0</namespace>
+</mdclass:XDTOPackage>

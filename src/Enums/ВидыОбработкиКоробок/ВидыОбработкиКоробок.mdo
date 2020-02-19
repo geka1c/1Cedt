@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0dd1ceff-7ff3-41fa-b279-a6324a7f3650">
+  <producedTypes>
+    <refType typeId="26d4a2c9-9945-45d8-9550-34f42a3908e2" valueTypeId="eed25c8b-7617-4da6-ac43-a6deee10dd0e"/>
+    <listType typeId="c6876896-49d4-4c09-87b3-41eeb0624668" valueTypeId="70c974de-9aff-4622-81c0-78adb6f406c1"/>
+    <managerType typeId="6616b1a0-56f2-43b1-9f6f-9a0fe576698f" valueTypeId="6d23db81-cc73-4ab2-8238-42e296905a78"/>
+  </producedTypes>
+  <name>ВидыОбработкиКоробок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды обработки коробок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="209a09af-7110-468f-b052-a5f8f0b78fb6">
+    <name>ПостановкаВОчередь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Постановка в очередь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0a5bbf59-bf45-428d-82f6-9536490395cf">
+    <name>РазборКоробок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разбор коробок</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

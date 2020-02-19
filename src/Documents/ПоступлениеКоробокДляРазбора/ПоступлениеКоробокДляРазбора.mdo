@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2bdc970-ae7e-4efe-8cbc-80e315a57b24">
+  <producedTypes>
+    <objectType typeId="7102c653-042b-4d61-b197-db21f7fbb4ec" valueTypeId="2dcfb5ad-8836-4954-8201-df173641fafc"/>
+    <refType typeId="f05f8cfa-5d8c-47af-b4a9-4f622c8afc1f" valueTypeId="3d1d53cd-dda2-40c1-be19-e66d44e72d28"/>
+    <selectionType typeId="09515292-de32-413c-86a5-7d3c7ff9ba78" valueTypeId="536a2010-deb9-495a-a2fc-666c4a7d8603"/>
+    <listType typeId="e9d6eac8-e8cb-4564-bccd-ab89e6785b28" valueTypeId="27295edb-9001-4181-9185-3ea650d24837"/>
+    <managerType typeId="feeaab26-ec87-410e-8330-a2111655ce7b" valueTypeId="e538975c-32d5-4914-b453-8168a4356401"/>
+  </producedTypes>
+  <name>ПоступлениеКоробокДляРазбора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поступление коробок в очередь для разбора</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПоступлениеКоробокДляРазбора.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>12</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПоступлениеКоробокДляРазбора.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПоступлениеКоробокДляРазбора.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>InformationRegister.ОчередьРазбора</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="fdf552d6-2aab-4f86-9271-17a524cd4d29">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e7b672c-1441-43b6-8fe3-d52488a86fb7">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d3d4005-5c25-457c-977f-555caede86ce">
+    <name>Курьер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курьер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Курьеры</types>
+      <types>CatalogRef.Организаторы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ecec69a7-7e2b-48bf-8df7-6113144473cc">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c14ea5d1-6ab3-4173-80ef-7f4d45cd74cc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3cb29b74-dcb1-47a6-95d5-eae71b6b9b63">
+    <name>ФормаВводаШК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода ШК</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="df865dad-00c7-4610-8dd8-8f1d9f0669fe">
+    <producedTypes>
+      <objectType typeId="67e1027f-7b7d-4dd4-b74c-0a06d0c54cbd" valueTypeId="32d7df56-028d-48e9-9a10-4335879c804a"/>
+      <rowType typeId="bf0a613a-ff6c-4fcf-88f4-c873cb321689" valueTypeId="e7337224-5747-4028-99d9-728d14d90971"/>
+    </producedTypes>
+    <name>Коробки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробки</value>
+    </synonym>
+    <attributes uuid="f67a6c68-97bd-40a8-bbe1-9d1f773fb577">
+      <name>Коробка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коробка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Коробки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6c984e25-c15c-43ef-93e8-f95b8b4170ab">
+      <name>Предупреждение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предупреждение</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ПредупрежденияПрихода</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="89fb85cf-5775-4a97-9194-9c6b071d7732">
+    <name>Макет</name>
+  </templates>
+  <commands uuid="5282eec9-5d1a-495a-b256-6e8ff866767d">
+    <name>Чек</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ПоступлениеКоробокДляРазбора</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.PrintImmediately</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>

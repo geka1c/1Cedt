@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba494ef0-e268-4170-b57e-15e27ce473a5">
+  <producedTypes>
+    <managerType typeId="b3501011-a1d5-46ef-b0d2-2a0b7c98d637" valueTypeId="0fb6c31c-ee07-4f81-9ebb-4128342dbeba"/>
+    <valueManagerType typeId="59eb7817-8d97-44de-91ce-b4d2c08a9836" valueTypeId="522dea93-97f4-4b12-8dea-e58a964b9630"/>
+    <valueKeyType typeId="0141e741-1807-44ef-9ad9-edc3d5dd0efc" valueTypeId="de1ca904-5933-48be-93a8-6586dc026b35"/>
+  </producedTypes>
+  <name>ПоказыватьШтрихкодВРасходной</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать штрихкод в расходной</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

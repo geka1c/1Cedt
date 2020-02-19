@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20a45d6f-6fd9-4fcd-8502-e06e62dcee31">
+  <producedTypes>
+    <selectionType typeId="f6527e62-f8a7-4169-8863-696f605e4d36" valueTypeId="edf681b2-9517-4695-9bd6-6faad8592fca"/>
+    <listType typeId="f51c56fe-c0f6-4a55-a863-26d33d2079e8" valueTypeId="6486d00b-a48b-4068-adf4-b5e542114634"/>
+    <managerType typeId="450530ab-9e8b-4ba3-8322-16f9db7ad120" valueTypeId="1e2ba6e8-ee4f-4051-a01b-21a31ec0aae8"/>
+    <recordSetType typeId="b1d2ab19-5978-49a9-933d-16bdb597b16b" valueTypeId="bdbda796-c2db-4e4b-aea4-7b0823d4c29a"/>
+    <recordKeyType typeId="e3dd80a9-eaea-4ec2-b5f3-f88c263e8086" valueTypeId="3f0d7f76-e257-475f-9cfe-eac5f33ae6bd"/>
+    <recordType typeId="e390b390-c13f-4dcc-bb52-19ee26fb779a" valueTypeId="fbfce78f-d1b8-4cfb-b4e3-fd48328bf954"/>
+  </producedTypes>
+  <name>Расход</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="194e9f9e-2231-40be-80df-3bdd2b7b8f35">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ec624e57-9c4a-4e43-9c78-3854d13b4e8c">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="29014749-e467-4397-897a-a09afe7cb10c">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Габариты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5d61bb9d-b335-4ac6-a7e9-b806d096f657">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТипыЗаказа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7702efd1-0e6a-49c6-a0a1-0d86ac416ca5">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a4f7ae49-0254-4eb3-a065-7dd0af217627">
+    <name>Списано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d3db90d5-0b19-4ec7-a444-239cd5a4c115">
+    <name>ТипРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип расхода</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипРасхода</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e97d8739-1a9f-4faa-b51a-950516c26323">
+    <name>БесплатнаяВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бесплатная выдача</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

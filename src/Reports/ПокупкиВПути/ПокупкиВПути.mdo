@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="502f14cb-454f-479b-8dc6-ba4c0cf98a41">
+  <producedTypes>
+    <objectType typeId="e7bdad9a-14ca-4a07-a53c-148db0549ff7" valueTypeId="cffe008f-bbf2-4978-82eb-78ed8c1c9c87"/>
+    <managerType typeId="99dfee6d-6ec3-4ca7-8783-96a8e0af7d46" valueTypeId="f43e6958-2da5-401f-941c-b671b1511dd9"/>
+  </producedTypes>
+  <name>ПокупкиВПути</name>
+  <synonym>
+    <key>ru</key>
+    <value>Покупки в пути</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПокупкиВПути.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Сопостовление заказов отправленных Транзитным пунктом выдачи, с принятыми заказами</value>
+  </explanation>
+  <templates uuid="ca4f7546-ae56-47a4-8d3a-a2d04385ec9d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

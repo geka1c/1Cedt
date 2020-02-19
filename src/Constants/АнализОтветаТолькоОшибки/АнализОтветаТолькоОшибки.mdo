@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a881fac2-0f3d-4a86-857b-41862487baf1">
+  <producedTypes>
+    <managerType typeId="bc32dfd8-8537-4772-bf89-5f282919ef8d" valueTypeId="55d6acb3-95bc-464d-9de2-48a5896d3ff8"/>
+    <valueManagerType typeId="246305c5-6c22-4d66-adf3-9ec39e25fd50" valueTypeId="bda9a5f8-64da-433b-9768-9a787c351068"/>
+    <valueKeyType typeId="5ff476e6-64e6-5748-84e7-b9e2f33d14f6" valueTypeId="faecd38c-edb1-5b22-aef0-b5e01b1ec5e8"/>
+  </producedTypes>
+  <name>АнализОтветаТолькоОшибки</name>
+  <synonym>
+    <key>ru</key>
+    <value>После выгрузки показывать ответ только на ошибочные записи</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

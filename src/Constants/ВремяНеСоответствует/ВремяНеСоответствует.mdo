@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="296a5289-0b13-4e52-a747-49504b079381">
+  <producedTypes>
+    <managerType typeId="46aa94ad-c063-439d-9544-b5b183415f5a" valueTypeId="37ce042c-a0fb-4b03-8e46-1b64e7d3a29e"/>
+    <valueManagerType typeId="cc5f21ec-7acd-4b49-af24-ccfc44f110c1" valueTypeId="06ac12e7-b22c-4e42-b19e-f8b7a0bb00d0"/>
+    <valueKeyType typeId="875e6176-104a-5554-b2dc-0a88025a2dd8" valueTypeId="e4600f51-14c3-549e-b5e4-6d877994bc94"/>
+  </producedTypes>
+  <name>ВремяНеСоответствует</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время не соответствует</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

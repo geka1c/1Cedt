@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0fa8ade-f94f-487e-947b-c6dc82352da4">
+  <producedTypes>
+    <objectType typeId="c0fc84d8-27cf-4457-9dfa-cbed284ee08a" valueTypeId="93feea8f-5e06-4149-aa0a-2b57a71400c3"/>
+    <managerType typeId="d10eece4-6863-4aae-96b0-377bbf0f37c9" valueTypeId="aae10a26-d73d-4302-96d6-0d52adacc9dc"/>
+  </producedTypes>
+  <name>ВедомостьТранзитовСРазвернутымиГруппами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость транзитов с развернутыми группами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВедомостьТранзитовСРазвернутымиГруппами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Вместо коробки (группового стикера) в отчете отображается состав группового стикера</value>
+  </explanation>
+  <templates uuid="ce993f99-7426-41ee-a0af-ec96e071246c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

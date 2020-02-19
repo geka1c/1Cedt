@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bc1b868-8f87-4d78-9561-6842a756f9db">
+  <producedTypes>
+    <managerType typeId="2957bdd4-87fd-4442-ad43-1d7c8d4301c2" valueTypeId="546fc6b9-dbfe-449b-ad95-1e00160cc1d1"/>
+    <valueManagerType typeId="23a69f53-f0d4-4a4c-af4e-d4350a9574eb" valueTypeId="edf991af-cc27-4170-90b9-cf49885fc13b"/>
+    <valueKeyType typeId="e0c2c5a6-c580-5edf-b56d-eb9cfa47f610" valueTypeId="6871a5e5-6fc9-50d8-9dc1-bb5ee6d13a53"/>
+  </producedTypes>
+  <name>ПоискНикаСтоимость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск ника стоимость</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

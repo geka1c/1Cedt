@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fbe5e3f-9c56-4f16-b7b6-7ada36a54139">
+  <producedTypes>
+    <managerType typeId="a993f6ca-382b-4673-9169-e4cf9f7e9066" valueTypeId="35212673-5250-45c7-9cfe-d00524256795"/>
+    <valueManagerType typeId="8605a40d-59a7-4a3b-a214-ac8245766e83" valueTypeId="f505f62e-48cc-4be9-911d-45a61c468dff"/>
+    <valueKeyType typeId="d007485b-592c-5803-bff9-29e083171163" valueTypeId="a5b5cb5d-8898-556e-b575-2719ccfc28b8"/>
+  </producedTypes>
+  <name>ФлагОрганизаторОплачиваетРазборДоступность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флаг организатор оплачивает разбор доступность</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="efa03b81-5356-4c6e-b095-570e2244d607">
+  <producedTypes>
+    <managerType typeId="5e42b134-5cbe-41fb-a398-9c443943cb88" valueTypeId="08b886e8-40ec-4a1f-8acc-b6fe70d3760f"/>
+    <valueManagerType typeId="0407a250-ec9e-40b6-9769-e0eaf15f1fde" valueTypeId="06b6fcff-814d-4c83-96e0-fc19829e3a98"/>
+    <valueKeyType typeId="845b4b52-7e65-5167-abca-e4195a875aed" valueTypeId="b0530de7-4b22-539c-ae6f-3f324191402a"/>
+  </producedTypes>
+  <name>ПунктПриемаBoxBerryПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пункт приема box berry по умолчанию</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ПунктыВыдачиBoxBerry</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

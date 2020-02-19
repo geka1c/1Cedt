@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96895ea5-3238-407e-bd97-aa804207e149">
+  <producedTypes>
+    <objectType typeId="afee8f7c-e689-4774-8ccf-3634225e7e69" valueTypeId="53686c68-8ffd-4711-b6cb-8c0bb245c0be"/>
+    <managerType typeId="6227eab6-1510-4ea2-a871-a041ec1909ef" valueTypeId="5b60232e-23d5-4d4b-a56b-03e58cea7521"/>
+  </producedTypes>
+  <name>КалендарьСупергрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь супергрупп</value>
+  </synonym>
+  <defaultForm>DataProcessor.КалендарьСупергрупп.Form.Форма</defaultForm>
+  <attributes uuid="eccc4f37-8295-407a-8efd-ead419bc9751">
+    <name>Отправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d706b2a6-90c3-4383-84dd-8958a596e4e5">
+    <name>Получатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="73e27cd3-2c84-4357-92c7-8fd8955a742f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="402d488f-c6f3-43ed-a03e-d6226018d1b4">
+    <name>РасшифровкаКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка календаря</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2a4e8701-69d1-4b79-9818-eb0684314228">
+    <name>КалендарьСупергрупп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь супергрупп</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

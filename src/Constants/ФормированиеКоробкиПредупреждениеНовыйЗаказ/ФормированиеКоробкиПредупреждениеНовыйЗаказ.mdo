@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfcc4e53-8b48-4ea7-9a36-353aa9170c88">
+  <producedTypes>
+    <managerType typeId="ccfa0e5c-b6da-403c-aeed-8988739e46f1" valueTypeId="7886a381-bbe9-458f-857d-abb838fa20d8"/>
+    <valueManagerType typeId="cc573d9b-23df-44a7-bfe6-7139cea53a68" valueTypeId="7542b0ac-a19f-496c-b963-f35879da658d"/>
+    <valueKeyType typeId="c350644d-1c8b-55da-9e69-9717cd0cb749" valueTypeId="0c76cb11-b22c-5309-b2db-0dfaeda9594a"/>
+  </producedTypes>
+  <name>ФормированиеКоробкиПредупреждениеНовыйЗаказ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование коробки предупреждение новый заказ</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

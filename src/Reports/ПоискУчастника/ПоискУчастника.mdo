@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebb6d3ba-7cc3-477d-9737-4bd2f8a2fb28">
+  <producedTypes>
+    <objectType typeId="4c6f33bf-5809-461e-899c-994dac6c3932" valueTypeId="7559f9b7-8c53-4035-b8ec-c5f6958ab16d"/>
+    <managerType typeId="1e1babe7-b47f-4da1-92ae-a701e934f07e" valueTypeId="f452536f-0c8f-448a-8a6b-8a55518f9e87"/>
+  </producedTypes>
+  <name>ПоискУчастника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск участника</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПоискУчастника.Form.ФормаОтчета</defaultForm>
+  <tabularSections uuid="e06e6abe-e778-47e1-8975-eee6cd3dffba">
+    <producedTypes>
+      <objectType typeId="85e19890-7437-4b76-800a-35654e60810d" valueTypeId="cd5abd2e-bc95-4682-8c2b-f0e1d9c9bcfd"/>
+      <rowType typeId="0cefbbc5-35c9-4503-8727-6d0cab836c4f" valueTypeId="36f1081a-c8cf-43c2-9fa5-5b97b8444092"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть1</name>
+  </tabularSections>
+  <forms uuid="c289433c-e9fc-41c5-b70f-6817a33c3016">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b4c93829-b3aa-4f3b-834d-3a83b751420c">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

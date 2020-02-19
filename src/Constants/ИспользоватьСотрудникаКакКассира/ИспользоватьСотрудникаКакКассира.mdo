@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef11c686-4db8-42c8-a87a-2cd533fc2b9a">
+  <producedTypes>
+    <managerType typeId="e9af7e81-f333-4d05-b4fc-13023948a4cb" valueTypeId="22686fe4-69d6-4484-b1e6-a1560f968ce9"/>
+    <valueManagerType typeId="e9704d8a-77d8-4fe9-8c17-c65491c13977" valueTypeId="9399fb88-34f7-4b11-b749-1eea07c2c178"/>
+    <valueKeyType typeId="6f4f2e45-594a-4976-ab62-4c31de58feb4" valueTypeId="8c53601b-1f19-4b51-aff7-7392d6fff7f2"/>
+  </producedTypes>
+  <name>ИспользоватьСотрудникаКакКассира</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать сотрудника как кассира</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>В фискальном чеке  указывается в качестве Кассира сотрудник выдающий заказы (Сотрудник определяется по ШК). Если настройка не включена лбо сотрудник в документе выдачи не указан касссир берется из организации</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

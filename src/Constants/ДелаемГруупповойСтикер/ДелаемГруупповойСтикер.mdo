@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46cbfb1f-0c92-46c0-b764-d0bc3df9e940">
+  <producedTypes>
+    <managerType typeId="c9c4d96c-e460-4594-b7a1-1383fcbd4add" valueTypeId="1a091062-73dc-4e3d-921a-7fe22817d80d"/>
+    <valueManagerType typeId="d16834a7-609f-416b-bfc6-aef796de05ce" valueTypeId="75a031d9-dc4e-41a6-b5b6-2edc195095a2"/>
+    <valueKeyType typeId="ac063f1f-92f3-5522-bdbe-aff62c2a6b80" valueTypeId="18bc5a43-1333-5f85-9433-60e0459dc00a"/>
+  </producedTypes>
+  <name>ДелаемГруупповойСтикер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Делаем груупповой стикер</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>При разборе коробок транзитные заказы не приходуются на транзит, а просто пропикиваются для чека. Далее из них формируется групповой стикер на сайте и он уже приходуется на транзит.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

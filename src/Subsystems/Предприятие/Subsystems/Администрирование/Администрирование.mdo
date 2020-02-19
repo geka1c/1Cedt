@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a36a9c9-5c7f-4c39-992b-06a5b07d6d2f">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ПодключаемоеОборудование</content>
+  <content>Document.КорректировкаОстатков</content>
+  <content>CommonCommand.ЗапуститьВосстановлениеТранзита</content>
+  <content>Report.КонсольСистемыКомпоновкиДанных</content>
+  <content>CommonCommand.ЗагрузитьТочкиРаздачиССайта</content>
+  <content>CommonForm.остЗагрузкаИзХлс</content>
+  <content>CommonCommand.ЗагрузитьГородаСП</content>
+  <parentSubsystem>Subsystem.Предприятие</parentSubsystem>
+</mdclass:Subsystem>

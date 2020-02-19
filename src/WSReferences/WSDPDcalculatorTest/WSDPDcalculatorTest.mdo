@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d26d2f5e-3624-45ba-9902-c1756b4cc4b2">
+  <producedTypes>
+    <managerType typeId="6216ffcb-65d9-457c-a3d2-8cdb63e42ef0" valueTypeId="6097c2e0-c239-428c-9f36-98d94e319468"/>
+  </producedTypes>
+  <name>WSDPDcalculatorTest</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSDPDcalculator test</value>
+  </synonym>
+  <locationURL>http://wstest.dpd.ru/services/calculator2?wsdl</locationURL>
+</mdclass:WSReference>

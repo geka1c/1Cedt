@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72b033f2-864e-48b4-8461-19d02e355a21">
+  <producedTypes>
+    <selectionType typeId="6fa03403-8426-4968-bdc2-a61c532667d4" valueTypeId="5153d3d5-a842-45a6-8a48-0904d4b92f6f"/>
+    <listType typeId="59b2db70-b272-42ea-8cf3-7a5d1efb4b02" valueTypeId="1375e1d8-0f8f-4437-882a-4a3fef0d057e"/>
+    <managerType typeId="8586263a-acd1-4b74-9b7d-ae53b655797a" valueTypeId="add74b82-5e8f-49d9-928f-fb6a08e7f71f"/>
+    <recordSetType typeId="b2d6194d-704b-43f3-be58-cf1ec2a641d3" valueTypeId="e6f2c63e-1344-4ec6-be66-60fee06fcf21"/>
+    <recordKeyType typeId="df320720-6d3c-4abe-9bae-5a92545b69e8" valueTypeId="b2f1d4fa-bc73-4660-aa90-d145ab7cc08b"/>
+    <recordType typeId="b23ad570-0657-460c-81ea-86b53ca1807e" valueTypeId="fe8f3172-ae9b-4d78-abd4-d4492f01359a"/>
+    <recordManagerType typeId="fed605bf-e79d-4c50-b6c7-63d897ee4949" valueTypeId="9fc7567a-44e9-4418-8459-ccb84a68b226"/>
+  </producedTypes>
+  <name>Обмен100сп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен100сп</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="ebb14015-f924-434f-acaa-f20b09f1e4f2">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусОтпавкиНаСайт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="6939d4a6-b235-49d3-86f2-bbe8b52154dd">
+    <name>Ответ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="a418d96f-7283-4bbc-bbbe-053c569238d1">
+    <name>Мегаордер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мегаордер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Мегаордера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="98fdafe6-830a-47d4-8dd9-6ef2a04037df">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПартияДляОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6ceee5e0-a207-47ae-a468-13bc3bdca943">
+    <name>типОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип обмена</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбменов100сп</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

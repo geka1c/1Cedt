@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13b1c208-d146-469b-9aea-2592af88d5c7">
+  <producedTypes>
+    <refType typeId="3e1dcc39-c95e-4f88-a051-0138f45b712d" valueTypeId="7fbc37ff-5a78-4ffe-bfd4-7d4dced14ac3"/>
+    <listType typeId="963c5f38-f412-4d86-a967-e5123cfe61dd" valueTypeId="b710e08f-c082-46b2-8062-c6810aecc032"/>
+    <managerType typeId="0ca9ef57-d2bc-42af-8715-a874280cebbe" valueTypeId="d48de4b8-3e80-413a-a4f1-d36831660886"/>
+  </producedTypes>
+  <name>ФормыОплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формы оплаты</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="54a01db8-89e8-4425-8978-82b2b95a6b3f">
+    <name>Наличные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наличные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8c46f1db-095f-4958-acd4-616826912dc4">
+    <name>ПлатежнаяКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежная карта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="47ce3f70-7756-4d21-8f36-3fea6b289ba6">
+    <name>Кредит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кредит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eef1dbca-6072-4cd3-88ba-00c0c3085210">
+    <name>Сертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вес</dataPath>
+			<field>Вес</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПриема</dataPath>
+			<field>ДатаПриема</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СообщениеОшибки</dataPath>
+			<field>СообщениеОшибки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Отправлено</dataPath>
+			<field>Отправлено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Коробка</dataPath>
+			<field>Коробка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Посылка</dataPath>
+			<field>Посылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтдельнымМестом</dataPath>
+			<field>ОтдельнымМестом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>объем</dataPath>
+			<field>объем</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШК</dataPath>
+			<field>ШК</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоХранения</dataPath>
+			<field>МестоХранения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПунктВыдачи</dataPath>
+			<field>ПунктВыдачи</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РазборКоробкиПосылки.Ссылка,
+	РазборКоробкиПосылки.НомерСтроки,
+	РазборКоробкиПосылки.Посылка,
+	РазборКоробкиПосылки.ПунктВыдачи,
+	РазборКоробкиПосылки.МестоХранения,
+	РазборКоробкиПосылки.Габарит,
+	РазборКоробкиПосылки.ДатаПриема,
+	РазборКоробкиПосылки.Вес,
+	РазборКоробкиПосылки.объем,
+	РазборКоробкиПосылки.Коробка,
+	РазборКоробкиПосылки.ОтдельнымМестом,
+	РазборКоробкиПосылки.СообщениеОшибки,
+	РазборКоробкиПосылки.Отправлено,
+	РазборКоробкиПосылки.ШК
+ПОМЕСТИТЬ втСбор
+ИЗ
+	Документ.РазборКоробки.Посылки КАК РазборКоробкиПосылки
+ГДЕ
+	РазборКоробкиПосылки.Ссылка В (&amp;СписокДокументов)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РазборКоробкиГруппыНаТранзит.Ссылка,
+	РазборКоробкиГруппыНаТранзит.НомерСтроки,
+	РазборКоробкиГруппыНаТранзит.Коробка,
+	РазборКоробкиГруппыНаТранзит.ПунктВыдачи,
+	РазборКоробкиГруппыНаТранзит.МестоХранения,
+	РазборКоробкиГруппыНаТранзит.Габарит,
+	РазборКоробкиГруппыНаТранзит.ДатаПриема,
+	РазборКоробкиГруппыНаТранзит.Вес,
+	РазборКоробкиГруппыНаТранзит.объем,
+	NULL,
+	РазборКоробкиГруппыНаТранзит.ОтдельнымМестом,
+	РазборКоробкиГруппыНаТранзит.СообщениеОшибки,
+	РазборКоробкиГруппыНаТранзит.Отправлено,
+	РазборКоробкиГруппыНаТранзит.ШК
+ИЗ
+	Документ.РазборКоробки.ГруппыНаТранзит КАК РазборКоробкиГруппыНаТранзит
+ГДЕ
+	РазборКоробкиГруппыНаТранзит.Ссылка В (&amp;СписокДокументов)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПриходнаяПосылки.Ссылка,
+	ПриходнаяПосылки.НомерСтроки,
+	ПриходнаяПосылки.Посылка,
+	ПриходнаяПосылки.ПунктВыдачи,
+	ПриходнаяПосылки.МестоХранения,
+	ПриходнаяПосылки.Габарит,
+	ПриходнаяПосылки.ДатаПриема,
+	ПриходнаяПосылки.Вес,
+	ПриходнаяПосылки.объем,
+	NULL,
+	ПриходнаяПосылки.ОтдельнымМестом,
+	ПриходнаяПосылки.СообщениеОшибки,
+	ПриходнаяПосылки.Отправлено,
+	ПриходнаяПосылки.ШК
+ИЗ
+	Документ.Приходная.Посылки КАК ПриходнаяПосылки
+ГДЕ
+	ПриходнаяПосылки.Ссылка В (&amp;СписокДокументов)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПриходнаяПокупки.Ссылка,
+	ПриходнаяПокупки.НомерСтроки,
+	ПриходнаяПокупки.Покупка,
+	ПриходнаяПокупки.Ссылка.ПунктВыдачи,
+	ПриходнаяПокупки.МестоХранения,
+	ПриходнаяПокупки.Габарит,
+	ПриходнаяПокупки.ДатаПриема,
+	ПриходнаяПокупки.Вес,
+	ПриходнаяПокупки.объем,
+	NULL,
+	ПриходнаяПокупки.ОтдельнымМестом,
+	NULL,
+	NULL,
+	ПриходнаяПокупки.ШК
+ИЗ
+	Документ.Приходная.Покупки КАК ПриходнаяПокупки
+ГДЕ
+	ПриходнаяПокупки.Ссылка В (&amp;СписокДокументов)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втСбор.Ссылка,
+	втСбор.НомерСтроки,
+	втСбор.Посылка,
+	втСбор.ПунктВыдачи,
+	втСбор.МестоХранения,
+	втСбор.Габарит,
+	втСбор.ДатаПриема,
+	втСбор.Вес,
+	втСбор.объем,
+	втСбор.Коробка,
+	втСбор.ОтдельнымМестом,
+	втСбор.СообщениеОшибки,
+	втСбор.Отправлено,
+	втСбор.ШК
+ИЗ
+	втСбор КАК втСбор</query>
+	</dataSet>
+	<parameter>
+		<name>СписокДокументов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список документов</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Посылка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Посылка.Организатор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Посылка.ПерваяТочка.ГородСП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПунктВыдачи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МестоХранения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Коробка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Габарит</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПриема</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>b57c404e-0bd7-479d-83a5-12307281db89</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>48889dd8-ce32-4204-875b-c448137a7d7e</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>СписокДокументов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:Field"/>
+					<dcsset:userSettingID>9b7ed2da-e849-457c-8c23-8c03e532d6b0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаПриема</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>2f89e52e-d2f5-462e-a90b-17009a8ce0c0</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>e502a902-7325-49fe-bc5c-4a785c205bc5</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Ссылка</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:conditionalAppearance>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>e069d26e-449a-49a6-b1ba-73649ccd0d15</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

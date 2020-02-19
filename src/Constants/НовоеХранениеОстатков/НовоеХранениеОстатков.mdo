@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c87da14-e602-4be6-8106-6e002c05368f">
+  <producedTypes>
+    <managerType typeId="e0390fa4-bcee-445d-aaf7-c92d73127081" valueTypeId="a4a1a7b0-d0a4-4b20-82b9-7c95db6967ec"/>
+    <valueManagerType typeId="b48af8bc-5b56-4114-90e2-610d1db68dd5" valueTypeId="2b66b49a-23f1-46e5-b06a-e3799898ba91"/>
+    <valueKeyType typeId="95eb8e64-87aa-4509-a0cf-e46fabe9c77d" valueTypeId="e57f526b-48b6-477e-a54c-9939980622ff"/>
+  </producedTypes>
+  <name>НовоеХранениеОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Новое хранение остатков</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

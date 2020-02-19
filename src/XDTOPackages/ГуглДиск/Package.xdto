@@ -1,0 +1,43 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="https://www.googleapis.com">
+	<objectType name="fileList" ordered="false">
+		<property name="kind" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="incompleteSearch" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="https://www.googleapis.com" name="files" type="d3p1:fileList.files" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="fileList.files" ordered="false">
+		<property xmlns:d3p1="https://www.googleapis.com" name="file" type="d3p1:fileList.files.file" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="fileList.files.file">
+		<property name="kind" type="xs:string"/>
+		<property name="id" type="xs:string"/>
+		<property name="name" type="xs:string"/>
+		<property name="mimeType" type="xs:string"/>
+	</objectType>
+	<objectType name="sheetsList" ordered="false">
+		<property xmlns:d3p1="https://www.googleapis.com" name="sheets" type="d3p1:sheetsList.sheets" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="sheetsList.sheets" ordered="false">
+		<property xmlns:d3p1="https://www.googleapis.com" name="sheet" type="d3p1:sheetsList.sheets.sheet" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="sheetsList.sheets.sheet">
+		<property xmlns:d3p1="https://www.googleapis.com" name="properties" type="d3p1:sheetsList.sheets.sheet.properties" lowerBound="1" nillable="true" localName="propertiesZ"/>
+	</objectType>
+	<objectType name="sheetsList.sheets.sheet.properties">
+		<property name="sheetId" type="xs:string"/>
+		<property name="title" type="xs:string"/>
+		<property name="index" type="xs:string"/>
+		<property name="sheetType" type="xs:string"/>
+		<property xmlns:d3p1="https://www.googleapis.com" name="gridProperties" type="d3p1:sheetsList.sheets.sheet.properties.gridProperties" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="https://www.googleapis.com" name="tabColor" type="d3p1:sheetsList.sheets.sheet.tabColor" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="sheetsList.sheets.sheet.properties.gridProperties" ordered="false">
+		<property name="rowCount" type="xs:string"/>
+		<property name="columnCount" type="xs:string"/>
+		<property name="frozenRowCount" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="sheetsList.sheets.sheet.tabColor" ordered="false">
+		<property name="red" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="green" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="blue" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+	</objectType>
+</package>

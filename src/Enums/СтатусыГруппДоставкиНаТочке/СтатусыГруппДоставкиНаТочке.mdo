@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="338605d6-b052-47c0-8e53-0dc13c03fb68">
+  <producedTypes>
+    <refType typeId="b35f167f-f96d-4b75-96c9-0d5d2f80c3d1" valueTypeId="ff1c2cc9-8dc1-41bf-8713-332fbf7a914a"/>
+    <listType typeId="5ce7aa88-b036-4998-8cbe-b8ac0e74595a" valueTypeId="e2d66b16-33a5-471c-aa73-372706a98f62"/>
+    <managerType typeId="88ec17f8-1060-4e7e-982e-93ca19e272af" valueTypeId="e9ca6685-559e-450a-969e-0a2a151fe0ac"/>
+  </producedTypes>
+  <name>СтатусыГруппДоставкиНаТочке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы групп доставки на точке</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="03d1104a-93c9-4d34-bd15-214a3d7f8ca8">
+    <name>ЖдемОплату</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ждем оплату</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4a4be20d-318c-4c5e-a025-b4383033f218">
+    <name>ЖдемОтправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ждем отправление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f43f4f96-2f66-4722-aa75-0c3e2eac8015">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9faa234b-da1e-499b-9a42-2535688cff96">
+  <producedTypes>
+    <selectionType typeId="56a36596-9e0b-4bf7-a0c1-df218ec8710a" valueTypeId="05d4bc12-48aa-487d-bbf9-2d75324bd5b7"/>
+    <listType typeId="bbe6f440-ebc3-4761-891f-3a11635f0c6a" valueTypeId="c0376a2b-c2c4-42b2-8bbd-5989b25a988f"/>
+    <managerType typeId="38dec9fe-5094-437a-a82e-265d7cbbda29" valueTypeId="39f722a7-9b43-4d2b-a97e-15ab0f4a7ac5"/>
+    <recordSetType typeId="8746a3be-c0cc-41b3-a769-4e4e7b0de9a1" valueTypeId="38c5fc2f-ee6f-4e76-a36b-2d82ee6c224c"/>
+    <recordKeyType typeId="281996f6-9fea-4b93-b97d-db2ada2517f1" valueTypeId="66d33646-b8ca-49f2-baff-0e3920453391"/>
+    <recordType typeId="17698d40-60e4-4199-8d8b-d33932125cac" valueTypeId="3fb08347-a7c9-4b6f-a21e-5d1e5a2285b3"/>
+  </producedTypes>
+  <name>НеВыгруженноНаСайт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не выгруженно на сайт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="30834949-b993-438f-a54f-f542c46faea4">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="adf91d61-cb8d-4ffe-b427-b300ff259ec5">
+    <name>Посылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посылка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Посылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f9cbc50c-eda9-48df-9bc7-a454783152c8">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ec053b06-5ee7-4a84-ad7e-11e7e8cfc802">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Габариты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="dde7b1f9-1730-4284-b592-6d92a7a5d9f4">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="663349c4-180c-4e04-81a1-e3da987b0ce2">
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="41542ca2-1362-41f6-a9f3-fdf7e4c6dacc">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПартияДляОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

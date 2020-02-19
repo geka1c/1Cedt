@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dc80f4e-711f-4b2d-9547-cef4e95412fa">
+  <producedTypes>
+    <selectionType typeId="a06349b6-bac6-48a2-8482-f2d50195de1f" valueTypeId="4747c58f-93f9-419b-b79a-b5621cbcccbf"/>
+    <listType typeId="10e66191-7b70-4eae-92a6-245722acac11" valueTypeId="6fd2cc3d-fe90-4a0b-b16f-52749fb82464"/>
+    <managerType typeId="45f42477-7202-4208-ae16-764b04c8d14f" valueTypeId="0f803668-309a-437d-a8df-b03131585370"/>
+    <recordSetType typeId="522d0a6f-f646-4068-8019-155bae21533f" valueTypeId="1b93554d-3bfd-407c-8e5b-ab9720c9e0a0"/>
+    <recordKeyType typeId="e0772201-aec8-472d-bd4a-6db725928020" valueTypeId="2aa168cf-8ea2-43e6-a983-64dae878eb24"/>
+    <recordType typeId="7fb29f32-c237-4867-b2d3-fb0302d6c130" valueTypeId="24912214-8050-4f2e-ada5-4da29a006aba"/>
+    <recordManagerType typeId="c7ab3751-9661-42bb-9432-6c5f77530eee" valueTypeId="938dd498-a85e-46fe-8652-9b3baadad81d"/>
+  </producedTypes>
+  <name>СтоСП_ПосылкиЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто с п посылки заказа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c38acb6d-27f8-413c-b43b-dbfbcfb87858">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1c09ce9a-0bd5-4a13-9891-4129c360f0b2">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ТипыЗаказа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cf7ca94a-4564-4e3b-b1f4-e21d283ea546">
+    <name>Посылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посылка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Посылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8d795f70-934f-42a3-b219-92f4fb96388f">
+    <name>КодЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

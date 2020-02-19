@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d5ef515-4c8d-4e33-ad15-3b190b5915f2">
+  <producedTypes>
+    <selectionType typeId="e06f5033-8af5-4192-b70e-f30b401eb3fb" valueTypeId="ef614933-087e-4a44-96b0-b0671314412e"/>
+    <listType typeId="d1eaed1e-5260-4f7a-a472-5031ddef5ee4" valueTypeId="47dc9db2-9ca4-487e-be6a-b8cbb5a0c59f"/>
+    <managerType typeId="97c18645-62da-4bc4-8ccb-37163db563ab" valueTypeId="d5f90594-e42a-4249-9da8-3d37ae8b863e"/>
+    <recordSetType typeId="f1a682dc-df71-4034-8d93-275df9f456db" valueTypeId="bf80ea0b-3b4c-433e-a8e7-e5385089168f"/>
+    <recordKeyType typeId="8330b393-7d0c-4e76-9bcd-82e9051cc97a" valueTypeId="e181f73c-5f3e-4ad1-bee2-c55ad85d65ea"/>
+    <recordType typeId="59a04f1b-305a-4afe-a932-7ca92015d87e" valueTypeId="2a53db92-818b-4236-9d28-6abf83802709"/>
+    <recordManagerType typeId="cf1280b6-7dcf-4f2e-9293-05c2e4a787f3" valueTypeId="599e6e9b-b917-4144-83f6-0a894fceffab"/>
+  </producedTypes>
+  <name>УчастникиВГруппах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники в группах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="f7a890aa-102d-4ec8-9cb9-f444d3c358fc">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыУчастников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fd79a30a-1424-4a14-971a-27701b038877">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

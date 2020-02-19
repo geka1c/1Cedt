@@ -1,0 +1,150 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru">
+	<objectType name="bulletinOrder" ordered="false">
+		<property name="orderId" type="xs:integer"/>
+		<property name="bulletinName" type="xs:string"/>
+		<property name="distributorCode" type="xs:integer"/>
+		<property name="uid" type="xs:integer"/>
+		<property name="secureCode" type="xs:string" lowerBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="user" ordered="false">
+		<property name="id" type="xs:integer" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="bulletinOrder" type="d3p1:bulletinOrder" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="result" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors" open="true" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru" name="auth" type="d3p1:auth"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="dataByDates" type="d3p1:dataByDates" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="userBulletinOrders" type="d3p1:userBulletinOrders" lowerBound="0" nillable="true" fixed="false" form="Element"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="bulletinStickers" type="d3p1:bulletinStickers" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="incomes" type="d3p1:incomes" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroups" type="d3p1:superGroups_answer" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupReceipts" type="d3p1:superGroupReceipts" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="deliveryGroupTransitCode" type="d3p1:deliveryGroupTransitCode" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupStages" type="d3p1:superGroupStages_answer" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="distributors1" open="true" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru" name="auth" type="d3p1:auth"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="bulletinStickers" type="d3p1:bulletinStickers" lowerBound="0" nillable="true" fixed="false" form="Element"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroups" type="d3p1:superGroups"/>
+	</objectType>
+	<objectType name="userBulletinOrders" ordered="true">
+		<property xmlns:d3p1="http://www.100sp.ru" name="user" type="d3p1:user" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="auth" ordered="false">
+		<property name="result" type="xs:string"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="bulletinStickers" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru" name="bulletinSticker" type="d3p1:bulletinSticker" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="bulletinSticker" ordered="false">
+		<property name="id" type="xs:string" lowerBound="1" nillable="true" form="Attribute"/>
+		<property name="uid" type="xs:integer" lowerBound="0" nillable="true" form="Element"/>
+		<property name="orderId" type="xs:integer" lowerBound="0" nillable="true" form="Element"/>
+		<property name="bulletinName" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="secureCode" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="distributorCode" type="xs:integer" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="income" ordered="false">
+		<property name="orderType" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="uid" type="xs:integer" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="orderId" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="pid" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="arrivalNumber" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="orgid" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="date" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="firstIncomeCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="result" type="xs:string"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="stickerId" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="incomes">
+		<property xmlns:d3p1="http://www.100sp.ru" name="income" type="d3p1:income" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupReceipts">
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupReceipt" type="d3p1:superGroupReceipt" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupReceipt" ordered="false">
+		<property name="documentNumber" type="xs:string" upperBound="1" form="Attribute"/>
+		<property name="actualDeliveryDate" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="superGroups">
+		<property name="date" type="xs:dateTime" lowerBound="0" nillable="true" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroup" type="d3p1:superGroup" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroup" ordered="false">
+		<property name="documentNumber" type="xs:string" upperBound="1" form="Element"/>
+		<property name="distributorFromCode" type="xs:string" form="Element"/>
+		<property name="distributorToCode" type="xs:string" form="Element"/>
+		<property name="processedFromAt" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="processedToAt" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="deliveryDescription" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="orders" type="d3p1:orders" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupStages" type="d3p1:superGroupStages" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupStages">
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupStage" type="d3p1:superGroupStage" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupStage" ordered="false">
+		<property name="ordinalNumber" type="xs:string" nillable="false"/>
+		<property name="estimate_delivery_date" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="actual_delivery_date" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="delivery_number" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="delivery_service_name" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="delivery_description" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="superGroups_answer">
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroup" type="d3p1:superGroup_answer" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroup_answer" ordered="false">
+		<property name="processedAt" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="documentNumber" type="xs:string" upperBound="1" form="Attribute"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupStages_answer">
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroupStage" type="d3p1:superGroupStage_answer" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="superGroupStage_answer" ordered="false">
+		<property name="documentNumber" type="xs:string" form="Attribute"/>
+		<property name="ordinalNumber" type="xs:string" nillable="false" form="Attribute"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="order" ordered="false">
+		<property name="orderType" type="xs:string"/>
+		<property name="pid" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="uid" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="orderId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="distributor_code" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="order_answer" ordered="false">
+		<property name="orderType" type="xs:string" form="Attribute"/>
+		<property name="pid" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="uid" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="packageId" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="orderId" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property name="distributor_code" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="orders">
+		<property xmlns:d3p1="http://www.100sp.ru" name="order" type="d3p1:order" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="deliveryGroupTransitCode">
+		<property xmlns:d3p1="http://www.100sp.ru" name="order" type="d3p1:order_answer" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="dataByDates">
+		<property xmlns:d3p1="http://www.100sp.ru" name="superGroups" type="d3p1:superGroups" lowerBound="0" nillable="true"/>
+	</objectType>
+</package>

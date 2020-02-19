@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6d35a73-4ebb-4a12-adb1-4a0414ae2389">
+  <producedTypes>
+    <managerType typeId="86eca5ba-e939-40f3-b98f-77ecaf7be8fd" valueTypeId="c6d1d75b-a1bf-4437-9300-d3136998e9d1"/>
+    <valueManagerType typeId="05dc8753-61d4-4a2b-8210-a278330e3a10" valueTypeId="4e6df8c9-9fcd-485f-abc1-13f24fdccdba"/>
+    <valueKeyType typeId="7dbae875-2669-51c7-9b17-be377792a9d0" valueTypeId="7d444315-b14f-54d6-ba84-c3b80e85ce43"/>
+  </producedTypes>
+  <name>ПоказыватьРейтингВрасходной</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать рейтинг врасходной</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

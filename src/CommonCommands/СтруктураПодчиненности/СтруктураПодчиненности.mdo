@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41f87891-ddd5-4e0f-a4f2-8039fb71981b">
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы</value>
+  </synonym>
+  <group>CommandGroup.Взаимодействия</group>
+  <commandParameterType>
+    <types>DocumentRef.РегистрацияСупперГруппы</types>
+    <types>DocumentRef.ЗапросыГруппДоставки</types>
+    <types>DocumentRef.ПередачаВозвратовОрганизаторам</types>
+    <types>DocumentRef.ВыдачаТранзита</types>
+    <types>DocumentRef.ЗаявкаВТранспортнуюКомпанию</types>
+    <types>DocumentRef.ВозвратГруппОрганизатору</types>
+    <types>DocumentRef.Движение</types>
+    <types>DocumentRef.ПередачаВозвратовОрганизатору</types>
+    <types>DocumentRef.ФормированиеКоробки</types>
+    <types>DocumentRef.ВозвратПокупокОрганизатору</types>
+    <types>DocumentRef.Продажа</types>
+    <types>DocumentRef.УпаковатьЗаказы</types>
+    <types>DocumentRef.УдалитьКассовыйЧекКоррекции</types>
+    <types>DocumentRef.ОтправлениеТранзита</types>
+    <types>DocumentRef.ДвижениеТранзита</types>
+    <types>DocumentRef.ПакетНаСайт</types>
+    <types>DocumentRef.ПоступленияОтПоставщика</types>
+    <types>DocumentRef.Приходная</types>
+    <types>DocumentRef.Выгрузка_100СП</types>
+    <types>DocumentRef.ИнвентаризацияТранзитов</types>
+    <types>DocumentRef.ПоступлениеТоваров</types>
+    <types>DocumentRef.Расходная</types>
+    <types>DocumentRef.СчетКонтрагента</types>
+    <types>DocumentRef.УстановкаТарифовПоНаравлениям</types>
+    <types>CatalogRef.Коробки</types>
+    <types>DocumentRef.ЗакрытиеОшибокОбмена</types>
+    <types>DocumentRef.ЗапросАдресов</types>
+    <types>DocumentRef.ПоступлениеПристроя</types>
+    <types>DocumentRef.ОтчетОДоставке</types>
+    <types>DocumentRef.КассоваяСмена</types>
+    <types>DocumentRef.КорректировкаОстатков</types>
+    <types>DocumentRef.РазборКоробки</types>
+    <types>DocumentRef.ЗаполнитьСупергруппу</types>
+    <types>DocumentRef.ОбъединениеГруппДоставки</types>
+    <types>DocumentRef.ПеремещениеВозврата</types>
+    <types>DocumentRef.ЗаполнитьКоленоМаршрута</types>
+    <types>DocumentRef.ПоступлениеКоробокДляРазбора</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Перейти к иерархическому списку связанных документов</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

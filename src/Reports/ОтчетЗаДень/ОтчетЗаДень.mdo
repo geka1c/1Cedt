@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5846e351-33da-4fca-8f1f-88f7a920d38e">
+  <producedTypes>
+    <objectType typeId="c803972f-dd4f-473f-b742-40a506bf1714" valueTypeId="f39b6f75-700c-44a5-85aa-f42cb468a455"/>
+    <managerType typeId="8c5d0f44-cbac-4066-a7a0-fe1348ec63a8" valueTypeId="d1c9f376-8793-418d-bb76-0aa821e33f02"/>
+  </producedTypes>
+  <name>ОтчетЗаДень</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет за день</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетЗаДень.Form.ФормаОтчета</defaultForm>
+  <forms uuid="68e14a6d-2bef-4479-88b8-222ebbe3ee03">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1e7a0957-9c48-436d-ae7d-953bd5b4ff72">
+    <name>Макет</name>
+  </templates>
+  <templates uuid="f9c0abbe-0387-47c2-8038-ffda24936386">
+    <name>Макет1</name>
+  </templates>
+  <templates uuid="2257e5ca-90bc-4881-a1e0-4cf56241df8c">
+    <name>МакетСписано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет списано</value>
+    </synonym>
+  </templates>
+  <templates uuid="790c142b-f8be-403f-8e03-73e79b563aa8">
+    <name>МакетТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет транзит</value>
+    </synonym>
+  </templates>
+  <templates uuid="ff5a08a1-784b-4dd6-a2a2-023f7eb00d39">
+    <name>МакетПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет продажи</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбменВыполнен</dataPath>
+			<field>ОбменВыполнен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен выполнен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаДоставки</dataPath>
+			<field>ГруппаДоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СообщениеОшибки</dataPath>
+			<field>СообщениеОшибки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОбмена</dataPath>
+			<field>ТипОбмена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип обмена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОбмена</dataPath>
+			<field>ДокументОбмена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ обмена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗапросыГруппДоставкиЗапросыОтсрочки.ГруппаДоставки КАК ГруппаДоставки,
+	ЗапросыГруппДоставкиЗапросыОтсрочки.Успех КАК ОбменВыполнен,
+	ЗапросыГруппДоставкиЗапросыОтсрочки.СообщениеОшибки КАК СообщениеОшибки,
+	"Запрос отсрочки" КАК ТипОбмена,
+	ЗапросыГруппДоставкиЗапросыОтсрочки.Ссылка КАК ДокументОбмена,
+	ЗапросыГруппДоставкиЗапросыОтсрочки.НомерСтроки КАК НомерСтроки
+ИЗ
+	Документ.ЗапросыГруппДоставки.ЗапросыОтсрочки КАК ЗапросыГруппДоставкиЗапросыОтсрочки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗапросыГруппДоставкиЗапросыИсключения.ГруппаДоставки,
+	NULL,
+	ЗапросыГруппДоставкиЗапросыИсключения.СообщениеОшибки,
+	"Запрос исключения",
+	ЗапросыГруппДоставкиЗапросыИсключения.Ссылка,
+	ЗапросыГруппДоставкиЗапросыИсключения.НомерСтроки
+ИЗ
+	Документ.ЗапросыГруппДоставки.ЗапросыИсключения КАК ЗапросыГруппДоставкиЗапросыИсключения
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗапросыГруппДоставкиЗапросыУдаления.ГруппаДоставки,
+	ЗапросыГруппДоставкиЗапросыУдаления.Успех,
+	ЗапросыГруппДоставкиЗапросыУдаления.СообщениеОшибки,
+	"Запрос удаления",
+	ЗапросыГруппДоставкиЗапросыУдаления.Ссылка,
+	ЗапросыГруппДоставкиЗапросыУдаления.НомерСтроки
+ИЗ
+	Документ.ЗапросыГруппДоставки.ЗапросыУдаления КАК ЗапросыГруппДоставкиЗапросыУдаления
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗапросыГруппДоставкиЗапросыОплаты.ГруппаДоставки,
+	ЗапросыГруппДоставкиЗапросыОплаты.Успех,
+	ЗапросыГруппДоставкиЗапросыОплаты.СообщениеОшибки,
+	"Запрос оплаты",
+	ЗапросыГруппДоставкиЗапросыОплаты.Ссылка,
+	ЗапросыГруппДоставкиЗапросыОплаты.НомерСтроки
+ИЗ
+	Документ.ЗапросыГруппДоставки.ЗапросыОплаты КАК ЗапросыГруппДоставкиЗапросыОплаты</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Группы доставки истроия обменов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГруппаДоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДокументОбмена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерСтроки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбменВыполнен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СообщениеОшибки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипОбмена</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>03de7495-c938-45c4-88f4-557d044c7c6e</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ГруппаДоставки</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>2f552b4d-799e-443b-9949-9d8024884e88</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>7c9806c4-c56a-4943-83c5-bdfa63a55bc8</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДокументОбмена.Дата</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерСтроки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>6cf2ee17-330a-404b-a98b-a757feece78d</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>31cb2382-0098-4fd4-980a-7c3ce0189ee1</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>2adddb69-d0bd-4097-aae1-6c6f9e6c1f7e</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

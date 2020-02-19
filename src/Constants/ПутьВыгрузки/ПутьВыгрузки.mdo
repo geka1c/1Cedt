@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="04e533ee-a386-4ca1-8c58-b393216d1005">
+  <producedTypes>
+    <managerType typeId="313007d1-c622-44cc-8a39-2021c2c31cad" valueTypeId="836bfea9-a5c4-4cf8-8679-43f2f6352b20"/>
+    <valueManagerType typeId="00c9f6f7-a363-48d2-98d7-0745bb48023a" valueTypeId="f1d4e2b8-a9e3-4cea-8ec0-f837dec34a38"/>
+    <valueKeyType typeId="8671fcd5-1377-50d2-b5e2-8d3a70bbacbe" valueTypeId="3a639628-af11-5699-abd1-c57b3ad246d6"/>
+  </producedTypes>
+  <name>ПутьВыгрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь выгрузки</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>250</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

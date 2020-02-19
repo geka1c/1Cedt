@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="api.boxberry.de"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="api.boxberry.de"
+		targetNamespace="api.boxberry.de">
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:apachesoap="http://xml.apache.org/xml-soap"
+				xmlns:impl="api.boxberry.de"
+				xmlns:intf="api.boxberry.de"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+				elementFormDefault="qualified"
+				targetNamespace="api.boxberry.de">
+			<element name="ParselCreateQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="updateByTrack"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="order_id"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="PalletNumber"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="AgregatorPointCargoCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="barcode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="price"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="payment_sum"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="delivery_sum"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="vid"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="kurdost"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="true"
+								type="xsd1:ParselCreateKurdostData"/>
+						<element name="shop"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateShopData"/>
+						<element name="customer"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateCustomerData"/>
+						<element name="items"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ParselCreateItemsData"/>
+						<element name="weights"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateWeightsData"/>
+						<element name="YFR"
+								nillable="true"
+								type="xsd:string"
+								comment="yandex full request"/>
+						<element name="issue"
+								nillable="true"
+								type="xsd:integer"/>
+						<element name="sender_name"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="ParselCreateKurdostData">
+				<sequence>
+					<element name="index"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="citi"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="addressp"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="timesfrom1"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="timesto1"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="timesfrom2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="timesto2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="timep"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="comentk"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselCreateShopData">
+				<default:sequence>
+					<default:element name="name"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="name1"
+							nillable="false"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<complexType name="ParselCreateCustomerData">
+				<sequence>
+					<element name="fio"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="phone"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="phone2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="email"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="address"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="inn"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="kpp"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="r_s"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="bank"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="kor_s"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="bik"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselCreateItemsData">
+				<default:sequence>
+					<default:element name="id"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="name"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="UnitName"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="nds"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="price"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="quantity"
+							nillable="false"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<!--<element name="UpdateIntakeQuery">
+            <complexType>
+                <sequence>
+                    <element name="token" nillable="false" type="xsd:string"/>
+                    <element name="itemId" nillable="false" type="xsd:string"/>
+                    <element name="zip" nillable="false" type="xsd:string"/>
+                    <element name="city" nillable="false" type="xsd:string"/>
+                    <element name="street" nillable="false" type="xsd:string"/>
+                    <element name="house" nillable="false" type="xsd:string"/>
+                    <element name="building" nillable="true" type="xsd:string"/>
+                    <element name="housing" nillable="true" type="xsd:string"/>
+                    <element name="flat" nillable="true" type="xsd:string"/>
+                    <element name="contact_person" nillable="false" type="xsd:string"/>
+                    <element name="contact_phone" nillable="false" type="xsd:string"/>
+                    <element name="taking_date" nillable="false" type="xsd:string"/>
+                    <element name="taking_time_from" nillable="false" type="xsd:string"/>
+                    <element name="taking_time_to" nillable="false" type="xsd:string"/>
+                    <element name="seats_count" nillable="false" type="xsd:integer"/>
+                    <element name="volume" nillable="false" type="xsd:float"/>
+                    <element name="weight" nillable="false" type="xsd:float"/>
+                    <element name="comment" nillable="true" type="xsd:string"/>
+                </sequence>
+            </complexType>
+        </element>
+
+        <element name="UpdateIntakeResponse">
+            <complexType>
+                <sequence>
+                    <element name="Result" maxOccurs="unbounded" minOccurs="0" nillable="false"
+                             type="impl:UpdateIntakeData"/>
+                </sequence>
+            </complexType>
+        </element>
+
+        <complexType name="UpdateIntakeData">
+            <sequence>
+                <element name="message" nillable="true" type="xsd:string"/>
+            </sequence>
+        </complexType>-->
+			<complexType name="ParselCreateWeightsData">
+				<sequence>
+					<element name="weight"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="barcode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight3"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode3"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight4"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode4"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight5"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode5"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight6"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode6"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight7"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode7"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight8"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode8"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight9"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode9"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight10"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode10"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight11"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode11"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight12"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode12"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight13"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode13"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight14"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode14"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight15"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode15"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight16"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode16"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight17"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode17"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight18"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode18"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight19"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode19"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight20"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode20"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight21"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode21"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight22"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode22"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight23"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode23"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="weight24"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="barcode24"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<element name="ParselCreateResponse">
+				<complexType>
+					<sequence>
+						<element name="track"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="label"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ParselCreateSAPQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="updateByTrack"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="order_id"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="AgregatorPointCargoCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="PalletNumber"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="barcode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="price"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="payment_sum"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="delivery_sum"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="vid"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="kurdost"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="true"
+								type="xsd1:ParselCreateSAPKurdostData"/>
+						<element name="shop"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateSAPShopData"/>
+						<element name="customer"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateSAPCustomerData"/>
+						<element name="items"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ParselCreateSAPItemsData"/>
+						<element name="weights"
+								maxOccurs="1"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParselCreateSAPWeightsData"/>
+						<element name="YFR"
+								nillable="true"
+								type="xsd:string"
+								comment="yandex full request"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselCreateSAPKurdostData">
+				<default:sequence>
+					<default:element name="index"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="citi"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="addressp"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="timesfrom1"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="timesto1"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="timesfrom2"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="timesto2"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="timep"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="comentk"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<complexType name="ParselCreateSAPShopData">
+				<sequence>
+					<element name="name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="name1"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="ParselCreateSAPCustomerData">
+				<sequence>
+					<element name="fio"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="phone"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="phone2"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="email"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="address"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="inn"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="kpp"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="r_s"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="bank"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="kor_s"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="bik"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="ParselCreateSAPItemsData">
+				<sequence>
+					<element name="id"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="UnitName"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="nds"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="price"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="quantity"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="zprice"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselCreateSAPWeightsData">
+				<default:sequence>
+					<default:element name="weight"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="weight2"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="weight3"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="weight4"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="weight5"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ParselCreateSAPResponse">
+				<complexType>
+					<sequence>
+						<element name="track"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="label"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="error"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ParselReadinessQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="track"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="dop_code"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="dop_barcode128"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ParselReadinessResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ParselReadinessData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselReadinessData">
+				<default:sequence>
+					<default:element name="pre"
+							nillable="true"
+							type="default:boolean"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ParcelCreateForeignQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="lkp_key"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_name"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_surname"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_middlename"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_email"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_phone"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_country_code"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_pasport"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_passportIssued"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_passportIssuedBy"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_destination_country_code"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_city"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_take"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_post_code"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="u_street"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Order"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="sender_tracking"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="add_barcode128"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="box"
+								maxOccurs="5"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParcelCreateForeignBoxData"/>
+						<element name="barcode_pallets"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="barcode_bigbox"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="extraPassData"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParcelCreateForeignBoxData">
+				<default:sequence>
+					<default:element name="x"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="y"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="z"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="weight_bruto"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="add_tracking_code"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="seller"
+							maxOccurs="1"
+							minOccurs="1"
+							nillable="true"
+							type="xsd1:ParcelCreateForeignSellerData"/>
+					<default:element name="items"
+							maxOccurs="10000"
+							minOccurs="1"
+							nillable="false"
+							type="xsd1:ParcelCreateForeignItemsData"/>
+				</default:sequence>
+			</default:complexType>
+			<complexType name="ParcelCreateForeignSellerData">
+				<sequence>
+					<element name="exporter_number"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="legal_name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="web_address"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="address"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="post_code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="city"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="country_code"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="ParcelCreateForeignItemsData">
+				<sequence>
+					<element name="articul"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Manufacturer"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="model"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="quantity"
+							nillable="false"
+							type="xsd:integer"/>
+					<element name="bruto"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="item_price"
+							nillable="false"
+							type="xsd:float"/>
+					<element name="currency_price"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="link_web"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="link_foto"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="country_of_origin"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="hs_code"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="invoice"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="descr_rus"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="descr_alt"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="descr_alt_eng"
+							nillable="true"
+							type="xsd:boolean"/>
+					<element name="noti_num"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="noti_date"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="noti_code"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParcelCreateForeignResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="1000"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParcelCreateForeignResultData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ParcelCreateForeignResultData">
+				<sequence>
+					<element name="track"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="label"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="box"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselCheckQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="ImId"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ParselCheckResponse">
+				<complexType>
+					<sequence>
+						<element name="label"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="box"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="box_upload"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="GetStatusesQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="track_id"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetStatusesResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="boxberry_id"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="order_id"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="delivery_type"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="point_id"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="weight"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="delivery_date"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="store_date"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="status"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="phone"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="second_phone"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="payment_method"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="statuses"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:StatusesData"/>
+						<default:element name="productes"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:StatusesProductesData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="StatusesData">
+				<sequence>
+					<element name="status"
+							nillable="false"
+							type="xsd:integer"/>
+					<element name="name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="date_time"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="StatusesProductesData">
+				<default:sequence>
+					<default:element name="name"
+							nillable="false"
+							type="default:string"/>
+					<default:element name="vendor_code"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="issued"
+							nillable="true"
+							type="default:integer"/>
+					<default:element name="returned"
+							nillable="true"
+							type="default:integer"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ChangeSettingsOrdersQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="track"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="surname"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="name"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="middlename"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="phone"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="ext_phone"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="storage"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="CancelOrder"
+								nillable="true"
+								type="xsd:integer"/>
+						<element name="payment_sum"
+								nillable="true"
+								type="xsd:float"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ChangeSettingsOrdersResponse">
+				<complexType>
+					<sequence>
+						<element name="Result"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ParselListQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselListResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="ImIds"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ParselDelQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="ImId"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="ParselDelResponse">
+				<complexType>
+					<sequence>
+						<element name="text"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParcelDelQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="parcelId"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ParcelDelResponse">
+				<complexType>
+					<sequence>
+						<element name="message"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselStoryQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="from"
+								nillable="true"
+								type="default:integer"/>
+						<default:element name="to"
+								nillable="true"
+								type="default:integer"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ParselStoryResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:ParselStoryData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="ParselStoryData">
+				<sequence>
+					<element name="track"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="label"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="date"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="send"
+							nillable="true"
+							type="xsd:boolean"/>
+					<element name="barcode"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="imid"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="OrdersBalanceQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="OnlyPostpaid"
+								nillable="true"
+								type="default:integer"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="OrdersBalanceResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:OrdersBalanceData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="OrdersBalanceData">
+				<default:sequence>
+					<default:element name="ID"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Status"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Price"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Delivery_sum"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Payment_sum"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ParselSendQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="ImIds"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselSendData">
+				<default:sequence>
+					<default:element name="id"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="label"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="sticker"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ParselSendResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:ParselSendData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParcelSendForeignQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="control"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="pallet"
+								maxOccurs="unbounded"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ParcelSendForeignPalletDataData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ParcelSendForeignPalletDataData">
+				<sequence>
+					<element name="barcode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="box"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParcelSendForeignResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:ParcelSendForeignResultData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ParcelSendForeignResultData">
+				<sequence>
+					<element name="id"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="PaymentOrdersQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="DateBegin"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="DateEnd"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="PaymentOrdersResponse">
+				<complexType>
+					<sequence>
+						<element name="Result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:PaymentOrdersData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="PaymentOrdersData">
+				<sequence>
+					<element name="Date"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Number"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Sum"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Details"
+							maxOccurs="1000"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:PaymentOrdersDetailsData"/>
+				</sequence>
+			</complexType>
+			<complexType name="PaymentOrdersDetailsData">
+				<sequence>
+					<element name="ID"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Number"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Sum"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ParselSendStoryQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="from"
+								nillable="true"
+								type="default:integer"/>
+						<default:element name="to"
+								nillable="true"
+								type="default:integer"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ParselSendStoryResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:ParselSendStoryData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="ParselSendStoryData">
+				<sequence>
+					<element name="track"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="label"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="date"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="DelHandBookStockQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="HandBookItemsRemove"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:HandBookItemsRemoveData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="HandBookItemsRemoveData">
+				<sequence>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="DelHandBookStockResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:HandBookResultData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="SetHandBookStockQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="HandBookItems"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:HandBookItemsData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="HandBookItemsData">
+				<sequence>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Index"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="ContactName"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Address"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="ContactPhone"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<element name="SetHandBookStockResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:HandBookResultData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="HandBookResultData">
+				<sequence>
+					<element name="error"
+							nillable="true"
+							type="xsd:boolean"/>
+					<element name="message"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetHandBookStockQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="GetHandBookStockResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:GetHandBookResultData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetHandBookResultData">
+				<default:sequence>
+					<default:element name="Code"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Index"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Name"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="ContactName"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Address"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="ContactPhone"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="CreateIntakeQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="zip"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="city"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="street"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="house"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="building"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="housing"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="flat"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="contact_person"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="contact_phone"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="taking_date"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="taking_time_from"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="taking_time_to"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="seats_count"
+								nillable="false"
+								type="xsd:integer"/>
+						<element name="volume"
+								nillable="false"
+								type="xsd:float"/>
+						<element name="weight"
+								nillable="false"
+								type="xsd:float"/>
+						<element name="comment"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="CreateIntakeResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="Result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="false"
+								type="xsd1:CreateIntakeData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="CreateIntakeData">
+				<sequence>
+					<element name="message"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+		</schema>
+	</types>
+	<message name="CreateIntakeSoapIn">
+		<part name="CreateIntakeQuery"
+				element="tns:CreateIntakeQuery"/>
+	</message>
+	<message name="CreateIntakeSoapOut">
+		<part name="CreateIntakeResponse"
+				element="tns:CreateIntakeResponse"/>
+	</message>
+	<message name="ParselCreateSoapIn">
+		<part name="ParselCreateQuery"
+				element="tns:ParselCreateQuery"/>
+	</message>
+	<message name="ParselCreateSoapOut">
+		<part name="ParselCreateResponse"
+				element="tns:ParselCreateResponse"/>
+	</message>
+	<message name="ParselCheckSoapIn">
+		<part name="ParselCheckQuery"
+				element="tns:ParselCheckQuery"/>
+	</message>
+	<message name="ParselCheckSoapOut">
+		<part name="ParselCheckResponse"
+				element="tns:ParselCheckResponse"/>
+	</message>
+	<message name="ParselListSoapIn">
+		<part name="ParselListQuery"
+				element="tns:ParselListQuery"/>
+	</message>
+	<message name="ParselListSoapOut">
+		<part name="ParselListResponse"
+				element="tns:ParselListResponse"/>
+	</message>
+	<message name="ParselDelSoapIn">
+		<part name="ParselDelQuery"
+				element="tns:ParselDelQuery"/>
+	</message>
+	<message name="ParselDelSoapOut">
+		<part name="ParselDelResponse"
+				element="tns:ParselDelResponse"/>
+	</message>
+	<message name="ParselStorySoapIn">
+		<part name="ParselStoryQuery"
+				element="tns:ParselStoryQuery"/>
+	</message>
+	<message name="ParselStorySoapOut">
+		<part name="ParselStoryResponse"
+				element="tns:ParselStoryResponse"/>
+	</message>
+	<message name="ParselSendSoapIn">
+		<part name="ParselSendQuery"
+				element="tns:ParselSendQuery"/>
+	</message>
+	<message name="ParselSendSoapOut">
+		<part name="ParselSendResponse"
+				element="tns:ParselSendResponse"/>
+	</message>
+	<message name="ParselSendStorySoapIn">
+		<part name="ParselSendStoryQuery"
+				element="tns:ParselSendStoryQuery"/>
+	</message>
+	<message name="ParselSendStorySoapOut">
+		<part name="ParselSendStoryResponse"
+				element="tns:ParselSendStoryResponse"/>
+	</message>
+	<message name="OrdersBalanceSoapIn">
+		<part name="OrdersBalanceQuery"
+				element="tns:OrdersBalanceQuery"/>
+	</message>
+	<message name="OrdersBalanceSoapOut">
+		<part name="OrdersBalanceResponse"
+				element="tns:OrdersBalanceResponse"/>
+	</message>
+	<message name="ParselCreateSAPSoapIn">
+		<part name="ParselCreateSAPQuery"
+				element="tns:ParselCreateSAPQuery"/>
+	</message>
+	<message name="ParselCreateSAPSoapOut">
+		<part name="ParselCreateSAPResponse"
+				element="tns:ParselCreateSAPResponse"/>
+	</message>
+	<message name="ChangeSettingsOrdersSoapIn">
+		<part name="ChangeSettingsOrdersQuery"
+				element="tns:ChangeSettingsOrdersQuery"/>
+	</message>
+	<message name="ChangeSettingsOrdersSoapOut">
+		<part name="ChangeSettingsOrdersResponse"
+				element="tns:ChangeSettingsOrdersResponse"/>
+	</message>
+	<message name="SetHandBookStockSoapIn">
+		<part name="SetHandBookStockQuery"
+				element="tns:SetHandBookStockQuery"/>
+	</message>
+	<message name="SetHandBookStockSoapOut">
+		<part name="SetHandBookStockResponse"
+				element="tns:SetHandBookStockResponse"/>
+	</message>
+	<message name="DelHandBookStockSoapIn">
+		<part name="DelHandBookStockQuery"
+				element="tns:DelHandBookStockQuery"/>
+	</message>
+	<message name="DelHandBookStockSoapOut">
+		<part name="DelHandBookStockResponse"
+				element="tns:DelHandBookStockResponse"/>
+	</message>
+	<message name="GetHandBookStockSoapIn">
+		<part name="GetHandBookStockQuery"
+				element="tns:GetHandBookStockQuery"/>
+	</message>
+	<message name="GetHandBookStockSoapOut">
+		<part name="GetHandBookStockResponse"
+				element="tns:GetHandBookStockResponse"/>
+	</message>
+	<message name="ParcelCreateForeignSoapIn">
+		<part name="ParcelCreateForeignQuery"
+				element="tns:ParcelCreateForeignQuery"/>
+	</message>
+	<message name="ParcelCreateForeignSoapOut">
+		<part name="ParcelCreateForeignResponse"
+				element="tns:ParcelCreateForeignResponse"/>
+	</message>
+	<message name="ParcelSendForeignSoapIn">
+		<part name="ParcelSendForeignQuery"
+				element="tns:ParcelSendForeignQuery"/>
+	</message>
+	<message name="ParcelSendForeignSoapOut">
+		<part name="ParcelSendForeignResponse"
+				element="tns:ParcelSendForeignResponse"/>
+	</message>
+	<message name="PaymentOrdersSoapIn">
+		<part name="PaymentOrdersQuery"
+				element="tns:PaymentOrdersQuery"/>
+	</message>
+	<message name="PaymentOrdersSoapOut">
+		<part name="PaymentOrdersResponse"
+				element="tns:PaymentOrdersResponse"/>
+	</message>
+	<message name="ParcelDelSoapIn">
+		<part name="ParcelDelQuery"
+				element="tns:ParcelDelQuery"/>
+	</message>
+	<message name="ParcelDelSoapOut">
+		<part name="ParcelDelResponse"
+				element="tns:ParcelDelResponse"/>
+	</message>
+	<message name="GetStatusesSoapIn">
+		<part name="GetStatusesQuery"
+				element="tns:GetStatusesQuery"/>
+	</message>
+	<message name="GetStatusesSoapOut">
+		<part name="GetStatusesResponse"
+				element="tns:GetStatusesResponse"/>
+	</message>
+	<portType name="BoxBerrySoap">
+		<operation name="CreateIntake">
+			<input name="CreateIntakeRequest"
+					message="tns:CreateIntakeSoapIn"/>
+			<output name="CreateIntakeResponse"
+					message="tns:CreateIntakeSoapOut"/>
+		</operation>
+		<operation name="ParselCreate">
+			<input name="ParselCreateRequest"
+					message="tns:ParselCreateSoapIn"/>
+			<output name="ParselCreateResponse"
+					message="tns:ParselCreateSoapOut"/>
+		</operation>
+		<operation name="ParselCheck">
+			<input name="ParselCheckRequest"
+					message="tns:ParselCheckSoapIn"/>
+			<output name="ParselCheckResponse"
+					message="tns:ParselCheckSoapOut"/>
+		</operation>
+		<operation name="ParselList">
+			<input name="ParselListRequest"
+					message="tns:ParselListSoapIn"/>
+			<output name="ParselListResponse"
+					message="tns:ParselListSoapOut"/>
+		</operation>
+		<operation name="ParselDel">
+			<input name="ParselDelRequest"
+					message="tns:ParselDelSoapIn"/>
+			<output name="ParselDelResponse"
+					message="tns:ParselDelSoapOut"/>
+		</operation>
+		<operation name="ParselStory">
+			<input name="ParselStoryRequest"
+					message="tns:ParselStorySoapIn"/>
+			<output name="ParselStoryResponse"
+					message="tns:ParselStorySoapOut"/>
+		</operation>
+		<operation name="ParselSend">
+			<input name="ParselSendRequest"
+					message="tns:ParselSendSoapIn"/>
+			<output name="ParselSendResponse"
+					message="tns:ParselSendSoapOut"/>
+		</operation>
+		<operation name="ParselSendStory">
+			<input name="ParselSendStoryRequest"
+					message="tns:ParselSendStorySoapIn"/>
+			<output name="ParselSendStoryResponse"
+					message="tns:ParselSendStorySoapOut"/>
+		</operation>
+		<operation name="OrdersBalance">
+			<input name="OrdersBalanceRequest"
+					message="tns:OrdersBalanceSoapIn"/>
+			<output name="OrdersBalanceResponse"
+					message="tns:OrdersBalanceSoapOut"/>
+		</operation>
+		<operation name="ParselCreateSAP">
+			<input name="ParselCreateSAPRequest"
+					message="tns:ParselCreateSAPSoapIn"/>
+			<output name="ParselCreateSAPResponse"
+					message="tns:ParselCreateSAPSoapOut"/>
+		</operation>
+		<operation name="ChangeSettingsOrders">
+			<input name="ChangeSettingsOrdersRequest"
+					message="tns:ChangeSettingsOrdersSoapIn"/>
+			<output name="ChangeSettingsOrdersResponse"
+					message="tns:ChangeSettingsOrdersSoapOut"/>
+		</operation>
+		<operation name="SetHandBookStock">
+			<input name="SetHandBookStockRequest"
+					message="tns:SetHandBookStockSoapIn"/>
+			<output name="SetHandBookStockResponse"
+					message="tns:SetHandBookStockSoapOut"/>
+		</operation>
+		<operation name="DelHandBookStock">
+			<input name="DelHandBookStockRequest"
+					message="tns:DelHandBookStockSoapIn"/>
+			<output name="DelHandBookStockResponse"
+					message="tns:DelHandBookStockSoapOut"/>
+		</operation>
+		<operation name="GetHandBookStock">
+			<input name="GetHandBookStockRequest"
+					message="tns:GetHandBookStockSoapIn"/>
+			<output name="GetHandBookStockResponse"
+					message="tns:GetHandBookStockSoapOut"/>
+		</operation>
+		<operation name="ParcelCreateForeign">
+			<input name="ParcelCreateForeignRequest"
+					message="tns:ParcelCreateForeignSoapIn"/>
+			<output name="ParcelCreateForeignResponse"
+					message="tns:ParcelCreateForeignSoapOut"/>
+		</operation>
+		<operation name="ParcelSendForeign">
+			<input name="ParcelSendForeignRequest"
+					message="tns:ParcelSendForeignSoapIn"/>
+			<output name="ParcelSendForeignResponse"
+					message="tns:ParcelSendForeignSoapOut"/>
+		</operation>
+		<operation name="PaymentOrders">
+			<input name="PaymentOrdersRequest"
+					message="tns:PaymentOrdersSoapIn"/>
+			<output name="PaymentOrdersResponse"
+					message="tns:PaymentOrdersSoapOut"/>
+		</operation>
+		<operation name="ParcelDel">
+			<input name="ParcelDelRequest"
+					message="tns:ParcelDelSoapIn"/>
+			<output name="ParcelDelResponse"
+					message="tns:ParcelDelSoapOut"/>
+		</operation>
+		<operation name="GetStatuses">
+			<input name="GetStatusesRequest"
+					message="tns:GetStatusesSoapIn"/>
+			<output name="GetStatusesResponse"
+					message="tns:GetStatusesSoapOut"/>
+		</operation>
+	</portType>
+	<binding name="BoxBerrySoap"
+			type="tns:BoxBerrySoap">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="CreateIntake">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselCreate">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselCheck">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselList">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselDel">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselStory">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselSend">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselSendStory">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="OrdersBalance">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParselCreateSAP">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ChangeSettingsOrders">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetHandBookStock">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DelHandBookStock">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetHandBookStock">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParcelCreateForeign">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParcelSendForeign">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PaymentOrders">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ParcelDel">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetStatuses">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="BoxBerry">
+		<port name="BoxBerrySoap"
+				binding="tns:BoxBerrySoap">
+			<soapbind:address location="http://test.api.boxberry.de/__soap/1c_lc.php"/>
+		</port>
+	</service>
+</definitions>

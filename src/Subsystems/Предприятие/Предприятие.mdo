@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eab69afc-f37a-4f83-bc50-42574ddd0226">
+  <name>Предприятие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предприятие</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделПредприятие</picture>
+  </picture>
+  <content>AccumulationRegister.ОстаткиТоваров</content>
+  <content>Report.ОтчетЗаДень</content>
+  <content>Document.Движение</content>
+  <content>Report.ОстаткиНаСкладе</content>
+  <content>AccumulationRegister.Расход</content>
+  <content>AccumulationRegister.Приход</content>
+  <content>DataProcessor.ВыгрузкаНаСайт</content>
+  <content>Report.ПросроченныеПокупки</content>
+  <content>Report.СписанныеПокупки</content>
+  <content>Report.ПоискПокупок</content>
+  <content>CommonForm.ПараметрыУчета</content>
+  <content>AccumulationRegister.Возвраты</content>
+  <content>AccumulationRegister.Транзит</content>
+  <content>Report.РасположениеПокупок</content>
+  <content>Report.ПродажиЗаДень</content>
+  <content>Report.АнализОбработанныхПокупок</content>
+  <content>Report.СверкаРазобранныхКоробокССайтом</content>
+  <content>Report.ВедомостьДвижений</content>
+  <content>DataProcessor.КорректировкаСтруктурыБазы</content>
+  <content>DataProcessor.УниверсальныйОбменДаннымиXML</content>
+  <content>DataProcessor.ВыгрузкаЗагрузкаДанныхXML</content>
+  <content>CommonCommand.ШКОтдельнымМестом</content>
+  <content>Report.ОтчетЗаДеньNew</content>
+  <content>Report.АнализРазбораКоробок</content>
+  <subsystems>Администрирование</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

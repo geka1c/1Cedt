@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc072a15-c962-4d20-9d8b-f33107194619">
+  <name>ОбновлениеИнформационнойБазыСовместныеПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление информационной базы совместные покупки</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

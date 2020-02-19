@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4af37b1-4336-4dad-b5f5-eecfab328e20">
+  <name>Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПоступленияОтПоставщика</content>
+  <content>Document.СчетКонтрагента</content>
+  <content>Document.ОтчетОДоставке</content>
+  <content>Document.ЗаявкаВТранспортнуюКомпанию</content>
+  <content>Report.ВзаиморасчетыСКонтрагентами</content>
+  <content>DataProcessor.КонтрольДоставкиГрузов</content>
+  <content>InformationRegister.СтатусыДоставки</content>
+  <content>InformationRegister.СтатусыЗаявокВТК</content>
+  <parentSubsystem>Subsystem.Транзит</parentSubsystem>
+</mdclass:Subsystem>

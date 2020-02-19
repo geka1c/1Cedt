@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60520ea4-f17c-4e22-9210-ea16ffc68fd2">
+  <producedTypes>
+    <refType typeId="334499f1-55ff-4621-9c1a-2b13bcfe7ced" valueTypeId="0ae629f2-91b2-4c35-bf11-491d127ffb53"/>
+    <listType typeId="847441ba-6513-4d2b-a232-cb086b834172" valueTypeId="1ae323de-aeb0-4584-ab68-61cb04c95bd4"/>
+    <managerType typeId="5dda0722-ecfa-48b7-a08f-a8cc71abff89" valueTypeId="0fe02f9d-21ca-4257-a31b-c9b4573b5ac8"/>
+  </producedTypes>
+  <name>ВидыОперацийСчетКонтрагента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций счет контрагента</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9aa9272f-d459-423f-b5de-db6914f017ef">
+    <name>СТранспортнойКомпанией</name>
+    <synonym>
+      <key>ru</key>
+      <value>С транспортной компанией</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2f0f9cf0-6f68-4102-b8ea-07c654047df1">
+    <name>СЭкспедиторскойКомпанией</name>
+    <synonym>
+      <key>ru</key>
+      <value>С экспедиторской компанией</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02298229-d673-4a45-89a8-ec450c3400dc">
+  <producedTypes>
+    <objectType typeId="5cf335b2-b1df-4f0b-a754-2a42e6c1fc52" valueTypeId="b45c2282-cd05-40c2-a28a-14fdf5da7f83"/>
+    <managerType typeId="734c6fc8-134b-4a8c-a12f-73f568599b95" valueTypeId="295f91ca-b7e8-4ff2-beb6-403d74f10cef"/>
+  </producedTypes>
+  <name>ИсторияЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История заказов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ИсторияЗаказов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ИсторияЗаказов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="639c1228-7811-4681-97ec-5521b9c2e051">
+    <name>Мегаордер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мегаордер</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5d60e662-02ae-4e67-9ff5-d8db45bda30f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="13cd6719-81dc-4c2b-860c-4eab3b27efad">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

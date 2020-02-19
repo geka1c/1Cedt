@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb11a9df-32f0-49d6-90bd-f6f9e1fb76f9">
+  <producedTypes>
+    <selectionType typeId="4ed51d50-ff97-4e6f-a2bf-714d8884cbbf" valueTypeId="7bd4dfcb-6400-4b68-9890-91ba350aa0a0"/>
+    <listType typeId="d9caf5c9-ddb9-46a7-b407-1affe85c9f65" valueTypeId="ce4b5ef1-9ad8-47dd-bed0-61409c35cf1c"/>
+    <managerType typeId="9eabcc6c-b82d-4fb9-a119-268c04f69155" valueTypeId="7f4a23f9-c3af-4f06-ad9d-d7fcce20bde8"/>
+    <recordSetType typeId="076814de-4cec-4914-8179-9f7d6116f93e" valueTypeId="23df62ca-4f32-4d41-96f4-b6e9addb47b3"/>
+    <recordKeyType typeId="93bc0ac2-19d5-4512-a90a-eecb5a4a80b6" valueTypeId="5a7657af-5fb5-4aa6-a4db-903d911ca0a1"/>
+    <recordType typeId="7c5af487-f367-4bdf-a68f-a99422bcb6e0" valueTypeId="94d8c792-63ae-4e81-b826-3bc14cb8a3aa"/>
+    <recordManagerType typeId="e3f03531-6291-44bd-8fe2-6338b7cec62b" valueTypeId="86fd7de2-d057-491d-a5d0-d805af0533e2"/>
+  </producedTypes>
+  <name>СтатусыДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы доставки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b952f1d5-2adb-4dd5-b54b-c4f330032e39">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОтправкиГруза</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="0371f6b3-9049-4027-8926-1466d8a7b313">
+    <name>ОриентеровачнаяДатаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ориентеровачная дата доставки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cad8245f-3edd-4694-a299-bf3f50760f3d">
+    <name>НомерЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заявки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="d2567a36-24a7-4bc5-ace2-988b6a560023">
+    <name>ДатаЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заявки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f198ccf8-766a-4e9d-830d-cddc6b02a208">
+    <name>Груз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Груз</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОтправлениеТранзита</types>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

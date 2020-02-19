@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74a35b4f-fdb0-42d5-b708-aae940d0d4cf">
+  <producedTypes>
+    <objectType typeId="ba331737-3816-459c-ba68-176b12fe852f" valueTypeId="57f2bd42-c295-40ce-aa96-a02e50162f20"/>
+    <refType typeId="88213986-8e9f-428c-a934-ef84819baca1" valueTypeId="d411a3d1-5401-48a0-bfde-4939ec75c8ed"/>
+    <selectionType typeId="1f8a5073-6ffe-4eff-8295-52bd3da25bba" valueTypeId="d3887fc1-79ea-44c4-8717-ee29a2e0a5d7"/>
+    <listType typeId="35372d09-edf2-422f-8403-628e0db5673d" valueTypeId="664faaaa-67e8-41b0-bd0e-83d75816450f"/>
+    <managerType typeId="49e16e46-740c-4ba5-8c1f-7532468a1bc4" valueTypeId="a7ac3ae8-4ef1-4ec8-9551-c6f32356e2d8"/>
+  </producedTypes>
+  <name>ГородаBoxBerry</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города box berry</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГородаBoxBerry.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГородаBoxBerry.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ГородаBoxBerry.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ГородаBoxBerry.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="2b59e6ef-698f-4495-842b-aeef9a142ce5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2e8dc78a-bb77-401c-ae05-8d3e83da8b76">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="fe0a3b72-2a70-45d6-9007-02c390a528f0">
+    <name>ЗагрузитьГорода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить города</value>
+    </synonym>
+    <group>ActionsPanelCreate</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72a9b4c4-9492-4dff-a594-a8761e65f214">
+  <producedTypes>
+    <selectionType typeId="d6fefd6c-b869-4143-91e7-e02bab723e74" valueTypeId="3da99a5f-dfdb-4cea-9dcc-e79e07023a77"/>
+    <listType typeId="1b8d54c7-46b4-4683-a55a-619a468d5db9" valueTypeId="d39c450d-ccc1-4006-954a-5f6ab5bbfb59"/>
+    <managerType typeId="c50a82d1-56b4-49a8-9558-f21a44d65a2d" valueTypeId="6d1d3ce5-6bc1-4c5b-96be-0dec7b0481e2"/>
+    <recordSetType typeId="d24fd3b0-85ca-46d9-85d1-8a5b0d217689" valueTypeId="50b13069-5461-4b19-bdd5-f5d782d388d5"/>
+    <recordKeyType typeId="8b38584f-910b-4827-b829-1206b7569427" valueTypeId="8323238d-3307-4fe8-adf0-5513494e35fd"/>
+    <recordType typeId="c7794104-ef44-4be4-b640-c124354cf5da" valueTypeId="9d16baf3-ac79-4fbc-b396-80a70bfcd913"/>
+    <recordManagerType typeId="4520c619-53af-42ea-a900-156a51f88317" valueTypeId="def6ff52-acaf-4ef6-93f2-6c125a4311b6"/>
+  </producedTypes>
+  <name>ПротоколыОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протоколы обмена</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d0809a8c-65a0-45de-8638-27ff396b13d5">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d62f74c0-aeee-4607-93af-045370ec57fc">
+    <name>ПолученныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полученные данные</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="25e588fb-5296-4d5f-8036-18bca0663c47">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="902a7698-bf5e-4091-a04f-c99883ca638f">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПартияДляОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

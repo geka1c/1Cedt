@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="baa42343-926e-4ad5-8e51-87862ab0b163">
+  <producedTypes>
+    <managerType typeId="857f9f93-fed8-404b-9031-f2fe27b3ecfa" valueTypeId="430b2bb6-ca1a-437a-9dea-921975e56699"/>
+    <valueManagerType typeId="58af5ec3-b7dd-4509-891e-b9a0bfbbd1db" valueTypeId="f1e0883e-c726-4e09-8e4c-2cba604d59d4"/>
+    <valueKeyType typeId="23a09a04-8126-46ba-86c2-1918db3aad55" valueTypeId="e93785e1-348e-4f8a-a058-9d34082e5c5a"/>
+  </producedTypes>
+  <name>ТарифПристроя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тариф пристроя</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

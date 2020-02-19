@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d49b754a-2cc5-4811-a6cb-dbf74084b336">
+  <name>аСПОбновление</name>
+  <synonym>
+    <key>ru</key>
+    <value>А СПОбновление</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

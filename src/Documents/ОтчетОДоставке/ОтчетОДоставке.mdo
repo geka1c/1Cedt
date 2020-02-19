@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="423abdd1-2963-4431-91a7-aaf675ee4712">
+  <producedTypes>
+    <objectType typeId="6c6babad-c5a4-4559-bddb-db81ac4e05f1" valueTypeId="a36f73ae-1c00-4d8e-8b57-8c323d3c56d8"/>
+    <refType typeId="cfbda9a7-d4fe-47c1-9e20-14a620c08752" valueTypeId="c088878a-b828-4b9b-b61b-0740b8a03f69"/>
+    <selectionType typeId="d62176a2-4387-493c-bd3e-7c8a51b2a79c" valueTypeId="b34dd406-265d-48ef-bf1d-46572d1e3cdb"/>
+    <listType typeId="a553c51a-8f91-4dbc-a521-bd0edb6b7447" valueTypeId="8f26486e-9c61-40d4-aa17-2d1e91748f05"/>
+    <managerType typeId="a7080ef7-6afd-49a7-8aa5-734d13514228" valueTypeId="115d4a47-08c7-4272-a188-7c2c8692b6c1"/>
+  </producedTypes>
+  <name>ОтчетОДоставке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о доставке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтчетОДоставке.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>12</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОтчетОДоставке.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СтатусыДоставкиСвернуто</registerRecords>
+  <registerRecords>InformationRegister.СтатусыЗаявокВТК</registerRecords>
+  <registerRecords>InformationRegister.СтатусыДоставки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7d93ac5b-0d75-480a-b4e4-bbb1982847f3">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийОтчетОДоставке</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="95381ca3-ff75-4315-915e-f43e0f3ecabb">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a87cf9cb-3578-4644-a789-ba1620a3e456">
+    <name>ДатаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата доставки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e1ca1446-97c8-4c25-ac5e-2beda9e0047c">
+    <name>ГруппыДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы доставки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b94b232f-3c47-442c-aeba-98bdd09079f7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c85b0f75-7e6c-4537-a3b5-49262bdd49e8">
+    <producedTypes>
+      <objectType typeId="b4f814f6-14fa-45e4-9f98-08c736f9228f" valueTypeId="a728fecf-53e1-4b22-a3f2-9cfede30b9a7"/>
+      <rowType typeId="f0604b33-9cf8-42cc-bc4b-c972bd85abff" valueTypeId="d53f760e-d5dd-4143-bee1-ef1bf020ec11"/>
+    </producedTypes>
+    <name>Заказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="50f4ceda-a73a-4c38-97c8-0b93cfd204ff">
+      <name>Груз</name>
+      <synonym>
+        <key>ru</key>
+        <value>Груз</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Коробки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8332ce2d-496b-4317-9489-9b503bda2a03">
+      <name>Заявка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаВТранспортнуюКомпанию</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2a2d6994-f443-4a4c-8f90-278c3dbb974c">
+    <producedTypes>
+      <objectType typeId="1119925c-93e7-4082-91f3-56e8fe1f1b57" valueTypeId="057f04e7-931b-4b29-9dbb-768f91271af2"/>
+      <rowType typeId="90eff5e8-4baa-4cb4-b0c3-be08aeed48b2" valueTypeId="dae1098d-0d55-4f30-8006-c014ea5de233"/>
+    </producedTypes>
+    <name>ЗаявкиВТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки ВТК</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3b7945e3-f4a5-453d-b0e5-2297a773fcad">
+      <name>Заявка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заявка</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаявкаВТранспортнуюКомпанию</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

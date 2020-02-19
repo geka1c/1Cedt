@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a88f3231-75c9-40ae-976d-931c260c943b">
+  <producedTypes>
+    <refType typeId="edc41322-4125-4826-a09d-aa95408c5ce7" valueTypeId="45234477-cd1d-417b-b50a-c236c48417ce"/>
+    <listType typeId="c47dcaae-b867-4f79-afea-142d3a64a616" valueTypeId="f77ce60e-803d-49fe-aa02-bb9e6275fbb0"/>
+    <managerType typeId="0fd08d5b-80bd-4566-9b74-6117dcd13e8c" valueTypeId="a0e3c583-d0b5-477d-8936-ecf34e64abcf"/>
+  </producedTypes>
+  <name>ВидыПриходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды приходов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a3f01802-1efe-415d-aa33-5f5f909b2a8f">
+    <name>ОтОрганизатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>От организатора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d9868e7c-2249-4f1f-892c-fdfedb60e678">
+    <name>СТранзита</name>
+    <synonym>
+      <key>ru</key>
+      <value>С транзита</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a503fe04-e18a-4166-bf76-dfac36216f93">
+    <name>НаТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>На транзит</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

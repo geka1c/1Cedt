@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdb2aed0-43db-4d1a-b186-d4dccb29bb5a">
+  <name>ДрайверШтрихМЭлектронныеВесы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Драйвер &quot;Штрих-М:Электронные весы&quot;</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

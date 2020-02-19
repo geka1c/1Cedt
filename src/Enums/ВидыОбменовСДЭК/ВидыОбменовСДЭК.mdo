@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84746a85-d1c0-47e6-8451-e71ac505e39d">
+  <producedTypes>
+    <refType typeId="5be75f2c-e86a-488d-a5e2-1eba172000ad" valueTypeId="d69472e2-e1da-4fb6-96bb-95ea9cc43f53"/>
+    <listType typeId="b53cdfbe-d433-4f42-981d-b405fd20ddf2" valueTypeId="6b21273e-e577-40f9-b621-eaef1c54a14c"/>
+    <managerType typeId="5c939684-3a33-4b5e-8274-aefcd19f5438" valueTypeId="75f1dafe-f573-4418-a822-ef16141abaf4"/>
+  </producedTypes>
+  <name>ВидыОбменовСДЭК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды обменов СДЭК</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="23b5b3ff-35e9-483d-b4b5-edb4937517d4">
+    <name>СозданиеЗаказаНаДоставку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание заказа на доставку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="618fd995-6143-49cc-b869-74de696252e5">
+    <name>ИнформацияПоЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация по заказам</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="56018b60-7086-41b2-9a46-2d755d8c2821">
+    <name>ПолучитьКвитанцию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить квитанцию</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f6e88ceb-b4de-4f7a-9672-e0e5ef6052b5">
+    <name>СтоимостьПоТарифу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость по тарифу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bd85e53c-0b51-47b9-89f9-25bdb0315b62">
+    <name>УдалениеЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление заказа</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f77033f-0ed5-4646-85b3-3de6d07eeed7">
+  <name>Выдача</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделПродажи</picture>
+  </picture>
+  <content>Document.Расходная</content>
+  <content>AccumulationRegister.ОстаткиТоваров</content>
+  <content>Report.ОтчетЗаДень</content>
+  <content>Report.ОстаткиНаСкладе</content>
+  <content>AccumulationRegister.Расход</content>
+  <content>Document.ВыдачаТранзита</content>
+  <content>DocumentJournal.ДокуметыВыдачи</content>
+  <content>AccumulationRegister.Транзит</content>
+  <content>DataProcessor.МассоваяВыдачаПокупок</content>
+  <content>AccumulationRegister.Продажи</content>
+  <content>Document.Продажа</content>
+  <content>Report.КассоваяВедомость</content>
+  <content>Report.ПоискУчатникаСКД</content>
+  <content>Report.ПоискПокупок</content>
+</mdclass:Subsystem>

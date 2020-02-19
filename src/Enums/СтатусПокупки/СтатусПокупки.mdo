@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcd7052f-f61d-406d-9b1a-1f087490c2b2">
+  <producedTypes>
+    <refType typeId="fb9706c3-6074-450a-ac79-917d4c379fd5" valueTypeId="fbbf7333-b683-4bc4-b829-afaf14967e8b"/>
+    <listType typeId="9a18c290-d0c9-42e7-a996-89b6ed55bc28" valueTypeId="ed411eb1-4b74-4391-9e97-7043848ae507"/>
+    <managerType typeId="56159170-c51b-47eb-92a8-b46f34cb9b66" valueTypeId="db2d9ee1-3954-411e-8b2f-b88c75d87ae3"/>
+  </producedTypes>
+  <name>СтатусПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cf0d6401-5f2a-416b-8ccb-42fdef455dd9">
+    <name>Потерян</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потерян</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d7b509bb-c5b4-498b-a11b-76ec53306818">
+    <name>Оплачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6fc01aba-2ddb-4eb0-9414-15aac0f77991">
+    <name>Стандартный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стандартный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

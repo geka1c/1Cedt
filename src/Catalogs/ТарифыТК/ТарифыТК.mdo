@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="797c125f-4043-4dd2-99d2-b22d436d6707">
+  <producedTypes>
+    <objectType typeId="dba8c789-41dc-4447-bf45-9dc8e5998f69" valueTypeId="6b571088-0472-49ed-911d-94c323535f08"/>
+    <refType typeId="e058d980-e2b3-446d-be0b-06a16869e710" valueTypeId="0160d5cd-c250-458f-9061-6b5b622b5087"/>
+    <selectionType typeId="bf28f727-ee3b-47b2-8152-f8941a811c7b" valueTypeId="70b7e797-2ede-48f3-a65b-0d693d619685"/>
+    <listType typeId="d58f0d1d-8a0b-4f80-94d0-13e8cd964e6d" valueTypeId="0169f556-e2c3-4810-a5fc-a2db185496fb"/>
+    <managerType typeId="40fa1c19-ca33-45ad-a4f5-3a1ca72e9487" valueTypeId="6d467ba1-0f84-471c-82e2-67f32fe7b998"/>
+  </producedTypes>
+  <name>ТарифыТК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы ТК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТарифыТК.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТарифыТК.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="46f12e7d-fc22-4f4d-82e8-7ce9622d5fa1">
+      <name>Тариф136</name>
+      <description>136</description>
+      <code xsi:type="core:StringValue">
+        <value>136</value>
+      </code>
+    </items>
+    <items id="276f2da5-a6d4-4d32-ab36-96fe9615ade9">
+      <name>Тариф137</name>
+      <description>Тариф233</description>
+      <code xsi:type="core:StringValue">
+        <value>137</value>
+      </code>
+    </items>
+    <items id="8ef8d4ab-ce73-4c06-8d76-32a396d7ab62">
+      <name>Тариф302</name>
+      <description>Тариф302</description>
+      <code xsi:type="core:StringValue">
+        <value>302</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТарифыТК.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.ТарифыТК.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="0e286091-fce5-4675-aa7a-89bfdafefa52">
+    <name>ТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7444973a-5797-4ec9-923c-39eaa9c0f4b6">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d3de7c3a-7d0c-49f9-8997-d35422acc42c">
+    <name>Ограничения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc98e6e6-fda9-49dc-a0dd-001b9272fa94">
+    <name>КодТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код тарифа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc88fbed-7530-4f57-94a3-727c021053aa">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="22613416-df2c-499e-8834-d735c0b4b7a4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1cb9179f-3905-4107-a8a4-ccce127fc9ad">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b53226cf-f2a1-41ff-9edf-6562f3812f76">
+  <name>ФормаНастройкиАтолЭлектронныеВесы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма настройки &quot;АТОЛ: Электронные весы&quot;</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

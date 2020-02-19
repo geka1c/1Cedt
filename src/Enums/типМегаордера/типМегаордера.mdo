@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2566c918-cf84-46ac-a8b7-4602e99a0996">
+  <producedTypes>
+    <refType typeId="e590fcdd-2a8a-42ed-a675-21d6602e9da1" valueTypeId="92d7e128-01b8-43b5-9f48-5865b531ac8a"/>
+    <listType typeId="83974407-808d-42ec-b4f0-8cb9da364263" valueTypeId="6928639c-d4db-43e0-a601-e853dbfce28a"/>
+    <managerType typeId="3026843d-9b42-48f5-95ad-8f61f8d1b877" valueTypeId="10fef58e-dda1-4e64-bdb4-43fb7c0e4d1d"/>
+  </producedTypes>
+  <name>типМегаордера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип мегаордера</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2d5eb994-2c2b-4267-8c4d-e661cd740ab0">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка (44)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="adde32cd-7fcb-40c9-9982-604190bb1917">
+    <name>Посылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Посылка (12)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cef60d0f-e034-4439-8f11-07b8cd6b3ee7">
+    <name>Супергруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супергруппа (67)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e56410fe-406b-4c45-aff0-210828bc8683">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка (11)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="99c43f18-3e84-478d-9c5d-157db927474d">
+    <name>Заказ100маркета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ100маркета (33)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="26367804-4611-4da8-a7b1-3dcd5d68ce2a">
+    <name>КартаУчастника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта участника (22)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c3f429d6-a5ee-4878-8a21-513aec6ecf04">
+    <name>КартаУчастникаВиртуальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта участника (23)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d848eecb-4266-4c10-8928-a262c5430033">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник (55)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0364909d-5799-439c-a4b8-52b35968b807">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура (61)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="328cfafe-eac9-426b-8cbc-da73b684c421">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит (62)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="30af3d23-a923-4aff-b512-b37ecb445132">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения (63)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="824c8ba6-1fda-445d-bc83-91c4dee947a3">
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи (64)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="37114c72-e600-447b-8719-75d5a9952019">
+    <name>ФункцияШК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие по ШК (66)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9905aebc-750e-46b5-b4a9-c53dfd631451">
+    <name>Расходная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходная (68)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

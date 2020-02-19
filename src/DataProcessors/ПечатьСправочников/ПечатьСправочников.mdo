@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87985d3c-8556-4bda-8d5e-823f746c87c7">
+  <producedTypes>
+    <objectType typeId="45b49ca4-fc5c-4e63-858f-c393ca7b0071" valueTypeId="75ea1eda-9222-43fd-b63b-63ab28c08ac2"/>
+    <managerType typeId="3b94e817-4f25-424e-b8cf-c7793c24c853" valueTypeId="e949acf8-1a5b-4945-967d-c8a331201b7c"/>
+  </producedTypes>
+  <name>ПечатьСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать справочников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьСправочников.Form.Форма</defaultForm>
+  <tabularSections uuid="e0cce349-e0cf-471b-8468-a3beea0b9ad7">
+    <producedTypes>
+      <objectType typeId="ff80e499-f93f-4bbb-b845-de1f9df3011b" valueTypeId="60f57cc0-eb7d-45fd-aa80-d1a083ea1551"/>
+      <rowType typeId="2a32037b-0235-4adb-8940-41d393a5873c" valueTypeId="c04234cd-1130-4d17-b1e2-20826f474116"/>
+    </producedTypes>
+    <name>Элементы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элементы</value>
+    </synonym>
+    <attributes uuid="05ee8c5f-a8f6-444e-b49e-9269864b0fc4">
+      <name>Штрихкод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Штрихкод</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="ca0696a0-ffe0-4791-a540-c62701670af4">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>DefinedType.СправочникиДляПечатиШК</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="498e5f08-704a-4cf5-af24-e67c25b21e98">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество экземпляров этикеток(ценников), выводимых на печать.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ddbd477d-0372-4374-b111-d5798ca26f2c">
+      <name>Шаблон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаблон</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХранилищеШаблонов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4aa8ef77-3a3c-474c-af81-b2259b1a0fb6">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="164630bb-bd5e-4f3f-98e0-75819913b34a">
+      <name>ТипЭ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип Э</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="98539168-e4a9-4bb5-a982-197b8fc59256">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3342bc96-9a09-4eff-a82b-9ac2404a7ac6">
+    <name>ПоляШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля шаблона</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a23ea4e2-cb6d-469f-b311-0a148181992a">
+    <name>Эталон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

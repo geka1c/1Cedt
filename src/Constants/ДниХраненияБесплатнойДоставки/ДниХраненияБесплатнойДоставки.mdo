@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d271f3f-1826-4205-9372-406dd14a5948">
+  <producedTypes>
+    <managerType typeId="6c21e3dc-c7ef-46c9-abfa-9a7681096e79" valueTypeId="d6df706b-59f9-4d33-bbff-65cf4e1e0909"/>
+    <valueManagerType typeId="35f436dd-bea6-4afd-a18f-c1b859076f98" valueTypeId="4ef34929-f786-4ef0-8914-2d2c79688573"/>
+    <valueKeyType typeId="b20b9455-9c80-422c-a6f8-a2e9a09c954e" valueTypeId="aaab115b-4d37-4333-91e7-1700b9793d66"/>
+  </producedTypes>
+  <name>ДниХраненияБесплатнойДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дни хранения бесплатной доставки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Сколько дней оплачивает организатор при бесплатной доставке. Если в указаное количество дней заказ не забрали оставшиеся дни хранения оплачивает участник</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="035feef7-7d30-478f-af5c-911db0c73c8d">
+  <producedTypes>
+    <containerType typeId="1889c8f3-fabf-4835-bf07-69d802f92285" valueTypeId="c5094036-cc1d-420e-8475-0774eb7fd241"/>
+  </producedTypes>
+  <name>СправочникиДляПечатиШК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники для печати ШК</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ФункциональныеШК</types>
+    <types>CatalogRef.Габариты</types>
+    <types>CatalogRef.ТочкиРаздачи</types>
+    <types>CatalogRef.Сотрудники</types>
+    <types>CatalogRef.Посылки</types>
+    <types>CatalogRef.Номенклатура</types>
+    <types>CatalogRef.МестаХранения</types>
+  </type>
+</mdclass:DefinedType>

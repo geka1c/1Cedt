@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34d2c3c1-3613-4c1c-ba2d-4cb51ad33f81">
+  <name>ПодсистемаРозничныеПродажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подсистема розничные продажи</value>
+  </synonym>
+  <transparentPixel>
+    <x>40</x>
+    <y>41</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

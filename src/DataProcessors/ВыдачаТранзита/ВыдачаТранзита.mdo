@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a15bf12-dbbe-49d3-8036-e5cb1bbce616">
+  <producedTypes>
+    <objectType typeId="a9f6f082-e090-46d9-b11e-a1f4eddec9a1" valueTypeId="ec518d5d-db6c-49ae-b77f-a62dc539c02d"/>
+    <managerType typeId="bdc39aa9-707c-437e-abb1-9bec58a3111d" valueTypeId="4993057b-67eb-4f83-a8b0-cd34a222a9c9"/>
+  </producedTypes>
+  <name>ВыдачаТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача транзита</value>
+  </synonym>
+  <defaultForm>DataProcessor.ВыдачаТранзита.Form.Форма</defaultForm>
+  <forms uuid="aaf0de3a-c6b5-460c-9a80-eac2f834bae1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="73e99d00-3428-4958-a1c6-4a1223fe16de">
+    <name>НеПодтвержденныеПосылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подтвержденные посылки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

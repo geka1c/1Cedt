@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0034936-9ecc-4350-9413-ec933f007832">
+  <producedTypes>
+    <managerType typeId="e21cc24f-e4a0-45cd-90d7-42face088593" valueTypeId="73fca501-e680-4459-88ef-7a0cce801ad8"/>
+    <valueManagerType typeId="bb4e948a-7a41-422c-adee-ede9e9830b61" valueTypeId="8f500fe4-48aa-4e20-969a-41b8957fa5bc"/>
+    <valueKeyType typeId="4f3c585f-e2de-55b3-b61b-01557df9d459" valueTypeId="464e39b8-b60b-5aa3-898e-cd79fcc753ce"/>
+  </producedTypes>
+  <name>ДниВозврата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дни возврата</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

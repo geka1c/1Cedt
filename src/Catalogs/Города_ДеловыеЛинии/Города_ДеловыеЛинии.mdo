@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3662a332-dcd7-4c88-9a14-2e3bea6093bb">
+  <producedTypes>
+    <objectType typeId="95caf9c8-cfb2-43dc-8fa3-b2e85cbe2492" valueTypeId="b5b95e92-17b1-403c-a49c-18caca816bb8"/>
+    <refType typeId="dd7d7fa3-97c4-423b-8bc2-e618f72a128a" valueTypeId="c51b745c-cef7-461d-a578-bb8875bae280"/>
+    <selectionType typeId="868997d5-def9-46b5-b364-f68b4a114444" valueTypeId="bea60aa6-0fe9-4734-a0eb-5c4780299340"/>
+    <listType typeId="e6e3abce-f940-4fea-ae33-ba676462ce55" valueTypeId="209b9e1b-334b-4751-856c-13c6b90c1f30"/>
+    <managerType typeId="71de2f31-abd2-49c1-a36f-68a3abb4a380" valueTypeId="b7f94130-8889-49a2-82ee-ac2e7856bcd8"/>
+  </producedTypes>
+  <name>Города_ДеловыеЛинии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города деловые линии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Города_ДеловыеЛинии.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Города_ДеловыеЛинии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="562a4f78-d4f5-4303-9baf-ab04f54778ca">
+    <name>кодКЛАДР</name>
+    <synonym>
+      <key>ru</key>
+      <value>код КЛАДР</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a3483d0-154b-4de2-bf16-0b3f4213b2d0">
+    <name>строкаПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка поиска</value>
+    </synonym>
+    <comment>Строка поиска</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1c3d95c5-a9c8-42fa-aa86-27fa16641357">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <comment>Регион</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="97d1ed00-9dbe-46bc-855a-6eb48c2eea53">
+    <name>РегионКЛАДР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион КЛАДР</value>
+    </synonym>
+    <comment>Регион КЛАДР</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c5207841-6c86-44bd-8d63-6e9de6565e19">
+    <name>Район</name>
+    <synonym>
+      <key>ru</key>
+      <value>Район</value>
+    </synonym>
+    <comment>Район</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="751834ac-8239-4a1b-8ffe-f7a28abfd740">
+    <name>РайонКЛАДР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Район КЛАДР</value>
+    </synonym>
+    <comment>Район КЛАДР</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

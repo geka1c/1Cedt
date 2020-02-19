@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6622971-1ee0-41ec-a83f-43caaf2f994e">
+  <name>МакетПоискУчастника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Макет поиск участника</value>
+  </synonym>
+  <templateType>DataCompositionAppearanceTemplate</templateType>
+</mdclass:CommonTemplate>

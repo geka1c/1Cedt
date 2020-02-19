@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="516e78e5-74e4-407e-b773-2fcc9edc210f">
+  <producedTypes>
+    <managerType typeId="703ae400-fb33-4c30-a3f8-8a423879564b" valueTypeId="71151a77-24be-451a-b303-94b3f64438b0"/>
+    <valueManagerType typeId="dec26c09-388f-4ba2-8ccd-1ae8198f965d" valueTypeId="97202f0d-c9ac-4265-8289-19d271bffcf7"/>
+    <valueKeyType typeId="9e6dfb9d-ba4f-5889-8abd-d56439095f0a" valueTypeId="ccee9371-98ae-58fc-9c74-1919ece9c7c6"/>
+  </producedTypes>
+  <name>ПоискТочноеСоответствие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск точное соответствие</value>
+  </synonym>
+  <comment>Умолчание для отчета Поиск участника</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

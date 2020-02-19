@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eac6efe1-6656-4279-b957-e50ef1e98b7b">
+  <producedTypes>
+    <refType typeId="7c8daef6-2368-4e7a-93fa-21270278bb0e" valueTypeId="5ff08973-6b76-4045-83ea-41c969b82546"/>
+    <listType typeId="0f5a45a3-d793-4bdc-9ff2-16afe77e6fa4" valueTypeId="12d75a0e-00db-4b6c-9fb3-716dbafbe84a"/>
+    <managerType typeId="cad80338-53f3-4529-8039-48f34a176ee2" valueTypeId="446011f9-b4ac-43b7-bfb3-3f85d0f4ec52"/>
+  </producedTypes>
+  <name>ТипыПриходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы приходов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ad6b86e4-cbb7-420e-8f55-d4917b1d63b9">
+    <name>НаСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>На склад</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="615a7a83-e89e-47a6-9b28-6477d251b700">
+    <name>НаТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>На транзит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f32d8f3d-7d8a-4901-99f8-92b9c733fb5d">
+    <name>ВозвратОтУчастника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возврат от участника</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="902a0490-60ca-488d-813d-3b43dd735445">
+    <name>ПристройНаСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пристрой на склад</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="003c1bef-5935-43a3-99ff-fa290d332961">
+    <name>ПристройНаТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пристрой на транзит</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СозданиеЗаказаТК</dataPath>
+			<field>СозданиеЗаказаТК</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создание заказа ТК</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтправлениеСПВ</dataPath>
+			<field>ОтправлениеСПВ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправление СПВ</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Супергруппа</dataPath>
+			<field>Супергруппа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Супергруппа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТрэкНомер</dataPath>
+			<field>ТрэкНомер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДоставкиПлан</dataPath>
+			<field>ДатаДоставкиПлан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранспортнаяКомпания</dataPath>
+			<field>ТранспортнаяКомпания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаДоставкиФакт</dataPath>
+			<field>ДатаДоставкиФакт</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Транзит.Регистратор КАК Регистратор,
+	Транзит.ПокупкаСсылка КАК ПокупкаСсылка,
+	Транзит.Точка КАК Точка,
+	Транзит.Партия КАК Партия
+ПОМЕСТИТЬ Отправления
+ИЗ
+	РегистрНакопления.Транзит КАК Транзит
+ГДЕ
+	Транзит.Точка = &amp;Точка
+	И Транзит.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+	И ТИПЗНАЧЕНИЯ(Транзит.ПокупкаСсылка) = ТИП(Справочник.Коробки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Транзит.Регистратор КАК Регистратор,
+	Транзит.ПокупкаСсылка КАК ПокупкаСсылка,
+	Транзит.Точка КАК Точка,
+	Транзит.Партия КАК Партия
+ПОМЕСТИТЬ Выдачи
+ИЗ
+	РегистрНакопления.Транзит КАК Транзит
+ГДЕ
+	Транзит.Точка = &amp;Точка
+	И Транзит.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И ТИПЗНАЧЕНИЯ(Транзит.ПокупкаСсылка) = ТИП(Справочник.Коробки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(МегаордераМаршрут.ТранспортнаяКомпания) КАК ТранспортнаяКомпания,
+	МАКСИМУМ(МегаордераМаршрут.ТрэкНомер) КАК ТрэкНомер,
+	МАКСИМУМ(МегаордераМаршрут.ДатаДоставкиПлан) КАК ДатаДоставкиПлан,
+	МАКСИМУМ(МегаордераМаршрут.ДатаДоставкиФакт) КАК ДатаДоставкиФакт,
+	МАКСИМУМ(МегаордераМаршрут.Комментарий) КАК Комментарий,
+	МегаордераМаршрут.Ссылка КАК Супергруппа
+ПОМЕСТИТЬ Маршрут
+ИЗ
+	Справочник.Мегаордера.Маршрут КАК МегаордераМаршрут
+ГДЕ
+	МегаордераМаршрут.Ссылка В
+			(ВЫБРАТЬ
+				Выдачи.Регистратор.Супергруппа КАК РегистраторШК
+			ИЗ
+				Выдачи КАК Выдачи)
+
+СГРУППИРОВАТЬ ПО
+	МегаордераМаршрут.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Отправления.ПокупкаСсылка КАК Заказ,
+	Отправления.Регистратор КАК СозданиеЗаказаТК,
+	Выдачи.Регистратор КАК ОтправлениеСПВ,
+	Выдачи.Регистратор.Супергруппа КАК Супергруппа,
+	Маршрут.ТранспортнаяКомпания КАК ТранспортнаяКомпания,
+	Маршрут.ТрэкНомер КАК ТрэкНомер,
+	Маршрут.ДатаДоставкиПлан КАК ДатаДоставкиПлан,
+	Маршрут.ДатаДоставкиФакт КАК ДатаДоставкиФакт,
+	Маршрут.Комментарий КАК Комментарий
+ИЗ
+	Отправления КАК Отправления
+		ЛЕВОЕ СОЕДИНЕНИЕ Выдачи КАК Выдачи
+			ЛЕВОЕ СОЕДИНЕНИЕ Маршрут КАК Маршрут
+			ПО Выдачи.Регистратор.Супергруппа = Маршрут.Супергруппа
+		ПО Отправления.ПокупкаСсылка = Выдачи.ПокупкаСсылка</query>
+	</dataSet>
+	<parameter>
+		<name>Точка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Точка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ТочкиРаздачи</v8:Type>
+		</valueType>
+		<value xsi:type="xs:string">e182a277-bd19-11e6-8276-001e67dfb4e5</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Даты</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СозданиеЗаказаТК.Дата</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата создания в ТК</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтправлениеСПВ.Дата</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата отправления с ПВ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаДоставкиПлан</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДатаДоставкиФакт</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ.ДатаПервогоПоступления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ.Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТрэкНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТранспортнаяКомпания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Супергруппа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СозданиеЗаказаТК</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтправлениеСПВ</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Точка</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">e182a277-bd19-11e6-8276-001e67dfb4e5</dcscor:value>
+					<dcsset:userSettingID>622962b5-0634-4fb6-8dae-561746c9ec96</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>СозданиеЗаказаТК.Дата</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

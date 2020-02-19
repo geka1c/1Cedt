@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9fafc9f-9b1d-4b27-b2d7-b72b41362518">
+  <producedTypes>
+    <managerType typeId="70f4b926-22a4-4416-bf8d-d366ca912d5d" valueTypeId="5b74886e-f602-48d4-a2ac-b9792caea214"/>
+    <valueManagerType typeId="bc2eb627-f343-4eb3-a264-39274ee816e1" valueTypeId="ceac937a-5378-4ef0-bfb5-8a94ac6ed939"/>
+    <valueKeyType typeId="a2ee3ad0-efb1-4b7b-88b8-8ed8d38f3aef" valueTypeId="d32fcf0c-6cb5-4c70-bdfa-688d0bb6b84b"/>
+  </producedTypes>
+  <name>ИспользоватьДвухЭтапнуюВыдачуЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать двух этапную выдачу заказа</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

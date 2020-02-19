@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="748182a9-aaca-42c8-b554-e534b1b51b8b">
+  <producedTypes>
+    <objectType typeId="0289bca7-da89-4cd0-b192-c2272d70fcb9" valueTypeId="6601f4f9-73b3-46f4-8409-b7a9deefb5f6"/>
+    <managerType typeId="5110ce65-1ab0-4a80-91a1-8c4bf28c157b" valueTypeId="eb6dc334-5425-42c7-a35d-12fe4299aabf"/>
+  </producedTypes>
+  <name>ПросроченныеТранзиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просроченные транзиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПросроченныеТранзиты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Отчет по транзитным заказам, которые лежат на пункте выдачи больше указанного количества дней</value>
+  </explanation>
+  <templates uuid="42caac72-134d-4fc2-9d9e-8048900d03d6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

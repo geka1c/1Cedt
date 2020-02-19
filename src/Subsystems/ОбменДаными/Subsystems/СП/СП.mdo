@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57062f7a-525d-46b1-9759-c78723ddc01f">
+  <name>СП</name>
+  <synonym>
+    <key>ru</key>
+    <value>СП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПакетНаСайт</content>
+  <content>Document.ЗакрытиеОшибокОбмена</content>
+  <content>InformationRegister.Обмен100сп</content>
+  <content>InformationRegister.Обмен100спСообщения</content>
+  <content>CommonCommand.ЧистимСтарыеДвиженияОбмена</content>
+  <content>AccumulationRegister.Обмен100СПрн</content>
+  <content>Document.Выгрузка_100СП</content>
+  <content>AccumulationRegister.Обмен100СПрн_Ошибки</content>
+  <content>InformationRegister.ПротоколыОбмена</content>
+  <content>AccumulationRegister.НеВыгруженноНаСайт</content>
+  <content>Report.ОшибкиОбмена100СП</content>
+  <content>Report.ГруппыДоставкиИстроияОбменов</content>
+  <parentSubsystem>Subsystem.ОбменДаными</parentSubsystem>
+</mdclass:Subsystem>

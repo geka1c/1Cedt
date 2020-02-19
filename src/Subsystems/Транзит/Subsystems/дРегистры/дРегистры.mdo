@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b08384c-6c44-4d95-bdd9-766ea1e85e6f">
+  <name>дРегистры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>AccumulationRegister.ВзаиморасчетыСКонтрагентами</content>
+  <content>AccumulationRegister.Транзит</content>
+  <content>AccumulationRegister.УпакованныеЗаказы</content>
+  <content>AccumulationRegister.КПолучению</content>
+  <content>AccumulationRegister.Приход</content>
+  <content>AccumulationRegister.ЗаказыВПосылках</content>
+  <content>AccumulationRegister.ОстаткиНаСкладе</content>
+  <parentSubsystem>Subsystem.Транзит</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53f01d4a-fa6a-499f-88ee-263b08bc47b2">
+  <name>СтоСП_ТекущиеДела</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто с п текущие дела</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

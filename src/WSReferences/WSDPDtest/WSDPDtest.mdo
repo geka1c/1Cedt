@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c8c9cf9-9b7d-459b-931e-c401ce40f130">
+  <producedTypes>
+    <managerType typeId="e9050535-da75-43b7-9e33-80e5c00dd259" valueTypeId="8c02daca-a30b-4942-9a6a-bd63f2189ecd"/>
+  </producedTypes>
+  <name>WSDPDtest</name>
+  <synonym>
+    <key>ru</key>
+    <value>WSDPDtest</value>
+  </synonym>
+  <locationURL>http://wstest.dpd.ru/services/geography2?wsdl</locationURL>
+</mdclass:WSReference>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a08d25b-f6e3-40e1-a1bd-032949ab4274">
+  <producedTypes>
+    <managerType typeId="8e204031-189e-48a9-bd28-6465f54eaa7e" valueTypeId="974eb1b4-498d-4c29-8c93-c7404c60208b"/>
+    <valueManagerType typeId="8721559d-6639-487b-9123-03f9db9ceb42" valueTypeId="77d125b9-cc98-409f-ae36-fca6072ef72b"/>
+    <valueKeyType typeId="4c96dcf1-da02-4fba-b7ed-7b22431cb421" valueTypeId="0c0c95ad-734b-40b8-ada3-3945ac95115f"/>
+  </producedTypes>
+  <name>ПВТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПВТранзита</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ТочкиРаздачи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b8a41b1-0cd7-42b0-91f9-1e3907f7692e">
+  <name>бСуппергруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Суппергруппы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.РегистрацияСупперГруппы</content>
+  <content>Document.ЗаполнитьКоленоМаршрута</content>
+  <content>DataProcessor.КалендарьСупергрупп</content>
+  <content>Document.ЗаполнитьСупергруппу</content>
+  <content>Report.КонтрольСупергрупп</content>
+  <content>Document.ВыдачаТранзита</content>
+  <content>Document.УпаковатьЗаказы</content>
+  <content>CommonModule.СтоСПОбмен_СупперГруппы</content>
+  <parentSubsystem>Subsystem.Транзит</parentSubsystem>
+</mdclass:Subsystem>

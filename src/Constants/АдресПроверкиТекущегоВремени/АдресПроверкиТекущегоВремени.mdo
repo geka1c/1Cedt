@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c7a2693-247b-4e27-b402-11c8506147b3">
+  <producedTypes>
+    <managerType typeId="74d2ac1d-1360-49a3-9802-bd0ab89b04d1" valueTypeId="cad78d5a-d34f-4788-b2c6-f3d517a4fc4b"/>
+    <valueManagerType typeId="c6f133bc-94db-445b-98dc-8af9911f6ec5" valueTypeId="623fb3cc-2e1b-4542-80bd-7db7b3f2d6c2"/>
+    <valueKeyType typeId="157dd9d2-59e6-5303-b4fe-6489279e9d8b" valueTypeId="f238e7e2-56cb-5384-b4b0-af03c4016d5c"/>
+  </producedTypes>
+  <name>АдресПроверкиТекущегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес проверки текущего времени</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

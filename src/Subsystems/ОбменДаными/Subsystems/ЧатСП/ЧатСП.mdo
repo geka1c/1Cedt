@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3414c07a-73c3-44be-8dbd-e12cdf5b3448">
+  <name>ЧатСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат СП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.Чат100СП_Диалоги</content>
+  <content>InformationRegister.Чат100СП_Сообщения</content>
+  <content>DataProcessor.ОбменСообщениями100СП</content>
+  <parentSubsystem>Subsystem.ОбменДаными</parentSubsystem>
+</mdclass:Subsystem>

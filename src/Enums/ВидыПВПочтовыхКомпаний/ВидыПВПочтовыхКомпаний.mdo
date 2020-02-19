@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9812d18-ec1c-472a-af85-1278e8c10ba7">
+  <producedTypes>
+    <refType typeId="e11ae2b7-9c24-4844-ad19-0a1eeeb6e08d" valueTypeId="b405260c-8a9f-4a8e-8231-940d7bf977e7"/>
+    <listType typeId="e49cd25d-f224-42b3-8b16-4b226f75ac7b" valueTypeId="775146f5-251d-4020-8bd7-b1a90c62c80c"/>
+    <managerType typeId="3c13d5af-4366-4ad9-af00-4250cfc3ac54" valueTypeId="14853b17-d07f-4f08-840c-f1b1ee25f79d"/>
+  </producedTypes>
+  <name>ВидыПВПочтовыхКомпаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды ПВПочтовых компаний</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="379f53e4-faab-427f-8595-c95ed70049a1">
+    <name>Постомат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Постомат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d692b7f-fac4-4820-ae94-45b4bfcb474c">
+    <name>СДЭК</name>
+    <synonym>
+      <key>ru</key>
+      <value>СДЭК</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

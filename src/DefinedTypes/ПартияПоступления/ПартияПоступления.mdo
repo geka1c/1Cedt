@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d23f50fb-f5ef-42e8-91b3-7c62a1a1a06c">
+  <producedTypes>
+    <containerType typeId="b0307963-3bc5-4d81-b94f-912316625ce9" valueTypeId="bbb31b4d-7b13-4965-b423-d849fde268d9"/>
+  </producedTypes>
+  <name>ПартияПоступления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Партия поступления</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ДвижениеТранзита</types>
+    <types>DocumentRef.Приходная</types>
+    <types>DocumentRef.ПоступлениеПристроя</types>
+    <types>DocumentRef.РазборКоробки</types>
+  </type>
+</mdclass:DefinedType>

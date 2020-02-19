@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6eb9ed2d-9a57-45f5-9e88-a6cd98998879">
+  <producedTypes>
+    <refType typeId="37f614a1-245d-4902-8a0e-805de0d07b4f" valueTypeId="ade02c43-b0a7-4999-a0e5-7407990ed5b3"/>
+    <listType typeId="437ef6de-d61f-4a4b-88e4-ca7aca89fe21" valueTypeId="df173c90-29ed-4185-97cd-bfd1a21c17a0"/>
+    <managerType typeId="8dcb51c8-41c6-4942-8d82-2a1b5db0ccc2" valueTypeId="f615d4fb-dc01-4b7f-a3c4-cbfed940dfbe"/>
+  </producedTypes>
+  <name>ВидыОперацийВыдачаТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций выдача транзита</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2f295c62-0baa-418d-ba07-294ab420496b">
+    <name>НаОднуТочку</name>
+    <synonym>
+      <key>ru</key>
+      <value>На одну точку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4facfd4c-b74b-4c02-98ea-b050013f5667">
+    <name>НаНесколькоТочек</name>
+    <synonym>
+      <key>ru</key>
+      <value>На несколько точек</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

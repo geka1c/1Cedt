@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5108471-6609-40ae-a53c-d6cb22dc62cd">
+  <producedTypes>
+    <managerType typeId="ecc83f04-0fd1-4c3b-b414-92f31ec7ba23" valueTypeId="7c37ba0c-4361-4784-bd6e-acfbde685374"/>
+    <valueManagerType typeId="1a8e9518-9622-4423-8696-df8c2199cc3f" valueTypeId="155bfc87-6a19-4d74-853c-362fbb91e95f"/>
+    <valueKeyType typeId="37554e65-e438-5296-9bf8-b3eef0158b6c" valueTypeId="8b8f4c7c-2b82-5509-a326-ce39321e3bf3"/>
+  </producedTypes>
+  <name>АдресЗагрузкиДоставленныхТранзитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес загрузки доставленных транзитов</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

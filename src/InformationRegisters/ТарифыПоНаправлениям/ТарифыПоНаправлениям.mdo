@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7fe7cf6-e57f-43fb-bea7-785e9887a04d">
+  <producedTypes>
+    <selectionType typeId="58ca80ff-019e-4a9c-9754-66f81043a5c0" valueTypeId="1cf2c07f-6780-48fc-996f-b79ec656f189"/>
+    <listType typeId="c92ff29e-8a93-470f-bc69-12a810c3adca" valueTypeId="d34e585e-c02f-49ae-be89-0d708fbb84bc"/>
+    <managerType typeId="69af6ac6-aeed-48f3-9c34-320f90edf4f1" valueTypeId="e0890f74-1526-40f9-a204-11518707e50f"/>
+    <recordSetType typeId="881f7773-017d-46ee-af49-56dfc8df154d" valueTypeId="989dde5f-dc43-4024-8e51-b0e6e54ced18"/>
+    <recordKeyType typeId="6219601d-d03f-4789-a758-83f4b859a383" valueTypeId="5bd16a64-0ccd-4eb7-9acd-526e46d9ec8f"/>
+    <recordType typeId="d87e78ed-840d-4add-8985-ebe47987a79f" valueTypeId="033083f0-9f1b-4285-a1f8-256ad7cdabc7"/>
+    <recordManagerType typeId="6b86646e-bf3e-4340-89ab-6abc1faa03a6" valueTypeId="0e6e52a9-4ae5-4cbb-a35c-c5e62de30ab7"/>
+  </producedTypes>
+  <name>ТарифыПоНаправлениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы по направлениям</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="54ddeb9f-6ffc-431e-b9f9-699db21b720a">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a54f3bcd-dea7-4419-a66b-8f03efe4c36b">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Габариты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9fb9e428-48e1-40de-8e75-0b6f13d3da69">
+    <name>Откуда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Откуда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГородаСП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9f75bba2-7261-407c-9b35-95a3c5ac8b6a">
+    <name>Куда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Куда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГородаСП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aafde852-2066-4834-8924-ea84391c885a">
+  <producedTypes>
+    <objectType typeId="013cbca6-07b0-43f3-b81b-2383d334c36d" valueTypeId="53a46a9e-87fb-48d6-bac6-9e56332112d0"/>
+    <managerType typeId="cb517028-aa26-4afb-b38a-4c72b0c1793a" valueTypeId="e53486fd-319c-4294-85bd-1a2b12a93b38"/>
+  </producedTypes>
+  <name>ОбъединеннаяДоставкаГрузов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объединенная доставка грузов (Группы доставки, Курьерская доставка)</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОбъединеннаяДоставкаГрузов.Form.УчетДоставкиЗаказовчерезТК</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="d1a097c7-4b20-4a84-aa39-9d119dd1aeb1">
+    <name>УчетДоставкиЗаказовчерезТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет доставки заказовчерез ТК</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="5a745669-2fc8-4f33-9f82-dcb27baf4846">
+    <name>ОбъединеннаяДоставкаГрузов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объединенная доставка грузов</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Доставка&quot;Объединенных групп&quot; заказов, пристроя через транспортную компанию, курьера</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ГруппаФункций</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

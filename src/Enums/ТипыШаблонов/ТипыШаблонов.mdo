@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95f55c01-a9af-4c94-a699-1cea9a974797">
+  <producedTypes>
+    <refType typeId="7f874d81-e0de-4c94-8b42-04632670c745" valueTypeId="093b7e18-9038-4d70-989d-be9443159b65"/>
+    <listType typeId="a1a8c8a8-a0b2-4306-92a1-fd466ad5f82a" valueTypeId="3e88c76a-e61a-4efb-bd66-d728a9d9a261"/>
+    <managerType typeId="ec2d410e-00f1-4bf5-a62b-c67fcdf27dea" valueTypeId="412d75eb-5270-41d6-818f-e5885c5101ba"/>
+  </producedTypes>
+  <name>ТипыШаблонов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы шаблонов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d7ec84be-3e61-4609-8c60-1e1a1e2c91b7">
+    <name>ЭтикеткаЦенник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этикетка (ценник)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9804c9b0-deab-4f2d-be17-710723131fa2">
+    <name>ФискальныйЧек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фискальный чек</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

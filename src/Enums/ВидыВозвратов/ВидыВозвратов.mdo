@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9db65ff1-70b6-4a75-b533-38d59bea672a">
+  <producedTypes>
+    <refType typeId="40287a16-d8a5-4c53-a215-3fc9d255dfe8" valueTypeId="75f196f6-aa36-4613-a294-f1afd7f03e9f"/>
+    <listType typeId="7e00e5e9-3886-4ca3-970b-53f1b1d5d382" valueTypeId="4598f461-e1c3-47f8-9323-5ddf1f9e1f6d"/>
+    <managerType typeId="34e9a945-4ea6-46c1-b38d-4b7d76ef9d21" valueTypeId="aebcf616-e329-4f47-bf98-b873c2b12fde"/>
+  </producedTypes>
+  <name>ВидыВозвратов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды возвратов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="eae1dc65-2797-43b3-9b38-29da062ef1c9">
+    <name>ОтУчастника</name>
+    <synonym>
+      <key>ru</key>
+      <value>От участника</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="628a877d-1e89-4e14-b17d-040496ba3d9e">
+    <name>ОтУчастников</name>
+    <synonym>
+      <key>ru</key>
+      <value>От участников</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fbd1b790-9353-4c45-84c5-55fe432c000b">
+    <name>ОтПунктаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>От пункта выдачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3ebe4d89-aa65-4f27-b853-b4c04e79e9ea">
+    <name>ИзменилсяПВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменился пункт выдачи</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

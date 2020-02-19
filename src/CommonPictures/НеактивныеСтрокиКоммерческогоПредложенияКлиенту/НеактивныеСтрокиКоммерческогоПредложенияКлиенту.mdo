@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e8eb152-4a22-45fd-a3a0-749e7bf938e6">
+  <name>НеактивныеСтрокиКоммерческогоПредложенияКлиенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Неактивные строки коммерческого предложения клиенту</value>
+  </synonym>
+</mdclass:CommonPicture>

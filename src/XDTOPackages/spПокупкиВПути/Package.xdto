@@ -1,0 +1,73 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.transit.sp.ru/1.0.0">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.МестаХранения" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Габариты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Посылки" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ТочкиРаздачи" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокуиентСсылка.ВыдачаТранзита" base="d2p1:Ref"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Габариты" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваГабариты"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.МестаХранения" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваМестаХранения"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="Справочник.Посылки">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПосылки"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ТочкиРаздачи" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваТочкиРаздачи"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.ВыдачаТранзита" base="d2p1:Object">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваВыдачаТранзита"/>
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="ТочкаОтправитель" type="d3p1:КлючевыеСвойстваТочкиРаздачи"/>
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="ТочкаТранзита" type="d3p1:КлючевыеСвойстваТочкиРаздачи"/>
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="ТочкаНазначения" type="d3p1:КлючевыеСвойстваТочкиРаздачи"/>
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Покупки" type="d3p1:Документ.ВыдачаТранзита.Покупки"/>
+	</objectType>
+	<objectType name="Документ.ВыдачаТранзита.Покупки">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Строка" type="d3p1:Документ.ВыдачаТранзита.Покупки.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.ВыдачаТранзита.Покупки.Строка">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Покупка" type="d3p1:КлючевыеСвойстваПосылки"/>
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Габарит" type="d3p1:КлючевыеСвойстваГабариты"/>
+		<property name="Количество" type="xs:integer"/>
+		<property name="КоличествоМест" type="xs:integer"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваМестаХранения">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.МестаХранения"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваГабариты">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Габариты"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПосылки">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Ссылка" type="d3p1:СправочникСсылка.Посылки"/>
+		<property name="Код" type="xs:integer"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваТочкиРаздачи">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Ссылка" type="d3p1:Справочник.ТочкиРаздачи"/>
+		<property name="Код" type="xs:string"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваВыдачаТранзита">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="Ссылка" type="d3p1:ДокуиентСсылка.ВыдачаТранзита"/>
+		<property name="Номер" type="xs:string"/>
+		<property name="Дата" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="ЛюбаяСсылка">
+		<property name="СсылкаНаОбъект">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://www.transit.sp.ru/1.0.0" name="ГабаритыСсылка" type="d5p1:СправочникСсылка.Габариты" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.transit.sp.ru/1.0.0" name="МестоХраненияСсылка" type="d5p1:СправочникСсылка.МестаХранения" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.transit.sp.ru/1.0.0" name="ТочкиРаздачиСсылка" type="d5p1:СправочникСсылка.ТочкиРаздачи" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.transit.sp.ru/1.0.0" name="ПосылкиСсылка" type="d5p1:Справочник.Посылки" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.transit.sp.ru/1.0.0" name="ВыдачаТранзитаСсылка" type="d5p1:ДокуиентСсылка.ВыдачаТранзита" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="УдалениеОбъекта">
+		<property xmlns:d3p1="http://www.transit.sp.ru/1.0.0" name="СсылкаНаОбъект" type="d3p1:ЛюбаяСсылка"/>
+	</objectType>
+</package>

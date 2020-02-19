@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdad5cc1-a3d1-485b-bf46-bf49e7430709">
+  <producedTypes>
+    <managerType typeId="f13db8fb-f249-4944-b98d-60bb5d72b9bf" valueTypeId="1e6cc94f-8ad2-4131-939c-9f6f7e473814"/>
+    <valueManagerType typeId="18ff2349-f0ed-462b-bd13-3cad4b489a1b" valueTypeId="91271781-e3ec-46dd-b510-42ae4cf2b992"/>
+    <valueKeyType typeId="2578312d-e1b5-423c-81ef-8062e4ca198f" valueTypeId="dccd668e-be41-40cc-9904-1fb788c659d5"/>
+  </producedTypes>
+  <name>УбираемДубльВЧекеЭквайринга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Убираем дубль в чеке эквайринга</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Для тех аппаратов которые печатают два по два чека</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="576ed6f7-15e2-4f1e-b5b8-952db9fac682">
+  <producedTypes>
+    <managerType typeId="27d13293-6459-4028-81fd-c064155e8ad3" valueTypeId="9b9cd1a6-add3-4fa2-9ce6-4719fe4879c3"/>
+    <valueManagerType typeId="9d18e500-b263-4e0b-a8fc-fa46a947b94e" valueTypeId="9dc899c2-c6ba-43eb-82cc-01052ac5f72f"/>
+    <valueKeyType typeId="681f02d2-4074-5ea5-a060-ff03c1da7d33" valueTypeId="9e47a67c-0d92-5d2c-bcaf-2f02dd91f902"/>
+  </producedTypes>
+  <name>ЛимитККМ_Чек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лимит ККМ чек</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f252ffbe-1ca5-4fde-9f63-9a6992c08d00">
+  <producedTypes>
+    <managerType typeId="d89cb209-e27e-4613-880e-de36528f01b3" valueTypeId="4e17d128-2e35-46da-a06e-79f555ed4254"/>
+    <valueManagerType typeId="befa9021-3d2c-4e74-be17-c4d5cd7dc7c0" valueTypeId="86c53c0f-628a-4396-bc62-4dbaf68d28c6"/>
+    <valueKeyType typeId="63b2b741-5b94-5052-a172-951b4b8dd4a2" valueTypeId="ea4225a6-8883-5793-bb32-a99b5e892ab9"/>
+  </producedTypes>
+  <name>РейтингГраница</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рейтинг граница</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>5</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

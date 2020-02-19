@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13340033-ff67-496d-b87f-c7a1fa0975a2">
+  <name>аТранспортныеКомпании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспортные компании</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ФормированиеЗаказовТК</content>
+  <content>Document.ОтправлениеТранзита</content>
+  <content>Report.ВедомостьЗаказовЧерезТК</content>
+  <content>DataProcessor.ОбменСПочтойРоссии</content>
+  <content>DataProcessor.ОбъединеннаяДоставкаГрузов</content>
+  <content>Document.ОбъединениеГруппДоставки</content>
+  <content>InformationRegister.СтоСП_ПосылкиЗаказа</content>
+  <content>Document.СоздатьГруппуДоставки</content>
+  <content>Catalog.УслугиDPD</content>
+  <parentSubsystem>Subsystem.Транзит</parentSubsystem>
+</mdclass:Subsystem>

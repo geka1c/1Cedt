@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59a7f004-804f-4512-8c4a-3bacd5ae319f">
+  <producedTypes>
+    <objectType typeId="718fec94-52ae-4890-9f55-e3dd074d9ac0" valueTypeId="47116b76-f793-4ef0-aa55-ccd98c82f049"/>
+    <refType typeId="04168efe-b48f-4ac0-84dd-7ad92ab5d5a9" valueTypeId="9ca960e7-c0ec-45f3-b576-2acf3487b8d4"/>
+    <selectionType typeId="59e92987-4b1b-42b5-a0c7-1e1eb8b5f27f" valueTypeId="2aef61c4-c9b2-49f3-90c7-bf222a567fa3"/>
+    <listType typeId="652b4a05-93b9-45bc-9821-8275835b5040" valueTypeId="6220e492-c64c-432f-ba55-822f1be4cf65"/>
+    <managerType typeId="70ea5f1e-5dcb-4329-b0c5-fd1654a33d0c" valueTypeId="4fe9f235-c475-4bb8-aff8-8b706bbd7e85"/>
+  </producedTypes>
+  <name>ФункциональныеШК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрих коды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ФункциональныеШК.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ФункциональныеШК.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>15</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="13e3efd8-d127-4622-82d7-f4311e04f589">
+      <name>СнятьУстановитьОтдельнымМестом</name>
+      <description>отдельным местом (снять/установить)</description>
+      <code xsi:type="core:StringValue">
+        <value>6600000020004</value>
+      </code>
+    </items>
+    <items id="b802e46a-2162-4825-ace3-5ca9d92a0cfb">
+      <name>ОплатаНаличная</name>
+      <description>Оплата наличная</description>
+      <code xsi:type="core:StringValue">
+        <value>6600000020002</value>
+      </code>
+    </items>
+    <items id="313553c0-5b70-4d7a-827c-247d29aa2729">
+      <name>ОплатаБезНаличная</name>
+      <description>Оплата без наличная</description>
+      <code xsi:type="core:StringValue">
+        <value>6600000020001</value>
+      </code>
+    </items>
+    <items id="945ad292-3d8f-4ad3-8ba3-6b4ecadcf4bd">
+      <name>РазборКоробкиБезКоробки</name>
+      <description>Разбор коробки без коробки</description>
+      <code xsi:type="core:StringValue">
+        <value>6600000020005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ФункциональныеШК.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="874b4165-b996-457b-b36c-49b9fd56bdec">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="00ac38b6-57b0-46da-a9d2-45cba93ae0d7">
+    <name>Печать</name>
+  </templates>
+  <commands uuid="e02be7cb-25a6-45b4-b315-05d622773d27">
+    <name>Печать</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.ФункциональныеШК</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

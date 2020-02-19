@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d645350f-7399-4308-bf4c-685f20e35ae1">
+  <producedTypes>
+    <managerType typeId="c9697b0e-a111-4265-a23f-19a62d190c75" valueTypeId="d32342c3-aa30-43fd-964a-8e2ae34701b5"/>
+    <valueManagerType typeId="8c65abc4-989a-421d-a5f1-a20c05d00f97" valueTypeId="e9c39958-6330-470c-8780-aac86887ba0e"/>
+    <valueKeyType typeId="42ef405e-3421-5a1d-8fa8-245423b4df01" valueTypeId="2f5d816c-46bc-511f-ae63-099d9fddab95"/>
+  </producedTypes>
+  <name>ПочтовыйИндекс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Почтовый индекс</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>6</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

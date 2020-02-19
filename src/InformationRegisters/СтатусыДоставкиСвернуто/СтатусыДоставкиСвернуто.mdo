@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b8e5da5-400c-405e-9a38-7120d221e8da">
+  <producedTypes>
+    <selectionType typeId="3fea8193-baa9-4637-8577-f1a140ee8bc2" valueTypeId="ef797aa3-9f03-429c-95e5-711c45069a0b"/>
+    <listType typeId="41f1d53e-db18-4d19-841a-0d9423b5d722" valueTypeId="ce7ebf92-8d1f-4d4b-b848-ae1c9601d31b"/>
+    <managerType typeId="592d6cea-19f3-4ff0-a6e7-e79fb340371f" valueTypeId="9cdd21ee-917c-4632-b7e8-c04e9718c9c7"/>
+    <recordSetType typeId="780139a5-3ea7-4088-adf0-98bfe84cc7f8" valueTypeId="e9e580eb-1cf2-4292-803a-90d8fb8ce41e"/>
+    <recordKeyType typeId="13a4a386-e8a4-4982-a757-805b4a1e2cff" valueTypeId="6b6ba6dd-b392-4495-be33-0ba2a76b33cc"/>
+    <recordType typeId="4395a1f0-21bf-45bd-b678-5c65ce09831b" valueTypeId="3adad75a-9dd3-4d1c-ac5a-185fc104f586"/>
+    <recordManagerType typeId="b190bd49-e338-48bf-b8c3-d3a2caab63c4" valueTypeId="84a8c6db-af6c-44b4-8add-7716705a89c2"/>
+  </producedTypes>
+  <name>СтатусыДоставкиСвернуто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы доставки свернуто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3d50a5d5-70ec-4db3-914e-f7cb30dd289b">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4a23a994-71cb-4408-9b18-4b24afa7d55a">
+    <name>КоличествоГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ГС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3dbebd66-d087-4bb8-9804-1b9fca2e2a1d">
+    <name>КоличествоМест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество мест</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9453099d-70cd-451f-9c33-5b1c5e57973f">
+    <name>ЗаявкаВТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка ВТК</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаВТранспортнуюКомпанию</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="72c8fcef-4bd8-471b-84b4-077e9fda38bf">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОтправкиГруза</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

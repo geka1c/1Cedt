@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79be9451-11a4-4874-a0d4-bcbff3e54d82">
+  <producedTypes>
+    <containerType typeId="fb008d69-1749-40a4-96bd-010ad81ad5af" valueTypeId="2ac99112-f2f8-4870-a3a8-cc1bdc109bdf"/>
+  </producedTypes>
+  <name>ПартияДляОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Партия для обмена</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.РегистрацияСупперГруппы</types>
+    <types>DocumentRef.ВыдачаТранзита</types>
+    <types>DocumentRef.ПередачаВозвратовОрганизатору</types>
+    <types>DocumentRef.ФормированиеКоробки</types>
+    <types>DocumentRef.ВозвратПокупокОрганизатору</types>
+    <types>DocumentRef.Приходная</types>
+    <types>DocumentRef.Выгрузка_100СП</types>
+    <types>DocumentRef.Расходная</types>
+    <types>DocumentRef.ПоступлениеПристроя</types>
+    <types>DocumentRef.РазборКоробки</types>
+    <types>DocumentRef.ЗаполнитьСупергруппу</types>
+    <types>DocumentRef.ЗаполнитьКоленоМаршрута</types>
+  </type>
+</mdclass:DefinedType>

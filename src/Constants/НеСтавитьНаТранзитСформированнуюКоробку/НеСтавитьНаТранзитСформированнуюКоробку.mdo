@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e639232-9295-4f13-9787-0e7a8d591a88">
+  <producedTypes>
+    <managerType typeId="ec705331-ba06-4fe2-80a4-f324315e9479" valueTypeId="1dbfeb32-8ed5-4fd6-8819-4145abfb23f7"/>
+    <valueManagerType typeId="4591beb8-77c5-450f-9fc7-5cc3937c469a" valueTypeId="ff6802fe-1761-4b0a-a721-ba3bb3c9ca76"/>
+    <valueKeyType typeId="c2c4c93c-efcc-563c-a7d2-78f2bf2a2312" valueTypeId="c4f15d3d-3425-513b-a43a-b72ede8aad36"/>
+  </producedTypes>
+  <name>НеСтавитьНаТранзитСформированнуюКоробку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не ставить на транзит сформированную коробку</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

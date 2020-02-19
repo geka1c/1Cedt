@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23be8a03-9fd0-4be5-a576-a4b47ac28ae5">
+  <name>вПристрой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пристрой</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Пристрой</content>
+  <content>Document.ПоступлениеПристроя</content>
+  <content>Constant.ПВТранзита</content>
+  <parentSubsystem>Subsystem.Транзит</parentSubsystem>
+</mdclass:Subsystem>

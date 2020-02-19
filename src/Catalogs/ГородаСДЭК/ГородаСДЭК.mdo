@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0192095-a62b-4508-8eb1-274e4847ebc3">
+  <producedTypes>
+    <objectType typeId="f69ccb82-0218-4e2e-b578-098dbfd370ad" valueTypeId="c575b161-1cc6-4961-8d9c-32ba8898b240"/>
+    <refType typeId="d4c37612-2cd7-44b4-b3cf-89347836c926" valueTypeId="085318d8-730e-4517-9923-62066ac2125d"/>
+    <selectionType typeId="7ce789a7-e876-493d-9e60-efacc6ea908c" valueTypeId="d8df2b30-c7b6-4bbf-936d-0b12c776373d"/>
+    <listType typeId="0220d936-54fe-43b4-b219-576ae54bf157" valueTypeId="a4d712ac-5561-4f9b-831f-bdd8270128ec"/>
+    <managerType typeId="c92d75d0-f816-4700-8922-cf92bb57fa4b" valueTypeId="a533b305-a8ed-4a50-ae11-65bb504ed0f9"/>
+  </producedTypes>
+  <name>ГородаСДЭК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города СДЭК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГородаСДЭК.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГородаСДЭК.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ГородаСДЭК.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="70fc7000-3120-4d92-a310-6c643fea8519">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fe7e7800-ce2a-4a0d-b90e-77ef6c7f0034">
+    <name>НаименованиеАнгл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование англ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="731dff5e-d9d7-4140-8d2d-78b7d2286dff">
+    <name>Центр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Центр</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b400e52d-2232-4e05-889f-6277d776c5ef">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

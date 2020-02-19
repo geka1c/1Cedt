@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c89ce918-d48e-4b05-ba79-9f4d7ee511dd">
+  <producedTypes>
+    <selectionType typeId="a0ff2216-7ada-41f5-8bc4-749f8976060f" valueTypeId="720ed8ed-ff26-43a6-bfbc-41af2f72f3a9"/>
+    <listType typeId="c2f414a7-aefe-495a-8202-4f14449bb94f" valueTypeId="5f0fbee4-d7e5-45ee-b42a-a0f3908a1988"/>
+    <managerType typeId="46b84ae2-991d-408c-a0d4-253d385ac8af" valueTypeId="8a3ee638-7280-4cae-8f8b-3da2b04804e2"/>
+  </producedTypes>
+  <name>ВсеПриходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поступление заказов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ВсеПриходы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.Приходная</registeredDocuments>
+  <registeredDocuments>Document.РазборКоробки</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеПристроя</registeredDocuments>
+  <columns uuid="edff95c6-8d09-42f5-9f8c-483fe101df0b">
+    <name>Организатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организатор</value>
+    </synonym>
+    <references>Document.Приходная.Attribute.Организатор</references>
+    <references>Document.РазборКоробки.Attribute.Организатор</references>
+    <references>Document.ПоступлениеПристроя.Attribute.Участник</references>
+  </columns>
+  <columns uuid="61d5de2d-6a24-4d85-8f76-af22d448b5bd">
+    <name>ТочкаНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка назначения</value>
+    </synonym>
+    <references>Document.Приходная.Attribute.ПунктВыдачи</references>
+  </columns>
+  <columns uuid="27ff31e7-45da-4257-b576-ceac1ff3eba6">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка</value>
+    </synonym>
+    <references>Document.РазборКоробки.Attribute.УдалитьКоробка</references>
+  </columns>
+  <columns uuid="4926c2b7-8836-4e3b-8088-fa1c7fa3a73f">
+    <name>Транзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзит</value>
+    </synonym>
+    <references>Document.Приходная.Attribute.Транзит</references>
+  </columns>
+  <columns uuid="fc267c55-54de-4640-a3f3-728537ede14b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.РазборКоробки.Attribute.Ответственный</references>
+    <references>Document.Приходная.Attribute.Ответственный</references>
+    <references>Document.ПоступлениеПристроя.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="640311d2-062a-4156-94ee-0a96f85936fe">
+    <name>ВсеОрги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все орги</value>
+    </synonym>
+    <references>Document.РазборКоробки.Attribute.ВсеОрги</references>
+  </columns>
+  <columns uuid="03812adc-1f40-4272-843c-74018bbaa063">
+    <name>ВсеКоробки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все коробки</value>
+    </synonym>
+    <references>Document.РазборКоробки.Attribute.ВсеКоробки</references>
+  </columns>
+  <columns uuid="5cc63def-394b-4700-ab72-e0158199aa17">
+    <name>Супергруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Супергруппа</value>
+    </synonym>
+    <references>Document.РазборКоробки.Attribute.Супергруппа</references>
+  </columns>
+  <forms uuid="4c8bccd9-0852-4869-acaa-1fbdf32b573e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="190638fe-268a-4d75-8018-48c3dd8660b9">
+    <name>ФормаПечатиЧекаПоОрганизатору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печати чека по организатору</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

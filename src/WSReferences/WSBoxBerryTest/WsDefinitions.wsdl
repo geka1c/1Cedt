@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="api.boxberry.de"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="api.boxberry.de"
+		targetNamespace="api.boxberry.de">
+	<types>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema"
+				xmlns:apachesoap="http://xml.apache.org/xml-soap"
+				xmlns:impl="api.boxberry.de"
+				xmlns:intf="api.boxberry.de"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+				elementFormDefault="qualified"
+				targetNamespace="api.boxberry.de">
+			<element name="ListCitiesQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="CountryCode"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListCitiesResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListCitiesData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ListCitiesData">
+				<sequence>
+					<element name="Name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="CountryCode"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="PointsDescriptionQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="code"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="photo"
+								nillable="true"
+								type="default:boolean"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="PointsDescriptionResponse">
+				<complexType>
+					<sequence>
+						<element name="Name"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Organization"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="ZipCode"
+								nillable="true"
+								type="xsd:integer"/>
+						<element name="Country"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Area"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="CityCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="CityName"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Settlement"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Metro"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Street"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="House"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Structure"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Housing"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Apartment"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Address"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="AddressReduce"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="GPS"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TripDescription"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Phone"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="ForeignOnlineStoresOnly"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="PrepaidOrdersOnly"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="Acquiring"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="DigitalSignature"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="TypeOfOffice"
+								nillable="true"
+								type="xsd:byte"/>
+						<element name="CourierDelivery"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="ReceptionLaP"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="DeliveryLaP"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="LoadLimit"
+								nillable="true"
+								type="xsd:double"/>
+						<element name="VolumeLimit"
+								nillable="true"
+								type="xsd:double"/>
+						<element name="EnablePartialDelivery"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="EnableFitting"
+								nillable="true"
+								type="xsd:boolean"/>
+						<element name="WorkShedule"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkMoBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkMoEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkTuBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkTuEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkWeBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkWeEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkThBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkThEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkFrBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkFrEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkSaBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkSaEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkSuBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="WorkSuEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchMoBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchMoEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchTuBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchTuEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchWeBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchWeEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchThBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchThEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchFrBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchFrEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchSaBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchSaEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchSuBegin"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="LunchSuEnd"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="Photos"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalName"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalOrganization"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalCityCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalCityName"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalAddress"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TerminalPhone"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="CountryCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="TransType"
+								nillable="true"
+								type="xsd:integer"/>
+						<element name="InterRefunds"
+								nillable="true"
+								type="xsd:integer"/>
+						<element name="ExpressReception"
+								nillable="true"
+								type="xsd:integer"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="PointsByPostCodeQuery">
+				<complexType>
+					<sequence>
+						<element name="zip"
+								nillable="false"
+								type="xsd:int"/>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="PointsByPostCodeResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="Code"
+								nillable="true"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ListPointsQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="CityCode"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="prepaid"
+								nillable="true"
+								type="xsd:boolean"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListPointsResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListPointsData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ListPointsData">
+				<sequence>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Address"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Phone"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="WorkSchedule"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TripDescription"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="DeliveryPeriod"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CityCode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CityName"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TariffZone"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Settlement"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Area"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Country"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="GPS"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="AddressReduce"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="OnlyPrepaidOrders"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Acquiring"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="DigitalSignature"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CountryCode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="NalKD"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Metro"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TypeOfOffice"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListPointsForeignQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="CityCode"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="prepaid"
+								nillable="true"
+								type="default:boolean"/>
+						<default:element name="CountryCode"
+								nillable="true"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ListPointsForeignResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListPointsForeignData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="ListPointsForeignData">
+				<sequence>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Address"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Phone"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="WorkSchedule"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TripDescription"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="DeliveryPeriod"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CityCode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="ZipCode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CityName"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TariffZone"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Settlement"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Area"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Country"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="GPS"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="AddressReduce"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="OnlyPrepaidOrders"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Acquiring"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="DigitalSignature"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CountryCode"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="NalKD"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Metro"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="TypeOfOffice"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListZipsQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ListZipsResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListZipsData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="ListZipsData">
+				<sequence>
+					<element name="Zip"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="City"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Region"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Area"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="ZoneExpressDelivery"
+							nillable="true"
+							type="xsd:int"/>
+				</sequence>
+			</complexType>
+			<element name="ZipCheckQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="zip"
+								nillable="false"
+								type="xsd:int"/>
+						<element name="CountryCode"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ZipCheckResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ZipCheckData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ZipCheckData">
+				<sequence>
+					<element name="ExpressDelivery"
+							nillable="true"
+							type="xsd:boolean"/>
+					<element name="ZoneExpressDelivery"
+							nillable="true"
+							type="xsd:int"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListCountryQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ListCountryResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListCountryData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListCountryData">
+				<default:sequence>
+					<default:element name="CountryCode"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="LangRu"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="LangEng"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ListPointsShortQuery">
+				<complexType>
+					<sequence>
+						<element name="CityCode"
+								nillable="true"
+								type="xsd:integer"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListPointsShortResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListPointsShortData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ListPointsShortData">
+				<sequence>
+					<element name="CityCode"
+							nillable="true"
+							type="xsd:integer"/>
+					<element name="Code"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="UpdateDate"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListStatusesQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+						<default:element name="imcode"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="ListStatusesResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListStatusesData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListStatusesData">
+				<default:sequence>
+					<default:element name="Date"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Name"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Comment"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="ListStatusesFullQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="imcode"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListStatusesFullResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="statuses"
+								maxOccurs="unbounded"
+								minOccurs="1"
+								nillable="false"
+								type="xsd1:ListStatusesFullData"/>
+						<default:element name="PD"
+								nillable="true"
+								type="default:boolean"/>
+						<default:element name="sum"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="PaymentMethod"
+								nillable="true"
+								type="default:string"/>
+						<default:element name="Weight"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="products"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListStatusesFullData2"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ListStatusesFullData">
+				<sequence>
+					<element name="Date"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Comment"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="ListStatusesFullData2">
+				<sequence>
+					<element name="Name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Give"
+							nillable="true"
+							type="xsd:int"/>
+					<element name="Return"
+							nillable="true"
+							type="xsd:int"/>
+				</sequence>
+			</complexType>
+			<element name="ListServicesQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="imcode"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="ListServicesResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:ListServicesData"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<complexType name="ListServicesData">
+				<sequence>
+					<element name="Date"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Sum"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="PaymentMethod"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="CourierListCitiesQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="CourierListCitiesResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:CourierListCitiesData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="CourierListCitiesData">
+				<default:sequence>
+					<default:element name="City"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Region"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="Area"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="DeliveryPeriod"
+							nillable="true"
+							type="default:string"/>
+				</default:sequence>
+			</default:complexType>
+			<element name="DeliveryCostsQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="weight"
+								nillable="false"
+								type="xsd:int"/>
+						<element name="targetstart"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="target"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="ordersum"
+								nillable="true"
+								type="xsd:float"/>
+						<element name="deliverysum"
+								nillable="true"
+								type="xsd:float"/>
+						<element name="paysum"
+								nillable="true"
+								type="xsd:float"/>
+						<element name="height"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="width"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="depth"
+								nillable="true"
+								type="xsd:string"/>
+						<element name="zip"
+								nillable="true"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="DeliveryCostsResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="price"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="price_base"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="price_service"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="delivery_period"
+								nillable="true"
+								type="default:int"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="DeliveryCostsFQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="weight"
+								nillable="false"
+								type="xsd:int"/>
+						<element name="type"
+								nillable="false"
+								type="xsd:int"/>
+						<element name="target"
+								nillable="false"
+								type="xsd:string"/>
+						<element name="ordersum"
+								nillable="true"
+								type="xsd:float"/>
+						<element name="insurance"
+								nillable="true"
+								type="xsd:boolean"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="DeliveryCostsFResponse">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="price"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="price_base"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="price_service"
+								nillable="true"
+								type="default:float"/>
+						<default:element name="tariff_zone"
+								nillable="true"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="PointsForParcelsQuery">
+				<complexType>
+					<sequence>
+						<element name="token"
+								nillable="false"
+								type="xsd:string"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="PointsForParcelsResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:PointsForParcelsData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<complexType name="PointsForParcelsData">
+				<sequence>
+					<element name="Code"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="Name"
+							nillable="false"
+							type="xsd:string"/>
+					<element name="City"
+							nillable="false"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<default:element xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetTariffInfoQuery">
+				<default:complexType>
+					<default:sequence>
+						<default:element name="token"
+								nillable="false"
+								type="default:string"/>
+					</default:sequence>
+				</default:complexType>
+			</default:element>
+			<element name="GetTariffInfoResponse">
+				<complexType>
+					<sequence>
+						<element name="result"
+								maxOccurs="unbounded"
+								minOccurs="0"
+								nillable="true"
+								type="xsd1:GetTariffInfoData"/>
+					</sequence>
+				</complexType>
+			</element>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetTariffInfoData">
+				<default:sequence>
+					<default:element name="Tarrif"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:GetTariffInfoTarrifData"/>
+				</default:sequence>
+			</default:complexType>
+			<complexType name="GetTariffInfoTarrifData">
+				<sequence>
+					<element name="SenderCity"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:GetTariffInfoSenderCityData"/>
+					<element name="RecipientCitiesParams"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:GetTariffInfoRecipientCitiesParamsData"/>
+				</sequence>
+			</complexType>
+			<complexType name="GetTariffInfoSenderCityData">
+				<sequence>
+					<element name="Name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Code"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CountryCode"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="GetTariffInfoRecipientCitiesParamsData">
+				<sequence>
+					<element name="RecipientCityParam"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:GetTariffInfoRecipientCitiesParamData"/>
+				</sequence>
+			</complexType>
+			<default:complexType xmlns:default="http://www.w3.org/2001/XMLSchema"
+					name="GetTariffInfoRecipientCitiesParamData">
+				<default:sequence>
+					<default:element name="TarrifZone"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="DeliveryPeriodPoD"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="DeliveryPeriodCD"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="PricePoD"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="PriceCD"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="PriceAfter2kg"
+							nillable="true"
+							type="default:string"/>
+					<default:element name="RecipientCity"
+							maxOccurs="unbounded"
+							minOccurs="0"
+							nillable="true"
+							type="xsd1:GetTariffInfoRecipientCityData"/>
+				</default:sequence>
+			</default:complexType>
+			<complexType name="GetTariffInfoRecipientCityData">
+				<sequence>
+					<element name="Name"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="Code"
+							nillable="true"
+							type="xsd:string"/>
+					<element name="CountryCode"
+							nillable="true"
+							type="xsd:string"/>
+				</sequence>
+			</complexType>
+		</schema>
+	</types>
+	<message name="ListCitiesSoapIn">
+		<part name="ListCitiesQuery"
+				element="tns:ListCitiesQuery"/>
+	</message>
+	<message name="ListCitiesSoapOut">
+		<part name="ListCitiesResponse"
+				element="tns:ListCitiesResponse"/>
+	</message>
+	<message name="ListPointsSoapIn">
+		<part name="ListPointsQuery"
+				element="tns:ListPointsQuery"/>
+	</message>
+	<message name="ListPointsSoapOut">
+		<part name="ListPointsResponse"
+				element="tns:ListPointsResponse"/>
+	</message>
+	<message name="ListZipsSoapIn">
+		<part name="ListZipsQuery"
+				element="tns:ListZipsQuery"/>
+	</message>
+	<message name="ListZipsSoapOut">
+		<part name="ListZipsResponse"
+				element="tns:ListZipsResponse"/>
+	</message>
+	<message name="ZipCheckSoapIn">
+		<part name="ZipCheckQuery"
+				element="tns:ZipCheckQuery"/>
+	</message>
+	<message name="ZipCheckSoapOut">
+		<part name="ZipCheckResponse"
+				element="tns:ZipCheckResponse"/>
+	</message>
+	<message name="ListStatusesSoapIn">
+		<part name="ListStatusesQuery"
+				element="tns:ListStatusesQuery"/>
+	</message>
+	<message name="ListStatusesSoapOut">
+		<part name="ListStatusesResponse"
+				element="tns:ListStatusesResponse"/>
+	</message>
+	<message name="ListStatusesFullSoapIn">
+		<part name="ListStatusesFullQuery"
+				element="tns:ListStatusesFullQuery"/>
+	</message>
+	<message name="ListStatusesFullSoapOut">
+		<part name="ListStatusesFullResponse"
+				element="tns:ListStatusesFullResponse"/>
+	</message>
+	<message name="ListServicesSoapIn">
+		<part name="ListServicesQuery"
+				element="tns:ListServicesQuery"/>
+	</message>
+	<message name="ListServicesSoapOut">
+		<part name="ListServicesResponse"
+				element="tns:ListServicesResponse"/>
+	</message>
+	<message name="PointsForParcelsSoapIn">
+		<part name="PointsForParcelsQuery"
+				element="tns:PointsForParcelsQuery"/>
+	</message>
+	<message name="PointsForParcelsSoapOut">
+		<part name="PointsForParcelsResponse"
+				element="tns:PointsForParcelsResponse"/>
+	</message>
+	<message name="CourierListCitiesSoapIn">
+		<part name="CourierListCitiesQuery"
+				element="tns:CourierListCitiesQuery"/>
+	</message>
+	<message name="CourierListCitiesSoapOut">
+		<part name="CourierListCitiesResponse"
+				element="tns:CourierListCitiesResponse"/>
+	</message>
+	<message name="DeliveryCostsSoapIn">
+		<part name="DeliveryCostsQuery"
+				element="tns:DeliveryCostsQuery"/>
+	</message>
+	<message name="DeliveryCostsSoapOut">
+		<part name="DeliveryCostsResponse"
+				element="tns:DeliveryCostsResponse"/>
+	</message>
+	<message name="DeliveryCostsFSoapIn">
+		<part name="DeliveryCostsFQuery"
+				element="tns:DeliveryCostsFQuery"/>
+	</message>
+	<message name="DeliveryCostsFSoapOut">
+		<part name="DeliveryCostsFResponse"
+				element="tns:DeliveryCostsFResponse"/>
+	</message>
+	<message name="PointsByPostCodeSoapIn">
+		<part name="PointsByPostCodeQuery"
+				element="tns:PointsByPostCodeQuery"/>
+	</message>
+	<message name="PointsByPostCodeSoapOut">
+		<part name="PointsByPostCodeResponse"
+				element="tns:PointsByPostCodeResponse"/>
+	</message>
+	<message name="PointsDescriptionSoapIn">
+		<part name="PointsDescriptionQuery"
+				element="tns:PointsDescriptionQuery"/>
+	</message>
+	<message name="PointsDescriptionSoapOut">
+		<part name="PointsDescriptionResponse"
+				element="tns:PointsDescriptionResponse"/>
+	</message>
+	<message name="ListPointsShortSoapIn">
+		<part name="ListPointsShortQuery"
+				element="tns:ListPointsShortQuery"/>
+	</message>
+	<message name="ListPointsShortSoapOut">
+		<part name="ListPointsShortResponse"
+				element="tns:ListPointsShortResponse"/>
+	</message>
+	<message name="ListCountrySoapIn">
+		<part name="ListCountryQuery"
+				element="tns:ListCountryQuery"/>
+	</message>
+	<message name="ListCountrySoapOut">
+		<part name="ListCountryResponse"
+				element="tns:ListCountryResponse"/>
+	</message>
+	<message name="ListPointsForeignSoapIn">
+		<part name="ListPointsForeignQuery"
+				element="tns:ListPointsForeignQuery"/>
+	</message>
+	<message name="ListPointsForeignSoapOut">
+		<part name="ListPointsForeignResponse"
+				element="tns:ListPointsForeignResponse"/>
+	</message>
+	<message name="GetTariffInfoSoapIn">
+		<part name="GetTariffInfoQuery"
+				element="tns:GetTariffInfoQuery"/>
+	</message>
+	<message name="GetTariffInfoSoapOut">
+		<part name="GetTariffInfoResponse"
+				element="tns:GetTariffInfoResponse"/>
+	</message>
+	<portType name="BoxBerrySoap">
+		<operation name="ListCities">
+			<input name="ListCitiesRequest"
+					message="tns:ListCitiesSoapIn"/>
+			<output name="ListCitiesResponse"
+					message="tns:ListCitiesSoapOut"/>
+		</operation>
+		<operation name="ListPoints">
+			<input name="ListPointsRequest"
+					message="tns:ListPointsSoapIn"/>
+			<output name="ListPointsResponse"
+					message="tns:ListPointsSoapOut"/>
+		</operation>
+		<operation name="ListZips">
+			<input name="ListZipsRequest"
+					message="tns:ListZipsSoapIn"/>
+			<output name="ListZipsResponse"
+					message="tns:ListZipsSoapOut"/>
+		</operation>
+		<operation name="ZipCheck">
+			<input name="ZipCheckRequest"
+					message="tns:ZipCheckSoapIn"/>
+			<output name="ZipCheckResponse"
+					message="tns:ZipCheckSoapOut"/>
+		</operation>
+		<operation name="ListStatuses">
+			<input name="ListStatusesRequest"
+					message="tns:ListStatusesSoapIn"/>
+			<output name="ListStatusesResponse"
+					message="tns:ListStatusesSoapOut"/>
+		</operation>
+		<operation name="ListStatusesFull">
+			<input name="ListStatusesFullRequest"
+					message="tns:ListStatusesFullSoapIn"/>
+			<output name="ListStatusesFullResponse"
+					message="tns:ListStatusesFullSoapOut"/>
+		</operation>
+		<operation name="ListServices">
+			<input name="ListServicesRequest"
+					message="tns:ListServicesSoapIn"/>
+			<output name="ListServicesResponse"
+					message="tns:ListServicesSoapOut"/>
+		</operation>
+		<operation name="PointsForParcels">
+			<input name="PointsForParcelsRequest"
+					message="tns:PointsForParcelsSoapIn"/>
+			<output name="PointsForParcelsResponse"
+					message="tns:PointsForParcelsSoapOut"/>
+		</operation>
+		<operation name="CourierListCities">
+			<input name="CourierListCitiesRequest"
+					message="tns:CourierListCitiesSoapIn"/>
+			<output name="CourierListCitiesResponse"
+					message="tns:CourierListCitiesSoapOut"/>
+		</operation>
+		<operation name="DeliveryCosts">
+			<input name="DeliveryCostsRequest"
+					message="tns:DeliveryCostsSoapIn"/>
+			<output name="DeliveryCostsResponse"
+					message="tns:DeliveryCostsSoapOut"/>
+		</operation>
+		<operation name="DeliveryCostsF">
+			<input name="DeliveryCostsFRequest"
+					message="tns:DeliveryCostsFSoapIn"/>
+			<output name="DeliveryCostsFResponse"
+					message="tns:DeliveryCostsFSoapOut"/>
+		</operation>
+		<operation name="PointsByPostCode">
+			<input name="PointsByPostCodeRequest"
+					message="tns:PointsByPostCodeSoapIn"/>
+			<output name="PointsByPostCodeResponse"
+					message="tns:PointsByPostCodeSoapOut"/>
+		</operation>
+		<operation name="PointsDescription">
+			<input name="PointsDescriptionRequest"
+					message="tns:PointsDescriptionSoapIn"/>
+			<output name="PointsDescriptionResponse"
+					message="tns:PointsDescriptionSoapOut"/>
+		</operation>
+		<operation name="ListPointsShort">
+			<input name="ListPointsShortRequest"
+					message="tns:ListPointsShortSoapIn"/>
+			<output name="ListPointsShortResponse"
+					message="tns:ListPointsShortSoapOut"/>
+		</operation>
+		<operation name="ListCountry">
+			<input name="ListCountryRequest"
+					message="tns:ListCountrySoapIn"/>
+			<output name="ListCountryResponse"
+					message="tns:ListCountrySoapOut"/>
+		</operation>
+		<operation name="ListPointsForeign">
+			<input name="ListPointsForeignRequest"
+					message="tns:ListPointsForeignSoapIn"/>
+			<output name="ListPointsForeignResponse"
+					message="tns:ListPointsForeignSoapOut"/>
+		</operation>
+		<operation name="GetTariffInfo">
+			<input name="GetTariffInfoRequest"
+					message="tns:GetTariffInfoSoapIn"/>
+			<output name="GetTariffInfoResponse"
+					message="tns:GetTariffInfoSoapOut"/>
+		</operation>
+	</portType>
+	<binding name="BoxBerrySoap"
+			type="tns:BoxBerrySoap">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="ListCities">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListPoints">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListZips">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ZipCheck">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListStatuses">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListStatusesFull">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListServices">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PointsForParcels">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="CourierListCities">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DeliveryCosts">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DeliveryCostsF">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PointsByPostCode">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="PointsDescription">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListPointsShort">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListCountry">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ListPointsForeign">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetTariffInfo">
+			<soapbind:operation style="document"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="BoxBerry">
+		<port name="BoxBerrySoap"
+				binding="tns:BoxBerrySoap">
+			<soapbind:address location="http://test.api.boxberry.de/__soap/1c_public.php"/>
+		</port>
+	</service>
+</definitions>

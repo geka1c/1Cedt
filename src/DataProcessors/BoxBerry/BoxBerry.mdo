@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c432fcad-f263-4358-a551-9033bae02f08">
+  <producedTypes>
+    <objectType typeId="12b5f51d-32ec-41a7-b95b-fe10c4e6890c" valueTypeId="482d6fdd-5584-4665-b7f3-1b1b4adfe089"/>
+    <managerType typeId="c0b4b2d4-c03f-43c8-8356-903bfd28c56a" valueTypeId="d10f04b9-e189-44a1-bd71-f89d557a1015"/>
+  </producedTypes>
+  <name>BoxBerry</name>
+  <synonym>
+    <key>ru</key>
+    <value>Box berry</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.BoxBerry.Form.Форма</defaultForm>
+  <forms uuid="b230ccf5-f19d-4299-8a0e-9b37132a6ff5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

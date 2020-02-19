@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3ca7bf6-aa0d-418e-a922-b54a11d7720b">
+  <producedTypes>
+    <objectType typeId="5b79ca73-912f-4dba-b689-fcb84a3337e5" valueTypeId="b8189b66-c442-4466-a245-3c83c0124e7d"/>
+    <managerType typeId="22dcd049-a3aa-4547-8984-36df5c47c831" valueTypeId="e53c7b89-ffdb-449c-b821-0855f204dcca"/>
+  </producedTypes>
+  <name>ОбменСообщениями100СП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен сообщениями100 СП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбменСообщениями100СП.Form.Форма_СписокДиалогов</defaultForm>
+  <forms uuid="af7ab646-94cd-4396-b7c0-eee9fef50d57">
+    <name>Форма_СписокДиалогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма список диалогов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb88f68b-a9b9-4b22-bec0-4fa4b16d0fe1">
+    <name>Форма_Диалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма диалог</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6f2fae61-a727-40f6-a045-4655c82359a6">
+    <name>ФормаВыбораПокупки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора покупки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="79cc272c-497c-4138-b37b-60dd2c9a5b25">
+    <name>СКДПокупкиДляВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДПокупки для выбора</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

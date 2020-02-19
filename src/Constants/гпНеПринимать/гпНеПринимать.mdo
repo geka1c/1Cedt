@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24a21f6e-7722-490d-a1c2-a4ddd5dc2277">
+  <producedTypes>
+    <managerType typeId="9954175b-16d6-45db-afd2-3fd9f3339dea" valueTypeId="37bd5af9-17af-4514-a873-ef6acc938ce3"/>
+    <valueManagerType typeId="960ce023-4be0-45fe-8cce-11e9e7fb4730" valueTypeId="f088b47a-ad98-483e-a019-26cd7f9f285e"/>
+    <valueKeyType typeId="f965fe26-3652-57bc-8a11-6404207e63ec" valueTypeId="94e177ed-16bd-5f48-8465-6c63ad05f426"/>
+  </producedTypes>
+  <name>гпНеПринимать</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гп не принимать</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ГруппыУчастников</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

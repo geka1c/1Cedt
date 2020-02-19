@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="979085be-a8f4-49cd-9ac9-d3d8746e972b">
+  <producedTypes>
+    <objectType typeId="8c1da421-d532-450f-9fe3-9112840be837" valueTypeId="3e65a99d-5f69-4d77-ae03-9e1e9fc3af14"/>
+    <managerType typeId="8c102cf0-f7f0-4a5d-a101-a2917f1cc2af" valueTypeId="7ba3bf8a-c6f8-49f5-8f2d-b8f00c1e027c"/>
+  </producedTypes>
+  <name>ПоискПокупок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск покупок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПоискПокупок.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="af23c446-2e75-46c7-9e53-12e3d0be5be9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

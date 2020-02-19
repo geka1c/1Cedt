@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfe97617-c50f-44ea-a41a-873200bf8be5">
+  <producedTypes>
+    <objectType typeId="13ca1229-af94-4a78-82b6-bf06ecfcd170" valueTypeId="645d4b95-e3ac-4818-a4e1-ff3f4c1303a4"/>
+    <managerType typeId="505003d2-71a5-4d2b-9696-043294dbc81a" valueTypeId="7b3cec5a-e240-443a-a993-ce38779306ee"/>
+  </producedTypes>
+  <name>СписанныеПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списанные покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СписанныеПокупки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="cc97698e-d844-4a5d-b38a-1876aafdcab5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

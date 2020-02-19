@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bacd5409-5054-4a1a-8c9c-7eb69c81fac1">
+  <producedTypes>
+    <objectType typeId="734f024b-5f92-486b-ac8f-90212b51e0d2" valueTypeId="f33efa95-df98-4ed8-83b0-1c012bb63680"/>
+    <managerType typeId="93030485-d92e-456c-9ea8-836c842018fc" valueTypeId="2d45af49-4e39-459a-9a71-2f386bd02f74"/>
+  </producedTypes>
+  <name>КорректировкаСтруктурыБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка структуры базы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КорректировкаСтруктурыБазы.Form.Форма</defaultForm>
+  <forms uuid="f07b44ea-1551-42ca-a7be-1b7b9148c4c0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

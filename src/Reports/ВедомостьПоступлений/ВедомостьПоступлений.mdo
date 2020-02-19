@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e668e744-f8b5-4329-8d34-a9a380ac963b">
+  <producedTypes>
+    <objectType typeId="4191d2a4-737f-4057-9a37-ca9d34a709bf" valueTypeId="8c8515b4-c1bd-48f2-b26b-8b3ee1a72e1f"/>
+    <managerType typeId="bf102f77-0006-4754-ac55-09fdba8df151" valueTypeId="8ab21119-3429-4ea9-8997-61ce27afa779"/>
+  </producedTypes>
+  <name>ВедомостьПоступлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость поступлений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВедомостьПоступлений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Поступления заказов на склад вразрезе коробок(групповых стикеров), типов прихода (склад, транзит )...</value>
+  </explanation>
+  <templates uuid="8a76177d-4454-40e9-91eb-e176eed85feb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

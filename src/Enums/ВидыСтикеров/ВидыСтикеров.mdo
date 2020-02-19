@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7df3a55b-745c-418f-a145-f3c1993d00b6">
+  <producedTypes>
+    <refType typeId="8e5cc0b3-a1bc-4e9d-a9c1-b3ef54621229" valueTypeId="22fffbfe-61e6-4078-aa5e-79309244c440"/>
+    <listType typeId="25195825-382c-48ef-9727-22132ae45c25" valueTypeId="f4bdc39f-318b-4f16-bb56-66bddecc4173"/>
+    <managerType typeId="7cc2138a-3f65-4b82-8809-cbf109230ccd" valueTypeId="d96a6bf2-b93b-4669-a3b1-312c18e3e11a"/>
+  </producedTypes>
+  <name>ВидыСтикеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды стикеров</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b32f2680-10ac-49ab-906f-9ccd3aac0200">
+    <name>ГС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Групповой стикер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fd90369d-4486-4505-9348-46534539335c">
+    <name>ЗаказТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ ТК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8971a06a-6331-4b4a-b7e3-93d65127ae7b">
+    <name>ГруппаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа доставки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f83e281a-3a02-46a2-8da0-cf3ab1c1aba9">
+  <name>РИБРегистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен в распределенной информационной базе зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.МестаХранения</types>
+    <types>CatalogObject.ПраздничныеДни</types>
+    <types>CatalogObject.ВерсииФайлов</types>
+    <types>CatalogObject.КартыУчастников</types>
+    <types>CatalogObject.ХранилищеШаблонов</types>
+    <types>CatalogObject.ПапкиФайлов</types>
+    <types>CatalogObject.ГруппыУчастников</types>
+    <types>CatalogObject.ТочкиРаздачи</types>
+    <types>CatalogObject.УчетныеЗаписиЭлектроннойПочты</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.ПрофилиГруппДоступа</types>
+    <types>CatalogObject.ТарифнаяГруппа</types>
+    <types>CatalogObject.ПользовательскиеНастройкиОтчетов</types>
+    <types>CatalogObject.Участники</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.ФункциональныеШК</types>
+    <types>ChartOfCharacteristicTypesObject.РазделыДатЗапретаИзменения</types>
+    <types>CatalogObject.Мегаордера</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</types>
+    <types>CatalogObject.ДополнительныеОтчетыИОбработки</types>
+    <types>CatalogObject.Покупки</types>
+    <types>CatalogObject.ПредопределенныеВариантыОтчетов</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.ГородаСП</types>
+    <types>CatalogObject.Календари</types>
+    <types>CatalogObject.ЗначенияСвойствОбъектов</types>
+    <types>CatalogObject.ГруппыДоступа</types>
+    <types>CatalogObject.НаборыДополнительныхРеквизитовИСведений</types>
+    <types>CatalogObject.ПроизводственныеКалендари</types>
+    <types>CatalogObject.Файлы</types>
+    <types>CatalogObject.Организаторы</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.ИдентификаторыОбъектовМетаданных</types>
+    <types>CatalogObject.ТарифыТК</types>
+    <types>CatalogObject.ГруппыПользователей</types>
+    <types>CatalogObject.ПрограммыЭлектроннойПодписиИШифрования</types>
+    <types>CatalogObject.Курьеры</types>
+    <types>CatalogObject.Габариты</types>
+    <types>CatalogObject.Коробки</types>
+    <types>CatalogObject.Заказы</types>
+    <types>CatalogObject.РегионыСП</types>
+    <types>CatalogObject.ГородаСДЭК</types>
+    <types>CatalogObject.Пользователи</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияРИБ.ОбменВРИБЗарегистрироватьИзменение</handler>
+</mdclass:EventSubscription>

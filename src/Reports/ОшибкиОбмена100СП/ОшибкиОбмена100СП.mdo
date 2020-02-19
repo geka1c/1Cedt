@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b52c678e-7f1e-4d7d-8018-f0c6b7ef6f27">
+  <producedTypes>
+    <objectType typeId="31a9070a-b530-4fbd-a620-c5d61ee8d63a" valueTypeId="47b9d764-66cc-40bf-8820-d515608eb7f0"/>
+    <managerType typeId="34c3a66a-432d-4ee0-b025-0f42a03302bb" valueTypeId="c1fb54d3-3500-452c-bbd0-9dcbbdd12e72"/>
+  </producedTypes>
+  <name>ОшибкиОбмена100СП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибки обмена100 СП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОшибкиОбмена100СП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="c783de6b-21f6-4c0d-9e5b-060e7d96e6e1">
+    <name>ФормаДляВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма для выгрузки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="38e7b4ee-c93c-4fbd-bed8-3d5e1faa346b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

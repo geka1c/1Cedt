@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Посылки.StandardCommand.OpenList</commands>
+      <commands>Catalog.Коробки.StandardCommand.OpenList</commands>
+      <commands>Catalog.Пристрой.StandardCommand.OpenList</commands>
+      <commands>Catalog.Мегаордера.StandardCommand.OpenList</commands>
+      <commands>Catalog.Покупки.StandardCommand.OpenList</commands>
+      <commands>Catalog.Заказы.StandardCommand.OpenList</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelCreate</group>
+      <commands>Catalog.Посылки.StandardCommand.Create</commands>
+      <commands>Catalog.Заказы.StandardCommand.Create</commands>
+      <commands>Catalog.Коробки.StandardCommand.Create</commands>
+      <commands>Catalog.Мегаордера.StandardCommand.Create</commands>
+      <commands>Catalog.Покупки.StandardCommand.Create</commands>
+      <commands>Catalog.Пристрой.StandardCommand.Create</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

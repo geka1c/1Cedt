@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6dfe261-188d-4d8d-a0bb-38e936cddd15">
+  <name>ЗагрузкаГруппДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка групп доставки</value>
+  </synonym>
+  <methodName>CommonModule.аСППрив.ЗагрузкаГруппДоставки</methodName>
+  <description>ЗагрузкаГруппДоставки</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

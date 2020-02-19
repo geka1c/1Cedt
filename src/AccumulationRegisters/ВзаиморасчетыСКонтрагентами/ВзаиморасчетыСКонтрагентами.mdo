@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5493a739-4947-4acb-b7b1-dc50b9b556ff">
+  <producedTypes>
+    <selectionType typeId="2cff6c14-4b67-4ffc-87c6-2192fdf02875" valueTypeId="bc7d1277-ef2c-4471-891d-4d5e11445576"/>
+    <listType typeId="38f2cd7b-6759-4be4-990c-4bea852fa1dd" valueTypeId="b5b4b68e-51c7-4e04-a141-4d23a5a39ba0"/>
+    <managerType typeId="c6c4a826-1c4b-433a-aded-1ea6fb0a211c" valueTypeId="b2f6fc7a-bf76-4295-b64f-1001d3523971"/>
+    <recordSetType typeId="f89880cc-ba1f-4323-91b5-e78977e24984" valueTypeId="fad22d3d-ced1-43ae-aed6-17efe5e9dd2a"/>
+    <recordKeyType typeId="9d9c4a7b-496c-4f45-9763-025ae69f6a9c" valueTypeId="bdc1969d-227b-4740-a479-1f89a252b702"/>
+    <recordType typeId="53d3fd17-0f70-439b-adb9-4cbbc918be52" valueTypeId="ce6f8488-d15e-4373-b808-f50c14cdc24b"/>
+  </producedTypes>
+  <name>ВзаиморасчетыСКонтрагентами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с контрагентами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dfef4fc4-0a8c-4612-800b-d0e1373194d1">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="50110da1-d89b-45ba-84fd-d620ad9dcd98">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35520a42-fb6f-478e-9d12-edb291eb79e8">
+  <producedTypes>
+    <objectType typeId="df73120e-c31d-40cd-9a37-02559955a786" valueTypeId="0cabc048-8293-4c97-aa94-cf5a75614cc3"/>
+    <refType typeId="c2686953-dc25-4fb7-9826-ebfb423e485a" valueTypeId="9add4ed7-3a47-4024-9c94-38356f7dcd4b"/>
+    <selectionType typeId="7dbe955e-6940-4db7-8e83-1abaa89ea959" valueTypeId="598415f3-8851-4f08-b757-f6c569fe9a71"/>
+    <listType typeId="6eeef6e7-7599-4991-a4d9-68b279f13587" valueTypeId="4d31ad0e-9386-4687-ae99-730f8ff76afe"/>
+    <managerType typeId="3b1e8d62-de88-45eb-bcaf-6f73894ae8f2" valueTypeId="ba168fb7-aa01-4281-9015-4af447267197"/>
+  </producedTypes>
+  <name>ЗакрытиеОшибокОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие ошибок обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗакрытиеОшибокОбмена.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗакрытиеОшибокОбмена.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="ca4aa25d-7138-4e1b-86cb-f951705f329e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6863edad-986d-4148-a7a2-c01ff874dfed">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="39f69ee5-23a6-473b-87d5-c294c9e21914">
+    <producedTypes>
+      <objectType typeId="a2837594-322f-4c11-ba86-9e02c0d6d0ca" valueTypeId="9fbd7db1-2c0d-492a-ad0e-16c9d5e4295a"/>
+      <rowType typeId="db7b7508-8ed7-43c0-ad61-38573f21b0d7" valueTypeId="617a4321-58a4-45ba-9c92-af979bf53cb1"/>
+    </producedTypes>
+    <name>Ошибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e1b682c4-d458-491a-a0c1-ff14c5105ce3">
+      <name>ТипОбмена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип обмена</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыОбменов100сп</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="77030139-aed2-4a99-8ada-e5765bc5c238">
+      <name>Партия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПартияДляОбмена</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a1e614a5-abdb-4d0d-a069-5173a976986f">
+      <name>СтрокаВПартии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Строка в партии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d931c6ad-8750-43cd-8f93-5982ca675363">
+      <name>Мегаордер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мегаордер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Мегаордера</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f8c9f73b-cd12-427c-89f7-66ebdeec8d81">
+      <name>Сообщение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сообщение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7d19b382-d6a6-4325-801a-742b9ca3260b">
+      <name>КоличествоНеИсправленных</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество не исправленных</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

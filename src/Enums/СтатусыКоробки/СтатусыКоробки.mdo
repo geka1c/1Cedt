@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="968fce62-279d-45a1-8be5-629aa011ac90">
+  <producedTypes>
+    <refType typeId="835d4444-64d4-4807-8c9e-7de0ddb53a6c" valueTypeId="21995821-bf07-446b-b3e6-680d1f96399e"/>
+    <listType typeId="553cee1c-85b3-48da-9a4d-8c31021069fc" valueTypeId="32755f1a-274d-472a-953e-f649ead744af"/>
+    <managerType typeId="8f9208cc-e3c4-4010-804c-142381082d5e" valueTypeId="cea093d4-8fe2-4f54-8e33-2581b7f8a54d"/>
+  </producedTypes>
+  <name>СтатусыКоробки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы коробки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="084ca5ea-1363-4e29-ab8d-bc890380c8c8">
+    <name>ВОчереди</name>
+    <synonym>
+      <key>ru</key>
+      <value> В очереди к разбору</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cd5d2b89-a2e9-49de-bb5e-8df350d83bbd">
+    <name>Разобрана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разобрана</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

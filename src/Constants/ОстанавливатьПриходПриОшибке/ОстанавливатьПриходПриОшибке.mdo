@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df2e7b6d-0a70-4709-83c4-f99408cc3f40">
+  <producedTypes>
+    <managerType typeId="7472b8a4-fdc7-4ec6-a4d1-d2c17ebd8452" valueTypeId="0812da2a-b620-470a-92c9-00c238e66ee4"/>
+    <valueManagerType typeId="10436f22-a19d-4d7b-be31-5c32d4fa2e19" valueTypeId="47f2a8ca-ef82-4f50-8c34-bbbbddf9e735"/>
+    <valueKeyType typeId="4ede88c8-ddf1-5b68-ba80-cc87ad24d0f5" valueTypeId="2fa01788-9b06-57bd-8e10-de62cee33d32"/>
+  </producedTypes>
+  <name>ОстанавливатьПриходПриОшибке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Останавливать приход при ошибке</value>
+  </synonym>
+  <comment>При установленном флаге Ожидает реакцию пользователя на ошибку.</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

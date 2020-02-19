@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c7896e6-333a-41f0-8c87-032053a265bc">
+  <producedTypes>
+    <managerType typeId="1f4f9d91-2f79-4810-a2cc-b4313b2499f8" valueTypeId="e3a954f7-810e-40cc-94ee-5a5757129b66"/>
+    <valueManagerType typeId="372a5374-67db-47b2-8b2d-bf865c942bfe" valueTypeId="71c9ef0b-8179-4fd2-bb17-dc838267bbc4"/>
+    <valueKeyType typeId="95d39fb4-6aa3-5c1c-9d07-2a4f780c2302" valueTypeId="d735fab4-b285-584c-9ab5-23d9878df469"/>
+  </producedTypes>
+  <name>СвояТочка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Своя точка</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ТочкиРаздачи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

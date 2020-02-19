@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d8a811f-13bf-4ced-831b-0fc3a9940332">
+  <name>ИспользоватьДвухЭтапнуюВыдачуЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать двух этапную выдачу заказа</value>
+  </synonym>
+  <location>Constant.ИспользоватьДвухЭтапнуюВыдачуЗаказа</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="591a2811-b08c-46da-a448-ff1fcb5264f8">
+  <producedTypes>
+    <refType typeId="41c21f29-9ce1-4a06-8278-0cbf2d695a5d" valueTypeId="5271e55d-6016-4348-9eac-5c0f5aac7b45"/>
+    <listType typeId="99c995dd-d8ef-44a7-933d-0a2044c53406" valueTypeId="64b0c697-9d2c-48a0-972d-25ca1d0f816a"/>
+    <managerType typeId="8a966881-412f-43c1-9ae7-0ca6959fe45b" valueTypeId="119ff53c-e962-4953-8503-b5a6413ce54b"/>
+  </producedTypes>
+  <name>КатегорияРПО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категория РПО</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="895eb6d3-dc8d-4f17-80e5-5b7d87e8d207">
+    <name>ORDINARY</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обыкновенное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9e1e0038-3917-4267-9b3d-4c606a573a54">
+    <name>ORDERED</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказное</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3ffeedcd-e08c-404c-8ce0-cefc881dcc4c">
+    <name>WITH_DECLARED_VALUE</name>
+    <synonym>
+      <key>ru</key>
+      <value>С объявленной ценностью</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cc1f0154-cf4f-4934-aaa8-dd58e629e2f1">
+    <name>WITH_DECLARED_VALUE_AND_CASH_ON_DELIVERY</name>
+    <synonym>
+      <key>ru</key>
+      <value>С объявленной ценностью и наложенным платежом</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

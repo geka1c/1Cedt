@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46a35be7-5f15-49f1-a6cb-34cb6da46e8f">
+  <name>СтоСПОбмен_ЗаказыНаТранзите</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сто СПОбмен заказы на транзите</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

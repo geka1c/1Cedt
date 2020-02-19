@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b982c4e5-4dcc-41fb-b1ac-f6189de8ee25">
+  <producedTypes>
+    <selectionType typeId="e4bd488a-a31b-48eb-a710-1ded8dc49442" valueTypeId="3c2df4bd-0403-485c-b70c-881d457c2567"/>
+    <listType typeId="ff171de0-9189-4ca5-83ad-c6ad1569c9ea" valueTypeId="7c4b932b-8303-4ab9-bf25-8c250617acb5"/>
+    <managerType typeId="95cc4836-404e-40db-8f62-5071a9b42d66" valueTypeId="5c0ddc0e-bff9-4366-b7ea-3add217ffaec"/>
+    <recordSetType typeId="1497e139-8e93-41ef-9155-27627e991f75" valueTypeId="c5533e10-2fa5-4e2e-a5b3-9151d98aeb96"/>
+    <recordKeyType typeId="c773f5bc-8eb4-4380-8be9-bfa42d703a7e" valueTypeId="cba28e57-37ef-469e-ba66-a70c9154b91c"/>
+    <recordType typeId="199eaa5d-7b14-4841-863b-0cdebb920cfb" valueTypeId="5aff6251-3e6c-4a1b-b621-bddcfb1fd553"/>
+    <recordManagerType typeId="aa4590e2-959e-4afd-9fba-73ec53732a2e" valueTypeId="cdacd65b-a31a-4002-a4e5-80920f2dc438"/>
+  </producedTypes>
+  <name>НегабаритЗначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Негабарит значения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="12dc76cb-ef78-4e0b-afdf-d7d58e9365c9">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d3179985-6258-4dd3-b6a5-eb44d192b13b">
+    <name>объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>5</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fd3e83df-f217-45e6-8502-1e143128e52e">
+    <name>Покупка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Покупки</types>
+      <types>CatalogRef.Заказы</types>
+      <types>CatalogRef.Посылки</types>
+      <types>String</types>
+      <types>CatalogRef.Коробки</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df1991cc-5554-4d5c-9292-7c483186f740">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff152816-e9e8-474d-a70e-a7389b6ff80c">
+    <name>Габарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габарит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Габариты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7484c23e-9dce-4279-ad08-77d102e007bb">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Приходная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72d9ba8c-e906-4baf-b898-a86e885c7b1e">
+  <producedTypes>
+    <objectType typeId="f7b1623c-2214-441e-ba1a-59039f2837d2" valueTypeId="92aba773-5b07-49b9-ba84-383938257a56"/>
+    <managerType typeId="a8d6b5bc-a307-4dd7-a8a2-109bf562d8bb" valueTypeId="0b8a7c62-e984-4907-8124-cbab1922a6fa"/>
+  </producedTypes>
+  <name>КассоваяВедомость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассовая ведомость</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.КассоваяВедомость.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <explanation>
+    <key>ru</key>
+    <value>Отчет по чекам ККМ</value>
+  </explanation>
+  <templates uuid="6fb62ea6-f865-4bb5-a7eb-00f0e0b4104d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79eadba2-1255-47c3-9852-79ec1a7b8b05">
+  <name>СкрытьОтмененныеСтрокиЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скрыть отмененные строки заказа</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e62743a8-fd4a-4af8-820a-071480a95abb">
+  <producedTypes>
+    <managerType typeId="362cfaf8-51a4-4df3-9ca9-3620b337f9a7" valueTypeId="f9a2bb68-20cd-45b7-b7b1-b201776a833e"/>
+    <valueManagerType typeId="2831b4a9-ef86-4581-8808-69e984b11f40" valueTypeId="e79bd430-e5bd-4931-b67f-c4264a289a70"/>
+    <valueKeyType typeId="62d80a57-2333-53fb-998d-da85e86d3116" valueTypeId="62956ca2-741b-5dfd-b13a-74c2e5fe7fd1"/>
+  </producedTypes>
+  <name>ТокенПочтаРоссии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Токен почта россии</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

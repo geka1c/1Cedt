@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6db4202d-70f0-46ab-95ca-b51b156007a9">
+  <producedTypes>
+    <objectType typeId="980718cd-be26-4e1f-8452-92a88f73ea13" valueTypeId="1b8be96b-e5fc-4938-bf12-1286f5eabbbc"/>
+    <managerType typeId="e9aa3045-bb27-41b6-b31e-ffb21625e7c0" valueTypeId="956f5394-7d66-4d3e-ba72-e122e9d7b950"/>
+  </producedTypes>
+  <name>КонтрольСупергрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль супергрупп</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КонтрольСупергрупп.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.КонтрольСупергрупп.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Контроль за доставкой супергрупп. Из расшифровки возожно ввести информацию о маршруте и факте доставки.</value>
+  </explanation>
+  <forms uuid="f67dbced-48ca-42f3-85a9-93dc379451ba">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="66e04eb2-1d55-4c57-91f4-f8aca0709f1e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54879543-60c4-4474-bdd2-9512597443ab">
+  <producedTypes>
+    <managerType typeId="02872662-c5d7-485a-8b1a-d63aa75d7315" valueTypeId="5c371c4a-198d-459a-a747-d36f83b5fb71"/>
+    <valueManagerType typeId="8a895140-aeaf-43d7-9dfc-bbfd18ca9ebe" valueTypeId="5431fbc4-7005-4e01-ba37-a098929ef1e1"/>
+    <valueKeyType typeId="76453237-9278-5f60-9a46-1b2a58251842" valueTypeId="8ba580fc-f5c1-5bb3-a747-f39c36924eeb"/>
+  </producedTypes>
+  <name>СоздаватьТранзитПоШК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создавать транзит по ШК</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>При считывании ШК покупки или заказа  на Рабочем столе автоматом саздается документ &quot;Приходная&quot; на транзит. </value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

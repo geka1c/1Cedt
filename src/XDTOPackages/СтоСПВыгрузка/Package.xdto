@@ -1,0 +1,93 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru/out">
+	<objectType name="distributors" open="true" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="deliveryGroupTransitCode" type="d3p1:deliveryGroupTransitCode" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="dataByDates" type="d3p1:dataByDates" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="deliveryGroupsSetCod" type="d3p1:distributors.deliveryGroupsSetCod" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="groups" type="d3p1:distributors.groups" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="packages" type="d3p1:distributors.packages" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="packageStickerOrderUnlinks" type="d3p1:distributors.packageStickerOrderUnlinks" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="receivedOrders" type="d3p1:distributors.receivedOrders" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="userBulletinOrders" type="d3p1:distributors.userBulletinOrders" lowerBound="0" nillable="true" fixed="false"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="deliveryGroups" type="d3p1:distributors.deliveryGroups" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="deliveryGroupsHistory" type="d3p1:distributors.deliveryGroupsHistory" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="groupsWaitDistributor" type="d3p1:distributors.groupsWaitDistributor" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="deliveryHistory" type="d3p1:distributors.deliveryHistory" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="megaordersPackages" type="d3p1:distributors.megaordersPackages" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="purchases" type="d3p1:distributors.purchases" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="transitOrdersCounts" type="d3p1:distributors.transitOrdersCounts" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="deliveryGroupTransitCode" ordered="true">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="order" type="d3p1:order" upperBound="-1" nillable="false"/>
+	</objectType>
+	<objectType name="order" ordered="false">
+		<property name="orderType" type="xs:string"/>
+		<property name="pid" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="uid" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="orderId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="packageId" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="dataByDates" ordered="false">
+		<property name="superGroups" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="packageOrders" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="deliveryGroups" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="distributorCode" type="xs:integer" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.deliveryGroupsSetCod">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="group" type="d3p1:distributors.deliveryGroupsSetCod.group" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.deliveryGroupsSetCod.group" ordered="false">
+		<property name="delivery_group_id" type="xs:integer"/>
+	</objectType>
+	<objectType name="distributors.groups">
+		<property name="group" type="xs:integer" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.packages">
+		<property name="package" type="xs:integer" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.receivedOrders">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="receivedOrdersForUser" type="d3p1:distributors.receivedOrders.receivedOrdersForUser" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.receivedOrders.receivedOrdersForUser" ordered="false">
+		<property name="uid" type="xs:string"/>
+		<property name="since" type="xs:string"/>
+	</objectType>
+	<objectType name="distributors.userBulletinOrders">
+		<property name="user" type="xs:integer" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.packageStickerOrderUnlinks">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="packageStickerOrderUnlink" type="d3p1:distributors.packageStickerOrderUnlinks.packageStickerOrderUnlink" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.packageStickerOrderUnlinks.packageStickerOrderUnlink">
+		<property name="orderId" type="xs:string"/>
+		<property name="orderType" type="xs:string"/>
+	</objectType>
+	<objectType name="distributors.deliveryGroups">
+		<property name="deliveryGroup" type="xs:integer" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.deliveryGroupsHistory">
+		<property name="deliveryGroupHistory" type="xs:integer" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.groupsWaitDistributor">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="group" type="d3p1:distributors.groupsWaitDistributor.group" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.groupsWaitDistributor.group" ordered="false">
+		<property name="delivery_group_id" type="xs:integer"/>
+	</objectType>
+	<objectType name="distributors.deliveryHistory">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="order" type="d3p1:order" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.megaordersPackages">
+		<property xmlns:d3p1="http://www.100sp.ru/out" name="megaorders" type="d3p1:distributors.megaordersPackages.megaorders" upperBound="-1"/>
+	</objectType>
+	<objectType name="distributors.megaordersPackages.megaorders">
+		<property name="pid" type="xs:string"/>
+		<property name="uid" type="xs:string"/>
+	</objectType>
+	<objectType name="distributors.purchases">
+		<property name="purchase" type="xs:integer" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.transitOrdersCounts">
+		<property name="transitOrdersCount" type="xs:integer" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+</package>

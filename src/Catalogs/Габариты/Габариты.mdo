@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="600b3580-b6cb-4487-a39d-825e81634a14">
+  <producedTypes>
+    <objectType typeId="e64473fb-0fa0-45ef-8e72-52565bab287a" valueTypeId="c7bff553-a9b6-46c7-9a11-7fcaff4887e1"/>
+    <refType typeId="214de266-df8a-4ff7-b9ec-9d762a503c51" valueTypeId="f1a18a70-542a-4d2a-9eaa-352c5c7c806a"/>
+    <selectionType typeId="25040180-19e0-4cc8-8456-99642a9d6d76" valueTypeId="3818bf04-9452-424d-94f0-cd30c0bde7ed"/>
+    <listType typeId="971ca2fb-1fc2-4232-9656-5762bd6c99e3" valueTypeId="8760434a-6bda-41bb-9976-bc6e2333e323"/>
+    <managerType typeId="932a66cf-660c-4ddc-bd3a-d5107199d8c5" valueTypeId="41924f25-e626-4307-97ae-66e5ff96facd"/>
+  </producedTypes>
+  <name>Габариты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Габариты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Габариты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Габариты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="e4d5cdd5-ec19-4b4e-ac5e-f4b016131d9e">
+      <name>нулевой</name>
+      <description>Служебный</description>
+      <code xsi:type="core:StringValue">
+        <value>000000000</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Габариты.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="6bda4f3f-1a65-4a72-8576-6026a1146dc0">
+    <name>СтоимостьХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость хранения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6c6197f-fb62-4cc8-a6d0-2f4a96ad1f1a">
+    <name>ДниХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дни хранения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b531495-dd2e-47c7-8ea7-7371b7370690">
+    <name>ДобавочнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавочная стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6288528-9f83-484b-b604-064564c5527f">
+    <name>НеГабарит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не габарит</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f01973ed-89f4-4d57-b275-032797a3a26f">
+    <name>СтоимостьКуб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость куб</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="337d4717-bf3e-4333-b3dd-69bf6cd90b3b">
+    <name>СтоимостьКГ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость КГ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9222392e-5559-423b-907c-753712f6eb4c">
+    <name>СтоимостьЗамарозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость замарозки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e1e5aff4-fc7e-400b-9f0b-beb641c01cd2">
+    <name>ВесЗамарозкиКг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес замарозки кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1ea2481f-1963-4bd6-a3e4-d66a86beb245">
+    <name>Замарозка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замарозка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b0e8ac8e-50aa-4932-829c-5acdb7822c83">
+    <name>СворачиватьВЧеке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сворачивать в чеке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ff27192-2b8b-4132-93f2-b30b8a1773d1">
+    <name>ЗабираетКурьер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Забирает курьер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Габарит используется для расчета стоимости услуг курьера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="252f774d-bd16-4cc2-a4a3-e05237a5ebaf">
+    <producedTypes>
+      <objectType typeId="9ac54e7c-e215-48fd-89bf-d754965e4ced" valueTypeId="7da170e7-f105-4c98-b1ea-f3b7bc2c2aad"/>
+      <rowType typeId="c9a2bbd3-ff4b-4f8d-b3eb-50c4f350ceaf" valueTypeId="25e2bebf-31db-4267-a889-303b117ee0b6"/>
+    </producedTypes>
+    <name>ШкалаВес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шкала вес</value>
+    </synonym>
+    <attributes uuid="3210af9c-51e2-4abd-b9ac-18bbb9bdb013">
+      <name>вес</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вес</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>4</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dcbe3cef-4d0b-4bcc-9292-915c45619c64">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="15276b87-36ba-4f9b-9101-458cff4aaf3b">
+    <producedTypes>
+      <objectType typeId="542d4292-13fb-4c9e-880f-c9bd93f9327e" valueTypeId="055f5b34-97d8-40ad-9339-2f63c5e8b34a"/>
+      <rowType typeId="a8c96dac-e4f1-4522-b8a0-1c1d54d49ef4" valueTypeId="dec756a3-32d0-47e1-9f91-413be62bc5eb"/>
+    </producedTypes>
+    <name>ШкалаОбъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шкала объем</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="06316a79-7e4c-48a2-97dc-65ba1a3bc4aa">
+      <name>объем</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объем</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d006297d-0ddf-4843-b7b7-b06732b3c0e6">
+      <name>Стоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="dac57991-fd69-44c6-ac13-c65ed61115da">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e8bfe6c2-b814-4303-9f4a-b11fd0c86304">
+    <name>Печать</name>
+  </templates>
+  <commands uuid="34b116ee-7e0b-4c60-b4d1-efc793216247">
+    <name>Печать</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.Габариты</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc2a6a2f-3f0c-415f-808e-7ad6f90dd11c">
+  <producedTypes>
+    <managerType typeId="f6287daf-904c-443f-906b-81d237a886db" valueTypeId="ca723e11-7afe-488e-8f3d-f66a670a6cc1"/>
+    <valueManagerType typeId="f18b9bae-85eb-4d28-9e09-53f66171d989" valueTypeId="1fb3c1fd-294c-4de0-96b9-9173252a4f57"/>
+    <valueKeyType typeId="1185cc60-9670-4142-afe6-c1a15d1a94e3" valueTypeId="283ec18f-b809-4283-b1f6-79d5a2d78d7e"/>
+  </producedTypes>
+  <name>ЗаказовНаТранзите</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказов на транзите</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>150</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
