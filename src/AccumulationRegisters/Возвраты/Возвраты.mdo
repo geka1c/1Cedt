@@ -165,6 +165,8 @@
       <types>DocumentRef.ВозвратПокупокОрганизатору</types>
       <types>DocumentRef.КорректировкаЗаписейРегистров</types>
       <types>DocumentRef.ДвижениеТранзита</types>
+      <types>DocumentRef.Приходная</types>
+      <types>DocumentRef.РазборКоробки</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

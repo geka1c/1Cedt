@@ -29,6 +29,7 @@
   <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
   <registerRecords>AccumulationRegister.Транзит</registerRecords>
   <registerRecords>AccumulationRegister.Возвраты</registerRecords>
+  <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="bb431444-cbc8-489f-b9b7-9ca5d04b5033">
@@ -71,6 +72,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16a0c371-5b82-4b2b-af2a-b0f408901c02">
+    <name>ФормаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -153,7 +163,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="f726bb6e-9fbb-42ac-bd0a-b142829da22b">
-      <name>Точка</name>
+      <name>ПунктВыдачи</name>
       <synonym>
         <key>ru</key>
         <value>Точка назначения</value>
@@ -230,10 +240,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="326f7889-1d1a-4e23-bc00-b0985531c831">
-      <name>ТочкаНазначение</name>
+      <name>ПунктВыдачиНазначение</name>
       <synonym>
         <key>ru</key>
-        <value>Точка назначения</value>
+        <value>Пункт выдачи назначения</value>
       </synonym>
       <type>
         <types>CatalogRef.ТочкиРаздачи</types>
@@ -257,5 +267,25 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="4de3a077-1955-47f8-8688-779176011ac4">
+      <name>ПунктВыдачиТранзита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт выдачи транзита</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТочкиРаздачи</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
+  <templates uuid="ff49635f-0f65-4868-9079-37f622cbf4b8">
+    <name>СКДОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКДОтбор</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
 </mdclass:Document>

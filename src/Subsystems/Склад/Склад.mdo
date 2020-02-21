@@ -30,6 +30,7 @@
   <content>Report.ПоискПокупок</content>
   <content>Report.ОтчетСсылкиНаЗаказы</content>
   <content>Report.ВедомостьПринятыхЗаказов</content>
+  <content>Report.ДинамикаПоступленияЗаказов</content>
   <subsystems>Документы</subsystems>
   <subsystems>Регистры</subsystems>
   <subsystems>Товары</subsystems>

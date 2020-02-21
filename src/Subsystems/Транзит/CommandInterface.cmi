@@ -40,10 +40,6 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>Report.ПокупкиВПути.StandardCommand.Open</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>Report.ПокупкиВПутиNEW.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>

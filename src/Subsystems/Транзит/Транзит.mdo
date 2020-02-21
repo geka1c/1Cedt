@@ -11,7 +11,6 @@
     <picture>CommonPicture.РазделТранзит</picture>
   </picture>
   <content>Document.Приходная</content>
-  <content>Report.ПокупкиВПути</content>
   <content>Document.ИнвентаризацияТранзитов</content>
   <content>DataProcessor.ПечатьСтикеровДляКоробок</content>
   <content>Report.ВедомостьТранзитов</content>

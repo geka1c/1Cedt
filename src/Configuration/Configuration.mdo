@@ -2360,6 +2360,8 @@
   <reports>Report.ИсторияЗаказов</reports>
   <reports>Report.ВедомостьПринятыхЗаказов</reports>
   <reports>Report.СписокЗаказовДокумента</reports>
+  <reports>Report.ДинамикаПоступленияЗаказов</reports>
+  <reports>Report.ДинамикаВыдачиЗаказов</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

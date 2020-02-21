@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f11a62b1-d759-4c02-a53a-6cc96c708b3e">
+  <producedTypes>
+    <objectType typeId="58367cd7-7a22-493c-9756-4d37769318b0" valueTypeId="b976eaed-f400-4ccc-b5b2-5119eaa78900"/>
+    <managerType typeId="2e56a472-0f6e-411d-96a0-a70de97f0c1d" valueTypeId="ebe75962-5ff8-42f1-b088-28b6e67106ef"/>
+  </producedTypes>
+  <name>ДинамикаПоступленияЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика поступления заказов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДинамикаПоступленияЗаказов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e4495a66-6a14-4463-b2aa-2571432f1b69">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

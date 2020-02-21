@@ -33,4 +33,11 @@
       <value>Транзит на возврат</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="4c7b0308-8535-46b8-921e-ec349dfe615e">
+    <name>Списание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
