@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0bfd0202-979f-46f0-8b1b-2b43a467fb11">
+  <producedTypes>
+    <objectType typeId="f1c7b29b-2928-40ab-bd9d-4d9eb4096468" valueTypeId="941dbebd-d990-45a8-ba6c-dbe15dbca2ef"/>
+    <managerType typeId="fe292ea6-be4e-4d72-a7b6-6c6375769f52" valueTypeId="1a81c794-fad2-4aac-b5d1-42bb3ab9ec87"/>
+  </producedTypes>
+  <name>ЗаказыОтдельнымМестом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы отдельным местом</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗаказыОтдельнымМестом.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9be11ae3-693e-42ad-8eba-805a04a573c4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
