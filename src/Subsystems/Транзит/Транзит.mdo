@@ -30,6 +30,7 @@
   <content>Report.ПокупкиВПутиNEW</content>
   <content>Report.ВедомостьПринятыхЗаказов</content>
   <content>Constant.ЗаказовНаТранзите</content>
+  <content>Report.ЗаказыОтдельнымМестом</content>
   <subsystems>аТранспортныеКомпании</subsystems>
   <subsystems>бСуппергруппы</subsystems>
   <subsystems>вПристрой</subsystems>

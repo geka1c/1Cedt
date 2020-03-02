@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.2.17</version>
+  <version>3.5.2.18</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
