@@ -24,12 +24,7 @@
 	Объект_distributors						= ФабрикаXDTO.Создать(Тип_distributors);
 	Объект_distributors.transitOrdersCounts	= Объект_transitOrdersCounts;
 	
-	Запись = Новый ЗаписьXML;
-	Запись.УстановитьСтроку(); 
-	ФабрикаXDTO.ЗаписатьXML(Запись, Объект_distributors);
-	ДанныеXML = Запись.Закрыть();
-	ДанныеXML="<?xml version=""1.0"" encoding=""UTF-8""?> "+СтрЗаменить(ДанныеXML,"xmlns=""http://www.100sp.ru/out"" ","");
-	Возврат ДанныеXML; 
+	Возврат СтоСПОбмен_Общий.ПолучитьСтрокуXML(Объект_distributors);
 	
 КонецФункции
 
