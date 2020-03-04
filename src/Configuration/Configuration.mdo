@@ -2363,6 +2363,7 @@
   <reports>Report.ДинамикаПоступленияЗаказов</reports>
   <reports>Report.ДинамикаВыдачиЗаказов</reports>
   <reports>Report.ЗаказыОтдельнымМестом</reports>
+  <reports>Report.ЗаказыПлатныеВРазборе</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

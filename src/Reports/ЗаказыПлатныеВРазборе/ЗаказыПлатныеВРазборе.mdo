@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b371a72b-257e-46d7-bb8d-6efc82463a2a">
+  <producedTypes>
+    <objectType typeId="796a04f2-66e0-45a3-953a-9e494cc7b4b5" valueTypeId="4e733dab-032d-49a2-992b-df5d3ea996b6"/>
+    <managerType typeId="e7e86270-ce6f-465e-80bf-afc6bf9c4f2d" valueTypeId="3c685977-cc13-462c-a586-09e07187da80"/>
+  </producedTypes>
+  <name>ЗаказыПлатныеВРазборе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы платные в разборе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗаказыПлатныеВРазборе.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>показывает заказы разбор которых оплачивают организаоры</value>
+  </explanation>
+  <templates uuid="4ea23411-4a49-4ac7-86ce-887669a580c6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
