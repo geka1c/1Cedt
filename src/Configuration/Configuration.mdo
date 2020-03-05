@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.2.18</version>
+  <version>3.5.2.19</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -2308,6 +2308,7 @@
   <reports>Report.ВедомостьЗаказовНаСкладе</reports>
   <reports>Report.ВедомостьЗаказовЧерезТК</reports>
   <reports>Report.ВедомостьПоступлений</reports>
+  <reports>Report.ВедомостьПринятыхЗаказов</reports>
   <reports>Report.ВедомостьТоваровНаСкладе</reports>
   <reports>Report.ВедомостьТранзитов</reports>
   <reports>Report.ВедомостьТранзитовСРазвернутымиГруппами</reports>
@@ -2316,11 +2317,16 @@
   <reports>Report.ДатыЗапретаЗагрузки</reports>
   <reports>Report.ДатыЗапретаИзменения</reports>
   <reports>Report.ДвиженияДокумента</reports>
+  <reports>Report.ДинамикаВыдачиЗаказов</reports>
+  <reports>Report.ДинамикаПоступленияЗаказов</reports>
   <reports>Report.ЗависшиеЗадачи</reports>
   <reports>Report.Задания</reports>
   <reports>Report.Задачи</reports>
   <reports>Report.ЗадачиИстекающиеНаДату</reports>
+  <reports>Report.ЗаказыОтдельнымМестом</reports>
+  <reports>Report.ЗаказыПлатныеВРазборе</reports>
   <reports>Report.ИспользуемыеВнешниеРесурсы</reports>
+  <reports>Report.ИсторияЗаказов</reports>
   <reports>Report.КассоваяВедомость</reports>
   <reports>Report.КонсольСистемыКомпоновкиДанных</reports>
   <reports>Report.КонтрольСупергрупп</reports>
@@ -2356,14 +2362,8 @@
   <reports>Report.СогласияНаОбработкуПерсональныхДанныхДействующие</reports>
   <reports>Report.СогласияНаОбработкуПерсональныхДанныхИстекающие</reports>
   <reports>Report.СписанныеПокупки</reports>
-  <reports>Report.УниверсальныйОтчет</reports>
-  <reports>Report.ИсторияЗаказов</reports>
-  <reports>Report.ВедомостьПринятыхЗаказов</reports>
   <reports>Report.СписокЗаказовДокумента</reports>
-  <reports>Report.ДинамикаПоступленияЗаказов</reports>
-  <reports>Report.ДинамикаВыдачиЗаказов</reports>
-  <reports>Report.ЗаказыОтдельнымМестом</reports>
-  <reports>Report.ЗаказыПлатныеВРазборе</reports>
+  <reports>Report.УниверсальныйОтчет</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
