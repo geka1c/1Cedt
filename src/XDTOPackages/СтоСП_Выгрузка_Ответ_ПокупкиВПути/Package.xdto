@@ -13,6 +13,9 @@
 	</objectType>
 	<objectType name="distributors.transfers.transfer" ordered="false">
 		<property name="date" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back/transfer" name="item" type="d3p1:distributors.transfers.transfer.item" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.transfers.transfer.item" ordered="false">
 		<property name="orderId" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
 		<property name="orderType" type="xs:string" nillable="true" form="Element"/>
 		<property name="created" type="xs:string" lowerBound="0" nillable="true" form="Element"/>

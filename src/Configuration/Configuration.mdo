@@ -1684,6 +1684,7 @@
   <constants>Constant.Login</constants>
   <constants>Constant.passw</constants>
   <constants>Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности</constants>
+  <constants>Constant.АдминистраторДоставки</constants>
   <constants>Constant.АдресВыгрузкиНасайт</constants>
   <constants>Constant.АдресЗагрузкиДоставленныхТранзитов</constants>
   <constants>Constant.АдресЗагрузкиССайта</constants>
@@ -1695,6 +1696,7 @@
   <constants>Constant.АнализОтветаТолькоОшибки</constants>
   <constants>Constant.ВерсияДатЗапретаИзменения</constants>
   <constants>Constant.ВерсияКлассификатораБанков</constants>
+  <constants>Constant.ВозможностьПриниматьНаТранзит</constants>
   <constants>Constant.ВремяНеСоответствует</constants>
   <constants>Constant.ВыбиратьГабаритПоТОчкеНазначения</constants>
   <constants>Constant.ВыгружатьВозвратПриЗаписи</constants>
@@ -1709,17 +1711,22 @@
   <constants>Constant.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</constants>
   <constants>Constant.ДатаПоследнейВыгрузкиЗамеровПроизводительностиUTC</constants>
   <constants>Constant.ДатаУведомленияОНовыхЗадачах</constants>
+  <constants>Constant.ДатаХраненияДвиженийОбмена</constants>
   <constants>Constant.ДелаемГруупповойСтикер</constants>
   <constants>Constant.ДетализироватьОбновлениеИБВЖурналеРегистрации</constants>
   <constants>Constant.ДнейДоСкрытияПерсональныхДанныхСубъектов</constants>
   <constants>Constant.ДниВозврата</constants>
+  <constants>Constant.ДниХраненияБесплатнойДоставки</constants>
   <constants>Constant.ЗаголовокСистемы</constants>
   <constants>Constant.ЗагрузитьСообщениеОбменаДанными</constants>
+  <constants>Constant.ЗаказовНаТранзите</constants>
+  <constants>Constant.ЗакрыватьДокументПослеОплаты</constants>
   <constants>Constant.ЗапретРедактированияПрихода</constants>
   <constants>Constant.ЗапрещатьЗагрузкуФайловПоРасширению</constants>
   <constants>Constant.ИдентификаторИнформационнойБазы</constants>
   <constants>Constant.ИзвлекатьТекстыФайловНаСервере</constants>
   <constants>Constant.ИзменятьЗаданияЗаднимЧислом</constants>
+  <constants>Constant.ИндексОтправителяПРУмолчание</constants>
   <constants>Constant.ИспользоватьАльтернативныйСерверДляЗагрузкиКлассификатораБанков</constants>
   <constants>Constant.ИспользоватьАльтернативныйСерверДляЗагрузкиКурсовВалют</constants>
   <constants>Constant.ИспользоватьАнкетирование</constants>
@@ -1731,6 +1738,7 @@
   <constants>Constant.ИспользоватьДатуНачалаЗадач</constants>
   <constants>Constant.ИспользоватьДатыЗапретаЗагрузки</constants>
   <constants>Constant.ИспользоватьДатыЗапретаИзменения</constants>
+  <constants>Constant.ИспользоватьДвухЭтапнуюВыдачуЗаказа</constants>
   <constants>Constant.ИспользоватьДополнительныеОтчетыИОбработки</constants>
   <constants>Constant.ИспользоватьДополнительныеРеквизитыИСведения</constants>
   <constants>Constant.ИспользоватьЗаметки</constants>
@@ -1750,26 +1758,32 @@
   <constants>Constant.ИспользоватьСинхронизациюДанныхВЛокальномРежиме</constants>
   <constants>Constant.ИспользоватьСинхронизациюДанныхВМоделиСервиса</constants>
   <constants>Constant.ИспользоватьСкрытиеПерсональныхДанныхСубъектов</constants>
+  <constants>Constant.ИспользоватьСотрудникаКакКассира</constants>
   <constants>Constant.ИспользоватьУдалениеПомеченныхОбъектов</constants>
   <constants>Constant.ИспользоватьШаблоныСообщений</constants>
   <constants>Constant.ИспользоватьШифрование</constants>
   <constants>Constant.ИспользоватьЭлектроннуюПочтуВШаблонахСообщений</constants>
   <constants>Constant.ИспользоватьЭлектронныеПодписи</constants>
   <constants>Constant.ИспользуютсяПрофилиБезопасности</constants>
+  <constants>Constant.ИспоьзоватьДетальныйОбмен</constants>
   <constants>Constant.ИсточникДанныхАдресногоКлассификатора</constants>
   <constants>Constant.КаталогСОбновлениями</constants>
   <constants>Constant.КаталогСообщенийОбменаДаннымиДляLinux</constants>
   <constants>Constant.КаталогСообщенийОбменаДаннымиДляWindows</constants>
   <constants>Constant.КатологОбмена</constants>
   <constants>Constant.КоличествоЗамеровВПакетеЭкспорта</constants>
+  <constants>Constant.КоличествоПотоковОбновленияДоступа</constants>
+  <constants>Constant.КоличествоПотоковОбновленияИнформационнойБазы</constants>
   <constants>Constant.КоличествоЧековВыдачи</constants>
   <constants>Constant.КоличествоЭлементовВТранзакцииЗагрузкиДанных</constants>
   <constants>Constant.КомпьютерСФР</constants>
   <constants>Constant.КонтралироватьОстаткиПриРасходе</constants>
-  <constants>Constant.КоличествоПотоковОбновленияДоступа</constants>
-  <constants>Constant.КоличествоПотоковОбновленияИнформационнойБазы</constants>
   <constants>Constant.КонтралироватьТочкиПользователя</constants>
-  <constants>Constant.УдалитьЛогинДоступаКСервисуMorpher</constants>
+  <constants>Constant.ЛимитККМ_День</constants>
+  <constants>Constant.ЛимитККМ_Чек</constants>
+  <constants>Constant.ЛогинEMS</constants>
+  <constants>Constant.ЛогинПР</constants>
+  <constants>Constant.МаксимальноеКоличествоЗаказовВКоробке</constants>
   <constants>Constant.МаксимальныйРазмерФайла</constants>
   <constants>Constant.МаксимальныйРазмерФайлаОбластиДанных</constants>
   <constants>Constant.НазваниеОрганизации</constants>
@@ -1779,10 +1793,12 @@
   <constants>Constant.НастройкиПодчиненногоУзлаРИБ</constants>
   <constants>Constant.НеИспользоватьРазделениеПоОбластямДанных</constants>
   <constants>Constant.НеСтавитьНаТранзитСформированнуюКоробку</constants>
+  <constants>Constant.НовоеХранениеОстатков</constants>
+  <constants>Constant.ОграничениеВыдачиТранзита</constants>
   <constants>Constant.ОграничиватьДоступНаУровнеЗаписей</constants>
+  <constants>Constant.ОграничиватьДоступНаУровнеЗаписейУниверсально</constants>
   <constants>Constant.ОстанавливатьПриходПриОшибке</constants>
   <constants>Constant.ОтборПоСкладуПользователяПриЗаполненииНовойКоробки</constants>
-  <constants>Constant.ОграничиватьДоступНаУровнеЗаписейУниверсально</constants>
   <constants>Constant.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</constants>
   <constants>Constant.ОтложенноеОбновлениеЗавершеноУспешно</constants>
   <constants>Constant.ОтправкаЭлектронныхЧековПослеПробитияЧека</constants>
@@ -1794,6 +1810,9 @@
   <constants>Constant.ПараметрыИтоговИАгрегатов</constants>
   <constants>Constant.ПараметрыРезервногоКопирования</constants>
   <constants>Constant.ПараметрыЦентраМониторинга</constants>
+  <constants>Constant.ПарольEMS</constants>
+  <constants>Constant.ПарольПР</constants>
+  <constants>Constant.ПВТранзита</constants>
   <constants>Constant.ПереодичностьСкидки</constants>
   <constants>Constant.ПериодХраненияЗамеров</constants>
   <constants>Constant.ПовторитьЗагрузкуСообщенияОбменаДаннымиПередЗапуском</constants>
@@ -1802,24 +1821,30 @@
   <constants>Constant.ПоискТочноеСоответствие</constants>
   <constants>Constant.ПоказыватьАнализОтвета</constants>
   <constants>Constant.ПоказыватьРейтингВрасходной</constants>
+  <constants>Constant.ПоказыватьШтрихкодВРасходной</constants>
   <constants>Constant.ПомечатьЗаказыПриФормированииДокументаВыдачаТранзита</constants>
   <constants>Constant.Порт</constants>
+  <constants>Constant.ПоследнееОбновлениеДоступа</constants>
   <constants>Constant.ПоследняяЗагрузкаГруппОбъединеннойДоставки</constants>
   <constants>Constant.ПоследняяЗагрузкаДоставленныхТранзитов</constants>
   <constants>Constant.ПоследняяЗагрузкаКарты</constants>
   <constants>Constant.ПоследняяЗагрузкаПокупок</constants>
+  <constants>Constant.ПоследняяЗагрузкаПосылок</constants>
+  <constants>Constant.ПоследняяЗагрузкаСупергрупп</constants>
   <constants>Constant.ПоследняяЗагрузкаУчастников</constants>
-  <constants>Constant.ПоследнееОбновлениеДоступа</constants>
   <constants>Constant.ПочтовыйИндекс</constants>
   <constants>Constant.ПрефиксУзлаРаспределеннойИнформационнойБазы</constants>
+  <constants>Constant.ПриниматьГруппыНаТранзитВРазборе</constants>
   <constants>Constant.ПровайдерSMS</constants>
   <constants>Constant.ПроверятьОтветственногоПриРасходе</constants>
   <constants>Constant.ПроверятьЭлектронныеПодписиНаСервере</constants>
   <constants>Constant.ПрофильБезопасностиИнформационнойБазы</constants>
   <constants>Constant.ПроцентСкидки</constants>
+  <constants>Constant.ПунктПриемаBoxBerryПоУмолчанию</constants>
   <constants>Constant.ПутьВыгрузки</constants>
   <constants>Constant.РазрешатьПриходнойПриниматГСКРазбору</constants>
   <constants>Constant.РазрешитьВыдачуБезСверкиКодов</constants>
+  <constants>Constant.РегистрироватьСупергруппуРазборомКоробки</constants>
   <constants>Constant.РейтингГраница</constants>
   <constants>Constant.СведенияОБлокируемыхОбъектах</constants>
   <constants>Constant.СведенияОбОбновленииИБ</constants>
@@ -1836,56 +1861,31 @@
   <constants>Constant.СписокРасширенийФайловOpenDocument</constants>
   <constants>Constant.СписокРасширенийФайловOpenDocumentОбластиДанных</constants>
   <constants>Constant.СтатусОбновленияКонфигурации</constants>
+  <constants>Constant.СтоимостьВозвратаТКДляОрганизатора</constants>
   <constants>Constant.СтоимостьКартыУчастника</constants>
   <constants>Constant.СтрокПриходаАвтоСохранение</constants>
+  <constants>Constant.ТарифПристроя</constants>
   <constants>Constant.Телефоны</constants>
   <constants>Constant.Токен</constants>
   <constants>Constant.ТокенBoxBerry</constants>
+  <constants>Constant.ТокенEMS</constants>
+  <constants>Constant.ТокенПочтаРоссии</constants>
+  <constants>Constant.УбираемДубльВЧекеЭквайринга</constants>
   <constants>Constant.УдалитьАлгоритмПодписи</constants>
   <constants>Constant.УдалитьАлгоритмХеширования</constants>
   <constants>Constant.УдалитьАлгоритмШифрования</constants>
   <constants>Constant.УдалитьЛогинДляОтправкиSMS</constants>
+  <constants>Constant.УдалитьЛогинДоступаКСервисуMorpher</constants>
   <constants>Constant.УдалитьПарольДляОтправкиSMS</constants>
   <constants>Constant.УдалитьПровайдерЭП</constants>
   <constants>Constant.УдалитьТипПровайдераЭП</constants>
   <constants>Constant.ФайлСрезаОстатков</constants>
+  <constants>Constant.ФлагОрганизаторОплачиваетРазборДоступность</constants>
   <constants>Constant.ФормированиеКоробкиПредупреждениеНовыйЗаказ</constants>
   <constants>Constant.ФР</constants>
   <constants>Constant.ХранитьФайлыВТомахНаДиске</constants>
   <constants>Constant.ШаблонПечатиГрупповыхСтикеров</constants>
   <constants>Constant.ЭтоАвтономноеРабочееМесто</constants>
-  <constants>Constant.ПунктПриемаBoxBerryПоУмолчанию</constants>
-  <constants>Constant.ИспоьзоватьДетальныйОбмен</constants>
-  <constants>Constant.АдминистраторДоставки</constants>
-  <constants>Constant.ФлагОрганизаторОплачиваетРазборДоступность</constants>
-  <constants>Constant.МаксимальноеКоличествоЗаказовВКоробке</constants>
-  <constants>Constant.ИндексОтправителяПРУмолчание</constants>
-  <constants>Constant.ЛогинПР</constants>
-  <constants>Constant.ПарольПР</constants>
-  <constants>Constant.ТокенПочтаРоссии</constants>
-  <constants>Constant.ЛогинEMS</constants>
-  <constants>Constant.ПарольEMS</constants>
-  <constants>Constant.ТокенEMS</constants>
-  <constants>Constant.ПоследняяЗагрузкаСупергрупп</constants>
-  <constants>Constant.ДатаХраненияДвиженийОбмена</constants>
-  <constants>Constant.ЛимитККМ_День</constants>
-  <constants>Constant.ЛимитККМ_Чек</constants>
-  <constants>Constant.ПоследняяЗагрузкаПосылок</constants>
-  <constants>Constant.ПВТранзита</constants>
-  <constants>Constant.ТарифПристроя</constants>
-  <constants>Constant.СтоимостьВозвратаТКДляОрганизатора</constants>
-  <constants>Constant.РегистрироватьСупергруппуРазборомКоробки</constants>
-  <constants>Constant.УбираемДубльВЧекеЭквайринга</constants>
-  <constants>Constant.ИспользоватьДвухЭтапнуюВыдачуЗаказа</constants>
-  <constants>Constant.ЗакрыватьДокументПослеОплаты</constants>
-  <constants>Constant.ЗаказовНаТранзите</constants>
-  <constants>Constant.ОграничениеВыдачиТранзита</constants>
-  <constants>Constant.НовоеХранениеОстатков</constants>
-  <constants>Constant.ПриниматьГруппыНаТранзитВРазборе</constants>
-  <constants>Constant.ИспользоватьСотрудникаКакКассира</constants>
-  <constants>Constant.ДниХраненияБесплатнойДоставки</constants>
-  <constants>Constant.ВозможностьПриниматьНаТранзит</constants>
-  <constants>Constant.ПоказыватьШтрихкодВРасходной</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
@@ -2109,6 +2109,7 @@
   <catalogs>Catalog.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.УслугиDPD</catalogs>
+  <catalogs>Catalog.ПараметрыОбмена</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>
