@@ -1,0 +1,26 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.100sp.ru/api/distributor/upload/back/transfer">
+	<objectType name="distributors" ordered="false">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back/transfer" name="auth" type="d3p1:distributors.auth"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back/transfer" name="transfers" type="d3p1:distributors.transfers" lowerBound="0" nillable="true"/>
+		<property name="apiVersion" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="distributors.auth" ordered="false">
+		<property name="result" type="xs:string"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.transfers">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back/transfer" name="transfer" type="d3p1:distributors.transfers.transfer" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.transfers.transfer" ordered="false">
+		<property name="date" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back/transfer" name="item" type="d3p1:distributors.transfers.transfer.item" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.transfers.transfer.item" ordered="false">
+		<property name="orderId" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="orderType" type="xs:string" nillable="true" form="Element"/>
+		<property name="created" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="arrivalNumber" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="distributorCode" type="xs:integer" lowerBound="0" nillable="true" form="Element"/>
+		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+	</objectType>
+</package>

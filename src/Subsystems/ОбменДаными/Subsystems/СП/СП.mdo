@@ -19,5 +19,6 @@
   <content>AccumulationRegister.НеВыгруженноНаСайт</content>
   <content>Report.ОшибкиОбмена100СП</content>
   <content>Report.ГруппыДоставкиИстроияОбменов</content>
+  <content>Catalog.ПараметрыОбмена</content>
   <parentSubsystem>Subsystem.ОбменДаными</parentSubsystem>
 </mdclass:Subsystem>

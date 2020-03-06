@@ -747,6 +747,21 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="6bdfd759-36c1-4bd2-9e4b-ba697646fb6b">
+      <name>НомерОтправителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер отправителя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="b32060ff-50c4-488c-acbd-84dec3552247">
     <producedTypes>

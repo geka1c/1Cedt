@@ -148,17 +148,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.СверкаОбменов</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.ПросроченныеЗадачи</name>
 		<right>
 			<name>Use</name>

@@ -1234,6 +1234,7 @@
   <commonModules>CommonModule.СтоСПОбмен_Коробки</commonModules>
   <commonModules>CommonModule.СтоСПОбмен_Общий</commonModules>
   <commonModules>CommonModule.СтоСПОбмен_Покупки</commonModules>
+  <commonModules>CommonModule.СтоСПОбмен_ПокупкиВПути</commonModules>
   <commonModules>CommonModule.СтоСПОбмен_Посылки</commonModules>
   <commonModules>CommonModule.СтоСПОбмен_Посылки_income</commonModules>
   <commonModules>CommonModule.СтоСПОбмен_Посылки_ПоЗакзу</commonModules>
@@ -1344,6 +1345,7 @@
   <xDTOPackages>XDTOPackage.СтоСПВыгрузка</xDTOPackages>
   <xDTOPackages>XDTOPackage.СтоСП_Выгрузка</xDTOPackages>
   <xDTOPackages>XDTOPackage.СтоСП_Выгрузка_Ответ</xDTOPackages>
+  <xDTOPackages>XDTOPackage.СтоСП_Выгрузка_Ответ_ПокупкиВПути</xDTOPackages>
   <xDTOPackages>XDTOPackage.СтоСП_Чат</xDTOPackages>
   <xDTOPackages>XDTOPackage.ГуглДиск</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_2_0_0_3</xDTOPackages>
@@ -2107,6 +2109,7 @@
   <catalogs>Catalog.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.УслугиDPD</catalogs>
+  <catalogs>Catalog.ПараметрыОбмена</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>
@@ -2433,7 +2436,6 @@
   <dataProcessors>DataProcessor.РезервноеКопированиеИБ</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
-  <dataProcessors>DataProcessor.СверкаОбменов</dataProcessors>
   <dataProcessors>DataProcessor.СдвигГраницыИтогов</dataProcessors>
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.СкрытиеКонфиденциальнойИнформации</dataProcessors>
