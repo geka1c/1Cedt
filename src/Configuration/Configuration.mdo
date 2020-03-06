@@ -1827,10 +1827,10 @@
   <constants>Constant.ПоследнееОбновлениеДоступа</constants>
   <constants>Constant.ПоследняяЗагрузкаГруппОбъединеннойДоставки</constants>
   <constants>Constant.ПоследняяЗагрузкаДоставленныхТранзитов</constants>
+  <constants>Constant.ПоследняяЗагрузкаСупергрупп</constants>
   <constants>Constant.ПоследняяЗагрузкаКарты</constants>
   <constants>Constant.ПоследняяЗагрузкаПокупок</constants>
   <constants>Constant.ПоследняяЗагрузкаПосылок</constants>
-  <constants>Constant.ПоследняяЗагрузкаСупергрупп</constants>
   <constants>Constant.ПоследняяЗагрузкаУчастников</constants>
   <constants>Constant.ПочтовыйИндекс</constants>
   <constants>Constant.ПрефиксУзлаРаспределеннойИнформационнойБазы</constants>
@@ -2435,7 +2435,6 @@
   <dataProcessors>DataProcessor.РезервноеКопированиеИБ</dataProcessors>
   <dataProcessors>DataProcessor.РезультатыОбновленияПрограммы</dataProcessors>
   <dataProcessors>DataProcessor.РекомендацияПоПовышениюСкоростиРаботы</dataProcessors>
-  <dataProcessors>DataProcessor.СверкаОбменов</dataProcessors>
   <dataProcessors>DataProcessor.СдвигГраницыИтогов</dataProcessors>
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.СкрытиеКонфиденциальнойИнформации</dataProcessors>
