@@ -1313,6 +1313,7 @@
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйПовтИсп</commonModules>
+  <commonModules>CommonModule.Интеграция_Яндекс</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -1637,7 +1638,10 @@
   <commonCommands>CommonCommand.ОткрытьПараметрыУчета</commonCommands>
   <commonCommands>CommonCommand.ОтправитьSMS</commonCommands>
   <commonCommands>CommonCommand.ОтправитьПисьмо</commonCommands>
+  <commonCommands>CommonCommand.ОчередьЧековККТ</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовАдминистрирование</commonCommands>
+  <commonCommands>CommonCommand.ПанельОтчетовВыдача</commonCommands>
+  <commonCommands>CommonCommand.ПанельОтчетовСклад</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовТранзит</commonCommands>
   <commonCommands>CommonCommand.ПерсональнаяНастройкаПроксиСервера</commonCommands>
   <commonCommands>CommonCommand.ПечатьШКСправочника</commonCommands>
@@ -1649,6 +1653,7 @@
   <commonCommands>CommonCommand.ПредупрежденияПриСинхронизацииДанных</commonCommands>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commonCommands>CommonCommand.РазместитьФайлыНачальногоОбраза</commonCommands>
+  <commonCommands>CommonCommand.РегистрФискальныхОпераций</commonCommands>
   <commonCommands>CommonCommand.РедактируемыеФайлы</commonCommands>
   <commonCommands>CommonCommand.РолиИИсполнителиЗадач</commonCommands>
   <commonCommands>CommonCommand.СведенияОПользователе</commonCommands>
@@ -1672,9 +1677,6 @@
   <commonCommands>CommonCommand.ФайлыВТоме</commonCommands>
   <commonCommands>CommonCommand.ЧистимСтарыеДвиженияОбмена</commonCommands>
   <commonCommands>CommonCommand.ШКОтдельнымМестом</commonCommands>
-  <commonCommands>CommonCommand.ПанельОтчетовСклад</commonCommands>
-  <commonCommands>CommonCommand.РегистрФискальныхОпераций</commonCommands>
-  <commonCommands>CommonCommand.ОчередьЧековККТ</commonCommands>
   <commandGroups>CommandGroup.Взаимодействия</commandGroups>
   <commandGroups>CommandGroup.Информация</commandGroups>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
@@ -2158,6 +2160,7 @@
   <documents>Document.РегистрацияСупперГруппы</documents>
   <documents>Document.ЗаполнитьКоленоМаршрута</documents>
   <documents>Document.ЗаполнитьСупергруппу</documents>
+  <documents>Document.ОтчетПоБесплатнойВыдаче</documents>
   <sequences>Sequence.ОтрицательныеОстаткиТоваров</sequences>
   <sequences>Sequence.Транзит</sequences>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
@@ -2367,6 +2370,7 @@
   <reports>Report.СписанныеПокупки</reports>
   <reports>Report.СписокЗаказовДокумента</reports>
   <reports>Report.УниверсальныйОтчет</reports>
+  <reports>Report.ОтчетПоБесплатнойВыдаче</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03cbbd7c-f169-4cea-9994-9a7d08dc484e">
+  <producedTypes>
+    <objectType typeId="5e331fe6-f548-426d-98e8-846a0275c6bb" valueTypeId="edc53d27-ee37-41ee-8a00-bebd55691164"/>
+    <refType typeId="22a7787c-f946-440d-8c05-92357cdddd6e" valueTypeId="20138c8c-3194-4fef-9cd7-007d9626a63c"/>
+    <selectionType typeId="92e11abb-1386-4f06-94ad-8e97340b553a" valueTypeId="84385e9f-e86c-4539-ac71-acdd36effe7c"/>
+    <listType typeId="4d3d9ab8-54b7-455a-83ed-048a9fa6f7b7" valueTypeId="2f14314f-35f7-4c72-a52f-b6ccc746c776"/>
+    <managerType typeId="7cb07525-33fd-489d-afff-6395f8f0be40" valueTypeId="a1933dfc-930c-4db1-9e53-88750dffcdea"/>
+  </producedTypes>
+  <name>ОтчетПоБесплатнойВыдаче</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по бесплатной выдаче</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтчетПоБесплатнойВыдаче.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОтчетПоБесплатнойВыдаче.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="0a33bacb-c420-4513-a8a5-8186477fcae7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
