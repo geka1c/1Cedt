@@ -89,4 +89,11 @@
       <value>Поступление пристроя</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="80306e33-a7a4-47bf-b503-3631c0f18c2b">
+    <name>ВыгрузкаЯндекс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка яндекс</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

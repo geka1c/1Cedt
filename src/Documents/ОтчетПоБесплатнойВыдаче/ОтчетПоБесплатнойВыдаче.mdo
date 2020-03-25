@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03cbbd7c-f169-4cea-9994-9a7d08dc484e">
+  <producedTypes>
+    <objectType typeId="5e331fe6-f548-426d-98e8-846a0275c6bb" valueTypeId="edc53d27-ee37-41ee-8a00-bebd55691164"/>
+    <refType typeId="22a7787c-f946-440d-8c05-92357cdddd6e" valueTypeId="20138c8c-3194-4fef-9cd7-007d9626a63c"/>
+    <selectionType typeId="92e11abb-1386-4f06-94ad-8e97340b553a" valueTypeId="84385e9f-e86c-4539-ac71-acdd36effe7c"/>
+    <listType typeId="4d3d9ab8-54b7-455a-83ed-048a9fa6f7b7" valueTypeId="2f14314f-35f7-4c72-a52f-b6ccc746c776"/>
+    <managerType typeId="7cb07525-33fd-489d-afff-6395f8f0be40" valueTypeId="a1933dfc-930c-4db1-9e53-88750dffcdea"/>
+  </producedTypes>
+  <name>ОтчетПоБесплатнойВыдаче</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по бесплатной выдаче</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтчетПоБесплатнойВыдаче.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОтчетПоБесплатнойВыдаче.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="395c5dbc-5106-4726-ac70-24f6a4154400">
+    <name>СуммаВозмещаемаяПунктуВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма возмещаемая пункту выдачи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d3a7cbb5-394b-44db-8d11-cf7587578156">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ac497498-4ecd-4279-adb8-18551561e4d0">
+    <name>СвойПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свой пункт выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da9b6f5c-1992-4c36-acb8-ec435fa95085">
+    <name>ИмяОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя отчета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c383cc46-a91a-4366-bbc9-d71ca78993c3">
+    <name>ПутьФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df7bacb4-b3cf-41c1-b0d4-34b6dd86f4f5">
+    <name>ПутьОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь отчета</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a566b4c2-ebf5-4aa2-8a00-f390e99b43b2">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8837ab68-c68d-4a79-be88-75f0968406f3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0a33bacb-c420-4513-a8a5-8186477fcae7">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a4670b8f-034d-4cfe-b431-a4b8498aa26f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

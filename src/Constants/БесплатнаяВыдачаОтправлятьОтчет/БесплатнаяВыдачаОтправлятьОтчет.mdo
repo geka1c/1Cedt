@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a29b82c5-b3d4-41bc-a9ae-ba45789e50c0">
+  <producedTypes>
+    <managerType typeId="e0848995-6aca-4e73-9480-798fae9ce290" valueTypeId="d86104ec-bb7a-4127-bee7-75c988659789"/>
+    <valueManagerType typeId="6720eb5d-811a-4339-935f-edfd7d1cdff6" valueTypeId="d21ceb4e-4d2c-4bf8-9a61-6ee30adaa3f9"/>
+    <valueKeyType typeId="35f0ab68-2998-4d68-9ead-1dffe8306116" valueTypeId="ee2e5699-f657-4db6-b6f3-90e33fad735d"/>
+  </producedTypes>
+  <name>БесплатнаяВыдачаОтправлятьОтчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бесплатная выдача отправлять отчет</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

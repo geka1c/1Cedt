@@ -1313,6 +1313,8 @@
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйПовтИсп</commonModules>
+  <commonModules>CommonModule.Интеграция_Яндекс</commonModules>
+  <commonModules>CommonModule.СП_Отчеты</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -1412,9 +1414,9 @@
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтГлавного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтПодчиненного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьВозможностьИзмененияНастроекОбменаДанными</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьИзменениеФильтровОграниченияМиграцииДанных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокументаЗащитаПерсональныхДанных</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьИзмененияДатВПредмете</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалением</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалениемЗащитаПерсональныхДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписьюДокумента</eventSubscriptions>
@@ -1424,6 +1426,8 @@
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиНабораЗаписей</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиНабораЗаписейРегистраРасчета</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьИзменениеФильтровОграниченияМиграцииДанных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьИзмененияДатВПредмете</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьУстранениеПроблемыДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьУстранениеПроблемыОбъекта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.РИБРегистрация</eventSubscriptions>
@@ -1433,9 +1437,10 @@
   <eventSubscriptions>EventSubscription.РИБРегистрацияНабораРасчета</eventSubscriptions>
   <eventSubscriptions>EventSubscription.РИБРегистрацияУдаления</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СброситьЗначениеРеквизитаУпорядочивания</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СвойстваПередУдалениемСсылочногоОбъекта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СкопироватьРеквизитыВерсииФайловВФайл</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СоздатьПредопределенныеПапкиЭлектронныхПисем</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СвойстваПередУдалениемСсылочногоОбъекта</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СП_КорректеровкаПроведенных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияЗадач</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайлов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовВзаимодействия</eventSubscriptions>
@@ -1443,9 +1448,8 @@
   <eventSubscriptions>EventSubscription.УстановитьПрефиксИнформационнойБазыНомеруДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСнятьПометкуУдаленияЗаметок</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСтатусИзмененияПометкиУдаленияПользователя</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалением</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СП_КорректеровкаПроведенных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ВосстановлениеТранзита</scheduledJobs>
   <scheduledJobs>ScheduledJob.ВыгрузкаНаСайт</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗагрузкаКлассификатораБанков</scheduledJobs>
@@ -1486,6 +1490,7 @@
   <scheduledJobs>ScheduledJob.УстановкаПериодаРассчитанныхИтогов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЭкспортОценкиПроизводительности</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗагрузкаГруппДоставки</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОтчетПоБесплатнойВыдаче</scheduledJobs>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</functionalOptions>
   <functionalOptions>FunctionalOption.ВариантыВерсионированияОбъектов</functionalOptions>
@@ -1637,7 +1642,10 @@
   <commonCommands>CommonCommand.ОткрытьПараметрыУчета</commonCommands>
   <commonCommands>CommonCommand.ОтправитьSMS</commonCommands>
   <commonCommands>CommonCommand.ОтправитьПисьмо</commonCommands>
+  <commonCommands>CommonCommand.ОчередьЧековККТ</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовАдминистрирование</commonCommands>
+  <commonCommands>CommonCommand.ПанельОтчетовВыдача</commonCommands>
+  <commonCommands>CommonCommand.ПанельОтчетовСклад</commonCommands>
   <commonCommands>CommonCommand.ПанельОтчетовТранзит</commonCommands>
   <commonCommands>CommonCommand.ПерсональнаяНастройкаПроксиСервера</commonCommands>
   <commonCommands>CommonCommand.ПечатьШКСправочника</commonCommands>
@@ -1649,6 +1657,7 @@
   <commonCommands>CommonCommand.ПредупрежденияПриСинхронизацииДанных</commonCommands>
   <commonCommands>CommonCommand.ПрисоединенныеФайлы</commonCommands>
   <commonCommands>CommonCommand.РазместитьФайлыНачальногоОбраза</commonCommands>
+  <commonCommands>CommonCommand.РегистрФискальныхОпераций</commonCommands>
   <commonCommands>CommonCommand.РедактируемыеФайлы</commonCommands>
   <commonCommands>CommonCommand.РолиИИсполнителиЗадач</commonCommands>
   <commonCommands>CommonCommand.СведенияОПользователе</commonCommands>
@@ -1672,9 +1681,6 @@
   <commonCommands>CommonCommand.ФайлыВТоме</commonCommands>
   <commonCommands>CommonCommand.ЧистимСтарыеДвиженияОбмена</commonCommands>
   <commonCommands>CommonCommand.ШКОтдельнымМестом</commonCommands>
-  <commonCommands>CommonCommand.ПанельОтчетовСклад</commonCommands>
-  <commonCommands>CommonCommand.РегистрФискальныхОпераций</commonCommands>
-  <commonCommands>CommonCommand.ОчередьЧековККТ</commonCommands>
   <commandGroups>CommandGroup.Взаимодействия</commandGroups>
   <commandGroups>CommandGroup.Информация</commandGroups>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
@@ -1886,6 +1892,8 @@
   <constants>Constant.ДниХраненияБесплатнойДоставки</constants>
   <constants>Constant.ВозможностьПриниматьНаТранзит</constants>
   <constants>Constant.ПоказыватьШтрихкодВРасходной</constants>
+  <constants>Constant.ЯндексДискТокен</constants>
+  <constants>Constant.БесплатнаяВыдачаОтправлятьОтчет</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
@@ -2110,6 +2118,7 @@
   <catalogs>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.УслугиDPD</catalogs>
   <catalogs>Catalog.ПараметрыОбмена</catalogs>
+  <catalogs>Catalog.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>
@@ -2158,6 +2167,7 @@
   <documents>Document.РегистрацияСупперГруппы</documents>
   <documents>Document.ЗаполнитьКоленоМаршрута</documents>
   <documents>Document.ЗаполнитьСупергруппу</documents>
+  <documents>Document.ОтчетПоБесплатнойВыдаче</documents>
   <sequences>Sequence.ОтрицательныеОстаткиТоваров</sequences>
   <sequences>Sequence.Транзит</sequences>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
@@ -2367,6 +2377,7 @@
   <reports>Report.СписанныеПокупки</reports>
   <reports>Report.СписокЗаказовДокумента</reports>
   <reports>Report.УниверсальныйОтчет</reports>
+  <reports>Report.ОтчетПоБесплатнойВыдаче</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

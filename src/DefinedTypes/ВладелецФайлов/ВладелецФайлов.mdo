@@ -11,5 +11,6 @@
   <type>
     <types>BusinessProcessRef.Задание</types>
     <types>CatalogRef.ПапкиФайлов</types>
+    <types>DocumentRef.ОтчетПоБесплатнойВыдаче</types>
   </type>
 </mdclass:DefinedType>

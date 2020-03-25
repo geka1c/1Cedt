@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="beb7facb-3d7c-470d-8390-76bd45ef79af">
+  <name>Интеграция_Яндекс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция яндекс</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>
