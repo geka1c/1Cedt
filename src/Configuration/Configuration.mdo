@@ -1314,6 +1314,7 @@
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйПовтИсп</commonModules>
   <commonModules>CommonModule.Интеграция_Яндекс</commonModules>
+  <commonModules>CommonModule.СП_Отчеты</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -1413,9 +1414,9 @@
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтГлавного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПриПолученииДанныхОтПодчиненного</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьВозможностьИзмененияНастроекОбменаДанными</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьИзменениеФильтровОграниченияМиграцииДанных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокументаЗащитаПерсональныхДанных</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьИзмененияДатВПредмете</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалением</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалениемЗащитаПерсональныхДанных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПередЗаписьюДокумента</eventSubscriptions>
@@ -1425,6 +1426,8 @@
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиНабораЗаписей</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьДоступПриЗаписиНабораЗаписейРегистраРасчета</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьИзменениеФильтровОграниченияМиграцииДанных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПроверитьИзмененияДатВПредмете</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьУстранениеПроблемыДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроверитьУстранениеПроблемыОбъекта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.РИБРегистрация</eventSubscriptions>
@@ -1434,9 +1437,10 @@
   <eventSubscriptions>EventSubscription.РИБРегистрацияНабораРасчета</eventSubscriptions>
   <eventSubscriptions>EventSubscription.РИБРегистрацияУдаления</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СброситьЗначениеРеквизитаУпорядочивания</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СвойстваПередУдалениемСсылочногоОбъекта</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СкопироватьРеквизитыВерсииФайловВФайл</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СоздатьПредопределенныеПапкиЭлектронныхПисем</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СвойстваПередУдалениемСсылочногоОбъекта</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СП_КорректеровкаПроведенных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияЗадач</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайлов</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовВзаимодействия</eventSubscriptions>
@@ -1444,9 +1448,8 @@
   <eventSubscriptions>EventSubscription.УстановитьПрефиксИнформационнойБазыНомеруДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСнятьПометкуУдаленияЗаметок</eventSubscriptions>
   <eventSubscriptions>EventSubscription.УстановитьСтатусИзмененияПометкиУдаленияПользователя</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.ПроверитьДатуЗапретаИзмененияПередУдалением</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СП_КорректеровкаПроведенных</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</eventSubscriptions>
   <scheduledJobs>ScheduledJob.ВосстановлениеТранзита</scheduledJobs>
   <scheduledJobs>ScheduledJob.ВыгрузкаНаСайт</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗагрузкаКлассификатораБанков</scheduledJobs>
@@ -1487,6 +1490,7 @@
   <scheduledJobs>ScheduledJob.УстановкаПериодаРассчитанныхИтогов</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЭкспортОценкиПроизводительности</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЗагрузкаГруппДоставки</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ОтчетПоБесплатнойВыдаче</scheduledJobs>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</functionalOptions>
   <functionalOptions>FunctionalOption.ВариантыВерсионированияОбъектов</functionalOptions>
@@ -1888,10 +1892,13 @@
   <constants>Constant.ДниХраненияБесплатнойДоставки</constants>
   <constants>Constant.ВозможностьПриниматьНаТранзит</constants>
   <constants>Constant.ПоказыватьШтрихкодВРасходной</constants>
+  <constants>Constant.ЯндексДискТокен</constants>
+  <constants>Constant.БесплатнаяВыдачаОтправлятьОтчет</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
   <commonForms>CommonForm.ВводЗначенийСпискомСФлажками</commonForms>
+  <commonForms>CommonForm.ВиджетОбмена100СП</commonForms>
   <commonForms>CommonForm.Вопрос</commonForms>
   <commonForms>CommonForm.ВопросОбУстановкеВнешнейКомпоненты</commonForms>
   <commonForms>CommonForm.ВопросОбУстановкеРасширенияРаботыСКриптографией</commonForms>
@@ -1900,11 +1907,14 @@
   <commonForms>CommonForm.ВспомогательнаяФормаНастроекОтчета</commonForms>
   <commonForms>CommonForm.ВходВПрограммуЗапрещен</commonForms>
   <commonForms>CommonForm.ВыборДаты</commonForms>
+  <commonForms>CommonForm.ВыборДатыИВремени</commonForms>
   <commonForms>CommonForm.ВыборДействияПриОбнаруженииОтличийФайла</commonForms>
+  <commonForms>CommonForm.ВыборЗаказаПолученногоУчастником</commonForms>
   <commonForms>CommonForm.ВыборИсполнителяБизнесПроцесса</commonForms>
   <commonForms>CommonForm.ВыборКонтакта</commonForms>
   <commonForms>CommonForm.ВыборОбъектовИнформационнойБазыКорреспондента</commonForms>
   <commonForms>CommonForm.ВыборОбъектовМетаданных</commonForms>
+  <commonForms>CommonForm.ВыборПосылкиПоПокупкеУчастнику</commonForms>
   <commonForms>CommonForm.ВыборПутиКАрхивуФайловТомов</commonForms>
   <commonForms>CommonForm.ВыборРолиИсполнителя</commonForms>
   <commonForms>CommonForm.ВыборТиповПользователей</commonForms>
@@ -1921,8 +1931,8 @@
   <commonForms>CommonForm.НастройкаДоступаКСервисуMorpher</commonForms>
   <commonForms>CommonForm.НастройкаКомандПечати</commonForms>
   <commonForms>CommonForm.НастройкаМоихОтчетовИОбработок</commonForms>
-  <commonForms>CommonForm.НастройкаРабочегоКаталога</commonForms>
   <commonForms>CommonForm.НастройкаОтправкиSMS</commonForms>
+  <commonForms>CommonForm.НастройкаРабочегоКаталога</commonForms>
   <commonForms>CommonForm.НастройкиВходаПользователей</commonForms>
   <commonForms>CommonForm.НастройкиПравОбъектов</commonForms>
   <commonForms>CommonForm.НастройкиРегистрацииСобытийДоступаКПерсональнымДанным</commonForms>
@@ -1948,11 +1958,11 @@
   <commonForms>CommonForm.ПредупрежденияПриЗавершенииРаботы</commonForms>
   <commonForms>CommonForm.ПустойРабочийСтол</commonForms>
   <commonForms>CommonForm.Расширения</commonForms>
+  <commonForms>CommonForm.РедактированиеГиперссылки</commonForms>
   <commonForms>CommonForm.РедактированиеДополнительныхСведений</commonForms>
   <commonForms>CommonForm.РедактированиеТабличногоДокумента</commonForms>
   <commonForms>CommonForm.РедакторЭтикетокДополнительныеДанные</commonForms>
   <commonForms>CommonForm.РедакторЭтикетокФормаВыбораПоляСКД</commonForms>
-  <commonForms>CommonForm.РедактированиеГиперссылки</commonForms>
   <commonForms>CommonForm.РедакторЭтикетокФормаРедактированияМакета</commonForms>
   <commonForms>CommonForm.РедакторЭтикетокФормаРедактированияПоляМакета</commonForms>
   <commonForms>CommonForm.РезультатПроверки</commonForms>
@@ -1965,10 +1975,14 @@
   <commonForms>CommonForm.СохранениеПечатнойФормы</commonForms>
   <commonForms>CommonForm.СравнениеТабличныхДокументов</commonForms>
   <commonForms>CommonForm.СтруктураПодчиненности</commonForms>
+  <commonForms>CommonForm.УстановкаВнешнейКомпонентыНевозможна</commonForms>
+  <commonForms>CommonForm.УстановленныеИсправления</commonForms>
   <commonForms>CommonForm.УточнениеКонтактов</commonForms>
   <commonForms>CommonForm.ФайлыВТоме</commonForms>
   <commonForms>CommonForm.ФормаВариантаОтчета</commonForms>
   <commonForms>CommonForm.ФормаВводаШК</commonForms>
+  <commonForms>CommonForm.ФормаВыбораПосылкиПоКодуПосылки</commonForms>
+  <commonForms>CommonForm.ФормаВыбораПунктаВыдачи</commonForms>
   <commonForms>CommonForm.ФормаВыбораСостоянияОбработкиКоробок</commonForms>
   <commonForms>CommonForm.ФормаНастроекОтчета</commonForms>
   <commonForms>CommonForm.ФормаНастройки1СККМOffline</commonForms>
@@ -1995,25 +2009,17 @@
   <commonForms>CommonForm.ФормаНастройкиСканкодТерминалыСбораДанных</commonForms>
   <commonForms>CommonForm.ФормаНастройкиСканситиТерминалыСбораДанных</commonForms>
   <commonForms>CommonForm.ФормаНастройкиУниверсальныйДрайвер</commonForms>
-  <commonForms>CommonForm.УстановкаВнешнейКомпонентыНевозможна</commonForms>
-  <commonForms>CommonForm.УстановленныеИсправления</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМВесыСПечатьюЭтикеток</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМДисплеиПокупателя</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМККМOffline</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМТерминалыСбораДанных</commonForms>
-  <commonForms>CommonForm.ФормаОтчета</commonForms>
-  <commonForms>CommonForm.ФормаПоиска</commonForms>
-  <commonForms>CommonForm.ЭлектроннаяПодпись</commonForms>
-  <commonForms>CommonForm.ФормаПросмотраHTML</commonForms>
-  <commonForms>CommonForm.ВиджетОбмена100СП</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМФискальныеРегистраторы</commonForms>
   <commonForms>CommonForm.ФормаНастройкиШтрихМЭлектронныеВесы</commonForms>
-  <commonForms>CommonForm.ВыборПосылкиПоПокупкеУчастнику</commonForms>
-  <commonForms>CommonForm.ВыборЗаказаПолученногоУчастником</commonForms>
-  <commonForms>CommonForm.ФормаВыбораПунктаВыдачи</commonForms>
   <commonForms>CommonForm.ФормаОжиданиеВводаШтрихкода</commonForms>
-  <commonForms>CommonForm.ВыборДатыИВремени</commonForms>
-  <commonForms>CommonForm.ФормаВыбораПосылкиПоКодуПосылки</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
+  <commonForms>CommonForm.ФормаПоиска</commonForms>
+  <commonForms>CommonForm.ФормаПросмотраHTML</commonForms>
+  <commonForms>CommonForm.ЭлектроннаяПодпись</commonForms>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Заказы</catalogs>
   <catalogs>Catalog.Покупки</catalogs>
@@ -2112,6 +2118,7 @@
   <catalogs>Catalog.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.УслугиDPD</catalogs>
   <catalogs>Catalog.ПараметрыОбмена</catalogs>
+  <catalogs>Catalog.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>

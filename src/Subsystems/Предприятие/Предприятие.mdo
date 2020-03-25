@@ -36,4 +36,5 @@
   <content>Report.АнализРазбораКоробок</content>
   <subsystems>Администрирование</subsystems>
   <subsystems>Справочники</subsystems>
+  <subsystems>РегламентныеОперации</subsystems>
 </mdclass:Subsystem>

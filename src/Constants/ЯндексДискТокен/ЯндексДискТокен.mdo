@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57ba4453-19c6-40bf-bd7b-88a3fe37255a">
+  <producedTypes>
+    <managerType typeId="20ae024f-9515-4ed6-97ee-db82c37096d2" valueTypeId="d3f63664-7c78-4ba0-a788-bd59b51ab67b"/>
+    <valueManagerType typeId="6951e7fc-ce01-4d65-84f1-6beae0740c38" valueTypeId="acccd895-c469-4cbc-9ca1-404bd9e5d618"/>
+    <valueKeyType typeId="a443901d-d173-469e-a164-f906e19ad554" valueTypeId="6ec662c0-e821-4860-9802-6ca7b13aba1f"/>
+  </producedTypes>
+  <name>ЯндексДискТокен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Яндекс диск токен</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>250</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

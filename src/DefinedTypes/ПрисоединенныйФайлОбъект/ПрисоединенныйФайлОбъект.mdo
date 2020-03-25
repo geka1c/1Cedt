@@ -18,5 +18,6 @@
     <types>CatalogObject.ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</types>
     <types>CatalogObject.ЗапланированноеВзаимодействиеПрисоединенныеФайлы</types>
     <types>CatalogObject.ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</types>
+    <types>CatalogObject.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</types>
   </type>
 </mdclass:DefinedType>

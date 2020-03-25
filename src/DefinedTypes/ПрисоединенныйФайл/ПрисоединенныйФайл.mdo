@@ -18,5 +18,6 @@
     <types>CatalogRef.ВерсииФайлов</types>
     <types>CatalogRef.ТелефонныйЗвонокПрисоединенныеФайлы</types>
     <types>CatalogRef.ШаблоныСообщенийПрисоединенныеФайлы</types>
+    <types>CatalogRef.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</types>
   </type>
 </mdclass:DefinedType>

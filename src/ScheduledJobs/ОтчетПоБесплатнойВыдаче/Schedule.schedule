@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule:Schedule xmlns:schedule="http://g5.1c.ru/v8/dt/schedule" weekDayInMonth="1" dayInMonth="1">
+  <months>Jan</months>
+  <months>Feb</months>
+  <months>Mar</months>
+  <months>Apr</months>
+  <months>May</months>
+  <months>Jun</months>
+  <months>Jul</months>
+  <months>Aug</months>
+  <months>Sep</months>
+  <months>Oct</months>
+  <months>Nov</months>
+  <months>Dec</months>
+</schedule:Schedule>
