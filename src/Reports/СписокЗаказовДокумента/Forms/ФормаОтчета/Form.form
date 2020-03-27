@@ -247,10 +247,6 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:ReportFormExtInfo">
-    <handlers>
-      <event>OnLoadUserSettingsAtServer</event>
-      <name>ПриЗагрузкеПользовательскихНастроекНаСервере</name>
-    </handlers>
     <reportResult>Результат</reportResult>
     <detailsInformation>ДанныеРасшифровки</detailsInformation>
     <userSettingsGroup>КомпоновщикНастроекПользовательскиеНастройки</userSettingsGroup>

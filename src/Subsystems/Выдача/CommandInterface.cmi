@@ -45,6 +45,26 @@
       <command>Report.ПоискПокупок.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетЗаДень.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетПоБесплатнойВыдаче.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.КассоваяВедомость.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ДинамикаВыдачиЗаказов.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ПоискУчатникаСКД.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
@@ -52,11 +72,13 @@
       <commands>DocumentJournal.ДокуметыВыдачи.StandardCommand.OpenList</commands>
       <commands>Document.ВыдачаТранзита.StandardCommand.OpenList</commands>
       <commands>Document.Расходная.StandardCommand.OpenList</commands>
+      <commands>CommonCommand.ПанельОтчетовВыдача</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelImportant</group>
+      <commands>CommonCommand.ПанельОтчетовВыдача</commands>
       <commands>DocumentJournal.ДокуметыВыдачи.StandardCommand.OpenList</commands>
       <commands>Document.ВыдачаТранзита.StandardCommand.OpenList</commands>
       <commands>Document.Расходная.StandardCommand.OpenList</commands>
