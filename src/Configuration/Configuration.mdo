@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.3.2</version>
+  <version>3.5.3.3</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -1894,6 +1894,7 @@
   <constants>Constant.ПоказыватьШтрихкодВРасходной</constants>
   <constants>Constant.ЯндексДискТокен</constants>
   <constants>Constant.БесплатнаяВыдачаОтправлятьОтчет</constants>
+  <constants>Constant.ЭлектроннаяПочтаКурьерскойДоставки</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>

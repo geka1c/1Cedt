@@ -465,7 +465,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue"/>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="0abf70e0-0d81-4d85-a288-a2134da5fbf1">

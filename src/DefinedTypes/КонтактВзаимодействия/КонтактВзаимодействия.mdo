@@ -11,5 +11,6 @@
   <type>
     <types>CatalogRef.СтроковыеКонтактыВзаимодействий</types>
     <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ТочкиРаздачи</types>
   </type>
 </mdclass:DefinedType>

@@ -67,7 +67,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
   </resources>
   <resources uuid="758f44ad-54da-4f72-accf-0afecc4f4827">

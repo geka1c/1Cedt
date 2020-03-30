@@ -259,9 +259,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:ReferenceValue">
-      <value>Document.ТелефонныйЗвонок.EmptyRef</value>
-    </fillValue>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="c3efa853-cd29-4618-929f-e3bec33dfd65">
