@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85358374-b006-4f66-81f5-d47a2dd3b70e">
+  <producedTypes>
+    <managerType typeId="115c7977-61a2-4414-9b54-a597556df340" valueTypeId="4236b1f1-5d58-4f94-9af9-c35d5de1d646"/>
+    <valueManagerType typeId="d3fac009-0ecd-4de1-8cca-c131264bb6fb" valueTypeId="8fec13be-801f-477f-b09b-3b32b238761e"/>
+    <valueKeyType typeId="70db4510-632a-489a-9df6-37b04b8cd423" valueTypeId="d9a27802-bb8b-43fa-aefe-4336d67ca5fb"/>
+  </producedTypes>
+  <name>ЭлектроннаяПочтаКурьерскойДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронная почта курьерской доставки</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
