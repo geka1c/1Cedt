@@ -1315,6 +1315,8 @@
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйПовтИсп</commonModules>
   <commonModules>CommonModule.Интеграция_Яндекс</commonModules>
   <commonModules>CommonModule.СП_Отчеты</commonModules>
+  <commonModules>CommonModule.СП_КурьерскаяДоставка</commonModules>
+  <commonModules>CommonModule.СП_АдресаДоставки</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -1895,6 +1897,9 @@
   <constants>Constant.ЯндексДискТокен</constants>
   <constants>Constant.БесплатнаяВыдачаОтправлятьОтчет</constants>
   <constants>Constant.ЭлектроннаяПочтаКурьерскойДоставки</constants>
+  <constants>Constant.КурьерскаяДоставка</constants>
+  <constants>Constant.ПунктВыдачиДляВозвратов</constants>
+  <constants>Constant.ПунктВыдачиКурьерскойДоставки</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
@@ -2120,6 +2125,7 @@
   <catalogs>Catalog.УслугиDPD</catalogs>
   <catalogs>Catalog.ПараметрыОбмена</catalogs>
   <catalogs>Catalog.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.СобранныеЗаказы</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>
@@ -2131,6 +2137,7 @@
   <documents>Document.Расходная</documents>
   <documents>Document.ФормированиеКоробки</documents>
   <documents>Document.ОтправлениеТранзита</documents>
+  <documents>Document.КурьерскаяДоставка</documents>
   <documents>Document.СоздатьГруппуДоставки</documents>
   <documents>Document.ОбъединениеГруппДоставки</documents>
   <documents>Document.ПоступленияОтПоставщика</documents>
@@ -2308,6 +2315,7 @@
   <enums>Enum.ТипыРасчетаДенежнымиСредствами</enums>
   <enums>Enum.ТипыСистемНалогообложенияККТ</enums>
   <enums>Enum.ТипыФискальныхДокументовККТ</enums>
+  <enums>Enum.СтатусыДоставки</enums>
   <reports>Report.АнализВерсийОбъектов</reports>
   <reports>Report.АнализГруппДоставки</reports>
   <reports>Report.АнализЖурналаРегистрации</reports>
@@ -2638,6 +2646,7 @@
   <accumulationRegisters>AccumulationRegister.ЗаказыВПосылках</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ТоварыНаСкладах</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНаСкладе</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.СобранныеЗаказы</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВопросыДляАнкетирования</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</chartsOfCharacteristicTypes>

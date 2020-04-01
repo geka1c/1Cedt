@@ -81,6 +81,7 @@
   <registerRecords>AccumulationRegister.УпакованныеЗаказы</registerRecords>
   <registerRecords>InformationRegister.Обмен100спСообщения</registerRecords>
   <registerRecords>AccumulationRegister.КПолучению</registerRecords>
+  <registerRecords>AccumulationRegister.СобранныеЗаказы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="c46da301-d754-400b-802c-ceb9b45111e9">
@@ -589,6 +590,7 @@
         <types>DocumentRef.Приходная</types>
         <types>DocumentRef.ПоступлениеПристроя</types>
         <types>DocumentRef.РазборКоробки</types>
+        <types>DocumentRef.КурьерскаяДоставка</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

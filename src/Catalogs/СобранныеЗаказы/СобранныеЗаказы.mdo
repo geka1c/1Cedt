@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="637f2947-78cc-4393-8952-84be1fd95483">
+  <producedTypes>
+    <objectType typeId="87220ab7-efcf-4aed-8dfb-3e699afaf853" valueTypeId="e49036a4-51a8-4f44-9264-6ef7964ebcf2"/>
+    <refType typeId="a118c091-adc3-433d-8955-e9b67aaaef82" valueTypeId="1a2e8d3a-734b-4ba8-b542-167d0aedb0da"/>
+    <selectionType typeId="2835088f-1b9d-496c-a8b5-e6b096712c1e" valueTypeId="7515ace7-d2fd-445f-9914-fb0638b9cb63"/>
+    <listType typeId="3e63befd-227b-4a45-84f0-59569668a786" valueTypeId="891e99b6-b880-44a8-831a-2c2bbc38ed55"/>
+    <managerType typeId="fe55ed81-3d91-4e72-880d-d39faa76403c" valueTypeId="4fb29e92-c443-4020-b082-8263df8f0f8f"/>
+  </producedTypes>
+  <name>СобранныеЗаказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Собранные заказы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СобранныеЗаказы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.СобранныеЗаказы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="d364372b-d226-482e-bbce-7fcef171e261">
+    <name>ДокументЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ заказа</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.КурьерскаяДоставка</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ca085162-7cb5-4e4c-9c57-88b4b21aa795">
+    <name>ШК</name>
+    <synonym>
+      <key>ru</key>
+      <value>ШК</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Мегаордера</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

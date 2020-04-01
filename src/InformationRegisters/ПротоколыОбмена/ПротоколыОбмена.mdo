@@ -34,6 +34,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="711ab548-5986-4bf1-9595-285c09051e67">
+    <name>Отправили</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправили</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
   <resources uuid="d62f74c0-aeee-4607-93af-045370ec57fc">
     <name>ПолученныеДанные</name>
     <synonym>

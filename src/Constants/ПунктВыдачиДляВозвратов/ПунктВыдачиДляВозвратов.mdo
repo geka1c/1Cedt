@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4ab8db6-22e3-4ff8-81e8-171d0316c0bf">
+  <producedTypes>
+    <managerType typeId="0f5bdf4d-e946-419c-b2b1-1102ff3bc4a3" valueTypeId="7efef028-e4d3-466c-a958-9b0952c01daa"/>
+    <valueManagerType typeId="3797fb5d-d6c1-4705-8fb9-e465d3fe45fa" valueTypeId="7015d33d-603c-46d1-8c2a-980f9ebc7bf0"/>
+    <valueKeyType typeId="d1bbeccb-87ec-4d52-8fca-eed3e2f64b04" valueTypeId="f72d4e43-ac81-41d2-b214-e198a437afc8"/>
+  </producedTypes>
+  <name>ПунктВыдачиДляВозвратов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пункт выдачи для возвратов</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ТочкиРаздачи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

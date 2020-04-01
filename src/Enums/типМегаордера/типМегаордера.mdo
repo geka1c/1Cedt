@@ -110,4 +110,11 @@
       <value>Расходная (68)</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="7ffbfc54-3e08-4c4c-9b60-84bd1bb02697">
+    <name>ЗаказКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ КД (45)</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

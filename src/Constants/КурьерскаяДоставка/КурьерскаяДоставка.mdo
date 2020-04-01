@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af761f97-171a-41f3-8c5e-1d2116a95162">
+  <producedTypes>
+    <managerType typeId="878616c2-a748-4a11-813c-ca924e94216f" valueTypeId="53894dec-6587-4e82-a881-fa333097b1dc"/>
+    <valueManagerType typeId="32c5e9fd-e056-4049-b506-508926dd7c8b" valueTypeId="95b84333-b3d6-4133-9a82-e0b2c9bc19bb"/>
+    <valueKeyType typeId="ea1ce26a-7ab5-4f18-ba70-b5d6cb43dad7" valueTypeId="dbe3f473-1a83-4e44-903a-c6a86140071b"/>
+  </producedTypes>
+  <name>КурьерскаяДоставка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курьерская доставка</value>
+  </synonym>
+  <comment>Учитывать курьерскую доставку отдельно от групповой</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbba4917-33e3-40cd-b4fc-ea7a39b385c4">
+  <producedTypes>
+    <selectionType typeId="dfe6d253-8a7a-4064-8006-b748a7f6aab2" valueTypeId="7760859d-40df-4e62-a9b7-08e1b3d3da0d"/>
+    <listType typeId="a72d658d-4b03-4fdd-8d76-34e003a72f2b" valueTypeId="12e28df4-1893-4d3b-aeaf-f2e4a26d004e"/>
+    <managerType typeId="f8ec33a3-59a8-49a0-939f-cab7153e89c8" valueTypeId="0c7338fe-6ea3-401a-a148-b1fb0dfdc0ca"/>
+    <recordSetType typeId="c6e66f7d-bf59-4b15-b90f-1c2b3401cf28" valueTypeId="bb5330da-f7e8-4cfd-bb6e-289c4d17777d"/>
+    <recordKeyType typeId="ef15434b-c0e4-4bae-b9ed-e47864f22d3e" valueTypeId="50568d90-d3d9-4300-a0ca-fa2131f36a2d"/>
+    <recordType typeId="58ec1a54-c98e-42a1-912d-f0d980572cb1" valueTypeId="c1b95a53-f7fb-461a-86eb-b34e4520c9cf"/>
+  </producedTypes>
+  <name>СобранныеЗаказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Собранные заказы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="27fcde75-2172-44aa-b25f-32a08db38f76">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="8c1221a9-dafa-47f3-adab-296b4cb562ba">
+    <name>СтоимостьХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость хранения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="68e55a22-56c7-4931-86d9-fd92fcbe7867">
+    <name>СтоимостьДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость доставки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="676fbf61-6b7c-420b-b8ca-110268587592">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СобранныеЗаказы</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="79346ec7-029d-41be-9891-6ee5288327ff">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыдачаТранзита</types>
+      <types>DocumentRef.КурьерскаяДоставка</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="68fe6cac-34f0-4ae9-8370-30102eaa47e3">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МестаХранения</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f5382dde-039f-4dd3-ba59-13786029dbf9">
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

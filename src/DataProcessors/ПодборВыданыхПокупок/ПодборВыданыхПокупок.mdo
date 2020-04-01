@@ -75,7 +75,6 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillValue xsi:type="core:UndefinedValue"/>
     </attributes>
     <attributes uuid="8cb88063-b9f9-4c91-83e5-55d7a92c54e4">
       <name>Расход</name>

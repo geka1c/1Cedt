@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f31cf98b-6f26-492f-abec-fd19cca0a444">
+  <producedTypes>
+    <refType typeId="f1a0a338-3f94-4883-9913-67ffbab26f88" valueTypeId="fd9f4c95-04e5-4bb5-965b-a8594d2e1a96"/>
+    <listType typeId="b39b431b-b730-47f5-bafc-da6c85eedbb2" valueTypeId="7107bb15-1670-42e9-81b6-6e00f37a6f15"/>
+    <managerType typeId="8dc32adf-bcc9-43cd-9c41-7e1f1a5356b9" valueTypeId="8d05161d-2a92-4126-9bb5-0333f67ffc09"/>
+  </producedTypes>
+  <name>СтатусыДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы доставки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d430d782-934f-44a7-8148-a2c06b1c058e">
+    <name>ОжидаетСборки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидает сборки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b4198f87-4e3d-4b8c-beb2-e9185fcd6fe5">
+    <name>Собран</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собран</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8fdb5c43-c883-4caa-a635-6ef607a7c6f0">
+    <name>Отменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5c22e52c-0a90-4ee5-9b9c-780439968168">
+    <name>Отправлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

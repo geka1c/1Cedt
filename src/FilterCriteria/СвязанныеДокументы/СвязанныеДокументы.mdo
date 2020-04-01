@@ -43,6 +43,7 @@
     <types>DocumentRef.ПеремещениеВозврата</types>
     <types>DocumentRef.ЗаполнитьКоленоМаршрута</types>
     <types>DocumentRef.ПоступлениеКоробокДляРазбора</types>
+    <types>DocumentRef.КурьерскаяДоставка</types>
   </type>
   <content>Document.ВыдачаТранзита.TabularSection.Покупки.Attribute.Партия</content>
   <content>Document.ВыдачаТранзита.TabularSection.Покупки.Attribute.Заявка</content>
@@ -79,4 +80,5 @@
   <content>Document.Выгрузка_100СП.TabularSection.ВыгружаемыеДанные.Attribute.Партия</content>
   <content>Document.ЗаполнитьКоленоМаршрута.Attribute.ДокументОснование</content>
   <content>Document.ЗаполнитьСупергруппу.Attribute.ДокументОснование</content>
+  <content>Document.КурьерскаяДоставка.TabularSection.ЗаказыНаСкладе.Attribute.Партия</content>
 </mdclass:FilterCriterion>

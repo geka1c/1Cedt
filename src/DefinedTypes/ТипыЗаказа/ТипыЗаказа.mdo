@@ -15,5 +15,6 @@
     <types>CatalogRef.Пристрой</types>
     <types>CatalogRef.Мегаордера</types>
     <types>CatalogRef.Коробки</types>
+    <types>CatalogRef.СобранныеЗаказы</types>
   </type>
 </mdclass:DefinedType>

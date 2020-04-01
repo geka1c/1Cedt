@@ -33,6 +33,7 @@
   <content>Report.ЗаказыОтдельнымМестом</content>
   <content>Report.ЗаказыПлатныеВРазборе</content>
   <subsystems>аТранспортныеКомпании</subsystems>
+  <subsystems>ааКурьерскаяДоставка</subsystems>
   <subsystems>бСуппергруппы</subsystems>
   <subsystems>вПристрой</subsystems>
   <subsystems>гДокументы</subsystems>

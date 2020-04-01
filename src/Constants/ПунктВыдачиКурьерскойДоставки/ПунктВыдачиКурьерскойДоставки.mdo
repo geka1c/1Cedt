@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19923e50-e9a4-4d90-8e34-b6f67c59cf19">
+  <producedTypes>
+    <managerType typeId="654c9e99-d321-4833-9f4c-323b8a69ad8c" valueTypeId="45ce3d59-e44d-4cec-8469-6aae1de80a2a"/>
+    <valueManagerType typeId="40d58849-801d-402a-b4b4-fd7cfa27154f" valueTypeId="5560c5db-a98c-48d4-a599-d9a7d48e258b"/>
+    <valueKeyType typeId="dd439459-f02a-40f1-bab7-beda68cba7ec" valueTypeId="df30ed00-1dfe-46be-a025-de4fa5b6156f"/>
+  </producedTypes>
+  <name>ПунктВыдачиКурьерскойДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пункт выдачи курьерской доставки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ТочкиРаздачи</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

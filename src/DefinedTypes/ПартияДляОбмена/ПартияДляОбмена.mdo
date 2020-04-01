@@ -22,5 +22,6 @@
     <types>DocumentRef.ЗаполнитьСупергруппу</types>
     <types>DocumentRef.ЗаполнитьКоленоМаршрута</types>
     <types>DocumentRef.ОтчетПоБесплатнойВыдаче</types>
+    <types>DocumentRef.КурьерскаяДоставка</types>
   </type>
 </mdclass:DefinedType>

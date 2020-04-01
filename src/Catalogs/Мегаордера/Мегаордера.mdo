@@ -65,10 +65,10 @@
       <types>CatalogRef.Посылки</types>
       <types>CatalogRef.Пристрой</types>
       <types>CatalogRef.Коробки</types>
+      <types>CatalogRef.СобранныеЗаказы</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -251,6 +251,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4aaad9ff-e370-4be9-9e6e-d87872ca1075">
+    <name>СобранныйЗаказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собранный заказ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СобранныеЗаказы</types>
+    </type>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
