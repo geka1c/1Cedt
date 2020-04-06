@@ -12,6 +12,15 @@
 		<viewMode>Normal</viewMode>
 		<userSettingID>ea86ee86-1205-40b9-95a2-7ece7b46486c</userSettingID>
 	</conditionalAppearance>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>СтатусДоставки</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+			</item>
+		</groupItems>
+	</item>
 	<itemsViewMode>Normal</itemsViewMode>
 	<itemsUserSettingID>24e5555d-d1a4-4962-ad88-9369e788e30c</itemsUserSettingID>
 </Settings>

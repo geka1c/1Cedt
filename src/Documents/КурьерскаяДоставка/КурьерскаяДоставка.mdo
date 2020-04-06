@@ -419,6 +419,7 @@
     <type>
       <types>CatalogRef.МестаХранения</types>
     </type>
+    <fillChecking>ShowError</fillChecking>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -439,6 +440,30 @@
     <synonym>
       <key>ru</key>
       <value>Счет выставлен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5082e38e-99f6-4f8c-9473-212c09ded936">
+    <name>Догрузить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Догрузить</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a934c90c-a412-43e1-9695-e474167515f1">
+    <name>Напечатано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Напечатано</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -820,6 +845,18 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ca1d400-316a-417b-bf98-1782d3bf9cd2">
+      <name>Подбор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подбор</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
