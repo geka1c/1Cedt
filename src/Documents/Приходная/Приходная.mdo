@@ -253,6 +253,7 @@
         <types>CatalogRef.Пристрой</types>
         <types>Number</types>
         <types>CatalogRef.Коробки</types>
+        <types>CatalogRef.СобранныеЗаказы</types>
         <numberQualifiers>
           <precision>10</precision>
         </numberQualifiers>

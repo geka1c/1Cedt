@@ -3207,10 +3207,6 @@
 	<object>
 		<name>Catalog.ТочкиРаздачи</name>
 		<right>
-			<name>Insert</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>InteractiveInsert</name>
 			<value>false</value>
 		</right>

@@ -41,15 +41,12 @@
       <value>Покупка</value>
     </synonym>
     <type>
-      <types>CatalogRef.Покупки</types>
-      <types>CatalogRef.Заказы</types>
-      <types>CatalogRef.Коробки</types>
+      <types>DefinedType.ТипыЗаказа</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
   <dimensions uuid="0ecb9f57-48e9-4954-af80-e4010ff5626e">

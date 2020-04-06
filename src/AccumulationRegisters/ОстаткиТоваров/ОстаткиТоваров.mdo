@@ -39,14 +39,7 @@
       <value>Покупка</value>
     </synonym>
     <type>
-      <types>CatalogRef.Покупки</types>
-      <types>CatalogRef.Заказы</types>
-      <types>CatalogRef.Посылки</types>
-      <types>CatalogRef.Пристрой</types>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
+      <types>DefinedType.ТипыЗаказа</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
