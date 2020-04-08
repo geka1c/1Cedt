@@ -7320,4 +7320,15 @@
 			<value>false</value>
 		</right>
 	</object>
+	<object>
+		<name>Document.КурьерскаяДоставка</name>
+		<right>
+			<name>Delete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
 </Rights>

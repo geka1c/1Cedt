@@ -954,6 +954,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="58a24d00-583e-413d-a513-2fa14b7592b1">
+    <name>Негаборит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Негаборит</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="692d0af7-56a6-4a25-9b46-73e190df075e">
     <name>ФормаДокумента</name>
     <synonym>
