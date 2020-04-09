@@ -46,9 +46,6 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Точка</dataPath>
 			<field>Точка</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПокупкаСсылка</dataPath>
@@ -147,6 +144,19 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПунктВыдачи</dataPath>
+			<field>ПунктВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункт выдачи</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ТранзитОстатки.Габарит,
@@ -155,7 +165,7 @@
 	ТранзитОстатки.Партия,
 	ТранзитОстатки.ПокупкаСсылка КАК Покупка,
 	ТранзитОстатки.ПокупкаСсылка,
-	ТранзитОстатки.Точка,
+	ТранзитОстатки.Точка как ПунктВыдачи,
 	ВЫБОР
 		КОГДА ТИПЗНАЧЕНИЯ(ТранзитОстатки.ПокупкаСсылка) = ТИП(Справочник.Коробки)
 			ТОГДА ТранзитОстатки.ПокупкаСсылка.Количество * ТранзитОстатки.КоличествоОстаток
@@ -315,7 +325,7 @@
 					<dcsset:field>Покупка</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Точка</dcsset:field>
+					<dcsset:field>ПунктВыдачи</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Участник</dcsset:field>
