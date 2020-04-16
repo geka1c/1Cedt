@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c213e24-fe8e-446d-b3d6-c2d86c1a7d8d">
+  <producedTypes>
+    <managerType typeId="c141308a-12a8-4600-a9d4-d76e0928a405" valueTypeId="b1eacdfc-57e9-4748-9114-b099c7986353"/>
+    <valueManagerType typeId="813640b3-731d-47d7-8cfd-ccf514c0c251" valueTypeId="eb691989-c1dc-4961-bd6e-55d911edef04"/>
+    <valueKeyType typeId="c0165038-2d9d-4780-978c-4cfe8a7d6938" valueTypeId="5e7f310f-66ba-490a-a10c-bb4b7dff9b9f"/>
+  </producedTypes>
+  <name>КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Курьерская доставка дополнять заказами на остатках</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Возможность добавить в доставку заказы участника принятые на склад но не отмеченные в доставке. Добавляются в документ Курьерская доставка не помеченными. </value>
+  </toolTip>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

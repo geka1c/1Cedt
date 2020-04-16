@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f56b5c99-6d11-4f61-869a-70a15e2ba38c">
+  <producedTypes>
+    <managerType typeId="5a9e1152-5442-4635-9003-56994cde1deb" valueTypeId="5322afca-096c-42b9-a941-c2424075deb6"/>
+    <valueManagerType typeId="81d737eb-b355-4436-9fa5-51c552e2df75" valueTypeId="dbaa1fad-5ba9-4c4b-869d-8e768e917a93"/>
+    <valueKeyType typeId="f1d55226-ae40-4942-9b49-8487fa230a44" valueTypeId="09ecf1ac-4ec3-4131-a4dc-8739cd1f34fc"/>
+  </producedTypes>
+  <name>СвойКурьер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свой курьер</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если помечено доставляет свой курьер, Иначе производится Централизованная доставка курьером  &quot;Антей-Транзита&quot;</value>
+  </toolTip>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

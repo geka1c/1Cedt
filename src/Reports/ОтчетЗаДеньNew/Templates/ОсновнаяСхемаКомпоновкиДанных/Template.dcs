@@ -124,6 +124,20 @@
 						<dcscom:periodType>Additional</dcscom:periodType>
 					</role>
 				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>МестоХранения</dataPath>
+					<field>МестоХранения</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГородПокупки</dataPath>
+					<field>ГородПокупки</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Город покупки</v8:content>
+						</v8:item>
+					</title>
+				</field>
 				<dataSource>ИсточникДанных1</dataSource>
 				<query>ВЫБРАТЬ
 	ПриходОбороты.Регистратор КАК Регистратор,
@@ -138,9 +152,10 @@
 		ИНАЧЕ ПриходОбороты.КоличествоОборот
 	КОНЕЦ КАК Количество,
 	ПриходОбороты.СуммаОборот КАК Сумма,
-	ПриходОбороты.ПериодЧас КАК ПериодЧас
+	ПриходОбороты.ПериодЧас КАК ПериодЧас,
+	ПриходОбороты.Покупка.ПерваяТочка.ГородСП КАК ГородПокупки
 ИЗ
-	РегистрНакопления.Приход.Обороты(, , Авто, ) КАК ПриходОбороты</query>
+	РегистрНакопления.Приход.Обороты(,, Авто,) КАК ПриходОбороты</query>
 			</dataSet>
 			<totalField>
 				<dataPath>Количество</dataPath>
@@ -214,8 +229,7 @@
 							<dcsset:field>Сумма</dcsset:field>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:use>false</dcsset:use>
-							<dcsset:field>ДеньНедели</dcsset:field>
+							<dcsset:field>ГородПокупки</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:outputParameters>

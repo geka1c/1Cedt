@@ -1900,6 +1900,8 @@
   <constants>Constant.КурьерскаяДоставка</constants>
   <constants>Constant.ПунктВыдачиДляВозвратов</constants>
   <constants>Constant.ПунктВыдачиКурьерскойДоставки</constants>
+  <constants>Constant.СвойКурьер</constants>
+  <constants>Constant.КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>

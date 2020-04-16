@@ -470,7 +470,13 @@
 				</c>
 			</c>
 			<c>
-				<i>7</i>
+				<i>6</i>
+				<c>
+					<f>29</f>
+					<parameter>КомментарийДоставки</parameter>
+				</c>
+			</c>
+			<c>
 				<c>
 					<f>28</f>
 					<parameter>Телефон</parameter>
@@ -491,7 +497,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>29</defaultFormatIndex>
+	<defaultFormatIndex>30</defaultFormatIndex>
 	<height>15</height>
 	<vgRows>15</vgRows>
 	<merge>
@@ -527,6 +533,11 @@
 	<horizontalUnmerge>
 		<r>12</r>
 		<c>7</c>
+		<h>1</h>
+	</horizontalUnmerge>
+	<horizontalUnmerge>
+		<r>12</r>
+		<c>6</c>
 		<h>1</h>
 	</horizontalUnmerge>
 	<namedItem xsi:type="NamedItemCells">
@@ -697,7 +708,9 @@
 	</format>
 	<format>
 		<font>3</font>
-		<border>0</border>
+		<leftBorder>0</leftBorder>
+		<topBorder>0</topBorder>
+		<rightBorder>0</rightBorder>
 		<width>307</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
@@ -723,6 +736,18 @@
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<font>3</font>
+		<leftBorder>0</leftBorder>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>0</bottomBorder>
+		<width>307</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<columnSizeChange>QuickChange</columnSizeChange>
 	</format>
 	<format>
 		<width>72</width>

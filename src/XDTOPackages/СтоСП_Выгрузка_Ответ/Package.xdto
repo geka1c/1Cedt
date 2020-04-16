@@ -24,6 +24,7 @@
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="megaordersPackages" type="d3p1:distributors.megaordersPackages" lowerBound="0" nillable="true"/>
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="transitOrdersCounts" type="d3p1:distributors.transitOrdersCounts" lowerBound="0" nillable="true"/>
 		<property name="apiVersion" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="groupsUnlink" type="d3p1:distributors.groupsUnlink" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="distributors.auth" ordered="false">
 		<property name="result" type="xs:string"/>
@@ -68,6 +69,7 @@
 		<property name="groupCode" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
 		<property name="result" type="xs:string" nillable="true" form="Element"/>
 		<property name="message" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="isSpCourier" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
 	</objectType>
 	<objectType name="distributors.transfers">
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="transfer" type="d3p1:distributors.transfers.transfer" upperBound="-1" nillable="true"/>
@@ -402,5 +404,16 @@
 	<objectType name="distributors.transitOrdersCounts.transitOrdersCount">
 		<property name="transitDistributorCode" type="xs:string" form="Attribute"/>
 		<property name="transitOrdersCount" type="xs:string" form="Element"/>
+	</objectType>
+	<objectType name="distributors.groupsUnlink">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="group" type="d3p1:distributors.groupsUnlink.group" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.groupsUnlink.group" ordered="false">
+		<property name="delivery_group_id" type="xs:string" form="Attribute"/>
+		<property name="orderType" type="xs:string" form="Attribute"/>
+		<property name="orderId" type="xs:string" form="Attribute"/>
+		<property name="uid" type="xs:string" form="Attribute"/>
+		<property name="result" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
 	</objectType>
 </package>

@@ -28,6 +28,8 @@
   <registerRecords>AccumulationRegister.СобранныеЗаказы</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
   <registerRecords>AccumulationRegister.Транзит</registerRecords>
+  <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
+  <registerRecords>AccumulationRegister.НеВыгруженноНаСайт</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="daa567ff-cfff-4777-8a5d-2488126fb14a">
@@ -471,6 +473,60 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="ddb62131-2880-4b92-9b85-76ffab84f4ff">
+    <name>ОтправленаОтмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлена отмена</value>
+    </synonym>
+    <comment>Выполнен запрос удаления из группы отмененных заказов</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f45fb6b0-665f-4301-aaa4-cb58cedd6eaf">
+    <name>СвойКурьер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свой курьер</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометить если доставляет свой курьер. Снять пометку если производится Централизованная доставка курьером  &quot;Антей-Транзита&quot;</value>
+    </toolTip>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a211b997-394d-4218-92ce-3dc239b396df">
+    <name>ОтправленаВыдача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлена выдача</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c77984b-c1ef-416d-a9eb-a69673dafa7c">
+    <name>КомментарийДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий доставки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="f479c287-3a07-480b-937a-41cf444c22f5">
     <name>ФормаДокумента</name>
     <synonym>
@@ -547,6 +603,45 @@
       </toolTip>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="03cb0b86-35df-494a-9423-937a107916ec">
+      <name>ДоставкаОтменена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доставка отменена</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="81e84bbd-db19-4c32-b0d9-51de7737b5e0">
+      <name>Сообщение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сообщение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="370a6403-b1d1-4bdc-97de-350a0b80d3a1">
+      <name>ОшибкаОтмены</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ошибка отмены</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -856,6 +951,33 @@
       </synonym>
       <type>
         <types>Boolean</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="52ec6185-96c1-46f6-ad42-0931c2ccacf9">
+      <name>Отправлено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправлено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fa337abf-77b6-408c-a513-9ff9a8779928">
+      <name>Сообщение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сообщение</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
       </type>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>

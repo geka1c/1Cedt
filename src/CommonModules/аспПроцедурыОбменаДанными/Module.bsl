@@ -1635,9 +1635,9 @@
 Функция ОбработатьАдресаЗаказовССайта(ПолученныеДанные) Экспорт
 	//СтруктураItems=новый Структура("ИмяТэга,тз","item",новый Структура("orderType,uid,pid,orderId,message","Строка","Строка","Строка","Строка","Строка"));
 
-	СтруктураФайла=Новый Структура("orderType,uid,pid,orderId,type,recipient_name,zipcode,region,city,address,address_street,address_building,address_apartment,phone,email,pvz_code,city_code ,message,result",
+	СтруктураФайла=Новый Структура("orderType,uid,pid,orderId,type,recipient_name,zipcode,region,city,address,address_street,address_building,address_apartment,address_comment,phone,email,pvz_code,city_code ,message,result",
 		"Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка",
-		"Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка");
+		"Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка", "Строка");
 	ЧтениеXML = Новый ЧтениеXML;
 	ЧтениеXML.УстановитьСтроку(ПолученныеДанные);
 	//

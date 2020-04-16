@@ -6713,6 +6713,98 @@
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
       </items>
+      <items xsi:type="form:FormField">
+        <name>КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</name>
+        <id>434</id>
+        <title>
+          <key>ru</key>
+          <value>Дополнять заказами на остатках</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</segments>
+        </dataPath>
+        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <extendedTooltip>
+          <name>ПолеРасширеннаяПодсказка13</name>
+          <id>436</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеКонтекстноеМеню13</name>
+          <id>435</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>СвойКурьер</name>
+        <id>431</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.СвойКурьер</segments>
+        </dataPath>
+        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <extendedTooltip>
+          <name>ПолеРасширеннаяПодсказка12</name>
+          <id>433</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеКонтекстноеМеню12</name>
+          <id>432</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>

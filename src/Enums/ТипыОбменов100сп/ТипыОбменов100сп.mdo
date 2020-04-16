@@ -96,4 +96,11 @@
       <value>Выгрузка яндекс</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="375e254c-f53f-40ba-baf1-25c7b14a6489">
+    <name>КурьерскаяДоставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курьерская доставка</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

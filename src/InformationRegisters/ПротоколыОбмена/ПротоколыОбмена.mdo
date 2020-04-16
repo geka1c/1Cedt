@@ -85,6 +85,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <attributes uuid="0cbdfeed-5a83-42da-b69a-089b6187143e">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <dimensions uuid="902a7698-bf5e-4091-a04f-c99883ca638f">
     <name>Документ</name>
     <synonym>
