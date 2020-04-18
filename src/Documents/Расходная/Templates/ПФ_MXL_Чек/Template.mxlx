@@ -1218,10 +1218,46 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>45</index>
+		<row>
+			<formatIndex>11</formatIndex>
+			<c>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доставка</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>3</i>
+				<c>
+					<f>77</f>
+					<parameter>Доставка</parameter>
+				</c>
+			</c>
+			<c>
+				<i>5</i>
+				<c>
+					<f>79</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>руб. </v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<drawing>
 		<drawingType>Picture</drawingType>
 		<id>1</id>
-		<formatIndex>79</formatIndex>
+		<formatIndex>80</formatIndex>
 		<beginRow>19</beginRow>
 		<beginRowOffset>36</beginRowOffset>
 		<endRow>19</endRow>
@@ -1236,9 +1272,9 @@
 		<pictureIndex>1</pictureIndex>
 	</drawing>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>80</defaultFormatIndex>
-	<height>44</height>
-	<vgRows>44</vgRows>
+	<defaultFormatIndex>81</defaultFormatIndex>
+	<height>46</height>
+	<vgRows>46</vgRows>
 	<merge>
 		<r>1</r>
 		<c>0</c>
@@ -1495,6 +1531,21 @@
 		<w>6</w>
 	</merge>
 	<merge>
+		<r>45</r>
+		<c>5</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>45</r>
+		<c>3</c>
+		<w>1</w>
+	</merge>
+	<merge>
+		<r>45</r>
+		<c>0</c>
+		<w>2</w>
+	</merge>
+	<merge>
 		<r>-1</r>
 		<c>3</c>
 		<w>1</w>
@@ -1684,6 +1735,16 @@
 			<type>Rows</type>
 			<beginRow>4</beginRow>
 			<endRow>9</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Доставка</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>45</beginRow>
+			<endRow>45</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -2308,6 +2369,14 @@
 	</format>
 	<format>
 		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<font>0</font>
+		<leftBorder>1</leftBorder>
+		<rightBorder>1</rightBorder>
+		<width>72</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 	</format>
 	<format>
 		<drawingBorder>5</drawingBorder>
