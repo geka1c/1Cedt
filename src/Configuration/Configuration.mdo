@@ -1317,6 +1317,7 @@
   <commonModules>CommonModule.СП_Отчеты</commonModules>
   <commonModules>CommonModule.СП_КурьерскаяДоставка</commonModules>
   <commonModules>CommonModule.СП_АдресаДоставки</commonModules>
+  <commonModules>CommonModule.СП_Эквайринг_Клиент</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -2137,6 +2138,7 @@
   <documents>Document.РазборКоробки</documents>
   <documents>Document.Движение</documents>
   <documents>Document.Расходная</documents>
+  <documents>Document.Продажа</documents>
   <documents>Document.ФормированиеКоробки</documents>
   <documents>Document.ОтправлениеТранзита</documents>
   <documents>Document.КурьерскаяДоставка</documents>
@@ -2167,7 +2169,6 @@
   <documents>Document.ЗакрытиеОшибокОбмена</documents>
   <documents>Document.ПоступлениеКоробокДляРазбора</documents>
   <documents>Document.ПоступлениеПристроя</documents>
-  <documents>Document.Продажа</documents>
   <documents>Document.ОтзывСогласияНаОбработкуПерсональныхДанных</documents>
   <documents>Document.СообщениеSMS</documents>
   <documents>Document.СогласиеНаОбработкуПерсональныхДанных</documents>

@@ -137,6 +137,145 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="6da6e13b-f8fe-407b-b00d-98008e93c6c9">
+    <name>ВидОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оплаты</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФормыОплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ФормыОплаты.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f93f5bc-2dcc-42ed-9aa2-f19e44c186c4">
+    <name>СтоимостьИтого</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость итого</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f27f6abf-862f-4cbc-9e03-21e20bb6adc4">
+    <name>ОплатаВыполнена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата выполнена</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dd922b59-f827-4975-bce4-8ddc73b90059">
+    <name>СсылочныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылочный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="79de0e1d-9418-4246-b9d0-30eabe97c6c2">
+    <name>НомерКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер карты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e2de0bf-df13-481d-80cd-4f4e58894c9d">
+    <name>СтатусККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус ККМ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЧековККМ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f8883438-8d39-4b14-bdae-b11af49480e6">
+    <name>НомерСменыККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер смены ККМ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae8ada96-01f1-4af5-b256-2754e1fd02b3">
+    <name>ПробитЧекОтмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробит чек отмены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="36c01417-20af-4a12-b05d-10d5988409cd">
     <name>ФормаДокумента</name>
     <synonym>
