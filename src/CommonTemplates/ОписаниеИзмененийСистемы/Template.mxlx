@@ -25,7 +25,7 @@
 		</columnsItem>
 	</columns>
 	<rowsItem>
-		<index>2</index>
+		<index>1</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
@@ -35,7 +35,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Новое в версии 3.5.4.16</v8:content>
+							<v8:content>Новое в версии 3.5.4.18</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -43,7 +43,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>3</index>
+		<index>2</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -60,7 +60,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>4</index>
+		<index>3</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -77,7 +77,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>5</index>
+		<index>4</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -86,7 +86,11 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content></v8:content>
+							<v8:content>Документ "Выдача транзита" добавлена возможность проверить статусы
+заказов СДЭК
+В документ "Продажи" добавлена возможность печатать фискальный чек и
+производить оплату по Эквайрингу. Исправлен отчет за день New для
+корректного отображения вида оплаты</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -94,7 +98,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>6</index>
+		<index>5</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -111,7 +115,139 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>7</index>
+		<index>6</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В отчет покупки в пути добавлен отбор по заказу и участнику
+формирование ШК в Посылке и коробке
+В Отчете "Расположение покупок" добавлена расшифровка для формирования
+документа движения на складе по участнику
+В Доставке ТК Пустые группы помечаются "Отменено" в графе "Что делать"
+Курьерская доставка: при создании документа если нет заказов не получаем
+адрес
+Исправлено Транзит по курьеру на сайт отправляется если не установлена
+галка "Свой курьер"</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<formatIndex>3</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>9</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 3.5.4.16</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новые объекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>11</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Измененные объекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
 		<row>
 			<c>
 				<c>
@@ -149,13 +285,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>9</index>
+		<index>15</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>9</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -167,7 +303,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>10</index>
+		<index>16</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -184,12 +320,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>11</index>
+		<index>17</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>10</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -201,7 +337,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>12</index>
+		<index>18</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -218,12 +354,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>13</index>
+		<index>19</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>11</f>
+					<f>14</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -235,7 +371,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>14</index>
+		<index>20</index>
 		<row>
 			<c>
 				<c>
@@ -274,13 +410,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>17</index>
+		<index>23</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>12</f>
+					<f>15</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -292,7 +428,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>18</index>
+		<index>24</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -309,12 +445,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>19</index>
+		<index>25</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -326,7 +462,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>20</index>
+		<index>26</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -343,12 +479,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>21</index>
+		<index>27</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>14</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -360,7 +496,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>22</index>
+		<index>28</index>
 		<row>
 			<c>
 				<c>
@@ -405,13 +541,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>25</index>
+		<index>31</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>15</f>
+					<f>18</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -423,7 +559,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>26</index>
+		<index>32</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -440,12 +576,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>27</index>
+		<index>33</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>16</f>
+					<f>19</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -457,7 +593,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>28</index>
+		<index>34</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -474,12 +610,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>29</index>
+		<index>35</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>17</f>
+					<f>20</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -491,7 +627,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>30</index>
+		<index>36</index>
 		<row>
 			<c>
 				<c>
@@ -530,13 +666,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>33</index>
+		<index>39</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>18</f>
+					<f>21</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -548,7 +684,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>34</index>
+		<index>40</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -565,12 +701,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>35</index>
+		<index>41</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>19</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -582,7 +718,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>36</index>
+		<index>42</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -599,12 +735,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>37</index>
+		<index>43</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>20</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -616,7 +752,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>38</index>
+		<index>44</index>
 		<row>
 			<c>
 				<c>
@@ -657,13 +793,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>41</index>
+		<index>47</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>21</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -675,7 +811,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>42</index>
+		<index>48</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -692,12 +828,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>43</index>
+		<index>49</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>22</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -709,7 +845,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>44</index>
+		<index>50</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -726,12 +862,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>45</index>
+		<index>51</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>23</f>
+					<f>26</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -743,7 +879,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>46</index>
+		<index>52</index>
 		<row>
 			<c>
 				<c>
@@ -782,13 +918,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>49</index>
+		<index>55</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>24</f>
+					<f>27</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -800,7 +936,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>50</index>
+		<index>56</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -817,12 +953,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>51</index>
+		<index>57</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>25</f>
+					<f>28</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -834,7 +970,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>52</index>
+		<index>58</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -851,12 +987,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>53</index>
+		<index>59</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>26</f>
+					<f>29</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -868,7 +1004,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>54</index>
+		<index>60</index>
 		<row>
 			<c>
 				<c>
@@ -906,13 +1042,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>57</index>
+		<index>63</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>27</f>
+					<f>30</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -924,7 +1060,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>58</index>
+		<index>64</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -941,12 +1077,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>59</index>
+		<index>65</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>28</f>
+					<f>31</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -958,7 +1094,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>60</index>
+		<index>66</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -975,12 +1111,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>61</index>
+		<index>67</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>29</f>
+					<f>32</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -992,7 +1128,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>62</index>
+		<index>68</index>
 		<row>
 			<c>
 				<c>
@@ -1030,13 +1166,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>65</index>
+		<index>71</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>30</f>
+					<f>33</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1048,7 +1184,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>66</index>
+		<index>72</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1065,12 +1201,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>67</index>
+		<index>73</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>31</f>
+					<f>34</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1082,7 +1218,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>68</index>
+		<index>74</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1099,12 +1235,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>69</index>
+		<index>75</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>32</f>
+					<f>35</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1116,7 +1252,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>70</index>
+		<index>76</index>
 		<row>
 			<c>
 				<c>
@@ -1157,13 +1293,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>73</index>
+		<index>79</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>33</f>
+					<f>36</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1175,7 +1311,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>74</index>
+		<index>80</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1192,12 +1328,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>75</index>
+		<index>81</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>34</f>
+					<f>37</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1209,7 +1345,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>76</index>
+		<index>82</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1227,131 +1363,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>77</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>35</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Измененные объекты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>78</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content></v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content></v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content></v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>81</index>
-		<row>
-			<formatIndex>3</formatIndex>
-			<c>
-				<i>1</i>
-				<c>
-					<f>36</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Новое в версии 3.5.3.3</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>82</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content></v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
 		<index>83</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>37</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Новые объекты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>84</index>
-		<row>
-			<c>
-				<i>1</i>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>При передаче заказов курьеру пра курьерской даставке документом выдача транзита. Ведомость по курьерской доставке отправляется на почту курьеру</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>85</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1368,7 +1380,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>86</index>
+		<index>84</index>
 		<row>
 			<c>
 				<c>
@@ -1406,7 +1418,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>89</index>
+		<index>87</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
@@ -1416,7 +1428,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Новое в версии 3.5.3.2</v8:content>
+							<v8:content>Новое в версии 3.5.3.3</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1424,7 +1436,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>90</index>
+		<index>88</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1441,7 +1453,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>91</index>
+		<index>89</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1458,18 +1470,24 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>92</index>
+		<index>90</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
 					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При передаче заказов курьеру пра курьерской даставке документом выдача транзита. Ведомость по курьерской доставке отправляется на почту курьеру</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>93</index>
+		<index>91</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1486,7 +1504,125 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>94</index>
+		<index>92</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>95</index>
+		<row>
+			<formatIndex>3</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>42</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 3.5.3.2</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>96</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content></v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>97</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>43</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новые объекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>98</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>6</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>99</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>44</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Измененные объекты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>100</index>
 		<row>
 			<c>
 				<c>
@@ -1524,13 +1660,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>97</index>
+		<index>103</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>42</f>
+					<f>45</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1542,7 +1678,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>98</index>
+		<index>104</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1559,12 +1695,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>99</index>
+		<index>105</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>43</f>
+					<f>46</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1576,7 +1712,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>100</index>
+		<index>106</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1599,12 +1735,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>101</index>
+		<index>107</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>44</f>
+					<f>47</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1616,7 +1752,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>102</index>
+		<index>108</index>
 		<row>
 			<c>
 				<c>
@@ -1654,13 +1790,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>105</index>
+		<index>111</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>45</f>
+					<f>48</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1672,7 +1808,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>106</index>
+		<index>112</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1689,12 +1825,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>107</index>
+		<index>113</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>46</f>
+					<f>49</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1706,7 +1842,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>108</index>
+		<index>114</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1723,12 +1859,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>109</index>
+		<index>115</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>47</f>
+					<f>50</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1740,7 +1876,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>110</index>
+		<index>116</index>
 		<row>
 			<c>
 				<c>
@@ -1778,13 +1914,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>112</index>
+		<index>118</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>48</f>
+					<f>51</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1796,7 +1932,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>113</index>
+		<index>119</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1813,12 +1949,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>114</index>
+		<index>120</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>49</f>
+					<f>52</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1830,7 +1966,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>115</index>
+		<index>121</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1847,12 +1983,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>116</index>
+		<index>122</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>50</f>
+					<f>53</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1864,7 +2000,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>117</index>
+		<index>123</index>
 		<row>
 			<c>
 				<c>
@@ -1903,13 +2039,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>120</index>
+		<index>126</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>51</f>
+					<f>54</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1921,7 +2057,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>121</index>
+		<index>127</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1938,12 +2074,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>122</index>
+		<index>128</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>52</f>
+					<f>55</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1955,7 +2091,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>123</index>
+		<index>129</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1972,12 +2108,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>124</index>
+		<index>130</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>53</f>
+					<f>56</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1989,7 +2125,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>125</index>
+		<index>131</index>
 		<row>
 			<c>
 				<c>
@@ -2027,13 +2163,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>128</index>
+		<index>134</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>54</f>
+					<f>57</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2045,7 +2181,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>129</index>
+		<index>135</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2062,12 +2198,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>130</index>
+		<index>136</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>55</f>
+					<f>58</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2079,7 +2215,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>131</index>
+		<index>137</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2096,12 +2232,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>132</index>
+		<index>138</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>56</f>
+					<f>59</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2113,7 +2249,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>133</index>
+		<index>139</index>
 		<row>
 			<c>
 				<c>
@@ -2151,13 +2287,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>136</index>
+		<index>142</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>57</f>
+					<f>60</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2169,7 +2305,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>137</index>
+		<index>143</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2186,12 +2322,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>138</index>
+		<index>144</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>58</f>
+					<f>61</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2203,7 +2339,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>139</index>
+		<index>145</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2220,12 +2356,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>140</index>
+		<index>146</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>59</f>
+					<f>62</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2237,7 +2373,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>141</index>
+		<index>147</index>
 		<row>
 			<c>
 				<c>
@@ -2276,13 +2412,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>144</index>
+		<index>150</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>60</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2294,7 +2430,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>145</index>
+		<index>151</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2311,12 +2447,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>146</index>
+		<index>152</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>61</f>
+					<f>64</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2328,7 +2464,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>147</index>
+		<index>153</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2345,12 +2481,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>148</index>
+		<index>154</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>62</f>
+					<f>65</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2362,7 +2498,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>149</index>
+		<index>155</index>
 		<row>
 			<c>
 				<c>
@@ -2402,13 +2538,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>152</index>
+		<index>158</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>63</f>
+					<f>66</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2420,7 +2556,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>153</index>
+		<index>159</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2437,12 +2573,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>154</index>
+		<index>160</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>64</f>
+					<f>67</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2454,7 +2590,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>155</index>
+		<index>161</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2471,12 +2607,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>156</index>
+		<index>162</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>65</f>
+					<f>68</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2488,7 +2624,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>157</index>
+		<index>163</index>
 		<row>
 			<c>
 				<c>
@@ -2530,13 +2666,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>160</index>
+		<index>166</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>66</f>
+					<f>69</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2548,7 +2684,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>161</index>
+		<index>167</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2565,12 +2701,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>162</index>
+		<index>168</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>67</f>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2582,7 +2718,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>163</index>
+		<index>169</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2593,12 +2729,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>164</index>
+		<index>170</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>68</f>
+					<f>71</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2610,7 +2746,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>165</index>
+		<index>171</index>
 		<row>
 			<c>
 				<c>
@@ -2651,13 +2787,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>168</index>
+		<index>174</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>69</f>
+					<f>72</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2669,7 +2805,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>169</index>
+		<index>175</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2686,12 +2822,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>170</index>
+		<index>176</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>70</f>
+					<f>73</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2703,7 +2839,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>171</index>
+		<index>177</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2714,12 +2850,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>172</index>
+		<index>178</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>71</f>
+					<f>74</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2731,7 +2867,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>173</index>
+		<index>179</index>
 		<row>
 			<c>
 				<c>
@@ -2778,13 +2914,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>176</index>
+		<index>182</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>72</f>
+					<f>75</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2796,7 +2932,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>177</index>
+		<index>183</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2813,12 +2949,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>178</index>
+		<index>184</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>73</f>
+					<f>76</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2830,7 +2966,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>179</index>
+		<index>185</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2841,12 +2977,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>180</index>
+		<index>186</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>74</f>
+					<f>77</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2858,7 +2994,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>181</index>
+		<index>187</index>
 		<row>
 			<c>
 				<c>
@@ -2902,13 +3038,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>184</index>
+		<index>190</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>75</f>
+					<f>78</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2920,7 +3056,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>185</index>
+		<index>191</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2937,12 +3073,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>186</index>
+		<index>192</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>76</f>
+					<f>79</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2954,7 +3090,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>187</index>
+		<index>193</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -2965,12 +3101,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>188</index>
+		<index>194</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>77</f>
+					<f>80</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -2982,7 +3118,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>189</index>
+		<index>195</index>
 		<row>
 			<c>
 				<c>
@@ -3022,13 +3158,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>192</index>
+		<index>198</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>78</f>
+					<f>81</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3040,7 +3176,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>193</index>
+		<index>199</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3057,12 +3193,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>194</index>
+		<index>200</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>79</f>
+					<f>82</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3074,7 +3210,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>195</index>
+		<index>201</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3085,12 +3221,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>196</index>
+		<index>202</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>80</f>
+					<f>83</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3102,7 +3238,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>197</index>
+		<index>203</index>
 		<row>
 			<c>
 				<c>
@@ -3140,13 +3276,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>200</index>
+		<index>206</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>81</f>
+					<f>84</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3158,7 +3294,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>201</index>
+		<index>207</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3175,12 +3311,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>202</index>
+		<index>208</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>82</f>
+					<f>85</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3192,7 +3328,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>203</index>
+		<index>209</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3210,12 +3346,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>204</index>
+		<index>210</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>83</f>
+					<f>86</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3227,7 +3363,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>205</index>
+		<index>211</index>
 		<row>
 			<c>
 				<c>
@@ -3259,13 +3395,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>208</index>
+		<index>214</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>84</f>
+					<f>87</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3277,7 +3413,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>209</index>
+		<index>215</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3294,12 +3430,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>210</index>
+		<index>216</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>85</f>
+					<f>88</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3311,7 +3447,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>211</index>
+		<index>217</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3328,12 +3464,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>212</index>
+		<index>218</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>86</f>
+					<f>89</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3345,7 +3481,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>213</index>
+		<index>219</index>
 		<row>
 			<c>
 				<c>
@@ -3384,13 +3520,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>216</index>
+		<index>222</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>87</f>
+					<f>90</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3402,7 +3538,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>217</index>
+		<index>223</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3419,12 +3555,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>218</index>
+		<index>224</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>88</f>
+					<f>91</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3436,7 +3572,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>219</index>
+		<index>225</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3453,12 +3589,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>220</index>
+		<index>226</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>89</f>
+					<f>92</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3470,7 +3606,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>221</index>
+		<index>227</index>
 		<row>
 			<c>
 				<c>
@@ -3520,13 +3656,13 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>224</index>
+		<index>230</index>
 		<row>
 			<formatIndex>3</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>90</f>
+					<f>93</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3538,7 +3674,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>225</index>
+		<index>231</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3555,12 +3691,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>226</index>
+		<index>232</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>91</f>
+					<f>94</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3572,7 +3708,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>227</index>
+		<index>233</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -3592,12 +3728,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>228</index>
+		<index>234</index>
 		<row>
 			<c>
 				<i>1</i>
 				<c>
-					<f>92</f>
+					<f>95</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3609,7 +3745,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>229</index>
+		<index>235</index>
 		<row>
 			<c>
 				<c>
@@ -3656,14 +3792,14 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>8</defaultFormatIndex>
-	<height>1453</height>
-	<vgRows>1453</vgRows>
+	<height>1459</height>
+	<vgRows>1459</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Версия3_2_6_22</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1436</beginRow>
-			<endRow>1450</endRow>
+			<beginRow>1442</beginRow>
+			<endRow>1456</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3672,8 +3808,8 @@
 		<name>Версия3_2_6_23</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1424</beginRow>
-			<endRow>1432</endRow>
+			<beginRow>1430</beginRow>
+			<endRow>1438</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3682,8 +3818,8 @@
 		<name>Версия3_2_6_24</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1412</beginRow>
-			<endRow>1419</endRow>
+			<beginRow>1418</beginRow>
+			<endRow>1425</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3692,8 +3828,8 @@
 		<name>Версия3_2_6_25</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1403</beginRow>
-			<endRow>1408</endRow>
+			<beginRow>1409</beginRow>
+			<endRow>1414</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3702,8 +3838,8 @@
 		<name>Версия3_2_6_26</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1394</beginRow>
-			<endRow>1399</endRow>
+			<beginRow>1400</beginRow>
+			<endRow>1405</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3712,8 +3848,8 @@
 		<name>Версия3_2_6_27</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1384</beginRow>
-			<endRow>1390</endRow>
+			<beginRow>1390</beginRow>
+			<endRow>1396</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3722,8 +3858,8 @@
 		<name>Версия3_2_6_28</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1374</beginRow>
-			<endRow>1380</endRow>
+			<beginRow>1380</beginRow>
+			<endRow>1386</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3732,8 +3868,8 @@
 		<name>Версия3_2_6_29</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1364</beginRow>
-			<endRow>1370</endRow>
+			<beginRow>1370</beginRow>
+			<endRow>1376</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3742,8 +3878,8 @@
 		<name>Версия3_2_6_30</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1354</beginRow>
-			<endRow>1360</endRow>
+			<beginRow>1360</beginRow>
+			<endRow>1366</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3752,8 +3888,8 @@
 		<name>Версия3_2_6_31</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1344</beginRow>
-			<endRow>1350</endRow>
+			<beginRow>1350</beginRow>
+			<endRow>1356</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3762,8 +3898,8 @@
 		<name>Версия3_2_6_32</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1334</beginRow>
-			<endRow>1340</endRow>
+			<beginRow>1340</beginRow>
+			<endRow>1346</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3772,8 +3908,8 @@
 		<name>Версия3_2_6_33</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1324</beginRow>
-			<endRow>1330</endRow>
+			<beginRow>1330</beginRow>
+			<endRow>1336</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3782,8 +3918,8 @@
 		<name>Версия3_2_6_34</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1316</beginRow>
-			<endRow>1320</endRow>
+			<beginRow>1322</beginRow>
+			<endRow>1326</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3792,8 +3928,8 @@
 		<name>Версия3_2_6_37</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1307</beginRow>
-			<endRow>1312</endRow>
+			<beginRow>1313</beginRow>
+			<endRow>1318</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3802,8 +3938,8 @@
 		<name>Версия3_2_6_38</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1298</beginRow>
-			<endRow>1303</endRow>
+			<beginRow>1304</beginRow>
+			<endRow>1309</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3812,8 +3948,8 @@
 		<name>Версия3_2_6_39</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1288</beginRow>
-			<endRow>1294</endRow>
+			<beginRow>1294</beginRow>
+			<endRow>1300</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3822,8 +3958,8 @@
 		<name>Версия3_2_6_40</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1278</beginRow>
-			<endRow>1284</endRow>
+			<beginRow>1284</beginRow>
+			<endRow>1290</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3832,8 +3968,8 @@
 		<name>Версия3_2_6_41</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1268</beginRow>
-			<endRow>1274</endRow>
+			<beginRow>1274</beginRow>
+			<endRow>1280</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3842,8 +3978,8 @@
 		<name>Версия3_2_6_42</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1255</beginRow>
-			<endRow>1264</endRow>
+			<beginRow>1261</beginRow>
+			<endRow>1270</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3852,8 +3988,8 @@
 		<name>Версия3_2_6_43</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1246</beginRow>
-			<endRow>1251</endRow>
+			<beginRow>1252</beginRow>
+			<endRow>1257</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3862,8 +3998,8 @@
 		<name>Версия3_2_6_44</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1234</beginRow>
-			<endRow>1242</endRow>
+			<beginRow>1240</beginRow>
+			<endRow>1248</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3872,8 +4008,8 @@
 		<name>Версия3_2_6_45</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1226</beginRow>
-			<endRow>1230</endRow>
+			<beginRow>1232</beginRow>
+			<endRow>1236</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3882,8 +4018,8 @@
 		<name>Версия3_2_6_46</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1218</beginRow>
-			<endRow>1222</endRow>
+			<beginRow>1224</beginRow>
+			<endRow>1228</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3892,8 +4028,8 @@
 		<name>Версия3_2_6_47</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1210</beginRow>
-			<endRow>1214</endRow>
+			<beginRow>1216</beginRow>
+			<endRow>1220</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3902,8 +4038,8 @@
 		<name>Версия3_2_6_48</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1203</beginRow>
-			<endRow>1206</endRow>
+			<beginRow>1209</beginRow>
+			<endRow>1212</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3912,8 +4048,8 @@
 		<name>Версия3_2_6_49</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1196</beginRow>
-			<endRow>1199</endRow>
+			<beginRow>1202</beginRow>
+			<endRow>1205</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3922,8 +4058,8 @@
 		<name>Версия3_2_6_50</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1189</beginRow>
-			<endRow>1192</endRow>
+			<beginRow>1195</beginRow>
+			<endRow>1198</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3932,8 +4068,8 @@
 		<name>Версия3_2_6_51</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1180</beginRow>
-			<endRow>1185</endRow>
+			<beginRow>1186</beginRow>
+			<endRow>1191</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3942,8 +4078,8 @@
 		<name>Версия3_2_6_52</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1171</beginRow>
-			<endRow>1176</endRow>
+			<beginRow>1177</beginRow>
+			<endRow>1182</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3952,8 +4088,8 @@
 		<name>Версия3_2_6_53</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1162</beginRow>
-			<endRow>1167</endRow>
+			<beginRow>1168</beginRow>
+			<endRow>1173</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3962,8 +4098,8 @@
 		<name>Версия3_2_6_54</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1153</beginRow>
-			<endRow>1158</endRow>
+			<beginRow>1159</beginRow>
+			<endRow>1164</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3972,8 +4108,8 @@
 		<name>Версия3_2_6_55</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1144</beginRow>
-			<endRow>1149</endRow>
+			<beginRow>1150</beginRow>
+			<endRow>1155</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3982,8 +4118,8 @@
 		<name>Версия3_2_6_56</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1135</beginRow>
-			<endRow>1140</endRow>
+			<beginRow>1141</beginRow>
+			<endRow>1146</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -3992,8 +4128,8 @@
 		<name>Версия3_2_6_57</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1126</beginRow>
-			<endRow>1131</endRow>
+			<beginRow>1132</beginRow>
+			<endRow>1137</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4002,8 +4138,8 @@
 		<name>Версия3_2_6_58</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1117</beginRow>
-			<endRow>1122</endRow>
+			<beginRow>1123</beginRow>
+			<endRow>1128</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4012,8 +4148,8 @@
 		<name>Версия3_2_6_59</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1108</beginRow>
-			<endRow>1113</endRow>
+			<beginRow>1114</beginRow>
+			<endRow>1119</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4022,8 +4158,8 @@
 		<name>Версия3_2_6_60</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1099</beginRow>
-			<endRow>1104</endRow>
+			<beginRow>1105</beginRow>
+			<endRow>1110</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4032,8 +4168,8 @@
 		<name>Версия3_2_6_61</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1090</beginRow>
-			<endRow>1095</endRow>
+			<beginRow>1096</beginRow>
+			<endRow>1101</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4042,8 +4178,8 @@
 		<name>Версия3_2_6_65</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1081</beginRow>
-			<endRow>1086</endRow>
+			<beginRow>1087</beginRow>
+			<endRow>1092</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4052,8 +4188,8 @@
 		<name>Версия3_2_6_66</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1072</beginRow>
-			<endRow>1077</endRow>
+			<beginRow>1078</beginRow>
+			<endRow>1083</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4062,8 +4198,8 @@
 		<name>Версия3_2_6_71</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1065</beginRow>
-			<endRow>1070</endRow>
+			<beginRow>1071</beginRow>
+			<endRow>1076</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4072,8 +4208,8 @@
 		<name>Версия3_2_6_73</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1056</beginRow>
-			<endRow>1061</endRow>
+			<beginRow>1062</beginRow>
+			<endRow>1067</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4082,8 +4218,8 @@
 		<name>Версия3_2_6_75</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1047</beginRow>
-			<endRow>1052</endRow>
+			<beginRow>1053</beginRow>
+			<endRow>1058</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4092,8 +4228,8 @@
 		<name>Версия3_2_6_76</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1038</beginRow>
-			<endRow>1043</endRow>
+			<beginRow>1044</beginRow>
+			<endRow>1049</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4102,8 +4238,8 @@
 		<name>Версия3_2_6_79</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1029</beginRow>
-			<endRow>1034</endRow>
+			<beginRow>1035</beginRow>
+			<endRow>1040</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4112,8 +4248,8 @@
 		<name>Версия3_2_6_80</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1020</beginRow>
-			<endRow>1025</endRow>
+			<beginRow>1026</beginRow>
+			<endRow>1031</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4122,8 +4258,8 @@
 		<name>Версия3_2_6_81</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1011</beginRow>
-			<endRow>1016</endRow>
+			<beginRow>1017</beginRow>
+			<endRow>1022</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4132,8 +4268,8 @@
 		<name>Версия3_2_6_82</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1002</beginRow>
-			<endRow>1007</endRow>
+			<beginRow>1008</beginRow>
+			<endRow>1013</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4142,8 +4278,8 @@
 		<name>Версия3_2_6_85</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>993</beginRow>
-			<endRow>998</endRow>
+			<beginRow>999</beginRow>
+			<endRow>1004</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4152,8 +4288,8 @@
 		<name>Версия3_2_6_86</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>984</beginRow>
-			<endRow>989</endRow>
+			<beginRow>990</beginRow>
+			<endRow>995</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4162,8 +4298,8 @@
 		<name>Версия3_2_6_87</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>975</beginRow>
-			<endRow>980</endRow>
+			<beginRow>981</beginRow>
+			<endRow>986</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4172,8 +4308,8 @@
 		<name>Версия3_2_6_90</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>966</beginRow>
-			<endRow>971</endRow>
+			<beginRow>972</beginRow>
+			<endRow>977</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4182,8 +4318,8 @@
 		<name>Версия3_2_7_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>957</beginRow>
-			<endRow>962</endRow>
+			<beginRow>963</beginRow>
+			<endRow>968</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4192,8 +4328,8 @@
 		<name>Версия3_2_7_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>894</beginRow>
-			<endRow>899</endRow>
+			<beginRow>900</beginRow>
+			<endRow>905</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4202,8 +4338,8 @@
 		<name>Версия3_2_7_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>885</beginRow>
-			<endRow>890</endRow>
+			<beginRow>891</beginRow>
+			<endRow>896</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4212,8 +4348,8 @@
 		<name>Версия3_2_7_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>876</beginRow>
-			<endRow>881</endRow>
+			<beginRow>882</beginRow>
+			<endRow>887</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4222,8 +4358,8 @@
 		<name>Версия3_2_7_13</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>867</beginRow>
-			<endRow>872</endRow>
+			<beginRow>873</beginRow>
+			<endRow>878</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4232,8 +4368,8 @@
 		<name>Версия3_2_7_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>858</beginRow>
-			<endRow>863</endRow>
+			<beginRow>864</beginRow>
+			<endRow>869</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4242,8 +4378,8 @@
 		<name>Версия3_2_7_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>849</beginRow>
-			<endRow>854</endRow>
+			<beginRow>855</beginRow>
+			<endRow>860</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4252,8 +4388,8 @@
 		<name>Версия3_2_7_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>840</beginRow>
-			<endRow>845</endRow>
+			<beginRow>846</beginRow>
+			<endRow>851</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4262,8 +4398,8 @@
 		<name>Версия3_2_7_17</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>831</beginRow>
-			<endRow>836</endRow>
+			<beginRow>837</beginRow>
+			<endRow>842</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4272,8 +4408,8 @@
 		<name>Версия3_2_7_18</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>822</beginRow>
-			<endRow>827</endRow>
+			<beginRow>828</beginRow>
+			<endRow>833</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4282,8 +4418,8 @@
 		<name>Версия3_2_7_19</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>813</beginRow>
-			<endRow>818</endRow>
+			<beginRow>819</beginRow>
+			<endRow>824</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4292,8 +4428,8 @@
 		<name>Версия3_2_7_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>948</beginRow>
-			<endRow>953</endRow>
+			<beginRow>954</beginRow>
+			<endRow>959</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4302,8 +4438,8 @@
 		<name>Версия3_2_7_20</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>804</beginRow>
-			<endRow>809</endRow>
+			<beginRow>810</beginRow>
+			<endRow>815</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4312,8 +4448,8 @@
 		<name>Версия3_2_7_21</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>795</beginRow>
-			<endRow>800</endRow>
+			<beginRow>801</beginRow>
+			<endRow>806</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4322,8 +4458,8 @@
 		<name>Версия3_2_7_22</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>786</beginRow>
-			<endRow>791</endRow>
+			<beginRow>792</beginRow>
+			<endRow>797</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4332,8 +4468,8 @@
 		<name>Версия3_2_7_23</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>777</beginRow>
-			<endRow>782</endRow>
+			<beginRow>783</beginRow>
+			<endRow>788</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4342,8 +4478,8 @@
 		<name>Версия3_2_7_24</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>765</beginRow>
-			<endRow>773</endRow>
+			<beginRow>771</beginRow>
+			<endRow>779</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4352,8 +4488,8 @@
 		<name>Версия3_2_7_25</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>755</beginRow>
-			<endRow>761</endRow>
+			<beginRow>761</beginRow>
+			<endRow>767</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4362,8 +4498,8 @@
 		<name>Версия3_2_7_26</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>745</beginRow>
-			<endRow>751</endRow>
+			<beginRow>751</beginRow>
+			<endRow>757</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4372,8 +4508,8 @@
 		<name>Версия3_2_7_27</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>735</beginRow>
-			<endRow>741</endRow>
+			<beginRow>741</beginRow>
+			<endRow>747</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4382,8 +4518,8 @@
 		<name>Версия3_2_7_28</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>723</beginRow>
-			<endRow>731</endRow>
+			<beginRow>729</beginRow>
+			<endRow>737</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4392,8 +4528,8 @@
 		<name>Версия3_2_7_29</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>711</beginRow>
-			<endRow>719</endRow>
+			<beginRow>717</beginRow>
+			<endRow>725</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4402,8 +4538,8 @@
 		<name>Версия3_2_7_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>939</beginRow>
-			<endRow>944</endRow>
+			<beginRow>945</beginRow>
+			<endRow>950</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4412,8 +4548,8 @@
 		<name>Версия3_2_7_30</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>703</beginRow>
-			<endRow>707</endRow>
+			<beginRow>709</beginRow>
+			<endRow>713</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4422,8 +4558,8 @@
 		<name>Версия3_2_7_31</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>694</beginRow>
-			<endRow>699</endRow>
+			<beginRow>700</beginRow>
+			<endRow>705</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4432,8 +4568,8 @@
 		<name>Версия3_2_7_32</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>685</beginRow>
-			<endRow>690</endRow>
+			<beginRow>691</beginRow>
+			<endRow>696</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4442,8 +4578,8 @@
 		<name>Версия3_2_7_33</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>676</beginRow>
-			<endRow>681</endRow>
+			<beginRow>682</beginRow>
+			<endRow>687</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4452,8 +4588,8 @@
 		<name>Версия3_2_7_34</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>667</beginRow>
-			<endRow>672</endRow>
+			<beginRow>673</beginRow>
+			<endRow>678</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4462,8 +4598,8 @@
 		<name>Версия3_2_7_35</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>658</beginRow>
-			<endRow>663</endRow>
+			<beginRow>664</beginRow>
+			<endRow>669</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4472,8 +4608,8 @@
 		<name>Версия3_2_7_36</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>649</beginRow>
-			<endRow>654</endRow>
+			<beginRow>655</beginRow>
+			<endRow>660</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4482,8 +4618,8 @@
 		<name>Версия3_2_7_37</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>640</beginRow>
-			<endRow>645</endRow>
+			<beginRow>646</beginRow>
+			<endRow>651</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4492,8 +4628,8 @@
 		<name>Версия3_2_7_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>930</beginRow>
-			<endRow>935</endRow>
+			<beginRow>936</beginRow>
+			<endRow>941</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4502,8 +4638,8 @@
 		<name>Версия3_2_7_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>921</beginRow>
-			<endRow>926</endRow>
+			<beginRow>927</beginRow>
+			<endRow>932</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4512,8 +4648,8 @@
 		<name>Версия3_2_7_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>912</beginRow>
-			<endRow>917</endRow>
+			<beginRow>918</beginRow>
+			<endRow>923</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4522,8 +4658,8 @@
 		<name>Версия3_2_7_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>903</beginRow>
-			<endRow>908</endRow>
+			<beginRow>909</beginRow>
+			<endRow>914</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4532,8 +4668,8 @@
 		<name>Версия3_2_9_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>631</beginRow>
-			<endRow>636</endRow>
+			<beginRow>637</beginRow>
+			<endRow>642</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4542,8 +4678,8 @@
 		<name>Версия3_3_0_0</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>622</beginRow>
-			<endRow>627</endRow>
+			<beginRow>628</beginRow>
+			<endRow>633</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4552,8 +4688,8 @@
 		<name>Версия3_3_0_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>613</beginRow>
-			<endRow>618</endRow>
+			<beginRow>619</beginRow>
+			<endRow>624</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4562,8 +4698,8 @@
 		<name>Версия3_3_0_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>536</beginRow>
-			<endRow>539</endRow>
+			<beginRow>542</beginRow>
+			<endRow>545</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4572,8 +4708,8 @@
 		<name>Версия3_3_0_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>529</beginRow>
-			<endRow>532</endRow>
+			<beginRow>535</beginRow>
+			<endRow>538</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4582,8 +4718,8 @@
 		<name>Версия3_3_0_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>522</beginRow>
-			<endRow>525</endRow>
+			<beginRow>528</beginRow>
+			<endRow>531</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4592,8 +4728,8 @@
 		<name>Версия3_3_0_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>515</beginRow>
-			<endRow>518</endRow>
+			<beginRow>521</beginRow>
+			<endRow>524</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4602,8 +4738,8 @@
 		<name>Версия3_3_0_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>508</beginRow>
-			<endRow>511</endRow>
+			<beginRow>514</beginRow>
+			<endRow>517</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4612,8 +4748,8 @@
 		<name>Версия3_3_0_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>604</beginRow>
-			<endRow>609</endRow>
+			<beginRow>610</beginRow>
+			<endRow>615</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4622,8 +4758,8 @@
 		<name>Версия3_3_0_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>595</beginRow>
-			<endRow>600</endRow>
+			<beginRow>601</beginRow>
+			<endRow>606</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4632,8 +4768,8 @@
 		<name>Версия3_3_0_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>586</beginRow>
-			<endRow>591</endRow>
+			<beginRow>592</beginRow>
+			<endRow>597</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4642,8 +4778,8 @@
 		<name>Версия3_3_0_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>577</beginRow>
-			<endRow>582</endRow>
+			<beginRow>583</beginRow>
+			<endRow>588</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4652,8 +4788,8 @@
 		<name>Версия3_3_0_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>568</beginRow>
-			<endRow>573</endRow>
+			<beginRow>574</beginRow>
+			<endRow>579</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4662,8 +4798,8 @@
 		<name>Версия3_3_0_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>559</beginRow>
-			<endRow>564</endRow>
+			<beginRow>565</beginRow>
+			<endRow>570</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4672,8 +4808,8 @@
 		<name>Версия3_3_0_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>550</beginRow>
-			<endRow>555</endRow>
+			<beginRow>556</beginRow>
+			<endRow>561</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4682,8 +4818,8 @@
 		<name>Версия3_3_0_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>543</beginRow>
-			<endRow>546</endRow>
+			<beginRow>549</beginRow>
+			<endRow>552</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4692,8 +4828,8 @@
 		<name>Версия3_3_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>501</beginRow>
-			<endRow>504</endRow>
+			<beginRow>507</beginRow>
+			<endRow>510</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4702,8 +4838,8 @@
 		<name>Версия3_3_2_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>494</beginRow>
-			<endRow>497</endRow>
+			<beginRow>500</beginRow>
+			<endRow>503</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4712,8 +4848,8 @@
 		<name>Версия3_3_3_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>487</beginRow>
-			<endRow>490</endRow>
+			<beginRow>493</beginRow>
+			<endRow>496</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4722,8 +4858,8 @@
 		<name>Версия3_3_3_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>480</beginRow>
-			<endRow>483</endRow>
+			<beginRow>486</beginRow>
+			<endRow>489</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4732,8 +4868,8 @@
 		<name>Версия3_3_4_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>473</beginRow>
-			<endRow>476</endRow>
+			<beginRow>479</beginRow>
+			<endRow>482</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4742,8 +4878,8 @@
 		<name>Версия3_3_5_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>466</beginRow>
-			<endRow>469</endRow>
+			<beginRow>472</beginRow>
+			<endRow>475</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4752,8 +4888,8 @@
 		<name>Версия3_3_5_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>459</beginRow>
-			<endRow>462</endRow>
+			<beginRow>465</beginRow>
+			<endRow>468</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4762,8 +4898,8 @@
 		<name>Версия3_3_5_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>452</beginRow>
-			<endRow>455</endRow>
+			<beginRow>458</beginRow>
+			<endRow>461</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4772,8 +4908,8 @@
 		<name>Версия3_3_6_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>445</beginRow>
-			<endRow>448</endRow>
+			<beginRow>451</beginRow>
+			<endRow>454</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4782,8 +4918,8 @@
 		<name>Версия3_3_6_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>438</beginRow>
-			<endRow>441</endRow>
+			<beginRow>444</beginRow>
+			<endRow>447</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4792,8 +4928,8 @@
 		<name>Версия3_3_6_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>431</beginRow>
-			<endRow>434</endRow>
+			<beginRow>437</beginRow>
+			<endRow>440</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4802,8 +4938,8 @@
 		<name>Версия3_3_7_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>375</beginRow>
-			<endRow>378</endRow>
+			<beginRow>381</beginRow>
+			<endRow>384</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4812,8 +4948,8 @@
 		<name>Версия3_3_7_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>424</beginRow>
-			<endRow>427</endRow>
+			<beginRow>430</beginRow>
+			<endRow>433</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4822,8 +4958,8 @@
 		<name>Версия3_3_7_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>417</beginRow>
-			<endRow>420</endRow>
+			<beginRow>423</beginRow>
+			<endRow>426</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4832,8 +4968,8 @@
 		<name>Версия3_3_7_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>410</beginRow>
-			<endRow>413</endRow>
+			<beginRow>416</beginRow>
+			<endRow>419</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4842,8 +4978,8 @@
 		<name>Версия3_3_7_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>403</beginRow>
-			<endRow>406</endRow>
+			<beginRow>409</beginRow>
+			<endRow>412</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4852,8 +4988,8 @@
 		<name>Версия3_3_7_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>396</beginRow>
-			<endRow>399</endRow>
+			<beginRow>402</beginRow>
+			<endRow>405</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4862,8 +4998,8 @@
 		<name>Версия3_3_7_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>389</beginRow>
-			<endRow>392</endRow>
+			<beginRow>395</beginRow>
+			<endRow>398</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4872,8 +5008,8 @@
 		<name>Версия3_3_7_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>382</beginRow>
-			<endRow>385</endRow>
+			<beginRow>388</beginRow>
+			<endRow>391</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4882,8 +5018,8 @@
 		<name>Версия3_4_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>368</beginRow>
-			<endRow>371</endRow>
+			<beginRow>374</beginRow>
+			<endRow>377</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4892,8 +5028,8 @@
 		<name>Версия3_4_1_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>326</beginRow>
-			<endRow>329</endRow>
+			<beginRow>332</beginRow>
+			<endRow>335</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4902,8 +5038,8 @@
 		<name>Версия3_4_1_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>319</beginRow>
-			<endRow>322</endRow>
+			<beginRow>325</beginRow>
+			<endRow>328</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4912,8 +5048,8 @@
 		<name>Версия3_4_1_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>312</beginRow>
-			<endRow>315</endRow>
+			<beginRow>318</beginRow>
+			<endRow>321</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4922,8 +5058,8 @@
 		<name>Версия3_4_1_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>361</beginRow>
-			<endRow>364</endRow>
+			<beginRow>367</beginRow>
+			<endRow>370</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4932,8 +5068,8 @@
 		<name>Версия3_4_1_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>354</beginRow>
-			<endRow>357</endRow>
+			<beginRow>360</beginRow>
+			<endRow>363</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4942,8 +5078,8 @@
 		<name>Версия3_4_1_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>347</beginRow>
-			<endRow>350</endRow>
+			<beginRow>353</beginRow>
+			<endRow>356</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4952,8 +5088,8 @@
 		<name>Версия3_4_1_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>340</beginRow>
-			<endRow>343</endRow>
+			<beginRow>346</beginRow>
+			<endRow>349</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4962,8 +5098,8 @@
 		<name>Версия3_4_1_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>333</beginRow>
-			<endRow>336</endRow>
+			<beginRow>339</beginRow>
+			<endRow>342</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4972,8 +5108,8 @@
 		<name>Версия3_5_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>305</beginRow>
-			<endRow>308</endRow>
+			<beginRow>311</beginRow>
+			<endRow>314</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4982,8 +5118,8 @@
 		<name>Версия3_5_1_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>256</beginRow>
-			<endRow>259</endRow>
+			<beginRow>262</beginRow>
+			<endRow>265</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -4992,8 +5128,8 @@
 		<name>Версия3_5_1_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>249</beginRow>
-			<endRow>252</endRow>
+			<beginRow>255</beginRow>
+			<endRow>258</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5002,8 +5138,8 @@
 		<name>Версия3_5_1_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>242</beginRow>
-			<endRow>245</endRow>
+			<beginRow>248</beginRow>
+			<endRow>251</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5012,8 +5148,8 @@
 		<name>Версия3_5_1_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>234</beginRow>
-			<endRow>237</endRow>
+			<beginRow>240</beginRow>
+			<endRow>243</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5022,8 +5158,8 @@
 		<name>Версия3_5_1_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>298</beginRow>
-			<endRow>301</endRow>
+			<beginRow>304</beginRow>
+			<endRow>307</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5032,8 +5168,8 @@
 		<name>Версия3_5_1_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>291</beginRow>
-			<endRow>294</endRow>
+			<beginRow>297</beginRow>
+			<endRow>300</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5042,8 +5178,8 @@
 		<name>Версия3_5_1_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>284</beginRow>
-			<endRow>287</endRow>
+			<beginRow>290</beginRow>
+			<endRow>293</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5052,8 +5188,8 @@
 		<name>Версия3_5_1_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>277</beginRow>
-			<endRow>280</endRow>
+			<beginRow>283</beginRow>
+			<endRow>286</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5062,8 +5198,8 @@
 		<name>Версия3_5_1_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>270</beginRow>
-			<endRow>273</endRow>
+			<beginRow>276</beginRow>
+			<endRow>279</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5072,8 +5208,8 @@
 		<name>Версия3_5_1_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>263</beginRow>
-			<endRow>266</endRow>
+			<beginRow>269</beginRow>
+			<endRow>272</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5082,8 +5218,8 @@
 		<name>Версия3_5_2_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>226</beginRow>
-			<endRow>229</endRow>
+			<beginRow>232</beginRow>
+			<endRow>235</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5092,8 +5228,8 @@
 		<name>Версия3_5_2_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>154</beginRow>
-			<endRow>157</endRow>
+			<beginRow>160</beginRow>
+			<endRow>163</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5102,8 +5238,8 @@
 		<name>Версия3_5_2_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>146</beginRow>
-			<endRow>149</endRow>
+			<beginRow>152</beginRow>
+			<endRow>155</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5112,8 +5248,8 @@
 		<name>Версия3_5_2_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>138</beginRow>
-			<endRow>141</endRow>
+			<beginRow>144</beginRow>
+			<endRow>147</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5122,8 +5258,8 @@
 		<name>Версия3_5_2_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>130</beginRow>
-			<endRow>133</endRow>
+			<beginRow>136</beginRow>
+			<endRow>139</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5132,8 +5268,8 @@
 		<name>Версия3_5_2_17</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>122</beginRow>
-			<endRow>125</endRow>
+			<beginRow>128</beginRow>
+			<endRow>131</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5142,8 +5278,8 @@
 		<name>Версия3_5_2_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>218</beginRow>
-			<endRow>221</endRow>
+			<beginRow>224</beginRow>
+			<endRow>227</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5152,8 +5288,8 @@
 		<name>Версия3_5_2_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>210</beginRow>
-			<endRow>213</endRow>
+			<beginRow>216</beginRow>
+			<endRow>219</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5162,8 +5298,8 @@
 		<name>Версия3_5_2_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>202</beginRow>
-			<endRow>205</endRow>
+			<beginRow>208</beginRow>
+			<endRow>211</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5172,8 +5308,8 @@
 		<name>Версия3_5_2_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>194</beginRow>
-			<endRow>197</endRow>
+			<beginRow>200</beginRow>
+			<endRow>203</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5182,8 +5318,8 @@
 		<name>Версия3_5_2_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>186</beginRow>
-			<endRow>189</endRow>
+			<beginRow>192</beginRow>
+			<endRow>195</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5192,8 +5328,8 @@
 		<name>Версия3_5_2_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>178</beginRow>
-			<endRow>181</endRow>
+			<beginRow>184</beginRow>
+			<endRow>187</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5202,8 +5338,8 @@
 		<name>Версия3_5_2_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>170</beginRow>
-			<endRow>173</endRow>
+			<beginRow>176</beginRow>
+			<endRow>179</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5212,8 +5348,8 @@
 		<name>Версия3_5_2_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>162</beginRow>
-			<endRow>165</endRow>
+			<beginRow>168</beginRow>
+			<endRow>171</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5222,8 +5358,8 @@
 		<name>Отступ</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1451</beginRow>
-			<endRow>1451</endRow>
+			<beginRow>1457</beginRow>
+			<endRow>1457</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5232,8 +5368,8 @@
 		<name>Шапка3_2_6_22</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1434</beginRow>
-			<endRow>1434</endRow>
+			<beginRow>1440</beginRow>
+			<endRow>1440</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5242,8 +5378,8 @@
 		<name>Шапка3_2_6_23</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1422</beginRow>
-			<endRow>1422</endRow>
+			<beginRow>1428</beginRow>
+			<endRow>1428</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5252,8 +5388,8 @@
 		<name>Шапка3_2_6_24</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1410</beginRow>
-			<endRow>1410</endRow>
+			<beginRow>1416</beginRow>
+			<endRow>1416</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5262,8 +5398,8 @@
 		<name>Шапка3_2_6_25</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1401</beginRow>
-			<endRow>1401</endRow>
+			<beginRow>1407</beginRow>
+			<endRow>1407</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5272,8 +5408,8 @@
 		<name>Шапка3_2_6_26</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1392</beginRow>
-			<endRow>1392</endRow>
+			<beginRow>1398</beginRow>
+			<endRow>1398</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5282,8 +5418,8 @@
 		<name>Шапка3_2_6_27</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1382</beginRow>
-			<endRow>1382</endRow>
+			<beginRow>1388</beginRow>
+			<endRow>1388</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5292,8 +5428,8 @@
 		<name>Шапка3_2_6_28</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1372</beginRow>
-			<endRow>1372</endRow>
+			<beginRow>1378</beginRow>
+			<endRow>1378</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5302,8 +5438,8 @@
 		<name>Шапка3_2_6_29</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1362</beginRow>
-			<endRow>1362</endRow>
+			<beginRow>1368</beginRow>
+			<endRow>1368</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5312,8 +5448,8 @@
 		<name>Шапка3_2_6_30</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1352</beginRow>
-			<endRow>1352</endRow>
+			<beginRow>1358</beginRow>
+			<endRow>1358</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5322,8 +5458,8 @@
 		<name>Шапка3_2_6_31</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1342</beginRow>
-			<endRow>1342</endRow>
+			<beginRow>1348</beginRow>
+			<endRow>1348</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5332,8 +5468,8 @@
 		<name>Шапка3_2_6_32</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1332</beginRow>
-			<endRow>1332</endRow>
+			<beginRow>1338</beginRow>
+			<endRow>1338</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5342,8 +5478,8 @@
 		<name>Шапка3_2_6_33</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1322</beginRow>
-			<endRow>1322</endRow>
+			<beginRow>1328</beginRow>
+			<endRow>1328</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5352,8 +5488,8 @@
 		<name>Шапка3_2_6_34</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1314</beginRow>
-			<endRow>1314</endRow>
+			<beginRow>1320</beginRow>
+			<endRow>1320</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5362,8 +5498,8 @@
 		<name>Шапка3_2_6_37</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1305</beginRow>
-			<endRow>1305</endRow>
+			<beginRow>1311</beginRow>
+			<endRow>1311</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5372,8 +5508,8 @@
 		<name>Шапка3_2_6_38</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1296</beginRow>
-			<endRow>1296</endRow>
+			<beginRow>1302</beginRow>
+			<endRow>1302</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5382,8 +5518,8 @@
 		<name>Шапка3_2_6_39</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1286</beginRow>
-			<endRow>1286</endRow>
+			<beginRow>1292</beginRow>
+			<endRow>1292</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5392,8 +5528,8 @@
 		<name>Шапка3_2_6_40</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1276</beginRow>
-			<endRow>1276</endRow>
+			<beginRow>1282</beginRow>
+			<endRow>1282</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5402,8 +5538,8 @@
 		<name>Шапка3_2_6_41</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1266</beginRow>
-			<endRow>1266</endRow>
+			<beginRow>1272</beginRow>
+			<endRow>1272</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5412,8 +5548,8 @@
 		<name>Шапка3_2_6_42</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1253</beginRow>
-			<endRow>1253</endRow>
+			<beginRow>1259</beginRow>
+			<endRow>1259</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5422,8 +5558,8 @@
 		<name>Шапка3_2_6_43</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1244</beginRow>
-			<endRow>1244</endRow>
+			<beginRow>1250</beginRow>
+			<endRow>1250</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5432,8 +5568,8 @@
 		<name>Шапка3_2_6_44</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1232</beginRow>
-			<endRow>1232</endRow>
+			<beginRow>1238</beginRow>
+			<endRow>1238</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5442,8 +5578,8 @@
 		<name>Шапка3_2_6_45</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1224</beginRow>
-			<endRow>1224</endRow>
+			<beginRow>1230</beginRow>
+			<endRow>1230</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5452,8 +5588,8 @@
 		<name>Шапка3_2_6_46</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1216</beginRow>
-			<endRow>1216</endRow>
+			<beginRow>1222</beginRow>
+			<endRow>1222</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5462,8 +5598,8 @@
 		<name>Шапка3_2_6_47</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1208</beginRow>
-			<endRow>1208</endRow>
+			<beginRow>1214</beginRow>
+			<endRow>1214</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5472,8 +5608,8 @@
 		<name>Шапка3_2_6_48</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1201</beginRow>
-			<endRow>1201</endRow>
+			<beginRow>1207</beginRow>
+			<endRow>1207</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5482,8 +5618,8 @@
 		<name>Шапка3_2_6_49</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1194</beginRow>
-			<endRow>1194</endRow>
+			<beginRow>1200</beginRow>
+			<endRow>1200</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5492,8 +5628,8 @@
 		<name>Шапка3_2_6_50</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1187</beginRow>
-			<endRow>1187</endRow>
+			<beginRow>1193</beginRow>
+			<endRow>1193</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5502,8 +5638,8 @@
 		<name>Шапка3_2_6_51</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1178</beginRow>
-			<endRow>1178</endRow>
+			<beginRow>1184</beginRow>
+			<endRow>1184</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5512,8 +5648,8 @@
 		<name>Шапка3_2_6_52</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1169</beginRow>
-			<endRow>1169</endRow>
+			<beginRow>1175</beginRow>
+			<endRow>1175</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5522,8 +5658,8 @@
 		<name>Шапка3_2_6_53</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1160</beginRow>
-			<endRow>1160</endRow>
+			<beginRow>1166</beginRow>
+			<endRow>1166</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5532,8 +5668,8 @@
 		<name>Шапка3_2_6_54</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1151</beginRow>
-			<endRow>1151</endRow>
+			<beginRow>1157</beginRow>
+			<endRow>1157</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5542,8 +5678,8 @@
 		<name>Шапка3_2_6_55</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1142</beginRow>
-			<endRow>1142</endRow>
+			<beginRow>1148</beginRow>
+			<endRow>1148</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5552,8 +5688,8 @@
 		<name>Шапка3_2_6_56</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1133</beginRow>
-			<endRow>1133</endRow>
+			<beginRow>1139</beginRow>
+			<endRow>1139</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5562,8 +5698,8 @@
 		<name>Шапка3_2_6_57</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1124</beginRow>
-			<endRow>1124</endRow>
+			<beginRow>1130</beginRow>
+			<endRow>1130</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5572,8 +5708,8 @@
 		<name>Шапка3_2_6_58</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1115</beginRow>
-			<endRow>1115</endRow>
+			<beginRow>1121</beginRow>
+			<endRow>1121</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5582,8 +5718,8 @@
 		<name>Шапка3_2_6_59</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1106</beginRow>
-			<endRow>1106</endRow>
+			<beginRow>1112</beginRow>
+			<endRow>1112</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5592,8 +5728,8 @@
 		<name>Шапка3_2_6_60</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1097</beginRow>
-			<endRow>1097</endRow>
+			<beginRow>1103</beginRow>
+			<endRow>1103</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5602,8 +5738,8 @@
 		<name>Шапка3_2_6_61</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1088</beginRow>
-			<endRow>1088</endRow>
+			<beginRow>1094</beginRow>
+			<endRow>1094</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5612,8 +5748,8 @@
 		<name>Шапка3_2_6_65</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1079</beginRow>
-			<endRow>1079</endRow>
+			<beginRow>1085</beginRow>
+			<endRow>1085</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5622,8 +5758,8 @@
 		<name>Шапка3_2_6_71</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1063</beginRow>
-			<endRow>1063</endRow>
+			<beginRow>1069</beginRow>
+			<endRow>1069</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5632,8 +5768,8 @@
 		<name>Шапка3_2_6_73</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1054</beginRow>
-			<endRow>1054</endRow>
+			<beginRow>1060</beginRow>
+			<endRow>1060</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5642,8 +5778,8 @@
 		<name>Шапка3_2_6_75</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1045</beginRow>
-			<endRow>1045</endRow>
+			<beginRow>1051</beginRow>
+			<endRow>1051</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5652,8 +5788,8 @@
 		<name>Шапка3_2_6_76</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1036</beginRow>
-			<endRow>1036</endRow>
+			<beginRow>1042</beginRow>
+			<endRow>1042</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5662,8 +5798,8 @@
 		<name>Шапка3_2_6_79</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1027</beginRow>
-			<endRow>1027</endRow>
+			<beginRow>1033</beginRow>
+			<endRow>1033</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5672,8 +5808,8 @@
 		<name>Шапка3_2_6_80</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1018</beginRow>
-			<endRow>1018</endRow>
+			<beginRow>1024</beginRow>
+			<endRow>1024</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5682,8 +5818,8 @@
 		<name>Шапка3_2_6_81</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1009</beginRow>
-			<endRow>1009</endRow>
+			<beginRow>1015</beginRow>
+			<endRow>1015</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5692,8 +5828,8 @@
 		<name>Шапка3_2_6_82</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>1000</beginRow>
-			<endRow>1000</endRow>
+			<beginRow>1006</beginRow>
+			<endRow>1006</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5702,8 +5838,8 @@
 		<name>Шапка3_2_6_85</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>991</beginRow>
-			<endRow>991</endRow>
+			<beginRow>997</beginRow>
+			<endRow>997</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5712,8 +5848,8 @@
 		<name>Шапка3_2_6_86</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>982</beginRow>
-			<endRow>982</endRow>
+			<beginRow>988</beginRow>
+			<endRow>988</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5722,8 +5858,8 @@
 		<name>Шапка3_2_6_87</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>973</beginRow>
-			<endRow>973</endRow>
+			<beginRow>979</beginRow>
+			<endRow>979</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5732,8 +5868,8 @@
 		<name>Шапка3_2_6_90</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>964</beginRow>
-			<endRow>964</endRow>
+			<beginRow>970</beginRow>
+			<endRow>970</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5742,8 +5878,8 @@
 		<name>Шапка3_2_7_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>955</beginRow>
-			<endRow>955</endRow>
+			<beginRow>961</beginRow>
+			<endRow>961</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5752,8 +5888,8 @@
 		<name>Шапка3_2_7_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>892</beginRow>
-			<endRow>892</endRow>
+			<beginRow>898</beginRow>
+			<endRow>898</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5762,8 +5898,8 @@
 		<name>Шапка3_2_7_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>883</beginRow>
-			<endRow>883</endRow>
+			<beginRow>889</beginRow>
+			<endRow>889</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5772,8 +5908,8 @@
 		<name>Шапка3_2_7_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>874</beginRow>
-			<endRow>874</endRow>
+			<beginRow>880</beginRow>
+			<endRow>880</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5782,8 +5918,8 @@
 		<name>Шапка3_2_7_13</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>865</beginRow>
-			<endRow>865</endRow>
+			<beginRow>871</beginRow>
+			<endRow>871</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5792,8 +5928,8 @@
 		<name>Шапка3_2_7_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>856</beginRow>
-			<endRow>856</endRow>
+			<beginRow>862</beginRow>
+			<endRow>862</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5802,8 +5938,8 @@
 		<name>Шапка3_2_7_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>847</beginRow>
-			<endRow>847</endRow>
+			<beginRow>853</beginRow>
+			<endRow>853</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5812,8 +5948,8 @@
 		<name>Шапка3_2_7_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>838</beginRow>
-			<endRow>838</endRow>
+			<beginRow>844</beginRow>
+			<endRow>844</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5822,8 +5958,8 @@
 		<name>Шапка3_2_7_17</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>829</beginRow>
-			<endRow>829</endRow>
+			<beginRow>835</beginRow>
+			<endRow>835</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5832,8 +5968,8 @@
 		<name>Шапка3_2_7_18</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>820</beginRow>
-			<endRow>820</endRow>
+			<beginRow>826</beginRow>
+			<endRow>826</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5842,8 +5978,8 @@
 		<name>Шапка3_2_7_19</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>811</beginRow>
-			<endRow>811</endRow>
+			<beginRow>817</beginRow>
+			<endRow>817</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5852,8 +5988,8 @@
 		<name>Шапка3_2_7_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>946</beginRow>
-			<endRow>946</endRow>
+			<beginRow>952</beginRow>
+			<endRow>952</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5862,8 +5998,8 @@
 		<name>Шапка3_2_7_20</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>802</beginRow>
-			<endRow>802</endRow>
+			<beginRow>808</beginRow>
+			<endRow>808</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5872,8 +6008,8 @@
 		<name>Шапка3_2_7_21</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>793</beginRow>
-			<endRow>793</endRow>
+			<beginRow>799</beginRow>
+			<endRow>799</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5882,8 +6018,8 @@
 		<name>Шапка3_2_7_22</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>784</beginRow>
-			<endRow>784</endRow>
+			<beginRow>790</beginRow>
+			<endRow>790</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5892,8 +6028,8 @@
 		<name>Шапка3_2_7_23</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>775</beginRow>
-			<endRow>775</endRow>
+			<beginRow>781</beginRow>
+			<endRow>781</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5902,8 +6038,8 @@
 		<name>Шапка3_2_7_24</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>763</beginRow>
-			<endRow>763</endRow>
+			<beginRow>769</beginRow>
+			<endRow>769</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5912,8 +6048,8 @@
 		<name>Шапка3_2_7_25</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>753</beginRow>
-			<endRow>753</endRow>
+			<beginRow>759</beginRow>
+			<endRow>759</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5922,8 +6058,8 @@
 		<name>Шапка3_2_7_26</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>743</beginRow>
-			<endRow>743</endRow>
+			<beginRow>749</beginRow>
+			<endRow>749</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5932,8 +6068,8 @@
 		<name>Шапка3_2_7_27</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>733</beginRow>
-			<endRow>733</endRow>
+			<beginRow>739</beginRow>
+			<endRow>739</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5942,8 +6078,8 @@
 		<name>Шапка3_2_7_28</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>721</beginRow>
-			<endRow>721</endRow>
+			<beginRow>727</beginRow>
+			<endRow>727</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5952,8 +6088,8 @@
 		<name>Шапка3_2_7_29</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>709</beginRow>
-			<endRow>709</endRow>
+			<beginRow>715</beginRow>
+			<endRow>715</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5962,8 +6098,8 @@
 		<name>Шапка3_2_7_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>937</beginRow>
-			<endRow>937</endRow>
+			<beginRow>943</beginRow>
+			<endRow>943</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5972,8 +6108,8 @@
 		<name>Шапка3_2_7_30</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>701</beginRow>
-			<endRow>701</endRow>
+			<beginRow>707</beginRow>
+			<endRow>707</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5982,8 +6118,8 @@
 		<name>Шапка3_2_7_31</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>692</beginRow>
-			<endRow>692</endRow>
+			<beginRow>698</beginRow>
+			<endRow>698</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -5992,8 +6128,8 @@
 		<name>Шапка3_2_7_32</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>683</beginRow>
-			<endRow>683</endRow>
+			<beginRow>689</beginRow>
+			<endRow>689</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6002,8 +6138,8 @@
 		<name>Шапка3_2_7_33</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>674</beginRow>
-			<endRow>674</endRow>
+			<beginRow>680</beginRow>
+			<endRow>680</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6012,8 +6148,8 @@
 		<name>Шапка3_2_7_34</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>665</beginRow>
-			<endRow>665</endRow>
+			<beginRow>671</beginRow>
+			<endRow>671</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6022,8 +6158,8 @@
 		<name>Шапка3_2_7_35</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>656</beginRow>
-			<endRow>656</endRow>
+			<beginRow>662</beginRow>
+			<endRow>662</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6032,8 +6168,8 @@
 		<name>Шапка3_2_7_36</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>647</beginRow>
-			<endRow>647</endRow>
+			<beginRow>653</beginRow>
+			<endRow>653</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6042,8 +6178,8 @@
 		<name>Шапка3_2_7_37</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>638</beginRow>
-			<endRow>638</endRow>
+			<beginRow>644</beginRow>
+			<endRow>644</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6052,8 +6188,8 @@
 		<name>Шапка3_2_7_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>928</beginRow>
-			<endRow>928</endRow>
+			<beginRow>934</beginRow>
+			<endRow>934</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6062,8 +6198,8 @@
 		<name>Шапка3_2_7_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>919</beginRow>
-			<endRow>919</endRow>
+			<beginRow>925</beginRow>
+			<endRow>925</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6072,8 +6208,8 @@
 		<name>Шапка3_2_7_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>910</beginRow>
-			<endRow>910</endRow>
+			<beginRow>916</beginRow>
+			<endRow>916</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6082,8 +6218,8 @@
 		<name>Шапка3_2_7_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>901</beginRow>
-			<endRow>901</endRow>
+			<beginRow>907</beginRow>
+			<endRow>907</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6092,8 +6228,8 @@
 		<name>Шапка3_2_9_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>629</beginRow>
-			<endRow>629</endRow>
+			<beginRow>635</beginRow>
+			<endRow>635</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6102,8 +6238,8 @@
 		<name>Шапка3_3_0_0</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>620</beginRow>
-			<endRow>620</endRow>
+			<beginRow>626</beginRow>
+			<endRow>626</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6112,8 +6248,8 @@
 		<name>Шапка3_3_0_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>611</beginRow>
-			<endRow>611</endRow>
+			<beginRow>617</beginRow>
+			<endRow>617</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6122,8 +6258,8 @@
 		<name>Шапка3_3_0_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>534</beginRow>
-			<endRow>534</endRow>
+			<beginRow>540</beginRow>
+			<endRow>540</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6132,8 +6268,8 @@
 		<name>Шапка3_3_0_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>527</beginRow>
-			<endRow>527</endRow>
+			<beginRow>533</beginRow>
+			<endRow>533</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6142,8 +6278,8 @@
 		<name>Шапка3_3_0_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>520</beginRow>
-			<endRow>520</endRow>
+			<beginRow>526</beginRow>
+			<endRow>526</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6152,8 +6288,8 @@
 		<name>Шапка3_3_0_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>513</beginRow>
-			<endRow>513</endRow>
+			<beginRow>519</beginRow>
+			<endRow>519</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6162,8 +6298,8 @@
 		<name>Шапка3_3_0_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>506</beginRow>
-			<endRow>506</endRow>
+			<beginRow>512</beginRow>
+			<endRow>512</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6172,8 +6308,8 @@
 		<name>Шапка3_3_0_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>602</beginRow>
-			<endRow>602</endRow>
+			<beginRow>608</beginRow>
+			<endRow>608</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6182,8 +6318,8 @@
 		<name>Шапка3_3_0_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>593</beginRow>
-			<endRow>593</endRow>
+			<beginRow>599</beginRow>
+			<endRow>599</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6192,8 +6328,8 @@
 		<name>Шапка3_3_0_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>584</beginRow>
-			<endRow>584</endRow>
+			<beginRow>590</beginRow>
+			<endRow>590</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6202,8 +6338,8 @@
 		<name>Шапка3_3_0_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>575</beginRow>
-			<endRow>575</endRow>
+			<beginRow>581</beginRow>
+			<endRow>581</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6212,8 +6348,8 @@
 		<name>Шапка3_3_0_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>566</beginRow>
-			<endRow>566</endRow>
+			<beginRow>572</beginRow>
+			<endRow>572</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6222,8 +6358,8 @@
 		<name>Шапка3_3_0_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>557</beginRow>
-			<endRow>557</endRow>
+			<beginRow>563</beginRow>
+			<endRow>563</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6232,8 +6368,8 @@
 		<name>Шапка3_3_0_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>548</beginRow>
-			<endRow>548</endRow>
+			<beginRow>554</beginRow>
+			<endRow>554</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6242,8 +6378,8 @@
 		<name>Шапка3_3_0_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>541</beginRow>
-			<endRow>541</endRow>
+			<beginRow>547</beginRow>
+			<endRow>547</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6252,8 +6388,8 @@
 		<name>Шапка3_3_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>499</beginRow>
-			<endRow>499</endRow>
+			<beginRow>505</beginRow>
+			<endRow>505</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6262,8 +6398,8 @@
 		<name>Шапка3_3_2_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>492</beginRow>
-			<endRow>492</endRow>
+			<beginRow>498</beginRow>
+			<endRow>498</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6272,8 +6408,8 @@
 		<name>Шапка3_3_3_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>485</beginRow>
-			<endRow>485</endRow>
+			<beginRow>491</beginRow>
+			<endRow>491</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6282,8 +6418,8 @@
 		<name>Шапка3_3_3_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>478</beginRow>
-			<endRow>478</endRow>
+			<beginRow>484</beginRow>
+			<endRow>484</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6292,8 +6428,8 @@
 		<name>Шапка3_3_4_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>471</beginRow>
-			<endRow>471</endRow>
+			<beginRow>477</beginRow>
+			<endRow>477</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6302,8 +6438,8 @@
 		<name>Шапка3_3_5_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>464</beginRow>
-			<endRow>464</endRow>
+			<beginRow>470</beginRow>
+			<endRow>470</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6312,8 +6448,8 @@
 		<name>Шапка3_3_5_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>457</beginRow>
-			<endRow>457</endRow>
+			<beginRow>463</beginRow>
+			<endRow>463</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6322,8 +6458,8 @@
 		<name>Шапка3_3_5_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>450</beginRow>
-			<endRow>450</endRow>
+			<beginRow>456</beginRow>
+			<endRow>456</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6332,8 +6468,8 @@
 		<name>Шапка3_3_6_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>443</beginRow>
-			<endRow>443</endRow>
+			<beginRow>449</beginRow>
+			<endRow>449</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6342,8 +6478,8 @@
 		<name>Шапка3_3_6_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>436</beginRow>
-			<endRow>436</endRow>
+			<beginRow>442</beginRow>
+			<endRow>442</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6352,8 +6488,8 @@
 		<name>Шапка3_3_6_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>429</beginRow>
-			<endRow>429</endRow>
+			<beginRow>435</beginRow>
+			<endRow>435</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6362,8 +6498,8 @@
 		<name>Шапка3_3_7_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>373</beginRow>
-			<endRow>373</endRow>
+			<beginRow>379</beginRow>
+			<endRow>379</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6372,8 +6508,8 @@
 		<name>Шапка3_3_7_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>422</beginRow>
-			<endRow>422</endRow>
+			<beginRow>428</beginRow>
+			<endRow>428</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6382,8 +6518,8 @@
 		<name>Шапка3_3_7_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>415</beginRow>
-			<endRow>415</endRow>
+			<beginRow>421</beginRow>
+			<endRow>421</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6392,8 +6528,8 @@
 		<name>Шапка3_3_7_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>408</beginRow>
-			<endRow>408</endRow>
+			<beginRow>414</beginRow>
+			<endRow>414</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6402,8 +6538,8 @@
 		<name>Шапка3_3_7_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>401</beginRow>
-			<endRow>401</endRow>
+			<beginRow>407</beginRow>
+			<endRow>407</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6412,8 +6548,8 @@
 		<name>Шапка3_3_7_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>394</beginRow>
-			<endRow>394</endRow>
+			<beginRow>400</beginRow>
+			<endRow>400</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6422,8 +6558,8 @@
 		<name>Шапка3_3_7_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>387</beginRow>
-			<endRow>387</endRow>
+			<beginRow>393</beginRow>
+			<endRow>393</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6432,8 +6568,8 @@
 		<name>Шапка3_3_7_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>380</beginRow>
-			<endRow>380</endRow>
+			<beginRow>386</beginRow>
+			<endRow>386</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6442,8 +6578,8 @@
 		<name>Шапка3_4_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>366</beginRow>
-			<endRow>366</endRow>
+			<beginRow>372</beginRow>
+			<endRow>372</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6452,8 +6588,8 @@
 		<name>Шапка3_4_1_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>324</beginRow>
-			<endRow>324</endRow>
+			<beginRow>330</beginRow>
+			<endRow>330</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6462,8 +6598,8 @@
 		<name>Шапка3_4_1_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>317</beginRow>
-			<endRow>317</endRow>
+			<beginRow>323</beginRow>
+			<endRow>323</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6472,8 +6608,8 @@
 		<name>Шапка3_4_1_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>310</beginRow>
-			<endRow>310</endRow>
+			<beginRow>316</beginRow>
+			<endRow>316</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6482,8 +6618,8 @@
 		<name>Шапка3_4_1_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>359</beginRow>
-			<endRow>359</endRow>
+			<beginRow>365</beginRow>
+			<endRow>365</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6492,8 +6628,8 @@
 		<name>Шапка3_4_1_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>352</beginRow>
-			<endRow>352</endRow>
+			<beginRow>358</beginRow>
+			<endRow>358</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6502,8 +6638,8 @@
 		<name>Шапка3_4_1_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>345</beginRow>
-			<endRow>345</endRow>
+			<beginRow>351</beginRow>
+			<endRow>351</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6512,8 +6648,8 @@
 		<name>Шапка3_4_1_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>338</beginRow>
-			<endRow>338</endRow>
+			<beginRow>344</beginRow>
+			<endRow>344</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6522,8 +6658,8 @@
 		<name>Шапка3_4_1_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>331</beginRow>
-			<endRow>331</endRow>
+			<beginRow>337</beginRow>
+			<endRow>337</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6532,8 +6668,8 @@
 		<name>Шапка3_5_1_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>303</beginRow>
-			<endRow>303</endRow>
+			<beginRow>309</beginRow>
+			<endRow>309</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6542,8 +6678,8 @@
 		<name>Шапка3_5_1_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>254</beginRow>
-			<endRow>254</endRow>
+			<beginRow>260</beginRow>
+			<endRow>260</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6552,8 +6688,8 @@
 		<name>Шапка3_5_1_11</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>247</beginRow>
-			<endRow>247</endRow>
+			<beginRow>253</beginRow>
+			<endRow>253</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6562,8 +6698,8 @@
 		<name>Шапка3_5_1_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>240</beginRow>
-			<endRow>240</endRow>
+			<beginRow>246</beginRow>
+			<endRow>246</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6572,8 +6708,8 @@
 		<name>Шапка3_5_1_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>232</beginRow>
-			<endRow>232</endRow>
+			<beginRow>238</beginRow>
+			<endRow>238</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6582,8 +6718,8 @@
 		<name>Шапка3_5_1_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>296</beginRow>
-			<endRow>296</endRow>
+			<beginRow>302</beginRow>
+			<endRow>302</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6592,8 +6728,8 @@
 		<name>Шапка3_5_1_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>289</beginRow>
-			<endRow>289</endRow>
+			<beginRow>295</beginRow>
+			<endRow>295</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6602,8 +6738,8 @@
 		<name>Шапка3_5_1_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>282</beginRow>
-			<endRow>282</endRow>
+			<beginRow>288</beginRow>
+			<endRow>288</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6612,8 +6748,8 @@
 		<name>Шапка3_5_1_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>275</beginRow>
-			<endRow>275</endRow>
+			<beginRow>281</beginRow>
+			<endRow>281</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6622,8 +6758,8 @@
 		<name>Шапка3_5_1_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>268</beginRow>
-			<endRow>268</endRow>
+			<beginRow>274</beginRow>
+			<endRow>274</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6632,8 +6768,8 @@
 		<name>Шапка3_5_1_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>261</beginRow>
-			<endRow>261</endRow>
+			<beginRow>267</beginRow>
+			<endRow>267</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6642,8 +6778,8 @@
 		<name>Шапка3_5_2_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>224</beginRow>
-			<endRow>224</endRow>
+			<beginRow>230</beginRow>
+			<endRow>230</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6652,8 +6788,8 @@
 		<name>Шапка3_5_2_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>152</beginRow>
-			<endRow>152</endRow>
+			<beginRow>158</beginRow>
+			<endRow>158</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6662,8 +6798,8 @@
 		<name>Шапка3_5_2_12</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>144</beginRow>
-			<endRow>144</endRow>
+			<beginRow>150</beginRow>
+			<endRow>150</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6672,8 +6808,8 @@
 		<name>Шапка3_5_2_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>136</beginRow>
-			<endRow>136</endRow>
+			<beginRow>142</beginRow>
+			<endRow>142</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6682,8 +6818,8 @@
 		<name>Шапка3_5_2_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>128</beginRow>
-			<endRow>128</endRow>
+			<beginRow>134</beginRow>
+			<endRow>134</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6692,8 +6828,8 @@
 		<name>Шапка3_5_2_17</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>120</beginRow>
-			<endRow>120</endRow>
+			<beginRow>126</beginRow>
+			<endRow>126</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6702,8 +6838,8 @@
 		<name>Шапка3_5_2_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>216</beginRow>
-			<endRow>216</endRow>
+			<beginRow>222</beginRow>
+			<endRow>222</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6712,8 +6848,8 @@
 		<name>Шапка3_5_2_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>208</beginRow>
-			<endRow>208</endRow>
+			<beginRow>214</beginRow>
+			<endRow>214</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6722,8 +6858,8 @@
 		<name>Шапка3_5_2_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>200</beginRow>
-			<endRow>200</endRow>
+			<beginRow>206</beginRow>
+			<endRow>206</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6732,8 +6868,8 @@
 		<name>Шапка3_5_2_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>192</beginRow>
-			<endRow>192</endRow>
+			<beginRow>198</beginRow>
+			<endRow>198</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6742,8 +6878,8 @@
 		<name>Шапка3_5_2_6</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>184</beginRow>
-			<endRow>184</endRow>
+			<beginRow>190</beginRow>
+			<endRow>190</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6752,8 +6888,8 @@
 		<name>Шапка3_5_2_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>176</beginRow>
-			<endRow>176</endRow>
+			<beginRow>182</beginRow>
+			<endRow>182</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6762,8 +6898,8 @@
 		<name>Шапка3_5_2_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>168</beginRow>
-			<endRow>168</endRow>
+			<beginRow>174</beginRow>
+			<endRow>174</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6772,8 +6908,8 @@
 		<name>Шапка3_5_2_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>160</beginRow>
-			<endRow>160</endRow>
+			<beginRow>166</beginRow>
+			<endRow>166</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6782,8 +6918,8 @@
 		<name>Версия3_5_2_18</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>114</beginRow>
-			<endRow>117</endRow>
+			<beginRow>120</beginRow>
+			<endRow>123</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6792,8 +6928,8 @@
 		<name>Шапка3_5_2_18</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>112</beginRow>
-			<endRow>112</endRow>
+			<beginRow>118</beginRow>
+			<endRow>118</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6802,8 +6938,8 @@
 		<name>Версия3_5_2_19</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>107</beginRow>
-			<endRow>110</endRow>
+			<beginRow>113</beginRow>
+			<endRow>116</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6812,8 +6948,8 @@
 		<name>Шапка3_5_2_19</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>105</beginRow>
-			<endRow>105</endRow>
+			<beginRow>111</beginRow>
+			<endRow>111</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6822,8 +6958,8 @@
 		<name>Шапка3_5_3_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>97</beginRow>
-			<endRow>97</endRow>
+			<beginRow>103</beginRow>
+			<endRow>103</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6832,8 +6968,8 @@
 		<name>Версия3_5_3_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>99</beginRow>
-			<endRow>102</endRow>
+			<beginRow>105</beginRow>
+			<endRow>108</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6842,8 +6978,8 @@
 		<name>Версия3_5_3_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>91</beginRow>
-			<endRow>94</endRow>
+			<beginRow>97</beginRow>
+			<endRow>100</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6852,8 +6988,8 @@
 		<name>Шапка3_5_3_2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>89</beginRow>
-			<endRow>89</endRow>
+			<beginRow>95</beginRow>
+			<endRow>95</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6862,8 +6998,8 @@
 		<name>Версия3_5_3_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>83</beginRow>
-			<endRow>86</endRow>
+			<beginRow>89</beginRow>
+			<endRow>92</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6872,8 +7008,8 @@
 		<name>Шапка3_5_3_3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>81</beginRow>
-			<endRow>81</endRow>
+			<beginRow>87</beginRow>
+			<endRow>87</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6882,8 +7018,8 @@
 		<name>Шапка3_5_4_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>73</beginRow>
-			<endRow>73</endRow>
+			<beginRow>79</beginRow>
+			<endRow>79</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6892,8 +7028,8 @@
 		<name>Версия3_5_4_1</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>75</beginRow>
-			<endRow>78</endRow>
+			<beginRow>81</beginRow>
+			<endRow>84</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6902,8 +7038,8 @@
 		<name>Шапка3_5_4_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>65</beginRow>
-			<endRow>65</endRow>
+			<beginRow>71</beginRow>
+			<endRow>71</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6912,8 +7048,8 @@
 		<name>Версия3_5_4_4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>67</beginRow>
-			<endRow>70</endRow>
+			<beginRow>73</beginRow>
+			<endRow>76</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6922,8 +7058,8 @@
 		<name>Версия3_5_4_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>59</beginRow>
-			<endRow>62</endRow>
+			<beginRow>65</beginRow>
+			<endRow>68</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6932,8 +7068,8 @@
 		<name>Шапка3_5_4_5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>57</beginRow>
-			<endRow>57</endRow>
+			<beginRow>63</beginRow>
+			<endRow>63</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6942,8 +7078,8 @@
 		<name>Шапка3_5_4_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>49</beginRow>
-			<endRow>49</endRow>
+			<beginRow>55</beginRow>
+			<endRow>55</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6952,8 +7088,8 @@
 		<name>Версия3_5_4_7</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>51</beginRow>
-			<endRow>54</endRow>
+			<beginRow>57</beginRow>
+			<endRow>60</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6962,8 +7098,8 @@
 		<name>Версия3_5_4_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>43</beginRow>
-			<endRow>46</endRow>
+			<beginRow>49</beginRow>
+			<endRow>52</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6972,8 +7108,8 @@
 		<name>Шапка3_5_4_8</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>41</beginRow>
-			<endRow>41</endRow>
+			<beginRow>47</beginRow>
+			<endRow>47</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6982,8 +7118,8 @@
 		<name>Версия3_5_4_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>35</beginRow>
-			<endRow>38</endRow>
+			<beginRow>41</beginRow>
+			<endRow>44</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -6992,8 +7128,8 @@
 		<name>Шапка3_5_4_9</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>33</beginRow>
-			<endRow>33</endRow>
+			<beginRow>39</beginRow>
+			<endRow>39</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7002,8 +7138,8 @@
 		<name>Версия3_5_4_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>27</beginRow>
-			<endRow>30</endRow>
+			<beginRow>33</beginRow>
+			<endRow>36</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7012,8 +7148,8 @@
 		<name>Шапка3_5_4_10</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>25</beginRow>
-			<endRow>25</endRow>
+			<beginRow>31</beginRow>
+			<endRow>31</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7022,8 +7158,8 @@
 		<name>Шапка3_5_4_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>17</beginRow>
-			<endRow>17</endRow>
+			<beginRow>23</beginRow>
+			<endRow>23</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7032,8 +7168,8 @@
 		<name>Версия3_5_4_14</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>19</beginRow>
-			<endRow>22</endRow>
+			<beginRow>25</beginRow>
+			<endRow>28</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7042,8 +7178,8 @@
 		<name>Версия3_5_4_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>11</beginRow>
-			<endRow>14</endRow>
+			<beginRow>17</beginRow>
+			<endRow>20</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7052,8 +7188,8 @@
 		<name>Шапка3_5_4_15</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>9</beginRow>
-			<endRow>9</endRow>
+			<beginRow>15</beginRow>
+			<endRow>15</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7062,8 +7198,8 @@
 		<name>Версия3_5_4_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>4</beginRow>
-			<endRow>7</endRow>
+			<beginRow>10</beginRow>
+			<endRow>13</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7072,8 +7208,28 @@
 		<name>Шапка3_5_4_16</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>2</beginRow>
-			<endRow>2</endRow>
+			<beginRow>8</beginRow>
+			<endRow>8</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Версия3_5_4_18</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>3</beginRow>
+			<endRow>6</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка3_5_4_18</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>1</beginRow>
+			<endRow>1</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -7120,6 +7276,30 @@
 	</format>
 	<format>
 		<width>72</width>
+	</format>
+	<format>
+		<font>1</font>
+		<height>0</height>
+		<width>432</width>
+		<backColor>#C0C0C0</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<font>2</font>
+		<height>0</height>
+		<width>432</width>
+		<backColor>#C0C0C0</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
+	</format>
+	<format>
+		<font>2</font>
+		<height>0</height>
+		<width>432</width>
+		<backColor>#C0C0C0</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<hyperLink>false</hyperLink>
 	</format>
 	<format>
 		<font>1</font>
