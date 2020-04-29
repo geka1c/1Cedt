@@ -939,6 +939,7 @@
   <commonModules>CommonModule.ЗащитаПерсональныхДанныхПовтИсп</commonModules>
   <commonModules>CommonModule.Интеграция_BoxBerry</commonModules>
   <commonModules>CommonModule.Интеграция_DPD</commonModules>
+  <commonModules>CommonModule.Интеграция_СДЭК</commonModules>
   <commonModules>CommonModule.Интеграция_ДеловыеЛинии</commonModules>
   <commonModules>CommonModule.Интеграция_ПочтаРоссии</commonModules>
   <commonModules>CommonModule.Интеграция_ТранспортныеКомпании_Общий</commonModules>
@@ -1309,7 +1310,6 @@
   <commonModules>CommonModule.ЭлектроннаяПодписьКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьПереопределяемый</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебный</commonModules>
-  <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйВызовСервера</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйПовтИсп</commonModules>
@@ -1318,6 +1318,7 @@
   <commonModules>CommonModule.СП_КурьерскаяДоставка</commonModules>
   <commonModules>CommonModule.СП_АдресаДоставки</commonModules>
   <commonModules>CommonModule.СП_Эквайринг_Клиент</commonModules>
+  <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйВызовСервера</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -1355,7 +1356,7 @@
   <xDTOPackages>XDTOPackage.ГуглДиск</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_2_0_0_3</xDTOPackages>
   <xDTOPackages>XDTOPackage.spПокупкиВПути</xDTOPackages>
-  <xDTOPackages>XDTOPackage.ПакетXDTO1</xDTOPackages>
+  <xDTOPackages>XDTOPackage.ИнтеграцияСДЭК</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_3_0_0_0</xDTOPackages>
   <xDTOPackages>XDTOPackage.EquipmentService_3_0_0_1</xDTOPackages>
   <webServices>WebService.EnterpriseDataExchange_1_0_1_1</webServices>
@@ -2029,6 +2030,7 @@
   <commonForms>CommonForm.ФормаОжиданиеВводаШтрихкода</commonForms>
   <commonForms>CommonForm.ВыборДатыИВремени</commonForms>
   <commonForms>CommonForm.ФормаВыбораПосылкиПоКодуПосылки</commonForms>
+  <commonForms>CommonForm.ФормаПросмотраТабличногоДокумента</commonForms>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Заказы</catalogs>
   <catalogs>Catalog.Покупки</catalogs>
@@ -2129,6 +2131,7 @@
   <catalogs>Catalog.ПараметрыОбмена</catalogs>
   <catalogs>Catalog.ОтчетПоБесплатнойВыдачеПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.СобранныеЗаказы</catalogs>
+  <catalogs>Catalog.УчетныеДанные</catalogs>
   <documents>Document.ВыдачаТранзита</documents>
   <documents>Document.УпаковатьЗаказы</documents>
   <documents>Document.ПоступлениеТоваров</documents>

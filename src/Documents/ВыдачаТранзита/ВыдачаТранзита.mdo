@@ -964,4 +964,12 @@
       <value>П ф MXL экспедиторская расписка</value>
     </synonym>
   </templates>
+  <templates uuid="84dda218-83cd-406b-9b02-0c21aed06a83">
+    <name>скд_СтатусыЗаказовТК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скд статусы заказов ТК</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
 </mdclass:Document>

@@ -26,6 +26,7 @@
   <content>Document.ЗапросыГруппДоставки</content>
   <content>DataProcessor.ГуглДиск</content>
   <content>Catalog.ТранспортныеКомпании</content>
+  <content>Catalog.УчетныеДанные</content>
   <subsystems>ПочтаРоссии</subsystems>
   <subsystems>СП</subsystems>
   <subsystems>ЧатСП</subsystems>

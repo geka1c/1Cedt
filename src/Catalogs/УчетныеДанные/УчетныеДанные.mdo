@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8aba4da-488e-4546-9b1f-e30c05128370">
+  <producedTypes>
+    <objectType typeId="75bb4b7d-51f5-4c2f-a8a0-5d5b907809da" valueTypeId="69e053d4-4740-49d5-b667-fc45517d1ad6"/>
+    <refType typeId="fe4bb7fa-ab9b-4bc9-a2ac-f364625dc2a1" valueTypeId="0ed9260f-4342-4864-a2f3-138f15277993"/>
+    <selectionType typeId="7c9465e9-4292-446e-9158-2f767a58ff25" valueTypeId="5f43872a-18df-4428-94e8-ffeab27ad092"/>
+    <listType typeId="6d0c2cfd-b0f3-4235-b22f-ce74e801d5ca" valueTypeId="1075f8da-b8f8-46e8-bdce-bcf18087ea06"/>
+    <managerType typeId="f81790b5-4b81-4fbf-96b9-a8e2b543e7c0" valueTypeId="7b1e8865-c75a-4e10-b00b-313e9e66f0a2"/>
+  </producedTypes>
+  <name>УчетныеДанные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетные данные</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.УчетныеДанные.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.УчетныеДанные.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="6e1a2926-ebc7-46a8-80c8-f8dc70bb69f2">
+      <name>СДЭК</name>
+      <description>СДЭК</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a6c32d5f-0d75-4d1e-8b15-61d69a6a562f">
+    <name>Аккаунт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аккаунт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a86041f-88d5-47f7-bc3f-7fb44aa76f3e">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf4ee050-14ca-4c88-b781-e1a526675653">
+    <name>Токен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

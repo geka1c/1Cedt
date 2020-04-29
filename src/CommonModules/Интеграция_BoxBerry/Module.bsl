@@ -326,15 +326,15 @@
 
 
 Функция СформироватьЗаказ(ДокОтправлениеТранзита)   
-	Прокси = ПолучитьПроксиЛК().Прокси;
-	токен=Константы.ТокенBoxBerry.Получить();
+	Прокси 		= ПолучитьПроксиЛК().Прокси;
+	токен		= Константы.ТокенBoxBerry.Получить();
 	
-	ТипСписок = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 					"ParselCreateQuery");
-	ТипShop = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 					"ParselCreateShopData");
-	ТипCustomer = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 				"ParselCreateCustomerData");
-	ТипWeights = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 					"ParselCreateWeightsData");
-	ТипItems = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 					"ParselCreateItemsData");
-	ТипParselCreateKurdostData = Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateKurdostData");
+	ТипСписок 					= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateQuery");
+	ТипShop 					= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateShopData");
+	ТипCustomer 				= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateCustomerData");
+	ТипWeights 					= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateWeightsData");
+	ТипItems 					= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateItemsData");
+	ТипParselCreateKurdostData 	= Прокси.ФабрикаXDTO.Тип("api.boxberry.ru", 	"ParselCreateKurdostData");
 	
 	
 	// Заполняем параметр:
