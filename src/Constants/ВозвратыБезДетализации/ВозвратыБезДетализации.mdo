@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27e363ee-a29e-4630-b191-b9772b5c4784">
+  <producedTypes>
+    <managerType typeId="5ab79e98-60fe-4813-a1fc-b30b413c18e8" valueTypeId="7a776d0d-2780-4a98-a864-2fcac035dd4e"/>
+    <valueManagerType typeId="b527c230-ac72-4cbc-9ba6-58c9d296bebc" valueTypeId="66ff42ec-d33f-4b51-8d60-1a882672b742"/>
+    <valueKeyType typeId="774b52ef-db81-4063-bc0b-a6f4b1a3ca30" valueTypeId="27fbca5b-9cf9-482c-8e33-750e1335f50a"/>
+  </producedTypes>
+  <name>ВозвратыБезДетализации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возвраты без детализации</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Прием возвратов без детализации по товарам</value>
+  </toolTip>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

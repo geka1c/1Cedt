@@ -304,6 +304,145 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="4a8376c9-1ca7-4e30-b39c-867a179bdf5e">
+      <name>КодыТоваров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коды товаров</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8b5e8d7e-1988-4818-9b7b-56626d6bd914">
+    <producedTypes>
+      <objectType typeId="b93770d6-1600-4b20-a51a-d50201f668a4" valueTypeId="2175702f-64e1-48a0-b26c-53fc982e6a78"/>
+      <rowType typeId="c17c6e06-88c2-4823-9510-761904e63414" valueTypeId="a7cdb810-549b-4b85-bb54-1535082365cf"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="2c4dad65-063c-4044-bffc-0651b9de6302">
+      <name>Посылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Посылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Посылки</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="17175e62-47b5-443b-9ad6-c58fbea8c546">
+      <name>КодТовара</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код товара</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04dd6b86-6b70-47dd-9fde-3150df6ed737">
+      <name>КодМегаордера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код мегаордера</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f25d9b7f-91d9-4a23-bb65-3fd7846e6f62">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5b27546b-92a8-4b60-8128-9bf8c3e03042">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b9f3e1c6-3510-4656-bac4-e7bbdf8b73c3">
+      <name>Артикул</name>
+      <synonym>
+        <key>ru</key>
+        <value>Артикул</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="06bfd9ca-a14d-44a5-ad91-b432ce3df09c">
+      <name>Размер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Размер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9a94f843-2574-43bf-b285-c3df419df161">
+      <name>Картинка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Картинка</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <templates uuid="52147381-4a36-4071-963f-e3775d17b754">
     <name>Печать</name>

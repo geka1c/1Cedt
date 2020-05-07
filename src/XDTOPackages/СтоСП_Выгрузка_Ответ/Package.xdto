@@ -25,6 +25,7 @@
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="transitOrdersCounts" type="d3p1:distributors.transitOrdersCounts" lowerBound="0" nillable="true"/>
 		<property name="apiVersion" type="xs:string" lowerBound="0" nillable="true" form="Attribute"/>
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="groupsUnlink" type="d3p1:distributors.groupsUnlink" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="receivedOrdersGoods" type="d3p1:distributors.receivedOrdersGoods" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="distributors.auth" ordered="false">
 		<property name="result" type="xs:string"/>
@@ -415,5 +416,33 @@
 		<property name="uid" type="xs:string" form="Attribute"/>
 		<property name="result" type="xs:string" lowerBound="0" nillable="true"/>
 		<property name="message" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="requestedObject" type="d3p1:distributors.receivedOrdersGoods.requestedObject" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods.requestedObject">
+		<property name="orderType" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Attribute"/>
+		<property name="orderId" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Attribute"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="megaorders" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods.requestedObject.megaorders">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="megaorder" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder">
+		<property name="id" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="pid" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="uid" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="goods" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder.goods" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder.goods">
+		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="good" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder.goods.good" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder.goods.good">
+		<property name="id" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="articul" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="name" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="size" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="price" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="image" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
 	</objectType>
 </package>

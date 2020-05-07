@@ -1029,6 +1029,10 @@
           <items xsi:type="form:Button">
             <name>ЗаказыПросмотрПристроя</name>
             <id>121</id>
+            <title>
+              <key>ru</key>
+              <value>Картинка</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>

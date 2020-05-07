@@ -972,4 +972,11 @@
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
+  <templates uuid="a96e42ee-d313-4a9f-a4cb-01eb65bbd3cf">
+    <name>ПФ_MXL_НакладнаяХабаровск</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL накладная хабаровск</value>
+    </synonym>
+  </templates>
 </mdclass:Document>
