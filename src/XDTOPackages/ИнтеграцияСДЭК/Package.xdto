@@ -65,6 +65,7 @@
 		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Status" type="d3p1:StatusReport.Order.Status" nillable="true"/>
 		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Reason" type="d3p1:StatusReport.Order.Reason" nillable="true"/>
 		<property xmlns:d3p1="http://www.integration.cdek.ru" name="DelayReason" type="d3p1:StatusReport.Order.Reason" nillable="true"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Call" type="d3p1:StatusReport.Order.Call" lowerBound="0" nillable="true"/>
 	</objectType>
 	<objectType name="StatusReport.Order.Status" ordered="false">
 		<property name="Date" type="xs:string" nillable="true" form="Attribute"/>
@@ -80,5 +81,32 @@
 	</objectType>
 	<objectType name="distributors">
 		<property xmlns:d3p1="http://www.integration.cdek.ru" name="StatusReport" type="d3p1:StatusReport" lowerBound="0" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call" ordered="false">
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="CallDelay" type="d3p1:StatusReport.Order.Call.CallDelay" lowerBound="0" nillable="true" form="Element"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="CallGood" type="d3p1:StatusReport.Order.Call.CallGood" lowerBound="0" nillable="true" form="Element"/>
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="CallFail" type="d3p1:StatusReport.Order.Call.CallFail" lowerBound="0" nillable="true" form="Element"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallDelay">
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Delay" type="d3p1:StatusReport.Order.Call.CallDelay.Delay" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallGood">
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Good" type="d3p1:StatusReport.Order.Call.CallGood.Good" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallFail">
+		<property xmlns:d3p1="http://www.integration.cdek.ru" name="Fail" type="d3p1:StatusReport.Order.Call.CallFail.Fail" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallDelay.Delay" ordered="false">
+		<property name="Date" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="DateNext" type="xs:string" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallGood.Good" ordered="false">
+		<property name="Date" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="DateDeliv" type="xs:string" nillable="true" form="Attribute"/>
+	</objectType>
+	<objectType name="StatusReport.Order.Call.CallFail.Fail" ordered="false">
+		<property name="Date" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="ReasonCode" type="xs:string" nillable="true" form="Attribute"/>
+		<property name="ReasonDescription" type="xs:string" nillable="true" form="Attribute"/>
 	</objectType>
 </package>
