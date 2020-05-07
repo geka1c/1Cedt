@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.КурьерскаяДоставка</content>
+  <content>Report.ОтчетПоКурьерскойДоставке</content>
   <parentSubsystem>Subsystem.Транзит</parentSubsystem>
 </mdclass:Subsystem>

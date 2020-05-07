@@ -91,12 +91,16 @@
     <name>ПутьФайла</name>
     <synonym>
       <key>ru</key>
-      <value>Путь файла</value>
+      <value>Путь к файлу консалидации</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь к файлу консалидации</value>
+    </toolTip>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -104,12 +108,16 @@
     <name>ПутьОтчета</name>
     <synonym>
       <key>ru</key>
-      <value>Путь отчета</value>
+      <value>Путь к файлу отчета по Курьерской доставке</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers/>
     </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь к файлу отчета по Курьерской доставке</value>
+    </toolTip>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -140,6 +148,40 @@
     <fillValue xsi:type="core:StringValue">
       <value></value>
     </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d532642f-6f4e-49a6-a113-873193406470">
+    <name>ПутьОтчетаКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу отчета по Курьерской доставке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь к файлу отчета по Курьерской доставке</value>
+    </toolTip>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8524a077-d000-4183-abff-d729f92a0e7c">
+    <name>КоличествоКурьерскихЗаказов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество курьерских заказов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

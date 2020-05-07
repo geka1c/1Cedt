@@ -30,6 +30,6 @@
   <content>Report.ПоискУчатникаСКД</content>
   <content>Report.ПоискПокупок</content>
   <content>Report.ДинамикаВыдачиЗаказов</content>
-  <content>Report.ОтчетПоБесплатнойВыдаче</content>
   <content>CommonCommand.ПанельОтчетовВыдача</content>
+  <content>Report.ОтчетПоБесплатнойВыдаче</content>
 </mdclass:Subsystem>

@@ -2394,6 +2394,7 @@
   <reports>Report.СписокЗаказовДокумента</reports>
   <reports>Report.УниверсальныйОтчет</reports>
   <reports>Report.ОтчетПоБесплатнойВыдаче</reports>
+  <reports>Report.ОтчетПоКурьерскойДоставке</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

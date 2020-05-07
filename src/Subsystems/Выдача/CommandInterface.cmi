@@ -50,10 +50,6 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>Report.ОтчетПоБесплатнойВыдаче.StandardCommand.Open</command>
-      <visible/>
-    </visibilityFragments>
-    <visibilityFragments>
       <command>Report.КассоваяВедомость.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
