@@ -2025,6 +2025,23 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>ВозвратыБезДетализации</name>
+    <title>
+      <key>ru</key>
+      <value>Возвраты без детализации</value>
+    </title>
+    <id>21</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ПолучитьЗаказы</name>
     <title>
