@@ -57,6 +57,13 @@
         <value>6600000020005</value>
       </code>
     </items>
+    <items id="5a83ee04-9d94-49bc-878f-74d460eceede">
+      <name>Мультиорг</name>
+      <description>Мультиорг</description>
+      <code xsi:type="core:StringValue">
+        <value>6600000020006</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
