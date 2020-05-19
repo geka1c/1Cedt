@@ -20,16 +20,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ПунктВыдачи</dataPath>
-			<field>ПунктВыдачи</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Пункт выдачи</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Регистратор</dataPath>
 			<field>Регистратор</field>
 			<role>
@@ -38,33 +28,27 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>МестоХранения</dataPath>
-			<field>МестоХранения</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СтоимостьХранения</dataPath>
-			<field>СтоимостьХранения</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СтоимостьДоставки</dataPath>
-			<field>СтоимостьДоставки</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Заказ</dataPath>
 			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Партия</dataPath>
-			<field>Партия</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
+			<dataPath>ПунктВыдачи</dataPath>
+			<field>ПунктВыдачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункт выдачи</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПериодМесяц</dataPath>
@@ -81,6 +65,10 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьХранения</dataPath>
+			<field>СтоимостьХранения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>ПВ</dataPath>
 			<field>ПВ</field>
 			<title xsi:type="v8:LocalStringType">
@@ -92,6 +80,48 @@
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоХранения</dataPath>
+			<field>МестоХранения</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьДоставки</dataPath>
+			<field>СтоимостьДоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Списано</dataPath>
+			<field>Списано</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник</dataPath>
+			<field>Участник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипРасхода</dataPath>
+			<field>ТипРасхода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Покупка</dataPath>
+			<field>Покупка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БесплатнаяВыдача</dataPath>
+			<field>БесплатнаяВыдача</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -110,19 +140,33 @@
 	Константа.СвояТочка КАК СвояТочка
 ГДЕ
 	СобранныеЗаказы.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
-	И СобранныеЗаказы.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)</query>
+	И СобранныеЗаказы.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	и
+	не СобранныеЗаказы.Партия.СвойКурьер
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	РасходОбороты.Покупка,
+	NULL,
+	РасходОбороты.Регистратор,
+	NULL,
+	РасходОбороты.Участник,
+	РасходОбороты.КоличествоОборот,
+	РасходОбороты.СуммаОборот,
+	NULL,
+	РасходОбороты.ПериодМесяц,
+	СвояТочка.Значение
+ИЗ
+	РегистрНакопления.Расход.Обороты(&amp;ДатаНачала, &amp;ДатаОкончания, Авто,
+		ТИПЗНАЧЕНИЯ(Участник) = ТИП(Справочник.ТочкиРаздачи)
+	И ТИПЗНАЧЕНИЯ(Покупка) = ТИП(Справочник.Коробки)
+	И Участник.Код = "0100") КАК РасходОбороты,
+	Константа.СвояТочка КАК СвояТочка</query>
 	</dataSet>
 	<totalField>
 		<dataPath>Количество</dataPath>
 		<expression>Сумма(Количество)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СтоимостьДоставки</dataPath>
-		<expression>Сумма(СтоимостьДоставки)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СтоимостьХранения</dataPath>
-		<expression>Сумма(СтоимостьХранения)</expression>
 	</totalField>
 	<parameter>
 		<name>ПериодОтчета</name>
@@ -162,6 +206,40 @@
 		<useRestriction>true</useRestriction>
 		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
 	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>ОтчетПоКурьерскойДоставке</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -176,12 +254,14 @@
 					<dcsset:field>Заказ</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:field>МестоХранения</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Партия</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:field>ПВ</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -197,9 +277,11 @@
 					<dcsset:field>Количество</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:field>СтоимостьДоставки</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
 					<dcsset:field>СтоимостьХранения</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>

@@ -16,5 +16,6 @@
   <content>InformationRegister.СтоСП_ПосылкиЗаказа</content>
   <content>Document.СоздатьГруппуДоставки</content>
   <content>Catalog.УслугиDPD</content>
+  <content>Report.СостояниеОтгрузкиТранзита</content>
   <parentSubsystem>Subsystem.Транзит</parentSubsystem>
 </mdclass:Subsystem>

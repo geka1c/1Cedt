@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5edd365-6354-46f9-9e43-d786d2484eb5">
+  <producedTypes>
+    <objectType typeId="1ef0f1f0-ebe6-4b30-a1f6-15f687877ad2" valueTypeId="cfc91d26-f388-44c7-aabc-e49e08c7578d"/>
+    <managerType typeId="2dfe29ee-2eb1-4dbe-a88a-81db4c28ab0d" valueTypeId="e678aaf0-36cc-4427-a92b-afa80dedcf73"/>
+  </producedTypes>
+  <name>СостояниеОтгрузкиТранзита</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние отгрузки транзита</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СостояниеОтгрузкиТранзита.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4d0a4966-ab41-45d7-a97c-d71f30c90912">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

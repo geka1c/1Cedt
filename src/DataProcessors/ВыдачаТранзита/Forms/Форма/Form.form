@@ -150,6 +150,37 @@
     <placementArea>UserCmds</placementArea>
     <representationInContextMenu>Auto</representationInContextMenu>
   </items>
+  <items xsi:type="form:Button">
+    <name>Статусы</name>
+    <id>10</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <extendedTooltip>
+      <name>СтатусыРасширеннаяПодсказка</name>
+      <id>11</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Hyperlink</type>
+    <commandName>Form.Command.Статусы</commandName>
+    <representation>Auto</representation>
+    <autoMaxWidth>true</autoMaxWidth>
+    <autoMaxHeight>true</autoMaxHeight>
+    <placementArea>UserCmds</placementArea>
+    <representationInContextMenu>Auto</representationInContextMenu>
+  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -257,6 +288,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>УпаковатьЗаказы</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Статусы</name>
+    <title>
+      <key>ru</key>
+      <value>Статусы</value>
+    </title>
+    <id>3</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Статусы</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

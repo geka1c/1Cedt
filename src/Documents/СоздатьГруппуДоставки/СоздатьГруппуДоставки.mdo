@@ -272,6 +272,18 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="3631c566-653b-43c7-86a2-c09de412e579">
+      <name>Посылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Посылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Посылки</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="b9c8cf2c-75b2-422d-85f5-29dae3fac716">
     <producedTypes>

@@ -30,11 +30,37 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МестаХранения.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="a27b3348-c90f-48e7-83f6-f734a7c51ba5">
+    <name>БуфенаяЗона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Буфеная зона</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для сортировки заказов. Заказы с этого места хранения не попадают в выдачу транзита. Но их можно переместить на место хранения отгрузки.</value>
+    </toolTip>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="e61e84c8-b250-4edb-bbed-1f81b3746809">
     <name>ГенерацияТопологииСклада</name>
     <synonym>
       <key>ru</key>
       <value>Генерация топологии склада</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92834c3e-195d-46b3-bc24-eb8309acc879">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

@@ -447,6 +447,7 @@
         <types>DocumentRef.Приходная</types>
         <types>DocumentRef.ПоступлениеПристроя</types>
         <types>DocumentRef.РазборКоробки</types>
+        <types>DocumentRef.ОтправлениеТранзита</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

@@ -136,58 +136,6 @@
       <currentRowUse>DontUse</currentRowUse>
     </extInfo>
   </items>
-  <items xsi:type="form:FormField">
-    <name>СворачиватьВЧеке</name>
-    <id>135</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.СворачиватьВЧеке</segments>
-      </paths>
-    </dataPath>
-    <toolTip>
-      <key>ru</key>
-      <value>Отображение заказов  в чеке по габаритам в документе Выдача транзита</value>
-    </toolTip>
-    <toolTipRepresentation>ShowRight</toolTipRepresentation>
-    <extendedTooltip>
-      <name>СворачиватьВЧекеРасширеннаяПодсказка</name>
-      <id>137</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>СворачиватьВЧекеКонтекстноеМеню</name>
-      <id>136</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>CheckBoxField</type>
-    <editMode>Enter</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:CheckBoxFieldExtInfo">
-      <checkBoxType>Tumbler</checkBoxType>
-    </extInfo>
-  </items>
   <items xsi:type="form:FormGroup">
     <name>Группа2</name>
     <id>97</id>
@@ -1101,52 +1049,6 @@
       <currentRowUse>DontUse</currentRowUse>
     </extInfo>
   </items>
-  <items xsi:type="form:FormField">
-    <name>ЗабираетКурьер</name>
-    <id>138</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.ЗабираетКурьер</segments>
-      </paths>
-    </dataPath>
-    <toolTipRepresentation>ShowRight</toolTipRepresentation>
-    <extendedTooltip>
-      <name>ЗабираетКурьерРасширеннаяПодсказка</name>
-      <id>140</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>ЗабираетКурьерКонтекстноеМеню</name>
-      <id>139</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>CheckBoxField</type>
-    <editMode>Enter</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-  </items>
   <items xsi:type="form:FormGroup">
     <name>гпСтраницы</name>
     <id>89</id>
@@ -1695,7 +1597,7 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>негабарит</value>
+        <value>не габарит</value>
       </title>
       <toolTip>
         <key>ru</key>
@@ -2051,6 +1953,137 @@
       <extendedTooltip>
         <name>гпЗамарозкаРасширеннаяПодсказка</name>
         <id>94</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>гпПрочее</name>
+      <id>141</id>
+      <items xsi:type="form:FormField">
+        <name>СворачиватьВЧеке</name>
+        <id>135</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:MultiLanguageDataPath">
+          <paths xsi:type="form:DataPath">
+            <segments>Объект.СворачиватьВЧеке</segments>
+          </paths>
+        </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Отображение заказов  в чеке по габаритам в документе Выдача транзита</value>
+        </toolTip>
+        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <extendedTooltip>
+          <name>СворачиватьВЧекеРасширеннаяПодсказка</name>
+          <id>137</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СворачиватьВЧекеКонтекстноеМеню</name>
+          <id>136</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+          <checkBoxType>Tumbler</checkBoxType>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ЗабираетКурьер</name>
+        <id>138</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:MultiLanguageDataPath">
+          <paths xsi:type="form:DataPath">
+            <segments>Объект.ЗабираетКурьер</segments>
+          </paths>
+        </dataPath>
+        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <extendedTooltip>
+          <name>ЗабираетКурьерРасширеннаяПодсказка</name>
+          <id>140</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ЗабираетКурьерКонтекстноеМеню</name>
+          <id>139</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>прочее</value>
+      </title>
+      <extendedTooltip>
+        <name>Группа6РасширеннаяПодсказка</name>
+        <id>142</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>

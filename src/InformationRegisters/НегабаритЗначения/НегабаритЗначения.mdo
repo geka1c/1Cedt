@@ -120,13 +120,12 @@
       <value>Партия</value>
     </synonym>
     <type>
-      <types>DocumentRef.Приходная</types>
+      <types>DefinedType.ПартияПоступления</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
 </mdclass:InformationRegister>

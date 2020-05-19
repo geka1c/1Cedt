@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.4.20</version>
+  <version>3.5.4.21</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -2395,6 +2395,7 @@
   <reports>Report.УниверсальныйОтчет</reports>
   <reports>Report.ОтчетПоБесплатнойВыдаче</reports>
   <reports>Report.ОтчетПоКурьерскойДоставке</reports>
+  <reports>Report.СостояниеОтгрузкиТранзита</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
