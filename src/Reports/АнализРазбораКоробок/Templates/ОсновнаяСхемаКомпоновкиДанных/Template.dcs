@@ -76,7 +76,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Количество без штрафа</v8:content>
+					<v8:content>КоличествоБезШтрафа</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -224,6 +224,7 @@
 	Документ.РазборКоробки.Покупки КАК РазборКоробкиПокупки
 ГДЕ
 	РазборКоробкиПокупки.Ссылка.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И РазборКоробкиПокупки.Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -239,6 +240,7 @@
 	Документ.РазборКоробки.Посылки КАК РазборКоробкиПосылки
 ГДЕ
 	РазборКоробкиПосылки.Ссылка.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И РазборКоробкиПосылки.Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
 
 ИНДЕКСИРОВАТЬ ПО
 	Ссылка,
@@ -518,40 +520,19 @@
 		</title>
 	</calculatedField>
 	<totalField>
-		<dataPath>Количество</dataPath>
-		<expression>0</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоБезШтрафа</dataPath>
-		<expression>0</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КличествоСоШтрафом</dataPath>
-		<expression>0</expression>
-	</totalField>
-	<totalField>
 		<dataPath>КоличествоМест</dataPath>
 		<expression>Максимум(КоличествоМестСоШтрафом)+Максимум(КоличествоМестБезШтрафа)</expression>
+		<group>Организатор</group>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоМестБезШтрафа</dataPath>
 		<expression>Максимум(КоличествоМестБезШтрафа)</expression>
+		<group>Организатор</group>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоМестСоШтрафом</dataPath>
 		<expression>Максимум(КоличествоМестСоШтрафом)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоМестСоШтрафом</dataPath>
-		<expression>0</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоМестБезШтрафа</dataPath>
-		<expression>0</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоМест</dataPath>
-		<expression>0</expression>
+		<group>Организатор</group>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоМестБезШтрафа</dataPath>
@@ -570,30 +551,6 @@
 	</totalField>
 	<totalField>
 		<dataPath>КличествоСоШтрафом</dataPath>
-		<expression>Максимум(КоличествоШтрафныхВКоробке)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоБезШтрафа</dataPath>
-		<expression>Максимум(КоличествоБезШтрафаВКоробке)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Количество</dataPath>
-		<expression>Максимум(КоличествоВКоробке)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КличествоСоШтрафом</dataPath>
-		<expression>Максимум(КоличествоШтрафныхПоОрганизатору)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоБезШтрафа</dataPath>
-		<expression>Максимум(КоличествоБезШтрафаПоОрганизатору)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>Количество</dataPath>
-		<expression>Максимум(КоличествоШтрафныхПоОрганизатору)+Максимум(КоличествоБезШтрафаПоОрганизатору)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КличествоСоШтрафом</dataPath>
 		<expression>Максимум(КоличествоШтрафныхИтого)</expression>
 		<group>ОбщийИтог</group>
 	</totalField>
@@ -604,8 +561,17 @@
 	</totalField>
 	<totalField>
 		<dataPath>Количество</dataPath>
-		<expression>Максимум(КоличествоШтрафныхИтого)+Максимум(КоличествоБезШтрафаИтого)</expression>
-		<group>ОбщийИтог</group>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КличествоСоШтрафом</dataPath>
+		<expression>Максимум(КличествоСоШтрафом)</expression>
+		<group>Организатор</group>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоБезШтрафа</dataPath>
+		<expression>Максимум(КоличествоБезШтрафа)</expression>
+		<group>Организатор</group>
 	</totalField>
 	<parameter>
 		<name>ДатаНачала</name>
