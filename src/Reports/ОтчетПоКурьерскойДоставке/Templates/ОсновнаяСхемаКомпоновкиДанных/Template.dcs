@@ -123,10 +123,21 @@
 			<dataPath>БесплатнаяВыдача</dataPath>
 			<field>БесплатнаяВыдача</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СвойКурьер</dataPath>
+			<field>СвойКурьер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свой курьер</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	СобранныеЗаказы.Заказ,
 	СобранныеЗаказы.Партия,
+	СобранныеЗаказы.Партия.СвойКурьер как СвойКурьер,
 	СобранныеЗаказы.Регистратор,
 	СобранныеЗаказы.МестоХранения,
 	СобранныеЗаказы.ПунктВыдачи КАК ПВ,
@@ -141,14 +152,13 @@
 ГДЕ
 	СобранныеЗаказы.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
 	И СобранныеЗаказы.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
-	и
-	не СобранныеЗаказы.Партия.СвойКурьер
 
 ОБЪЕДИНИТЬ ВСЕ
 
 ВЫБРАТЬ
 	РасходОбороты.Покупка,
 	NULL,
+	Ложь как СвойКурьер,
 	РасходОбороты.Регистратор,
 	NULL,
 	РасходОбороты.Участник,
@@ -325,7 +335,7 @@
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Партия.СвойКурьер</dcsset:field>
+								<dcsset:field>СвойКурьер</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							</dcsset:item>
@@ -381,6 +391,13 @@
 					<dcsset:field>ПВ</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">СвойКурьер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ПериодОтчета</dcscor:parameter>

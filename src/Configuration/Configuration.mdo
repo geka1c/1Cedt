@@ -1905,6 +1905,7 @@
   <constants>Constant.СвойКурьер</constants>
   <constants>Constant.КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</constants>
   <constants>Constant.ВозвратыБезДетализации</constants>
+  <constants>Constant.ИспользоватьБуффернуюЗону</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>

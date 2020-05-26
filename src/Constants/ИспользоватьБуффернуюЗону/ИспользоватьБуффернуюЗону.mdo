@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5c87c5b-52ce-44ee-8553-e28a81f48fd9">
+  <producedTypes>
+    <managerType typeId="36c52ab5-f591-4352-ab2b-618e3c9e7483" valueTypeId="22515508-7c71-4a55-89a2-69071ce800d6"/>
+    <valueManagerType typeId="101380dc-bdb1-4e7a-ac5d-0e8bc54b502b" valueTypeId="f3ae4902-4028-48a2-820a-88bc8962bfc1"/>
+    <valueKeyType typeId="fff15b99-4f25-4e2c-8014-e3f65f80fa97" valueTypeId="adabd910-fdc7-4bbb-86f6-52bb75360672"/>
+  </producedTypes>
+  <name>ИспользоватьБуффернуюЗону</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать буфферную зону</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Выдача транзита производится только с мест хранения не отмеченных как буфферная зона. Места хранения с пометкой &quot;буфферная зона&quot; используются для разбора товара. Далее товар перемещается на местахранения отгрузки.</value>
+  </toolTip>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

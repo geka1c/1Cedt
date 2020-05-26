@@ -772,6 +772,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="ab476649-15a9-46f0-a466-b2def95d3c72">
+    <name>ПроизводитсяОтгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производится отгрузка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="fa89666d-cd4f-4b4b-b456-3f56b29f1b2e">
     <name>ФормаВыбора</name>
     <synonym>

@@ -157,6 +157,29 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БуфенаяЗона</dataPath>
+			<field>БуфенаяЗона</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Буфеная зона</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоШтук</dataPath>
+			<field>КоличествоШтук</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество штук</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ТранзитОстатки.Габарит,
@@ -166,11 +189,12 @@
 	ТранзитОстатки.ПокупкаСсылка КАК Покупка,
 	ТранзитОстатки.ПокупкаСсылка,
 	ТранзитОстатки.Точка как ПунктВыдачи,
+	ТранзитОстатки.КоличествоОстаток Как Количество,
 	ВЫБОР
 		КОГДА ТИПЗНАЧЕНИЯ(ТранзитОстатки.ПокупкаСсылка) = ТИП(Справочник.Коробки)
 			ТОГДА ТранзитОстатки.ПокупкаСсылка.Количество * ТранзитОстатки.КоличествоОстаток
 		ИНАЧЕ ТранзитОстатки.КоличествоОстаток
-	КОНЕЦ КАК Количество,
+	КОНЕЦ КАК КоличествоШтук,
 	РАЗНОСТЬДАТ(ТранзитОстатки.Партия.Дата, &amp;ДатаОтчета, ДЕНЬ) КАК ДнейХранения,
 	ТранзитОстатки.КоличествоОстаток КАК КоличествоМест,
 	ВЫБОР
@@ -185,7 +209,6 @@
 	КОНЕЦ КАК Организатор,
 	ВЫБОР
 		КОГДА &amp;Габарит = ЗНАЧЕНИЕ(Справочник.Габариты.ПустаяСсылка)
-		
 			ТОГДА ТранзитОстатки.Габарит
 		ИНАЧЕ &amp;Габарит
 	КОНЕЦ КАК ГабаритНазначение,
@@ -198,7 +221,8 @@
 		КОГДА &amp;ПунктВыдачиТранзита = ЗНАЧЕНИЕ(Справочник.ТочкиРаздачи.ПустаяСсылка)
 			ТОГДА ТранзитОстатки.Точка
 		ИНАЧЕ &amp;ПунктВыдачиТранзита
-	КОНЕЦ КАК ПунктВыдачиТранзита
+	КОНЕЦ КАК ПунктВыдачиТранзита,
+	ТранзитОстатки.МестоХранения.БуфенаяЗона КАК БуфенаяЗона
 ИЗ
 	РегистрНакопления.Транзит.Остатки(&amp;ДатаОтчета,) КАК ТранзитОстатки
 ГДЕ
@@ -348,6 +372,9 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ПунктВыдачиТранзита</dcsset:field>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоШтук</dcsset:field>
+				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
@@ -392,6 +419,18 @@
 					<dcsset:comparisonType>Greater</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
 					<dcsset:userSettingID>7232610a-2215-447f-817c-fe26b8e2ee0a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПунктВыдачи</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:nil="true"/>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">БуфенаяЗона</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 				</dcsset:item>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 				<dcsset:userSettingID>1d376267-1062-45d8-a4b4-1dbdf3b6b761</dcsset:userSettingID>

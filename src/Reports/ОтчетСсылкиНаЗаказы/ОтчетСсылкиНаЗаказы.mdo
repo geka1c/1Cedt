@@ -10,7 +10,17 @@
     <value>Отчет ссылки на заказы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетСсылкиНаЗаказы.Form.ФормаОтчета</defaultForm>
   <mainDataCompositionSchema>Report.ОтчетСсылкиНаЗаказы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="da2c0e8b-39c1-4878-8ef4-5ce73e2c6d6b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="7016bc39-7fa1-47ff-819d-6ab22e155b72">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>

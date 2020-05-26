@@ -4893,6 +4893,49 @@
       <name>стрТранзит</name>
       <id>134</id>
       <items xsi:type="form:FormField">
+        <name>ИспользоватьБуффернуюЗону</name>
+        <id>440</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>НаборКонстант.ИспользоватьБуффернуюЗону</segments>
+        </dataPath>
+        <extendedTooltip>
+          <name>ПолеРасширеннаяПодсказка15</name>
+          <id>442</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ПолеКонтекстноеМеню15</name>
+          <id>441</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
         <name>ВозможностьПриниматьНаТранзит</name>
         <id>374</id>
         <visible>true</visible>
@@ -4951,7 +4994,7 @@
             <segments>НаборКонстант.РегистрироватьСупергруппуРазборомКоробки</segments>
           </paths>
         </dataPath>
-        <toolTipRepresentation>ShowRight</toolTipRepresentation>
+        <toolTipRepresentation>ShowBottom</toolTipRepresentation>
         <extendedTooltip>
           <name>РегистрироватьСупергруппуРазборомКоробкиРасширеннаяПодсказка</name>
           <id>349</id>
@@ -5646,6 +5689,7 @@
         <key>ru</key>
         <value>Стр транзит</value>
       </toolTip>
+      <toolTipRepresentation>ShowBottom</toolTipRepresentation>
       <extendedTooltip>
         <name>стрТранзитРасширеннаяПодсказка</name>
         <id>135</id>

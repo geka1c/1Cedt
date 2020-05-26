@@ -533,6 +533,37 @@
         <currentRowUse>DontUse</currentRowUse>
       </extInfo>
     </items>
+    <items xsi:type="form:Button">
+      <name>ЗаполнитьНазначения</name>
+      <id>111</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ЗаполнитьНазначенияРасширеннаяПодсказка</name>
+        <id>112</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>UsualButton</type>
+      <commandName>Form.Command.ЗаполнитьНазначения</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -1993,6 +2024,27 @@
         <name>СчитатьШКВручную</name>
       </handler>
     </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьНазначения</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить назначения</value>
+    </title>
+    <id>4</id>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ЗаполнитьТоварыПоЦеновойГруппе</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаполнитьНазначения</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

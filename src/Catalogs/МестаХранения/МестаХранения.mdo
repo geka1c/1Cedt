@@ -31,6 +31,7 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.МестаХранения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.МестаХранения.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="a27b3348-c90f-48e7-83f6-f734a7c51ba5">
     <name>БуфенаяЗона</name>
     <synonym>
@@ -61,6 +62,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f2bc6a98-4ea8-4aa0-800c-3f42c71b9a29">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
