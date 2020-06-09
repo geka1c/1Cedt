@@ -37,6 +37,7 @@
   <registerRecords>AccumulationRegister.Транзит</registerRecords>
   <registerRecords>InformationRegister.СтатусыДоставки</registerRecords>
   <registerRecords>InformationRegister.Обмен100спСообщения</registerRecords>
+  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="96d1d54c-eed1-4508-ae8a-efa87d3d2cbf">

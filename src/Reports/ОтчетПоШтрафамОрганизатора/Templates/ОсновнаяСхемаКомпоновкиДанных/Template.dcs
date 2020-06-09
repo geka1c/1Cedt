@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организатор</dataPath>
+			<field>Организатор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Коробка</dataPath>
+			<field>Коробка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОдиночныеЗаказы</dataPath>
+			<field>ОдиночныеЗаказы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Одиночные заказы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШтрафныхЗаказов</dataPath>
+			<field>ШтрафныхЗаказов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Штрафных заказов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазобраноМест</dataPath>
+			<field>РазобраноМест</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разобрано мест</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазобраноШт</dataPath>
+			<field>РазобраноШт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разобрано шт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппыНаТранзит</dataPath>
+			<field>ГруппыНаТранзит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестаСоШтрафом</dataPath>
+			<field>МестаСоШтрафом</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Места со штрафом</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СформированноГрупп</dataPath>
+			<field>СформированноГрупп</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформированно групп</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УпакованоВГруппу</dataPath>
+			<field>УпакованоВГруппу</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ШтрафныеЗаказы.Организатор,
+	ШтрафныеЗаказы.Коробка,
+	СУММА(ШтрафныеЗаказы.Штраф) КАК Штраф,
+	СУММА(ШтрафныеЗаказы.Разобрано) КАК Разобрано,
+	СУММА(ШтрафныеЗаказы.Одиночные) КАК Одиночные,
+	СУММА(ШтрафныеЗаказы.ГруппыНаТранзит) КАК ГруппыНаТранзит,
+	СУММА(ШтрафныеЗаказы.УпакованоВГруппу) КАК УпакованоВГруппу
+ПОМЕСТИТЬ втПоКоробкам
+ИЗ
+	РегистрСведений.ШтрафныеЗаказы КАК ШтрафныеЗаказы
+ГДЕ
+	ШтрафныеЗаказы.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+СГРУППИРОВАТЬ ПО
+	ШтрафныеЗаказы.Организатор,
+	ШтрафныеЗаказы.Коробка
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втПоКоробкам.Организатор,
+	втПоКоробкам.Коробка,
+	втПоКоробкам.Разобрано КАК РазобраноШт,
+	ВЫБОР
+		КОГДА втПоКоробкам.Разобрано &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК РазобраноМест,
+	втПоКоробкам.Штраф КАК ШтрафныхЗаказов,
+	ВЫБОР
+		КОГДА втПоКоробкам.Штраф &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК МестаСоШтрафом,
+	втПоКоробкам.Одиночные КАК ОдиночныеЗаказы,
+	втПоКоробкам.ГруппыНаТранзит КАК ГруппыНаТранзит,
+	втПоКоробкам.УпакованоВГруппу,
+	ВЫБОР
+		КОГДА втПоКоробкам.УпакованоВГруппу &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК СформированноГрупп
+ИЗ
+	втПоКоробкам КАК втПоКоробкам</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ОдиночныеЗаказы</dataPath>
+		<expression>Сумма(ОдиночныеЗаказы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ШтрафныхЗаказов</dataPath>
+		<expression>Сумма(ШтрафныхЗаказов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазобраноШт</dataPath>
+		<expression>Сумма(РазобраноШт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазобраноМест</dataPath>
+		<expression>Сумма(РазобраноМест)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МестаСоШтрафом</dataPath>
+		<expression>Сумма(МестаСоШтрафом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ГруппыНаТранзит</dataPath>
+		<expression>Сумма(ГруппыНаТранзит)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УпакованоВГруппу</dataPath>
+		<expression>Сумма(УпакованоВГруппу)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СформированноГрупп</dataPath>
+		<expression>Сумма(СформированноГрупп)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоШтрафамОрганизатора</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по штрафам организатора</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организатор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Коробка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РазобраноШт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РазобраноМест</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОдиночныеЗаказы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ШтрафныхЗаказов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МестаСоШтрафом</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГруппыНаТранзит</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УпакованоВГруппу</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СформированноГрупп</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisWeek</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>3721114e-c409-4774-bc25-7a2047e59cf7</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Организатор</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организатор</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d75bdae-a5e2-47b6-97b9-0e0c099ed875">
+  <producedTypes>
+    <selectionType typeId="c2ee455e-4983-4167-b0f7-8243c89f3a4f" valueTypeId="3a67d16b-63ba-4ebe-9a84-8e3878a34ba5"/>
+    <listType typeId="bcde29ef-b267-4ebe-8d22-4ba653b8a56c" valueTypeId="a4dcfecd-816a-45d8-9f5f-f8ba01d9605c"/>
+    <managerType typeId="19046f8b-6f90-4a6d-ad28-1f33f294aec3" valueTypeId="ce481496-0a83-48e8-bc14-fdb766eadded"/>
+    <recordSetType typeId="b518bd23-6f50-4348-9b88-f6108437bf7e" valueTypeId="93e2256b-5a29-4f39-b5c4-da9eb7c0cdb6"/>
+    <recordKeyType typeId="5b42a6cb-f365-4c1c-870b-9f621af8d064" valueTypeId="335428a7-6804-4c52-8364-1c865c946f07"/>
+    <recordType typeId="9d1e6238-08ee-4cf8-9e5f-2fd60bef3a92" valueTypeId="75fe5961-c5c4-486d-8e74-6a66ecf6ff13"/>
+    <recordManagerType typeId="967d4725-7951-4132-807d-56519673ad7b" valueTypeId="ee25e817-c15d-4743-ae46-294e83672518"/>
+  </producedTypes>
+  <name>ШтрафныеЗаказы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрафные заказы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8945b0be-0254-48d5-99ff-cd0e8193401c">
+    <name>Разобрано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разобрано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <resources uuid="6811a7ce-ba9f-4d4b-acde-307e3ecb6843">
+    <name>Штраф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штраф</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <resources uuid="2b2493dc-814f-4f34-ad00-070798da2e24">
+    <name>Одиночные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Одиночные</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <resources uuid="b401ef83-269f-4e7e-9e53-fa2ba054a165">
+    <name>ГруппыНаТранзит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы на транзит</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <resources uuid="15667998-2b82-4b60-b137-b07abf785347">
+    <name>УпакованоВГруппу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Упаковано в группу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <dimensions uuid="388ffc71-5260-4134-994c-d27b36a5aa9d">
+    <name>Организатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организаторы</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="22fdf540-2de5-4787-a962-f16d1f6930be">
+    <name>Коробка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коробка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f925302c-08d7-4fb4-916a-29d558357dca">
+    <name>ПунктВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт выдачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТочкиРаздачи</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

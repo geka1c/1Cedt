@@ -51,6 +51,7 @@
   <registerRecords>AccumulationRegister.Приход</registerRecords>
   <registerRecords>AccumulationRegister.КПолучению</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
+  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="01e89549-5767-4cae-aa14-e46a724518e6">

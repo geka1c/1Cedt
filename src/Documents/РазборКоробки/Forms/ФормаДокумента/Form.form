@@ -879,6 +879,53 @@
         <items xsi:type="form:FormGroup">
           <name>грГорр3</name>
           <id>68</id>
+          <items xsi:type="form:FormField">
+            <name>ВыбиратьГабаритПоТочкеНазначения</name>
+            <id>475</id>
+            <title>
+              <key>ru</key>
+              <value>заполнять из ПВ</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>ВыбиратьГабаритПоТочкеНазначения</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ПолеРасширеннаяПодсказка2</name>
+              <id>477</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ПолеКонтекстноеМеню2</name>
+              <id>476</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>CheckBoxField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+          </items>
           <items xsi:type="form:FormGroup">
             <name>Группа4</name>
             <id>204</id>

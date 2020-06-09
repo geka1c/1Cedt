@@ -32,6 +32,7 @@
   <content>Constant.ЗаказовНаТранзите</content>
   <content>Report.ЗаказыОтдельнымМестом</content>
   <content>Report.ЗаказыПлатныеВРазборе</content>
+  <content>Report.ОтчетПоШтрафамОрганизатора</content>
   <subsystems>аТранспортныеКомпании</subsystems>
   <subsystems>ааКурьерскаяДоставка</subsystems>
   <subsystems>бСуппергруппы</subsystems>

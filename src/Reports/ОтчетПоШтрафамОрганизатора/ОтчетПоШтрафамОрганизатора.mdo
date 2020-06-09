@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71c8500f-6e36-4760-8529-60e14e60ab60">
+  <producedTypes>
+    <objectType typeId="55860a8d-a76d-48fb-8289-b445edd99c3e" valueTypeId="424b999b-8211-4009-9faa-4bf61eb7c2b4"/>
+    <managerType typeId="4dd21fc2-0d49-4481-99f8-24b4a8589c83" valueTypeId="42f5e7c4-65fc-4b93-8d59-f3b6f088a197"/>
+  </producedTypes>
+  <name>ОтчетПоШтрафамОрганизатора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по штрафам организатора</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоШтрафамОрганизатора.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="5f6e9ad2-88f4-49be-8a61-b6ae13b84cfa">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
