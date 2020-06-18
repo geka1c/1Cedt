@@ -424,6 +424,8 @@
 		<property name="orderType" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Attribute"/>
 		<property name="orderId" type="xs:string" lowerBound="0" upperBound="1" nillable="true" form="Attribute"/>
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="megaorders" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders" lowerBound="0" upperBound="1" nillable="true" form="Element"/>
+		<property name="result" type="xs:string" lowerBound="0" upperBound="1" nillable="false"/>
+		<property name="message" type="xs:string" lowerBound="0" upperBound="1" nillable="false"/>
 	</objectType>
 	<objectType name="distributors.receivedOrdersGoods.requestedObject.megaorders">
 		<property xmlns:d3p1="http://www.100sp.ru/api/distributor/upload/back" name="megaorder" type="d3p1:distributors.receivedOrdersGoods.requestedObject.megaorders.megaorder" lowerBound="0" upperBound="-1" nillable="true" form="Element"/>
