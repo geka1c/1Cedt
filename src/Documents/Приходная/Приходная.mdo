@@ -39,6 +39,7 @@
   <registerRecords>AccumulationRegister.ЗаказыВПосылках</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиНаСкладе</registerRecords>
   <registerRecords>InformationRegister.СтатусыДоставкиСвернуто</registerRecords>
+  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <registerRecords>AccumulationRegister.Обмен100СПрн</registerRecords>
   <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
   <registerRecords>InformationRegister.ОчередьРазбора</registerRecords>
@@ -51,7 +52,6 @@
   <registerRecords>AccumulationRegister.Приход</registerRecords>
   <registerRecords>AccumulationRegister.КПолучению</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
-  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="01e89549-5767-4cae-aa14-e46a724518e6">
@@ -252,9 +252,9 @@
         <types>CatalogRef.Покупки</types>
         <types>CatalogRef.Заказы</types>
         <types>CatalogRef.Пристрой</types>
+        <types>CatalogRef.СобранныеЗаказы</types>
         <types>Number</types>
         <types>CatalogRef.Коробки</types>
-        <types>CatalogRef.СобранныеЗаказы</types>
         <numberQualifiers>
           <precision>10</precision>
         </numberQualifiers>

@@ -32,4 +32,5 @@
   <content>Report.ДинамикаВыдачиЗаказов</content>
   <content>CommonCommand.ПанельОтчетовВыдача</content>
   <content>Report.ОтчетПоБесплатнойВыдаче</content>
+  <content>Report.СтатистикаПоУчастникам</content>
 </mdclass:Subsystem>

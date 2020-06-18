@@ -2626,8 +2626,10 @@
                       <userVisible>
                         <common>true</common>
                       </userVisible>
-                      <dataPath xsi:type="form:DataPath">
-                        <segments>Объект.Негаборит</segments>
+                      <dataPath xsi:type="form:MultiLanguageDataPath">
+                        <paths xsi:type="form:DataPath">
+                          <segments>Объект.Негаборит</segments>
+                        </paths>
                       </dataPath>
                       <extendedTooltip>
                         <name>ПолеРасширеннаяПодсказка</name>

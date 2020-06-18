@@ -59,6 +59,14 @@
       <command>Report.ВедомостьПринятыхЗаказов.StandardCommand.Open</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетПоШтрафамОрганизатора.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:0e19dc4c-9518-4625-90eb-bb3a03110d53</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>

@@ -7,12 +7,38 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Организатор</dataPath>
-			<field>Организатор</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Коробка</dataPath>
 			<field>Коробка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоХранения</dataPath>
+			<field>МестоХранения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипПрихода</dataPath>
+			<field>ТипПрихода</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник</dataPath>
+			<field>Участник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Покупка</dataPath>
+			<field>Покупка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организатор</dataPath>
+			<field>Организатор</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ОдиночныеЗаказы</dataPath>
@@ -21,6 +47,26 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Одиночные заказы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазобраноМест</dataPath>
+			<field>РазобраноМест</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мест</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазобраноШтук</dataPath>
+			<field>РазобраноШтук</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>штук</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -35,36 +81,32 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>РазобраноМест</dataPath>
-			<field>РазобраноМест</field>
+			<dataPath>ГруппыНаТранзитШтук</dataPath>
+			<field>ГруппыНаТранзитШтук</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разобрано мест</v8:content>
+					<v8:content>штук</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>РазобраноШт</dataPath>
-			<field>РазобраноШт</field>
+			<dataPath>ГруппыНаТранзитМест</dataPath>
+			<field>ГруппыНаТранзитМест</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разобрано шт</v8:content>
+					<v8:content>мест</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ГруппыНаТранзит</dataPath>
-			<field>ГруппыНаТранзит</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>МестаСоШтрафом</dataPath>
-			<field>МестаСоШтрафом</field>
+			<dataPath>УпакованноВГРуппы</dataPath>
+			<field>УпакованноВГРуппы</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Места со штрафом</v8:content>
+					<v8:content>Упакованно ВГРуппы</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -79,109 +121,341 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>УпакованоВГруппу</dataPath>
-			<field>УпакованоВГруппу</field>
+			<dataPath>ОтдельнымМестом</dataPath>
+			<field>ОтдельнымМестом</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ШтрафныеЗаказы.Организатор,
-	ШтрафныеЗаказы.Коробка,
-	СУММА(ШтрафныеЗаказы.Штраф) КАК Штраф,
-	СУММА(ШтрафныеЗаказы.Разобрано) КАК Разобрано,
-	СУММА(ШтрафныеЗаказы.Одиночные) КАК Одиночные,
-	СУММА(ШтрафныеЗаказы.ГруппыНаТранзит) КАК ГруппыНаТранзит,
-	СУММА(ШтрафныеЗаказы.УпакованоВГруппу) КАК УпакованоВГруппу
-ПОМЕСТИТЬ втПоКоробкам
+	втШТрафныеЗаказыПоДням.ТипПрихода,
+	втШТрафныеЗаказыПоДням.Организатор,
+	СУММА(втШТрафныеЗаказыПоДням.КоличествоШтук) КАК КоличествоШтук,
+	СУММА(втШТрафныеЗаказыПоДням.Штраф) КАК Штраф
+ПОМЕСТИТЬ втШтрафныеЗаказыПоОрганизаторам
 ИЗ
-	РегистрСведений.ШтрафныеЗаказы КАК ШтрафныеЗаказы
+	(ВЫБРАТЬ
+		ПриходОбороты.ТипПрихода КАК ТипПрихода,
+		ПриходОбороты.Организатор КАК Организатор,
+		СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук,
+		ВЫБОР
+			КОГДА СУММА(ПриходОбороты.КоличествоОборот) - 2 &gt; 0
+				ТОГДА СУММА(ПриходОбороты.КоличествоОборот) - 2
+			ИНАЧЕ 0
+		КОНЕЦ КАК Штраф,
+		ПриходОбороты.Период КАК Период,
+		ПриходОбороты.Покупка.ПунктВыдачи КАК ПокупкаПунктВыдачи
+	ИЗ
+		РегистрНакопления.Приход.Обороты(,, День, Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
+		И ВЫБОР
+			КОГДА &amp;НеУчитыватьОтдельнымМестомПриРасчеиеШтрафа
+				ТОГДА НЕ ОтдельнымМестом
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ) КАК ПриходОбороты
+	СГРУППИРОВАТЬ ПО
+		ПриходОбороты.ТипПрихода,
+		ПриходОбороты.Организатор,
+		ПриходОбороты.Период,
+		ПриходОбороты.Покупка.ПунктВыдачи) КАК втШТрафныеЗаказыПоДням
 ГДЕ
-	ШтрафныеЗаказы.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	втШТрафныеЗаказыПоДням.Штраф &gt; 0
 СГРУППИРОВАТЬ ПО
-	ШтрафныеЗаказы.Организатор,
-	ШтрафныеЗаказы.Коробка
+	втШТрафныеЗаказыПоДням.ТипПрихода,
+	втШТрафныеЗаказыПоДням.Организатор
 ;
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	втПоКоробкам.Организатор,
-	втПоКоробкам.Коробка,
-	втПоКоробкам.Разобрано КАК РазобраноШт,
-	ВЫБОР
-		КОГДА втПоКоробкам.Разобрано &gt; 0
-			ТОГДА 1
-		ИНАЧЕ 0
-	КОНЕЦ КАК РазобраноМест,
-	втПоКоробкам.Штраф КАК ШтрафныхЗаказов,
-	ВЫБОР
-		КОГДА втПоКоробкам.Штраф &gt; 0
-			ТОГДА 1
-		ИНАЧЕ 0
-	КОНЕЦ КАК МестаСоШтрафом,
-	втПоКоробкам.Одиночные КАК ОдиночныеЗаказы,
-	втПоКоробкам.ГруппыНаТранзит КАК ГруппыНаТранзит,
-	втПоКоробкам.УпакованоВГруппу,
-	ВЫБОР
-		КОГДА втПоКоробкам.УпакованоВГруппу &gt; 0
-			ТОГДА 1
-		ИНАЧЕ 0
-	КОНЕЦ КАК СформированноГрупп
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка,
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук
+ПОМЕСТИТЬ втРазбор
 ИЗ
-	втПоКоробкам КАК втПоКоробкам</query>
+	РегистрНакопления.Приход.Обороты(,, День, Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)) КАК ПриходОбороты
+СГРУППИРОВАТЬ ПО
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ПриходОбороты.Коробка) КАК Коробка
+ПОМЕСТИТЬ втРазобраноКоробок
+ИЗ
+	РегистрНакопления.Приход.Обороты(,, День, Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)) КАК ПриходОбороты
+СГРУППИРОВАТЬ ПО
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка,
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук
+ПОМЕСТИТЬ втОдиночные
+ИЗ
+	РегистрНакопления.Приход.Обороты(,, День, Коробка = ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
+	И ТИПЗНАЧЕНИЯ(Покупка) &lt;&gt; ТИП(Справочник.Коробки)) КАК ПриходОбороты
+СГРУППИРОВАТЬ ПО
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка,
+	СУММА(ПриходОбороты.Покупка.Количество) КАК КоличествоШтук,
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоМест
+ПОМЕСТИТЬ втГруппыНаТранзит
+ИЗ
+	РегистрНакопления.Приход.Обороты(,, День, Коробка = ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
+	И ТИПЗНАЧЕНИЯ(Покупка) = ТИП(Справочник.Коробки)) КАК ПриходОбороты
+СГРУППИРОВАТЬ ПО
+	ПриходОбороты.ТипПрихода,
+	ПриходОбороты.Организатор,
+	ПриходОбороты.Коробка
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ШтрафныеЗаказы.Организатор,
+	ШтрафныеЗаказы.УпакованоВГруппу,
+	ЗНАЧЕНИЕ(Перечисление.ТипыПриходов.НаТранзит) КАК ТипПрихода
+ПОМЕСТИТЬ УпакованноВГРуппу
+ИЗ
+	РегистрСведений.ШтрафныеЗаказы КАК ШтрафныеЗаказы
+ГДЕ
+	ШтрафныеЗаказы.УпакованоВГруппу &gt; 0
+	И ШтрафныеЗаказы.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ШтрафныеЗаказы.Организатор,
+	ЗНАЧЕНИЕ(Перечисление.ТипыПриходов.НаТранзит) КАК ТипПрихода,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ШтрафныеЗаказы.Коробка) КАК Количество
+ПОМЕСТИТЬ СформированноГРупп
+ИЗ
+	РегистрСведений.ШтрафныеЗаказы КАК ШтрафныеЗаказы
+ГДЕ
+	ШтрафныеЗаказы.УпакованоВГруппу &gt; 0
+	И ШтрафныеЗаказы.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+СГРУППИРОВАТЬ ПО
+	ШтрафныеЗаказы.Организатор,
+	ЗНАЧЕНИЕ(Перечисление.ТипыПриходов.НаТранзит)
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втРазбор.ТипПрихода,
+	втРазбор.Организатор,
+	втРазбор.КоличествоШтук КАК РазобраноШтук,
+	0 КАК РазобраноМест,
+	0 КАК ОдиночныеЗаказы,
+	0 КАК ШтрафныхЗаказов,
+	0 КАК ГруппыНаТранзитШтук,
+	0 КАК ГруппыНаТранзитМест,
+	0 КАК УпакованноВГРуппы,
+	0 КАК СформированноГрупп
+ПОМЕСТИТЬ втСбор
+ИЗ
+	втРазбор КАК втРазбор
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втОдиночные.ТипПрихода,
+	втОдиночные.Организатор,
+	0,
+	0,
+	втОдиночные.КоличествоШтук,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	втОдиночные КАК втОдиночные
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втШтрафныеЗаказыПоОрганизаторам.ТипПрихода,
+	втШтрафныеЗаказыПоОрганизаторам.Организатор,
+	0,
+	0,
+	0,
+	втШтрафныеЗаказыПоОрганизаторам.Штраф,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	втШтрафныеЗаказыПоОрганизаторам КАК втШтрафныеЗаказыПоОрганизаторам
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втГруппыНаТранзит.ТипПрихода,
+	втГруппыНаТранзит.Организатор,
+	0,
+	0,
+	0,
+	0,
+	втГруппыНаТранзит.КоличествоШтук,
+	втГруппыНаТранзит.КоличествоМест,
+	0,
+	0
+ИЗ
+	втГруппыНаТранзит КАК втГруппыНаТранзит
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	втРазобраноКоробок.ТипПрихода,
+	втРазобраноКоробок.Организатор,
+	0,
+	втРазобраноКоробок.Коробка,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	втРазобраноКоробок КАК втРазобраноКоробок
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	УпакованноВГРуппу.ТипПрихода,
+	УпакованноВГРуппу.Организатор,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	УпакованноВГРуппу.УпакованоВГруппу,
+	0
+ИЗ
+	УпакованноВГРуппу КАК УпакованноВГРуппу
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СформированноГРупп.ТипПрихода,
+	СформированноГРупп.Организатор,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	СформированноГРупп.Количество
+ИЗ
+	СформированноГРупп КАК СформированноГРупп
+;
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втСбор.ТипПрихода,
+	втСбор.Организатор,
+	СУММА(втСбор.РазобраноШтук) КАК РазобраноШтук,
+	СУММА(втСбор.РазобраноМест) КАК РазобраноМест,
+	СУММА(втСбор.ОдиночныеЗаказы) КАК ОдиночныеЗаказы,
+	СУММА(втСбор.ШтрафныхЗаказов) КАК ШтрафныхЗаказов,
+	СУММА(втСбор.ГруппыНаТранзитШтук) КАК ГруппыНаТранзитШтук,
+	СУММА(втСбор.ГруппыНаТранзитМест) КАК ГруппыНаТранзитМест,
+	СУММА(втСбор.УпакованноВГРуппы) КАК УпакованноВГРуппы,
+	СУММА(втСбор.СформированноГрупп) КАК СформированноГрупп
+ИЗ
+	втСбор КАК втСбор
+СГРУППИРОВАТЬ ПО
+	втСбор.ТипПрихода,
+	втСбор.Организатор</query>
 	</dataSet>
-	<totalField>
-		<dataPath>ОдиночныеЗаказы</dataPath>
-		<expression>Сумма(ОдиночныеЗаказы)</expression>
-	</totalField>
+	<calculatedField>
+		<dataPath>ПринятоСтикеров</dataPath>
+		<expression>РазобраноШтук+ГруппыНаТранзитМест+ОдиночныеЗаказы</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Принято стикеров</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>ШтрафныхЗаказов</dataPath>
 		<expression>Сумма(ШтрафныхЗаказов)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>РазобраноШт</dataPath>
-		<expression>Сумма(РазобраноШт)</expression>
+		<dataPath>РазобраноШтук</dataPath>
+		<expression>Сумма(РазобраноШтук)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>РазобраноМест</dataPath>
 		<expression>Сумма(РазобраноМест)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>МестаСоШтрафом</dataPath>
-		<expression>Сумма(МестаСоШтрафом)</expression>
+		<dataPath>ОдиночныеЗаказы</dataPath>
+		<expression>Сумма(ОдиночныеЗаказы)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ГруппыНаТранзит</dataPath>
-		<expression>Сумма(ГруппыНаТранзит)</expression>
+		<dataPath>ГруппыНаТранзитМест</dataPath>
+		<expression>Сумма(ГруппыНаТранзитМест)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>УпакованоВГруппу</dataPath>
-		<expression>Сумма(УпакованоВГруппу)</expression>
+		<dataPath>ГруппыНаТранзитШтук</dataPath>
+		<expression>Сумма(ГруппыНаТранзитШтук)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УпакованноВГРуппы</dataPath>
+		<expression>Сумма(УпакованноВГРуппы)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>СформированноГрупп</dataPath>
 		<expression>Сумма(СформированноГрупп)</expression>
 	</totalField>
+	<totalField>
+		<dataPath>ПринятоСтикеров</dataPath>
+		<expression>Сумма(ПринятоСтикеров)</expression>
+	</totalField>
 	<parameter>
-		<name>ДатаОкончания</name>
+		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Дата окончания</v8:content>
+				<v8:content>Начало периода</v8:content>
 			</v8:item>
 		</title>
-		<valueType/>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
-	</parameter>
-	<parameter>
-		<name>ДатаНачала</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Дата начала</v8:content>
-			</v8:item>
-		</title>
-		<valueType/>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
 		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
 	</parameter>
 	<parameter>
 		<name>ПериодОтчета</name>
@@ -194,14 +468,29 @@
 		<valueType>
 			<v8:Type>v8:StandardPeriod</v8:Type>
 		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НеУчитыватьОтдельнымМестомПриРасчеиеШтрафа</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Не учитывать отдельным местом при расчеие штрафа</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
-		<dcsset:name>ОтчетПоШтрафамОрганизатора</dcsset:name>
+		<dcsset:name>ОтчетПоШтрафамОрганизатора2</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Отчет по штрафам организатора</v8:content>
+				<v8:content>Отчет по штрафам организатора 2</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -210,54 +499,85 @@
 					<dcsset:field>Организатор</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Коробка</dcsset:field>
+					<dcsset:field>ТипПрихода</dcsset:field>
 				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РазобраноШт</dcsset:field>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разбор</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазобраноШтук</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазобраноМест</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ШтрафныхЗаказов</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РазобраноМест</dcsset:field>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы на транзит</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ГруппыНаТранзитМест</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ГруппыНаТранзитШтук</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формирование групп</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УпакованноВГРуппы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СформированноГрупп</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОдиночныеЗаказы</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ШтрафныхЗаказов</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>МестаСоШтрафом</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ГруппыНаТранзит</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>УпакованоВГруппу</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СформированноГрупп</dcsset:field>
+					<dcsset:field>ПринятоСтикеров</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardPeriod">
-						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisWeek</v8:variant>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">LastMonth</v8:variant>
 					</dcscor:value>
-					<dcsset:userSettingID>3721114e-c409-4774-bc25-7a2047e59cf7</dcsset:userSettingID>
+					<dcsset:userSettingID>4a29b25a-b139-49e9-9db1-3357f63876d8</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НеУчитыватьОтдельнымМестомПриРасчеиеШтрафа</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>420e0e3a-ba0d-49e6-adc0-0216fcd60319</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
-			<dcsset:order>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:field>Организатор</dcsset:field>
-					<dcsset:orderType>Asc</dcsset:orderType>
-				</dcsset:item>
-			</dcsset:order>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Организатор</dcsset:field>
+						<dcsset:field>ТипПрихода</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
 				<dcsset:order>
@@ -267,12 +587,30 @@
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Организатор</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 					</dcsset:order>
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

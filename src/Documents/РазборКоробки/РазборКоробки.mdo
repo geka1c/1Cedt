@@ -28,6 +28,7 @@
   <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
   <registerRecords>InformationRegister.ПокупкиОтдельнымМестом</registerRecords>
   <registerRecords>AccumulationRegister.ЗаказыВПосылках</registerRecords>
+  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <registerRecords>AccumulationRegister.Обмен100СПрн</registerRecords>
   <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
   <registerRecords>InformationRegister.ОчередьРазбора</registerRecords>
@@ -39,7 +40,6 @@
   <registerRecords>AccumulationRegister.Приход</registerRecords>
   <registerRecords>AccumulationRegister.КПолучению</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
-  <registerRecords>InformationRegister.ШтрафныеЗаказы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="e246b2ef-4a9d-4b22-b669-23f266957fc9">

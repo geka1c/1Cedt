@@ -7,15 +7,37 @@
   <name>ОтчетПоШтрафамОрганизатора</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по штрафам организатора</value>
+    <value>Отчет по штрафам организатора2</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоШтрафамОрганизатора.Form.ФормаОтчета</defaultForm>
   <mainDataCompositionSchema>Report.ОтчетПоШтрафамОрганизатора.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Показывает количество принятых заказов. Одиночных, Группы на транзит, разобранные, а так же штрафные заказы в разборе</value>
+  </explanation>
+  <forms uuid="bacd89a6-9429-424d-af9e-aa8ddf085df6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="5f6e9ad2-88f4-49be-8a61-b6ae13b84cfa">
     <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
       <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="48a95103-2b4f-4edb-ad41-39f62db0929b">
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
