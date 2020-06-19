@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0efd2d25-78b6-4bae-8ee0-b04e1cc6d0b7">
+  <producedTypes>
+    <managerType typeId="a64cbf78-0758-452a-9bfc-796a9b07fc45" valueTypeId="3decc695-76c3-40b8-806d-39ce24e87f06"/>
+    <valueManagerType typeId="c0004d20-c075-46e4-8280-ed941518de82" valueTypeId="2218f9c9-ec42-4298-8a1c-b26bb0d3b170"/>
+    <valueKeyType typeId="cd317316-0381-4d1e-b029-5d355ff2c4cb" valueTypeId="cfd90629-7d22-4bfd-ac65-6589a863a590"/>
+  </producedTypes>
+  <name>ИгнорироватьОшибкуИзмененияПунктаНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Игнорировать ошибку изменения пункта назначения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

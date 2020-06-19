@@ -7,7 +7,7 @@
   <name>ОтчетПоШтрафамОрганизатора</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет по штрафам организатора2</value>
+    <value>Отчет по штрафам организатора</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>Report.ОтчетПоШтрафамОрганизатора.Form.ФормаОтчета</defaultForm>

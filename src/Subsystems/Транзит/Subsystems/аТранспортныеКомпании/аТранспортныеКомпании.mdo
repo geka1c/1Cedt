@@ -17,5 +17,6 @@
   <content>Document.СоздатьГруппуДоставки</content>
   <content>Catalog.УслугиDPD</content>
   <content>Report.СостояниеОтгрузкиТранзита</content>
+  <content>Report.ОтчетПоЗаказамТранспортныхКомпаний</content>
   <parentSubsystem>Subsystem.Транзит</parentSubsystem>
 </mdclass:Subsystem>

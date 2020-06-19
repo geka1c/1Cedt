@@ -13,6 +13,14 @@
       <command>DataProcessor.ФормированиеЗаказовТК.Command.ФормированиеЗаказовТК</command>
       <visible/>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.СостояниеОтгрузкиТранзита.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ОтчетПоЗаказамТранспортныхКомпаний.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsOrder>
     <orderFragments>

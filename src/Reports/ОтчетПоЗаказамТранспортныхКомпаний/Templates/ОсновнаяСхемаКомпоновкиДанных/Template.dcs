@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеЗапросОтсрочки</dataPath>
+			<field>ВСтатусеЗапросОтсрочки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеУчастникМеняетАдрес</dataPath>
+			<field>ВСтатусеУчастникМеняетАдрес</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеЗапросОплаты</dataPath>
+			<field>ВСтатусеЗапросОплаты</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеМожноОтправлять</dataPath>
+			<field>ВСтатусеМожноОтправлять</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеОтправлено</dataPath>
+			<field>ВСтатусеОтправлено</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеПустая</dataPath>
+			<field>ВСтатусеПустая</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВСтатусеОжиданиеЗаказов</dataPath>
+			<field>ВСтатусеОжиданиеЗаказов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранспортнаяКомпания</dataPath>
+			<field>ТранспортнаяКомпания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспортная компания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник</dataPath>
+			<field>Участник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Участник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Точка</dataPath>
+			<field>Точка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Габарит</dataPath>
+			<field>Габарит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МестоХранения</dataPath>
+			<field>МестоХранения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказовНаСкладе</dataPath>
+			<field>ЗаказовНаСкладе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказов на складе</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПокупкаСсылка</dataPath>
+			<field>ПокупкаСсылка</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ТранзитОстатки.Участник,
+	ТранзитОстатки.Точка,
+	ТранзитОстатки.КоличествоОстаток
+ПОМЕСТИТЬ втОстаткиНаСкладе
+ИЗ
+	РегистрНакопления.Транзит.Остатки(, Точка.ТранспортнаяКомпания) КАК ТранзитОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Коробки.Ссылка КАК ГруппаДоставки,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.waitForOrders)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеОжиданиеЗаказов,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.waitForDelay)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеЗапросОтсрочки,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.waitForPayment)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеЗапросОплаты,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.shipment)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеМожноОтправлять,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.finished)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеОтправлено,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.empty)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеПустая,
+	ВЫБОР
+		КОГДА Коробки.СтатусГруппыДоставки = ЗНАЧЕНИЕ(Перечисление.СтатусыГруппыДоставки.waitForDistributor)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВСтатусеУчастникМеняетАдрес
+ПОМЕСТИТЬ втГруппыДоставки
+ИЗ
+	Справочник.Коробки КАК Коробки
+ГДЕ
+	Коробки.ВидСтикера = ЗНАЧЕНИЕ(Перечисление.ВидыСтикеров.ГруппаДоставки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втГруппыДоставки.ВСтатусеОжиданиеЗаказов КАК ВСтатусеОжиданиеЗаказов,
+	втГруппыДоставки.ВСтатусеЗапросОтсрочки КАК ВСтатусеЗапросОтсрочки,
+	втГруппыДоставки.ВСтатусеЗапросОплаты КАК ВСтатусеЗапросОплаты,
+	втГруппыДоставки.ВСтатусеМожноОтправлять КАК ВСтатусеМожноОтправлять,
+	втГруппыДоставки.ВСтатусеОтправлено КАК ВСтатусеОтправлено,
+	втГруппыДоставки.ВСтатусеПустая КАК ВСтатусеПустая,
+	втГруппыДоставки.ВСтатусеУчастникМеняетАдрес КАК ВСтатусеУчастникМеняетАдрес,
+	втГруппыДоставки.ГруппаДоставки.УчастникГД КАК Участник,
+	втГруппыДоставки.ГруппаДоставки.ТочкаНазначения КАК ТранспортнаяКомпания,
+	0 КАК ЗаказовНаСкладе
+ПОМЕСТИТЬ втСбор
+ИЗ
+	втГруппыДоставки КАК втГруппыДоставки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	втОстаткиНаСкладе.Участник,
+	втОстаткиНаСкладе.Точка,
+	втОстаткиНаСкладе.КоличествоОстаток
+ИЗ
+	втОстаткиНаСкладе КАК втОстаткиНаСкладе
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(втСбор.ВСтатусеОжиданиеЗаказов) КАК ВСтатусеОжиданиеЗаказов,
+	СУММА(втСбор.ВСтатусеЗапросОтсрочки) КАК ВСтатусеЗапросОтсрочки,
+	СУММА(втСбор.ВСтатусеЗапросОплаты) КАК ВСтатусеЗапросОплаты,
+	СУММА(втСбор.ВСтатусеМожноОтправлять) КАК ВСтатусеМожноОтправлять,
+	СУММА(втСбор.ВСтатусеОтправлено) КАК ВСтатусеОтправлено,
+	СУММА(втСбор.ВСтатусеПустая) КАК ВСтатусеПустая,
+	СУММА(втСбор.ВСтатусеУчастникМеняетАдрес) КАК ВСтатусеУчастникМеняетАдрес,
+	втСбор.Участник,
+	втСбор.ТранспортнаяКомпания,
+	СУММА(втСбор.ЗаказовНаСкладе) КАК ЗаказовНаСкладе
+ИЗ
+	втСбор КАК втСбор
+СГРУППИРОВАТЬ ПО
+	втСбор.Участник,
+	втСбор.ТранспортнаяКомпания</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>НеОтправлено</dataPath>
+		<expression>ВСтатусеЗапросОплаты+ВСтатусеЗапросОтсрочки+ВСтатусеМожноОтправлять+ВСтатусеОжиданиеЗаказов+ВСтатусеУчастникМеняетАдрес</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Не отправлено</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+	</calculatedField>
+	<totalField>
+		<dataPath>ВСтатусеЗапросОплаты</dataPath>
+		<expression>Сумма(ВСтатусеЗапросОплаты)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеЗапросОтсрочки</dataPath>
+		<expression>Сумма(ВСтатусеЗапросОтсрочки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеМожноОтправлять</dataPath>
+		<expression>Сумма(ВСтатусеМожноОтправлять)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеОжиданиеЗаказов</dataPath>
+		<expression>Сумма(ВСтатусеОжиданиеЗаказов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеОтправлено</dataPath>
+		<expression>Сумма(ВСтатусеОтправлено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеПустая</dataPath>
+		<expression>Сумма(ВСтатусеПустая)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВСтатусеУчастникМеняетАдрес</dataPath>
+		<expression>Сумма(ВСтатусеУчастникМеняетАдрес)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НеОтправлено</dataPath>
+		<expression>Сумма(НеОтправлено)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗаказовНаСкладе</dataPath>
+		<expression>Сумма(ЗаказовНаСкладе)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоЗаказамТранспортныхКомпаний</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по заказам транспортных компаний</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТранспортнаяКомпания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказовНаСкладе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НеОтправлено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеМожноОтправлять</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеОжиданиеЗаказов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеЗапросОплаты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеУчастникМеняетАдрес</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеЗапросОтсрочки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеОтправлено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВСтатусеПустая</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НеОтправлено</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Участник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

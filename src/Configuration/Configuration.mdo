@@ -1906,6 +1906,7 @@
   <constants>Constant.КурьерскаяДоставкаДополнятьЗаказамиНаОстатках</constants>
   <constants>Constant.ВозвратыБезДетализации</constants>
   <constants>Constant.ИспользоватьБуффернуюЗону</constants>
+  <constants>Constant.ИгнорироватьОшибкуИзмененияПунктаНазначения</constants>
   <commonForms>CommonForm.АдреснаяКнига</commonForms>
   <commonForms>CommonForm.АнализОтвета</commonForms>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
@@ -2399,6 +2400,7 @@
   <reports>Report.СостояниеОтгрузкиТранзита</reports>
   <reports>Report.ОтчетПоШтрафамОрганизатора</reports>
   <reports>Report.СтатистикаПоУчастникам</reports>
+  <reports>Report.ОтчетПоЗаказамТранспортныхКомпаний</reports>
   <dataProcessors>DataProcessor.BoxBerry</dataProcessors>
   <dataProcessors>DataProcessor.Test</dataProcessors>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>

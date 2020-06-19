@@ -166,14 +166,16 @@
 	ПриходОбороты.ТипПрихода,
 	ПриходОбороты.Организатор,
 	ПриходОбороты.Коробка,
-	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук,
+	ПриходОбороты.Габарит
 ПОМЕСТИТЬ втРазбор
 ИЗ
 	РегистрНакопления.Приход.Обороты(,, День, Коробка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)) КАК ПриходОбороты
 СГРУППИРОВАТЬ ПО
 	ПриходОбороты.ТипПрихода,
 	ПриходОбороты.Организатор,
-	ПриходОбороты.Коробка
+	ПриходОбороты.Коробка,
+	ПриходОбороты.Габарит
 ;
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
@@ -192,7 +194,8 @@
 	ПриходОбороты.ТипПрихода,
 	ПриходОбороты.Организатор,
 	ПриходОбороты.Коробка,
-	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоШтук,
+	ПриходОбороты.Габарит
 ПОМЕСТИТЬ втОдиночные
 ИЗ
 	РегистрНакопления.Приход.Обороты(,, День, Коробка = ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
@@ -200,7 +203,8 @@
 СГРУППИРОВАТЬ ПО
 	ПриходОбороты.ТипПрихода,
 	ПриходОбороты.Организатор,
-	ПриходОбороты.Коробка
+	ПриходОбороты.Коробка,
+	ПриходОбороты.Габарит
 ;
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
@@ -208,7 +212,8 @@
 	ПриходОбороты.Организатор,
 	ПриходОбороты.Коробка,
 	СУММА(ПриходОбороты.Покупка.Количество) КАК КоличествоШтук,
-	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоМест
+	СУММА(ПриходОбороты.КоличествоОборот) КАК КоличествоМест,
+	ПриходОбороты.Габарит
 ПОМЕСТИТЬ втГруппыНаТранзит
 ИЗ
 	РегистрНакопления.Приход.Обороты(,, День, Коробка = ЗНАЧЕНИЕ(Справочник.Коробки.БезКоробки)
@@ -216,7 +221,8 @@
 СГРУППИРОВАТЬ ПО
 	ПриходОбороты.ТипПрихода,
 	ПриходОбороты.Организатор,
-	ПриходОбороты.Коробка
+	ПриходОбороты.Коробка,
+	ПриходОбороты.Габарит
 ;
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
@@ -256,7 +262,8 @@
 	0 КАК ГруппыНаТранзитШтук,
 	0 КАК ГруппыНаТранзитМест,
 	0 КАК УпакованноВГРуппы,
-	0 КАК СформированноГрупп
+	0 КАК СформированноГрупп,
+	втРазбор.Габарит КАК Габарит
 ПОМЕСТИТЬ втСбор
 ИЗ
 	втРазбор КАК втРазбор
@@ -273,7 +280,8 @@
 	0,
 	0,
 	0,
-	0
+	0,
+	втОдиночные.Габарит
 ИЗ
 	втОдиночные КАК втОдиночные
 
@@ -289,7 +297,8 @@
 	0,
 	0,
 	0,
-	0
+	0,
+	NULL
 ИЗ
 	втШтрафныеЗаказыПоОрганизаторам КАК втШтрафныеЗаказыПоОрганизаторам
 
@@ -305,7 +314,8 @@
 	втГруппыНаТранзит.КоличествоШтук,
 	втГруппыНаТранзит.КоличествоМест,
 	0,
-	0
+	0,
+	втГруппыНаТранзит.Габарит
 ИЗ
 	втГруппыНаТранзит КАК втГруппыНаТранзит
 
@@ -321,7 +331,8 @@
 	0,
 	0,
 	0,
-	0
+	0,
+	NULL
 ИЗ
 	втРазобраноКоробок КАК втРазобраноКоробок
 
@@ -337,7 +348,8 @@
 	0,
 	0,
 	УпакованноВГРуппу.УпакованоВГруппу,
-	0
+	0,
+	NULL
 ИЗ
 	УпакованноВГРуппу КАК УпакованноВГРуппу
 
@@ -353,7 +365,8 @@
 	0,
 	0,
 	0,
-	СформированноГРупп.Количество
+	СформированноГРупп.Количество,
+	NULL
 ИЗ
 	СформированноГРупп КАК СформированноГРупп
 ;
@@ -368,12 +381,15 @@
 	СУММА(втСбор.ГруппыНаТранзитШтук) КАК ГруппыНаТранзитШтук,
 	СУММА(втСбор.ГруппыНаТранзитМест) КАК ГруппыНаТранзитМест,
 	СУММА(втСбор.УпакованноВГРуппы) КАК УпакованноВГРуппы,
-	СУММА(втСбор.СформированноГрупп) КАК СформированноГрупп
+	СУММА(втСбор.СформированноГрупп) КАК СформированноГрупп,
+	втСбор.Габарит
 ИЗ
 	втСбор КАК втСбор
 СГРУППИРОВАТЬ ПО
 	втСбор.ТипПрихода,
-	втСбор.Организатор</query>
+	втСбор.Организатор,
+	втСбор.Габарит,
+	втСбор.Габарит.СтоимостьХранения</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>ПринятоСтикеров</dataPath>
@@ -384,6 +400,39 @@
 				<v8:content>Принято стикеров</v8:content>
 			</v8:item>
 		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтоимостьОдиночных</dataPath>
+		<expression>Габарит.СтоимостьХранения*ОдиночныеЗаказы</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стоимость одиночных</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтоимостьРазобранных</dataPath>
+		<expression>Габарит.СтоимостьХранения*РазобраноШтук</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стоимость разобранных</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтоимостьГруппНаТранзит</dataPath>
+		<expression>Габарит.СтоимостьХранения*ГруппыНаТранзитМест</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Стоимость групп на транзит</v8:content>
+			</v8:item>
+		</title>
+		<valueType/>
 	</calculatedField>
 	<totalField>
 		<dataPath>ШтрафныхЗаказов</dataPath>
@@ -420,6 +469,18 @@
 	<totalField>
 		<dataPath>ПринятоСтикеров</dataPath>
 		<expression>Сумма(ПринятоСтикеров)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьОдиночных</dataPath>
+		<expression>Сумма(СтоимостьОдиночных)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьГруппНаТранзит</dataPath>
+		<expression>Сумма(СтоимостьГруппНаТранзит)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьРазобранных</dataPath>
+		<expression>Сумма(СтоимостьРазобранных)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -509,6 +570,9 @@
 						</v8:item>
 					</dcsset:lwsTitle>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтоимостьРазобранных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>РазобраноШтук</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -526,6 +590,9 @@
 							<v8:content>Группы на транзит</v8:content>
 						</v8:item>
 					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СтоимостьГруппНаТранзит</dcsset:field>
+					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ГруппыНаТранзитМест</dcsset:field>
 					</dcsset:item>
@@ -548,6 +615,9 @@
 						<dcsset:field>СформированноГрупп</dcsset:field>
 					</dcsset:item>
 					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтоимостьОдиночных</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОдиночныеЗаказы</dcsset:field>
@@ -603,13 +673,33 @@
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:use>false</dcsset:use>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Габарит</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Габарит.СтоимостьХранения</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							</dcsset:item>
+						</dcsset:groupItems>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 						</dcsset:order>
 						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
 					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>

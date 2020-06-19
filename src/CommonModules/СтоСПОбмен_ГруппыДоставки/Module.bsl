@@ -26,7 +26,7 @@
 	Тип_distributors					= ФабрикаXDTO.Тип("http://www.100sp.ru/out","distributors");
 	
 	Объект_dataByDates					= ФабрикаXDTO.Создать(Тип_dataByDates);
-	Объект_dataByDates.deliveryGroups	= ?(ДатаЗагрузки = Неопределено, Справочники.ПараметрыОбмена.ГруппыДоставки.ДатаЗагрузки , ДатаЗагрузки);
+	Объект_dataByDates.deliveryGroups	= ?(ДатаЗагрузки = Неопределено, Справочники.ПараметрыОбмена.ГруппыДоставки.ДатаЗагрузки - 60*24*60*10 , ДатаЗагрузки- 60*24*60*10);
 	
 	Объект_distributors					= ФабрикаXDTO.Создать(Тип_distributors);
 	Объект_distributors.dataByDates		= Объект_dataByDates;
