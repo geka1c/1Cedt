@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.5.4</version>
+  <version>3.5.5.5</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -1319,6 +1319,7 @@
   <commonModules>CommonModule.СП_АдресаДоставки</commonModules>
   <commonModules>CommonModule.СП_Эквайринг_Клиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйВызовСервера</commonModules>
+  <commonModules>CommonModule.СП_ГруппыДоставки</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
