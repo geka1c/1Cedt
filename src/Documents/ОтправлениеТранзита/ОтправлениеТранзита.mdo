@@ -23,7 +23,7 @@
     <value>Отправление ТК</value>
   </objectPresentation>
   <numberType>String</numberType>
-  <numberLength>9</numberLength>
+  <numberLength>14</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <numberPeriodicity>Year</numberPeriodicity>
   <checkUnique>true</checkUnique>
@@ -966,6 +966,48 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3bd39007-1617-461d-8fec-249bc1fef797">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыГруппыДоставки</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="395578dd-42db-4aa4-93ef-d7f46db8f8d5">
+    <name>КоличествоВГруппе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество в группе</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d62d3992-34a5-4094-a634-59294dd6172e">
+    <name>КоличествоНаСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество на складе</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
