@@ -1320,7 +1320,6 @@
   <commonModules>CommonModule.СП_Эквайринг_Клиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйВызовСервера</commonModules>
   <commonModules>CommonModule.СП_ГруппыДоставки1</commonModules>
-  <commonModules>CommonModule.СП_ГруппыДоставки</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>

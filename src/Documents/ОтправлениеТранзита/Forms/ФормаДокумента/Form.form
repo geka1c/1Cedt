@@ -366,652 +366,22 @@
         <items xsi:type="form:FormGroup">
           <name>Группа8</name>
           <id>193</id>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаРасчетКалькулятора</name>
-            <id>223</id>
-            <items xsi:type="form:FormGroup">
-              <name>РКСтрокой</name>
-              <id>225</id>
-              <items xsi:type="form:FormField">
-                <name>РасчетКалькулятора</name>
-                <id>195</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:MultiLanguageDataPath">
-                  <paths xsi:type="form:DataPath">
-                    <segments>Объект.РасчетКалькулятора</segments>
-                  </paths>
-                </dataPath>
-                <extendedTooltip>
-                  <name>РасчетКалькулятораРасширеннаяПодсказка</name>
-                  <id>197</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>РасчетКалькулятораКонтекстноеМеню</name>
-                  <id>196</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <type>LabelField</type>
-                <editMode>Enter</editMode>
-                <showInHeader>true</showInHeader>
-                <headerHorizontalAlign>Left</headerHorizontalAlign>
-                <showInFooter>true</showInFooter>
-                <extInfo xsi:type="form:LabelFieldExtInfo">
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <verticalStretch>true</verticalStretch>
-                  <textColor xsi:type="core:ColorDef">
-                    <red>3</red>
-                    <green>157</green>
-                    <blue>43</blue>
-                  </textColor>
-                </extInfo>
-              </items>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <title>
-                <key>ru</key>
-                <value>РКСтрокой</value>
-              </title>
-              <toolTip>
-                <key>ru</key>
-                <value>РКСтрокой</value>
-              </toolTip>
-              <extendedTooltip>
-                <name>РКСтрокойРасширеннаяПодсказка</name>
-                <id>226</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>Page</type>
-              <extInfo xsi:type="form:PageGroupExtInfo">
-                <group>Vertical</group>
-                <showTitle>true</showTitle>
-              </extInfo>
-            </items>
-            <items xsi:type="form:FormGroup">
-              <name>РКТаблицей</name>
-              <id>227</id>
-              <items xsi:type="form:Table">
-                <name>РасчетКалькулятора1</name>
-                <id>229</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <dataPath xsi:type="form:DataPath">
-                  <segments>Объект.РасчетКалькулятораПочта</segments>
-                </dataPath>
-                <titleLocation>None</titleLocation>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1ВидОтправления</name>
-                  <id>245</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.ВидОтправления</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1ВидОтправленияРасширеннаяПодсказка</name>
-                    <id>247</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1ВидОтправленияКонтекстноеМеню</name>
-                    <id>246</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1Доставка</name>
-                  <id>248</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.Доставка</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1ДоставкаРасширеннаяПодсказка</name>
-                    <id>250</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1ДоставкаКонтекстноеМеню</name>
-                    <id>249</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1ПредельныйВес</name>
-                  <id>251</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.ПредельныйВес</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1ПредельныйВесРасширеннаяПодсказка</name>
-                    <id>253</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1ПредельныйВесКонтекстноеМеню</name>
-                    <id>252</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1СрокДоставки</name>
-                  <id>254</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.СрокДоставки</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1СрокДоставкиРасширеннаяПодсказка</name>
-                    <id>256</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1СрокДоставкиКонтекстноеМеню</name>
-                    <id>255</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1Тариф</name>
-                  <id>257</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.Тариф</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1ТарифРасширеннаяПодсказка</name>
-                    <id>259</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1ТарифКонтекстноеМеню</name>
-                    <id>258</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <items xsi:type="form:FormField">
-                  <name>РасчетКалькулятора1НетРасчета</name>
-                  <id>260</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <dataPath xsi:type="form:MultiLanguageDataPath">
-                    <paths xsi:type="form:DataPath">
-                      <segments>Объект.РасчетКалькулятораПочта.НетРасчета</segments>
-                    </paths>
-                  </dataPath>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1НетРасчетаРасширеннаяПодсказка</name>
-                    <id>262</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1НетРасчетаКонтекстноеМеню</name>
-                    <id>261</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
-                  <showInHeader>true</showInHeader>
-                  <headerHorizontalAlign>Left</headerHorizontalAlign>
-                  <showInFooter>true</showInFooter>
-                  <extInfo xsi:type="form:InputFieldExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <wrap>true</wrap>
-                    <chooseType>true</chooseType>
-                    <typeDomainEnabled>true</typeDomainEnabled>
-                    <textEdit>true</textEdit>
-                  </extInfo>
-                </items>
-                <autoCommandBar>
-                  <name>РасчетКалькулятора1КоманднаяПанель</name>
-                  <id>231</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <horizontalAlign>Left</horizontalAlign>
-                </autoCommandBar>
-                <handlers>
-                  <event>Selection</event>
-                  <name>РасчетКалькулятора1Выбор</name>
-                </handlers>
-                <searchStringAddition>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <name>РасчетКалькулятора1СтрокаПоиска</name>
-                  <id>233</id>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1СтрокаПоискаРасширеннаяПодсказка</name>
-                    <id>235</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1СтрокаПоискаКонтекстноеМеню</name>
-                    <id>234</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <extInfo xsi:type="form:SearchStringAdditionExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                  </extInfo>
-                </searchStringAddition>
-                <viewStatusAddition>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <name>РасчетКалькулятора1СостояниеПросмотра</name>
-                  <id>236</id>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1СостояниеПросмотраРасширеннаяПодсказка</name>
-                    <id>238</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1СостояниеПросмотраКонтекстноеМеню</name>
-                    <id>237</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>ViewStatusAddition</type>
-                  <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <horizontalLocation>Left</horizontalLocation>
-                  </extInfo>
-                </viewStatusAddition>
-                <searchControlAddition>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <name>РасчетКалькулятора1УправлениеПоиском</name>
-                  <id>239</id>
-                  <extendedTooltip>
-                    <name>РасчетКалькулятора1УправлениеПоискомРасширеннаяПодсказка</name>
-                    <id>241</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <type>Label</type>
-                    <autoMaxWidth>true</autoMaxWidth>
-                    <autoMaxHeight>true</autoMaxHeight>
-                    <extInfo xsi:type="form:LabelDecorationExtInfo">
-                      <horizontalAlign>Left</horizontalAlign>
-                    </extInfo>
-                  </extendedTooltip>
-                  <contextMenu>
-                    <name>РасчетКалькулятора1УправлениеПоискомКонтекстноеМеню</name>
-                    <id>240</id>
-                    <visible>true</visible>
-                    <enabled>true</enabled>
-                    <userVisible>
-                      <common>true</common>
-                    </userVisible>
-                    <autoFill>true</autoFill>
-                  </contextMenu>
-                  <type>SearchControlAddition</type>
-                  <extInfo xsi:type="form:SearchControlAdditionExtInfo">
-                    <autoMaxWidth>true</autoMaxWidth>
-                  </extInfo>
-                </searchControlAddition>
-                <extendedTooltip>
-                  <name>РасчетКалькулятора1РасширеннаяПодсказка</name>
-                  <id>232</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <type>Label</type>
-                  <autoMaxWidth>true</autoMaxWidth>
-                  <autoMaxHeight>true</autoMaxHeight>
-                  <extInfo xsi:type="form:LabelDecorationExtInfo">
-                    <horizontalAlign>Left</horizontalAlign>
-                  </extInfo>
-                </extendedTooltip>
-                <contextMenu>
-                  <name>РасчетКалькулятора1КонтекстноеМеню</name>
-                  <id>230</id>
-                  <visible>true</visible>
-                  <enabled>true</enabled>
-                  <userVisible>
-                    <common>true</common>
-                  </userVisible>
-                  <autoFill>true</autoFill>
-                </contextMenu>
-                <representation>HierarchicalList</representation>
-                <changeRowSet>true</changeRowSet>
-                <changeRowOrder>true</changeRowOrder>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <autoMaxRowsCount>true</autoMaxRowsCount>
-                <selectionMode>MultiRow</selectionMode>
-                <header>true</header>
-                <headerHeight>1</headerHeight>
-                <footerHeight>1</footerHeight>
-                <horizontalScrollBar>AutoUse</horizontalScrollBar>
-                <verticalScrollBar>AutoUse</verticalScrollBar>
-                <horizontalLines>true</horizontalLines>
-                <verticalLines>true</verticalLines>
-                <autoInsertNewRow>true</autoInsertNewRow>
-                <searchOnInput>Auto</searchOnInput>
-                <initialListView>Auto</initialListView>
-                <horizontalStretch>true</horizontalStretch>
-                <verticalStretch>true</verticalStretch>
-                <enableStartDrag>true</enableStartDrag>
-                <enableDrag>true</enableDrag>
-                <rowFilter xsi:type="core:UndefinedValue"/>
-              </items>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <title>
-                <key>ru</key>
-                <value>РКТаблицей</value>
-              </title>
-              <toolTip>
-                <key>ru</key>
-                <value>РКТаблицей</value>
-              </toolTip>
-              <extendedTooltip>
-                <name>РКТаблицейРасширеннаяПодсказка</name>
-                <id>228</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <type>Page</type>
-              <extInfo xsi:type="form:PageGroupExtInfo">
-                <group>Vertical</group>
-                <showTitle>true</showTitle>
-              </extInfo>
-            </items>
+          <items xsi:type="form:FormField">
+            <name>РасчетКалькулятора</name>
+            <id>195</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
-            <title>
-              <key>ru</key>
-              <value>Группа расчет калькулятора</value>
-            </title>
-            <toolTip>
-              <key>ru</key>
-              <value>Группа расчет калькулятора</value>
-            </toolTip>
+            <dataPath xsi:type="form:MultiLanguageDataPath">
+              <paths xsi:type="form:DataPath">
+                <segments>Объект.РасчетКалькулятора</segments>
+              </paths>
+            </dataPath>
             <extendedTooltip>
-              <name>ГруппаРасчетКалькулятораРасширеннаяПодсказка</name>
-              <id>224</id>
+              <name>РасчетКалькулятораРасширеннаяПодсказка</name>
+              <id>197</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -1024,9 +394,30 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <type>Pages</type>
-            <extInfo xsi:type="form:PagesGroupExtInfo">
-              <currentRowUse>DontUse</currentRowUse>
+            <contextMenu>
+              <name>РасчетКалькулятораКонтекстноеМеню</name>
+              <id>196</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>LabelField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:LabelFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <verticalStretch>true</verticalStretch>
+              <textColor xsi:type="core:ColorDef">
+                <red>3</red>
+                <green>157</green>
+                <blue>43</blue>
+              </textColor>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -1427,7 +818,7 @@
                     </dataPath>
                     <handlers>
                       <event>OnChange</event>
-                      <name>ПодсчитатьСтоимость</name>
+                      <name>ТарифПВПриИзменении</name>
                     </handlers>
                     <extendedTooltip>
                       <name>ТарифПВРасширеннаяПодсказка</name>
@@ -1487,7 +878,7 @@
                     </dataPath>
                     <handlers>
                       <event>OnChange</event>
-                      <name>ТарифПВнпПриИзменении</name>
+                      <name>ТарифПВПриИзменении</name>
                     </handlers>
                     <extendedTooltip>
                       <name>ТарифПВнпРасширеннаяПодсказка</name>
@@ -1547,7 +938,7 @@
                     </dataPath>
                     <handlers>
                       <event>OnChange</event>
-                      <name>ПодсчитатьСтоимость</name>
+                      <name>ТарифПВПриИзменении</name>
                     </handlers>
                     <extendedTooltip>
                       <name>ТарифТКРасширеннаяПодсказка</name>
@@ -1603,7 +994,7 @@
                     </dataPath>
                     <handlers>
                       <event>OnChange</event>
-                      <name>ПодсчитатьСтоимость</name>
+                      <name>ТарифПВПриИзменении</name>
                     </handlers>
                     <extendedTooltip>
                       <name>ПроцентРасширеннаяПодсказка</name>
@@ -5484,36 +4875,40 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ОбменСоСДЭК</name>
+      <name>ГруппаПротокол</name>
       <id>119</id>
       <items xsi:type="form:Table">
-        <name>ПротоколыПередач</name>
-        <id>121</id>
+        <name>Протокол</name>
+        <id>435</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ПротоколыПередач</segments>
+          <segments>Протокол</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачНомерСтроки</name>
-          <id>134</id>
+          <name>ПротоколДатаОкончания</name>
+          <id>448</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.LineNumber</segments>
+              <segments>Протокол.ДатаОкончания</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.ДатаОкончания</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачНомерСтрокиРасширеннаяПодсказка</name>
-            <id>136</id>
+            <name>ПротоколДатаОкончанияРасширеннаяПодсказка</name>
+            <id>450</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5527,56 +4922,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачНомерСтрокиКонтекстноеМеню</name>
-            <id>135</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
-          <name>ПротоколыПередачВидОбмена</name>
-          <id>168</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.ВидОбмена</segments>
-            </paths>
-          </dataPath>
-          <extendedTooltip>
-            <name>ПротоколыПередачВидОбменаРасширеннаяПодсказка</name>
-            <id>170</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ПротоколыПередачВидОбменаКонтекстноеМеню</name>
-            <id>169</id>
+            <name>ПротоколДатаОкончанияКонтекстноеМеню</name>
+            <id>449</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5585,7 +4932,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5599,21 +4946,25 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачДатаНачала</name>
-          <id>137</id>
+          <name>ПротоколДатаНачала</name>
+          <id>451</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.ДатаНачала</segments>
+              <segments>Протокол.ДатаНачала</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.ДатаНачала</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачДатаНачалаРасширеннаяПодсказка</name>
-            <id>139</id>
+            <name>ПротоколДатаНачалаРасширеннаяПодсказка</name>
+            <id>453</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5627,8 +4978,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачДатаНачалаКонтекстноеМеню</name>
-            <id>138</id>
+            <name>ПротоколДатаНачалаКонтекстноеМеню</name>
+            <id>452</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5637,7 +4988,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5651,21 +5002,25 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачДатаОкончания</name>
-          <id>140</id>
+          <name>ПротоколРезультат</name>
+          <id>454</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.ДатаОкончания</segments>
+              <segments>Протокол.Результат</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.Результат</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачДатаОкончанияРасширеннаяПодсказка</name>
-            <id>142</id>
+            <name>ПротоколРезультатРасширеннаяПодсказка</name>
+            <id>456</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5679,8 +5034,57 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачДатаОкончанияКонтекстноеМеню</name>
-            <id>141</id>
+            <name>ПротоколРезультатКонтекстноеМеню</name>
+            <id>455</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ПротоколПолученныеДанные</name>
+          <id>457</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.ПолученныеДанные</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.ПолученныеДанные</segments>
+            </paths>
+          </dataPath>
+          <extendedTooltip>
+            <name>ПротоколПолученныеДанныеРасширеннаяПодсказка</name>
+            <id>459</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПротоколПолученныеДанныеКонтекстноеМеню</name>
+            <id>458</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5689,7 +5093,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5703,21 +5107,25 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачРезультат</name>
-          <id>143</id>
+          <name>ПротоколДокумент</name>
+          <id>460</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.Результат</segments>
+              <segments>Протокол.Документ</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.Документ</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачРезультатРасширеннаяПодсказка</name>
-            <id>145</id>
+            <name>ПротоколДокументРасширеннаяПодсказка</name>
+            <id>462</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5731,8 +5139,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачРезультатКонтекстноеМеню</name>
-            <id>144</id>
+            <name>ПротоколДокументКонтекстноеМеню</name>
+            <id>461</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5741,7 +5149,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5755,21 +5163,25 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачОтправленныеДанные</name>
-          <id>146</id>
+          <name>ПротоколОтправили</name>
+          <id>463</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.ОтправленныеДанные</segments>
+              <segments>Протокол.Отправили</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.Отправили</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачОтправленныеДанныеРасширеннаяПодсказка</name>
-            <id>148</id>
+            <name>ПротоколОтправилиРасширеннаяПодсказка</name>
+            <id>465</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5783,8 +5195,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачОтправленныеДанныеКонтекстноеМеню</name>
-            <id>147</id>
+            <name>ПротоколОтправилиКонтекстноеМеню</name>
+            <id>464</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5793,7 +5205,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5807,21 +5219,25 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>ПротоколыПередачПолученныеДанные</name>
-          <id>149</id>
+          <name>ПротоколОписание</name>
+          <id>466</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
             <paths xsi:type="form:DataPath">
-              <segments>Объект.ПротоколыПередач.ПолученныеДанные</segments>
+              <segments>Протокол.Описание</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.Описание</segments>
             </paths>
           </dataPath>
           <extendedTooltip>
-            <name>ПротоколыПередачПолученныеДанныеРасширеннаяПодсказка</name>
-            <id>151</id>
+            <name>ПротоколОписаниеРасширеннаяПодсказка</name>
+            <id>468</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5835,8 +5251,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачПолученныеДанныеКонтекстноеМеню</name>
-            <id>150</id>
+            <name>ПротоколОписаниеКонтекстноеМеню</name>
+            <id>467</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5845,7 +5261,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -5856,11 +5272,66 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ПротоколСтандартнаяКартинка</name>
+          <id>469</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:MultiLanguageDataPath">
+            <activeLanguage>1</activeLanguage>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.DefaultPicture</segments>
+            </paths>
+            <paths xsi:type="form:DataPath">
+              <segments>Протокол.СтандартнаяКартинка</segments>
+            </paths>
+          </dataPath>
+          <extendedTooltip>
+            <name>ПротоколСтандартнаяКартинкаРасширеннаяПодсказка</name>
+            <id>471</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ПротоколСтандартнаяКартинкаКонтекстноеМеню</name>
+            <id>470</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>PictureField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:ImageFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <horizontalStretch>true</horizontalStretch>
+            <verticalStretch>true</verticalStretch>
+            <fileDragMode>AsFileRef</fileDragMode>
           </extInfo>
         </items>
         <autoCommandBar>
-          <name>ПротоколыПередачКоманднаяПанель</name>
-          <id>123</id>
+          <name>ПротоколКоманднаяПанель</name>
+          <id>436</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -5875,11 +5346,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПротоколыПередачСтрокаПоиска</name>
-          <id>125</id>
+          <name>ПротоколСтрокаПоиска</name>
+          <id>439</id>
           <extendedTooltip>
-            <name>ПротоколыПередачСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>127</id>
+            <name>ПротоколСтрокаПоискаРасширеннаяПодсказка</name>
+            <id>441</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5893,8 +5364,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачСтрокаПоискаКонтекстноеМеню</name>
-            <id>126</id>
+            <name>ПротоколСтрокаПоискаКонтекстноеМеню</name>
+            <id>440</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5912,11 +5383,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПротоколыПередачСостояниеПросмотра</name>
-          <id>128</id>
+          <name>ПротоколСостояниеПросмотра</name>
+          <id>445</id>
           <extendedTooltip>
-            <name>ПротоколыПередачСостояниеПросмотраРасширеннаяПодсказка</name>
-            <id>130</id>
+            <name>ПротоколСостояниеПросмотраРасширеннаяПодсказка</name>
+            <id>447</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5930,8 +5401,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачСостояниеПросмотраКонтекстноеМеню</name>
-            <id>129</id>
+            <name>ПротоколСостояниеПросмотраКонтекстноеМеню</name>
+            <id>446</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5951,11 +5422,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>ПротоколыПередачУправлениеПоиском</name>
-          <id>131</id>
+          <name>ПротоколУправлениеПоиском</name>
+          <id>442</id>
           <extendedTooltip>
-            <name>ПротоколыПередачУправлениеПоискомРасширеннаяПодсказка</name>
-            <id>133</id>
+            <name>ПротоколУправлениеПоискомРасширеннаяПодсказка</name>
+            <id>444</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5969,8 +5440,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПротоколыПередачУправлениеПоискомКонтекстноеМеню</name>
-            <id>132</id>
+            <name>ПротоколУправлениеПоискомКонтекстноеМеню</name>
+            <id>443</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -5984,8 +5455,8 @@
           </extInfo>
         </searchControlAddition>
         <extendedTooltip>
-          <name>ПротоколыПередачРасширеннаяПодсказка</name>
-          <id>124</id>
+          <name>ПротоколРасширеннаяПодсказка</name>
+          <id>438</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -5999,8 +5470,8 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ПротоколыПередачКонтекстноеМеню</name>
-          <id>122</id>
+          <name>ПротоколКонтекстноеМеню</name>
+          <id>437</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -6022,14 +5493,15 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
-        <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
-        <enableStartDrag>true</enableStartDrag>
-        <enableDrag>true</enableDrag>
-        <rowFilter xsi:type="core:UndefinedValue"/>
+        <fileDragMode>AsFileRef</fileDragMode>
+        <extInfo xsi:type="form:DynamicListTableExtInfo">
+          <autoRefreshPeriod>60</autoRefreshPeriod>
+          <showRoot>true</showRoot>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -6038,14 +5510,14 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Протоколы обмена</value>
+        <value>Протокол</value>
       </title>
       <toolTip>
         <key>ru</key>
         <value>Обмен со СДЭК</value>
       </toolTip>
       <extendedTooltip>
-        <name>ОбменСоСДЭКРасширеннаяПодсказка</name>
+        <name>ГруппаПротоколРасширеннаяПодсказка</name>
         <id>120</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -7198,6 +6670,10 @@
     </extendedTooltip>
     <type>Pages</type>
     <extInfo xsi:type="form:PagesGroupExtInfo">
+      <handlers>
+        <event>OnCurrentPageChange</event>
+        <name>ГруппаСтраницыПриСменеСтраницы</name>
+      </handlers>
       <pagesRepresentation>TabsOnTop</pagesRepresentation>
       <currentRowUse>DontUse</currentRowUse>
     </extInfo>
@@ -7430,6 +6906,42 @@
     <edit>
       <common>true</common>
     </edit>
+  </attributes>
+  <attributes>
+    <name>Протокол</name>
+    <title>
+      <key>ru</key>
+      <value>Протокол</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>DynamicList</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <extInfo xsi:type="form:DynamicListExtInfo">
+      <queryText>ВЫБРАТЬ
+	РегистрСведенийПротоколыОбмена.Документ КАК Документ,
+	РегистрСведенийПротоколыОбмена.Период КАК ДатаНачала,
+	РегистрСведенийПротоколыОбмена.ДатаОкончания КАК ДатаОкончания,
+	РегистрСведенийПротоколыОбмена.Отправили,
+	РегистрСведенийПротоколыОбмена.ПолученныеДанные КАК ПолученныеДанные,
+	РегистрСведенийПротоколыОбмена.Результат КАК Результат,
+	РегистрСведенийПротоколыОбмена.Описание
+ИЗ
+	РегистрСведений.ПротоколыОбмена КАК РегистрСведенийПротоколыОбмена
+ГДЕ
+	РегистрСведенийПротоколыОбмена.Документ = &amp;Документ</queryText>
+      <mainTable>InformationRegister.ПротоколыОбмена</mainTable>
+      <autoFillAvailableFields>true</autoFillAvailableFields>
+      <customQuery>true</customQuery>
+      <autoSaveUserSettings>true</autoSaveUserSettings>
+      <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+    </extInfo>
   </attributes>
   <formCommands>
     <name>ПолучитьНомерОтправления</name>

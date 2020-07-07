@@ -25,7 +25,6 @@
   <numberType>String</numberType>
   <numberLength>14</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
-  <numberPeriodicity>Year</numberPeriodicity>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ОтправлениеТранзита.Form.ФормаДокумента</defaultObjectForm>
@@ -1011,6 +1010,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="c3ca0c10-6474-4661-a8ac-ab8086d67d88">
+    <name>Взвешено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взвешено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="692d0af7-56a6-4a25-9b46-73e190df075e">
     <name>ФормаДокумента</name>
     <synonym>
@@ -1422,119 +1433,6 @@
       </synonym>
       <type>
         <types>EnumRef.ВидыОбменовСДЭК</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="a2c3df9c-5e19-491b-a66f-d2ceecd5af30">
-    <producedTypes>
-      <objectType typeId="8c4c1c42-b195-46b9-a9e8-fc64378b93a6" valueTypeId="de8fadf1-5e38-4a66-bcc2-0f2f8b8f33e3"/>
-      <rowType typeId="b2b55206-2c07-419e-bc14-b962f3012e95" valueTypeId="14a54b54-c2c9-45af-85ff-39be0dd9b615"/>
-    </producedTypes>
-    <name>РасчетКалькулятораПочта</name>
-    <synonym>
-      <key>ru</key>
-      <value>Расчет калькулятора почта</value>
-    </synonym>
-    <attributes uuid="bbee7422-515d-4c00-98c0-ad6a9d7a1768">
-      <name>ВидОтправления</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид отправления</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>50</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="3b47f899-20fc-44de-99d5-6fef5f76ce80">
-      <name>Доставка</name>
-      <synonym>
-        <key>ru</key>
-        <value>Доставка</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="4b906fdd-99ac-4307-a412-2c583ad64d39">
-      <name>ПредельныйВес</name>
-      <synonym>
-        <key>ru</key>
-        <value>Предельный вес</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="03128910-239d-4463-9194-8ab37236a47d">
-      <name>СрокДоставки</name>
-      <synonym>
-        <key>ru</key>
-        <value>Срок доставки</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="10584ffa-3ecf-4fae-862e-76bf55ed3fda">
-      <name>Тариф</name>
-      <synonym>
-        <key>ru</key>
-        <value>Тариф</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="76b37b5e-5f2e-4142-bca2-54d95964d6be">
-      <name>НетРасчета</name>
-      <synonym>
-        <key>ru</key>
-        <value>Нет расчета</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>200</length>
-        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

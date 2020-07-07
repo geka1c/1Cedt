@@ -23,5 +23,6 @@
     <types>DocumentRef.ЗаполнитьКоленоМаршрута</types>
     <types>DocumentRef.ОтчетПоБесплатнойВыдаче</types>
     <types>DocumentRef.КурьерскаяДоставка</types>
+    <types>DocumentRef.ОтправлениеТранзита</types>
   </type>
 </mdclass:DefinedType>
