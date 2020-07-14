@@ -27,6 +27,8 @@
   <defaultListForm>Document.ЗапросыГруппДоставки.Form.ФормаСписка</defaultListForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.ЗапросыГруппыДоставки</registerRecords>
+  <registerRecords>AccumulationRegister.Обмен100СПрн_Ошибки</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="95ec5693-981f-44a1-bae2-fa4189938862">

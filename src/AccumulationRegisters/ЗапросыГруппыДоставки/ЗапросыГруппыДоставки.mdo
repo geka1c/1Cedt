@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a23f240-4f3a-4a8e-985e-703fca399bf9">
+  <producedTypes>
+    <selectionType typeId="8b1f6137-c6ba-4908-8632-b1608c6f8dc0" valueTypeId="0a0d1a58-4489-4d23-b036-e4529b1bdff2"/>
+    <listType typeId="5c131077-0f00-4101-9115-e5c64e331951" valueTypeId="5c61e762-fa74-4af2-a423-5943ec521ea6"/>
+    <managerType typeId="78e71f3b-088d-40ed-bb3c-63e4d2dbf0e8" valueTypeId="af1b53d6-87c4-40d3-8e7f-61be1198530e"/>
+    <recordSetType typeId="e1a78e85-368c-416f-8bcd-8200545321cb" valueTypeId="0109f269-2583-4a2f-b7d4-5f404515e8f9"/>
+    <recordKeyType typeId="f1337c74-b6d4-4dbd-8cfb-579168261432" valueTypeId="4cc6031f-8b7a-41f9-a8cf-35e48fd762aa"/>
+    <recordType typeId="e41d7430-e3ac-477b-8532-3f4683f9b726" valueTypeId="a1cea1fa-9704-469b-8dae-92944ae13f3a"/>
+  </producedTypes>
+  <name>ЗапросыГруппыДоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запросы группы доставки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d56cf64a-1e8d-4444-a227-b7ab5353eb5f">
+    <name>НеЗавершен</name>
+    <synonym>
+      <key>ru</key>
+      <value>НеЗавершен</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="8502ac89-390b-4f12-88d9-c921cf4459fe">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="eb2608a5-9515-45b5-8fbd-e085333ab6a0">
+    <name>ГруппаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа доставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Коробки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8861e19f-84b7-4536-b90c-f901cbf96057">
+    <name>Запрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыГруппыДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

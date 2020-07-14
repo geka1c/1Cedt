@@ -18,7 +18,7 @@
   <defaultRoles>Role.АдминистраторСистемы</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Коваль Е. Л.</vendor>
-  <version>3.5.5.5</version>
+  <version>3.6.1.1</version>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
     <pages>
@@ -1319,7 +1319,6 @@
   <commonModules>CommonModule.СП_АдресаДоставки</commonModules>
   <commonModules>CommonModule.СП_Эквайринг_Клиент</commonModules>
   <commonModules>CommonModule.ЭлектроннаяПодписьСлужебныйВызовСервера</commonModules>
-  <commonModules>CommonModule.СП_ГруппыДоставки1</commonModules>
   <exchangePlans>ExchangePlan.РИБ</exchangePlans>
   <exchangePlans>ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
   <exchangePlans>ExchangePlan.спСинхронизацияДанныхЧерезУниверсальныйФормат</exchangePlans>
@@ -2663,6 +2662,7 @@
   <accumulationRegisters>AccumulationRegister.ТоварыНаСкладах</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНаСкладе</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.СобранныеЗаказы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ЗапросыГруппыДоставки</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВопросыДляАнкетирования</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ОбъектыАдресацииЗадач</chartsOfCharacteristicTypes>

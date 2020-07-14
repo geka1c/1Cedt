@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41f94422-7d99-48c5-9689-76a0bb982cb4">
-  <name>СП_ГруппыДоставки1</name>
-  <synonym>
-    <key>ru</key>
-    <value>С п группы доставки1</value>
-  </synonym>
-  <server>true</server>
-</mdclass:CommonModule>

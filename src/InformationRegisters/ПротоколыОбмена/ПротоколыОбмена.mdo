@@ -94,11 +94,16 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>25</length>
+        <length>200</length>
       </stringQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
   </attributes>
   <dimensions uuid="902a7698-bf5e-4091-a04f-c99883ca638f">
     <name>Документ</name>

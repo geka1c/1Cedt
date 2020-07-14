@@ -103,4 +103,18 @@
       <value>Курьерская доставка</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="75feb2d5-6889-4777-84b6-ae4f7f2c6344">
+    <name>ГруппыДоставкиЗапросОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы доставки запрос оплаты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c4bf9195-d90a-4031-a838-b6fe7dabe406">
+    <name>ГруппыДоставкиЗапросОтсрочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы доставки запрос отсрочки</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

@@ -117,4 +117,11 @@
       <value>Заказ КД (45)</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="ca14a598-2e81-42cb-be88-010f01541598">
+    <name>ГруппаДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа доставки (43)</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
